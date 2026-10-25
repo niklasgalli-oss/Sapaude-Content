@@ -45,12 +45,13 @@ Each item has:
 | `readTimeMinutes`, `listenTimeMinutes` | Positive whole minutes, from 1 to 30. Both clocks use minutes for the same item. |
 | `hook` | One sentence under the title. |
 | `headline` | 2-5 words, at most 32 characters, in English and in `i18n.de` alike. Aim for 27 or fewer: 28-32 characters is a warning, and longer than 32 is an error. The title must state what changes or what the reader can now do (e.g. `ChatGPT answers visually now`), never just `<product> in <product>` or a bare product name. Sentence case, unless the whole headline is title case. Details belong in `hook` or `summaryPoints`, not in the title. `briefing.json` headlines are unaffected and stay at most 60 characters. |
+| `shortTitle` | Optional for older items. About 3-5 words, in English and in `i18n.de`, that still say what changes, not a bare product name. The validator warns when it is missing or longer than 24 characters. |
 | `summaryPoints` | Exactly three strings: what the source shows, the limit of that claim, and what to check next. |
-| `takeaway` | One concrete action. |
+| `takeaway` | Optional. Up to three concrete to-dos grounded in the item's source, for example `Test Y in the new model X, because it can now do Z`. Omit the field, or use an empty string, when there is no sensible to-do. The app hides the section in that case. |
 | `deepDiveMarkdown` | Exactly four `## ` sections, in this order of roles: entry, how it works, the catch, what to do. Each heading is a specific statement about this story, at most 9 words, never ending with a period, and never a template label such as `The Hook` or `Practical Takeaway`. The validator checks the section count, word count and trailing period. Aim for about 150–260 words in each section. |
 | `source` | Exactly one `{ "name", "url" }`. `name` is the publisher. `url` is one well-formed `https` URL. Do not reuse a URL on another item. |
-| `i18n.de` | German `headline` (same 2-5 words, max 32 characters), `hook`, `summaryPoints`, `takeaway`, and `deepDiveMarkdown`, with the same structure as English. Technical AI terms stay in English and are capitalised as German nouns. |
-| `levels` | Optional. Root fields stay the intermediate text. `beginner` and `advanced` are each optional; a variant requires `headline`, `hook`, `summaryPoints`, `takeaway`, `deepDiveMarkdown`, and `de` with the same five fields. Omit a whole variant rather than leaving fields empty. Never copy root text. Headlines and deep dives follow the same rules as the root. |
+| `i18n.de` | German `headline` (same 2-5 words, max 32 characters), `shortTitle`, `hook`, `summaryPoints`, `takeaway`, and `deepDiveMarkdown`, with the same structure as English. `takeaway` and `shortTitle` may be omitted. Technical AI terms stay in English and are capitalised as German nouns. Write ä, ö, ü, and ß. The validator warns on common umlaut-less spellings such as `fur`, `ueber`, `Arzte`, `schlagt`, and `ss` where German uses `ß`. |
+| `levels` | Optional. Root fields stay the intermediate text. `beginner` and `advanced` are each optional; a variant requires `headline`, `hook`, `summaryPoints`, `deepDiveMarkdown`, and `de` with the same required fields. `takeaway` and `shortTitle` may be omitted on the variant and on `de`. Omit a whole variant rather than leaving fields empty. Never copy root text. Headlines, short titles, and deep dives follow the same rules as the root. |
 
 Run the check locally:
 
@@ -63,7 +64,7 @@ node scripts/validate.mjs --check-urls
 
 `--check-urls` requests each source URL and requires HTTP 200. It is off by default, including on push and pull request, because a publisher can block an automated client. Run the GitHub Actions workflow manually with the `check_urls` input when you want that check in CI.
 
-Errors fail the process. Warnings do not. A capitalised glossary term in the English card fields, a reused id, a reused source URL, a malformed briefing `pulseId`, and a pulse headline longer than 32 characters are errors. A missing beginner sentence is a warning. A pulse headline of 28-32 characters is a warning too. A briefing `pulseId` that matches `pulse-YYYY-MM-DD-short-slug` but is not in the current `pulse.json` is a warning, and the check still exits 0. The app hides the deep-dive link in that case. `briefing.json` headlines stay at most 60 characters and do not use the pulse length warning.
+Errors fail the process. Warnings do not. A capitalised glossary term in the English card fields, a reused id, a reused source URL, a malformed briefing `pulseId`, and a pulse headline longer than 32 characters are errors. A missing beginner sentence is a warning. A pulse headline of 28-32 characters is a warning too. A missing `shortTitle`, or one longer than 24 characters, is a warning. A common umlaut-less spelling in a German field is a warning. A briefing `pulseId` that matches `pulse-YYYY-MM-DD-short-slug` but is not in the current `pulse.json` is a warning, and the check still exits 0. The app hides the deep-dive link in that case. `briefing.json` headlines stay at most 60 characters and do not use the pulse length warning.
 
 ## Editorial checklist
 
@@ -76,7 +77,7 @@ Tick these 15 points before you add an item.
 5. **Freshness.** `date` is not in the future. Keep at most 12 items and drop the oldest from the front. That is how stale content is removed. There is no separate stale flag.
 6. **One subject per item.** One launch, one mechanism, one decision. A second product gets its own item.
 7. **Beginner first sentence.** `hook` or `summaryPoints[0]` says what the thing is, in plain language, before the news. The validator warns when it cannot see that sentence. The warning does not fail the check.
-8. **One actionable takeaway.** `takeaway` is a single thing the reader can do next, not a second summary.
+8. **Concrete to-dos.** `takeaway` holds at most three tasks the reader can actually do, each grounded in the source. Omit it, or leave it empty, when there is no sensible to-do. Do not restate the news.
 9. **Consistent duration.** `readTimeMinutes` and `listenTimeMinutes` are positive whole minutes for this item. Do not mix seconds, ranges, or a different length in the prose.
 10. **No duplicate sources.** A `source.url` is used once. Do not publish the same URL again under a new headline. That is an error. A trailing slash or a different host capitalisation still counts as the same URL.
 11. **Ids are never reused.** An `id` appears once in the file and never comes back after the item rolls off. A duplicate id is an error.

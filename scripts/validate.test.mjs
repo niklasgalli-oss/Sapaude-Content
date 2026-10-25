@@ -11,6 +11,8 @@ import {
   httpsUrlError,
   lintFeed,
   lowercaseGlossaryTerms,
+  shortTitleProblem,
+  umlautLessSpellings,
   usesHeadlineCasing,
 } from "./validate.mjs";
 
@@ -44,6 +46,7 @@ function copy(overrides = {}) {
     headline: "Beispiel prüft den Feed",
     hook: "Beispiel ist ein Werkzeug für den Feed.",
     summaryPoints: ["Eins ist die Quelle.", "Zwei nennt die Grenze.", "Drei sagt den nächsten Schritt."],
+    shortTitle: "Beispiel prüft den Feed",
     takeaway: "Starte den Check vor dem Push.",
     deepDiveMarkdown: deepDive("Kurzer Abschnitt mit dem Agent und einem Token."),
     ...overrides,
@@ -59,6 +62,7 @@ function item(overrides = {}) {
     listenTimeMinutes: 6,
     hook: "Example is a tool that checks a story before it ships.",
     headline: "Example checks the feed",
+    shortTitle: "Example checks the feed",
     summaryPoints: [
       "Example is a validator for the pulse feed.",
       "It does not fetch the network unless asked.",
@@ -83,6 +87,10 @@ test("schema still matches the validator contract", () => {
   assert.deepEqual(collectSchemaErrors(schema), []);
   assert.equal(schema.$defs.dailyPulseItem.required.includes("priority"), false);
   assert.equal(schema.$defs.dailyPulseItem.required.includes("levels"), false);
+  assert.equal(schema.$defs.dailyPulseItem.required.includes("takeaway"), false);
+  assert.equal(schema.$defs.dailyPulseItem.required.includes("shortTitle"), false);
+  assert.equal(schema.$defs.localizedCopy.required.includes("takeaway"), false);
+  assert.equal(schema.$defs.levelVariant.required.includes("takeaway"), false);
   assert.equal(schema.$defs.dailyPulseItem.additionalProperties, false);
   assert.equal(schema.$defs.dailyPulseItem.properties.levels.additionalProperties, false);
   assert.equal(schema.$defs.levelVariant.additionalProperties, false);
@@ -328,6 +336,109 @@ test("headlines of 33 characters fail, 30 warn, and 20 pass quietly", async () =
 test("live pulse.json passes", async () => {
   const result = await lintFeed(pulse, { now: Date.now() });
   assert.deepEqual(result.errors, []);
+  assert.equal(result.warnings.some((warning) => warning.includes("umlaut-less")), false);
+  assert.equal(result.warnings.some((warning) => warning.includes("shortTitle")), false);
+});
+
+test("takeaway may be omitted or empty", async () => {
+  const omitted = item();
+  delete omitted.takeaway;
+  delete omitted.i18n.de.takeaway;
+  const gone = await lintFeed([omitted], { now: NOW });
+  assert.deepEqual(gone.errors, []);
+
+  const empty = await lintFeed(
+    [item({ takeaway: "", i18n: { de: copy({ takeaway: "" }) } })],
+    { now: NOW },
+  );
+  assert.deepEqual(empty.errors, []);
+
+  const variant = levelVariant("Beginner");
+  delete variant.takeaway;
+  delete variant.de.takeaway;
+  const level = await lintFeed([item({ levels: { beginner: variant } })], { now: NOW });
+  assert.deepEqual(level.errors, []);
+
+  const bad = await lintFeed([item({ takeaway: 3 })], { now: NOW });
+  assert.match(bad.errors.join("\n"), /takeaway: must be a string/);
+});
+
+test("shortTitle warns when missing or longer than 24 characters", async () => {
+  assert.equal(shortTitleProblem(undefined), "missing; use about 3-5 words that say what changes");
+  assert.equal(shortTitleProblem("ü".repeat(24)), null);
+  assert.match(shortTitleProblem("ü".repeat(25)), /25 characters/);
+
+  const bare = item();
+  delete bare.shortTitle;
+  delete bare.i18n.de.shortTitle;
+  const missing = await lintFeed([bare], { now: NOW });
+  assert.deepEqual(missing.errors, []);
+  assert.deepEqual(
+    missing.warnings.filter((warning) => warning.includes("shortTitle")),
+    [
+      "pulse.json[0].shortTitle: missing; use about 3-5 words that say what changes",
+      "pulse.json[0].i18n.de.shortTitle: missing; use about 3-5 words that say what changes",
+    ],
+  );
+
+  const long = await lintFeed(
+    [
+      item({
+        shortTitle: "A".repeat(25),
+        i18n: { de: copy({ shortTitle: "B".repeat(24) }) },
+      }),
+    ],
+    { now: NOW },
+  );
+  assert.deepEqual(long.errors, []);
+  assert.deepEqual(long.warnings, [
+    "pulse.json[0].shortTitle: is 25 characters; keep it to about 24",
+  ]);
+
+  const variant = levelVariant("Beginner");
+  delete variant.shortTitle;
+  delete variant.de.shortTitle;
+  const level = await lintFeed([item({ levels: { beginner: variant } })], { now: NOW });
+  assert.deepEqual(
+    level.warnings.filter((warning) => warning.includes("shortTitle")),
+    [
+      "pulse.json[0].levels.beginner.shortTitle: missing; use about 3-5 words that say what changes",
+      "pulse.json[0].levels.beginner.de.shortTitle: missing; use about 3-5 words that say what changes",
+    ],
+  );
+
+  const notString = await lintFeed([item({ shortTitle: 4 })], { now: NOW });
+  assert.match(notString.errors.join("\n"), /shortTitle: must be a string/);
+});
+
+test("warns on umlaut-less German spellings in de fields only", async () => {
+  const broken = `Der Satz fur ueber 40 Arzte schlagt zu und l\u00e4sst es so.`;
+  const hits = umlautLessSpellings(broken).map((hit) => hit.term);
+  assert.deepEqual(hits, ["fur", "ueber", "Arzte", "schlagt", "l\u00e4sst"]);
+  assert.equal(umlautLessSpellings("Beweisschritt, dass du musst, neue Quelle.").length, 0);
+  assert.equal(umlautLessSpellings("für über Ärzte schlägt zu und l\u00e4\u00dft es so.").length, 0);
+
+  const bad = await lintFeed(
+    [
+      item({
+        hook: "A fur coat over ueber Arzte schlagt nothing here.",
+        i18n: { de: copy({ hook: broken }) },
+        levels: {
+          beginner: levelVariant("Beginner", { de: { hook: "Sie sagt fuer den Test." } }),
+        },
+      }),
+    ],
+    { now: NOW },
+  );
+  assert.deepEqual(bad.errors, []);
+  const warnings = bad.warnings.filter((warning) => warning.includes("umlaut-less"));
+  assert.equal(warnings.some((warning) => warning.includes("pulse.json[0].hook")), false);
+  assert.match(warnings.join("\n"), /i18n\.de\.hook: umlaut-less spelling "fur"; use "für"/);
+  assert.match(warnings.join("\n"), /umlaut-less spelling "ueber"; use "über"/);
+  assert.match(warnings.join("\n"), /umlaut-less spelling "Arzte"; use "Ärzte"/);
+  assert.match(warnings.join("\n"), /umlaut-less spelling "schlagt"; use "schlägt"/);
+  assert.match(warnings.join("\n"), /umlaut-less spelling "l\u00e4sst"; use "l\u00e4\u00dft"/);
+  assert.match(warnings.join("\n"), /levels\.beginner\.de\.hook: umlaut-less spelling "fuer"; use "für"/);
 });
 
 function specificDeepDive(headings, body = "A short section.") {
@@ -375,16 +486,18 @@ function levelVariant(label, overrides = {}) {
       `${label} does not replace the source.`,
       `Check the ${label} limit before you act.`,
     ],
+    shortTitle: `${label} short title`,
     takeaway: `Try the ${label} step once this week.`,
     deepDiveMarkdown: dive(label, `${label} section body.`),
     ...rest,
     de: {
       headline: `${label} Titel kurz`,
-      hook: `${label} ist die kuerzere Fassung der Geschichte.`,
+      shortTitle: `${label} Kurztitel`,
+      hook: `${label} ist die kürzere Fassung der Geschichte.`,
       summaryPoints: [
         `${label} nennt die Quelle klar.`,
         `${label} nennt die Grenze klar.`,
-        `${label} nennt den naechsten Schritt.`,
+        `${label} nennt den nächsten Schritt.`,
       ],
       takeaway: `Nutze die ${label} Fassung einmal.`,
       deepDiveMarkdown: dive(`${label} de`, `${label} Abschnitt.`),
@@ -427,10 +540,10 @@ test("rejects a levels variant with an unknown key, a missing field, or the wron
   );
   assert.match(unknown.errors.join("\n"), /levels\.beginner: unexpected field note/);
 
-  const missingTakeaway = levelVariant("Beginner");
-  delete missingTakeaway.takeaway;
-  const missing = await lintFeed([item({ levels: { beginner: missingTakeaway } })], { now: NOW });
-  assert.match(missing.errors.join("\n"), /levels\.beginner: missing takeaway/);
+  const missingHook = levelVariant("Beginner");
+  delete missingHook.hook;
+  const missing = await lintFeed([item({ levels: { beginner: missingHook } })], { now: NOW });
+  assert.match(missing.errors.join("\n"), /levels\.beginner: missing hook/);
 
   const shortPoints = await lintFeed(
     [

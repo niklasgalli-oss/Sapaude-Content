@@ -36,11 +36,16 @@ const ITEM_KEYS = [
   "source",
   "i18n",
   "levels",
+  "shortTitle",
 ];
 
 const COPY_KEYS = ["headline", "hook", "summaryPoints", "takeaway", "deepDiveMarkdown"];
+const REQUIRED_COPY_KEYS = ["headline", "hook", "summaryPoints", "deepDiveMarkdown"];
+const ALLOWED_COPY_KEYS = [...COPY_KEYS, "shortTitle"];
 const LEVEL_NAMES = ["beginner", "advanced"];
-const VARIANT_KEYS = [...COPY_KEYS, "de"];
+const VARIANT_KEYS = [...ALLOWED_COPY_KEYS, "de"];
+
+export const MAX_SHORT_TITLE_CHARS = 24;
 
 const ID_RE = /^pulse-[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const ISO_RE =
@@ -256,6 +261,11 @@ export function collectSchemaErrors(schema) {
     fail("priority must be an optional string enum of normal or breaking");
   }
   if (item?.required?.includes("priority")) fail("priority must not be required");
+  if (item?.required?.includes("takeaway")) fail("takeaway must not be required");
+  if (item?.required?.includes("shortTitle")) fail("shortTitle must not be required");
+  if (item?.properties?.takeaway?.type !== "string") fail("takeaway must be a string");
+  if ((item?.properties?.takeaway?.minLength ?? 0) > 0) fail("takeaway must allow an empty string");
+  if (item?.properties?.shortTitle?.type !== "string") fail("shortTitle must be an optional string");
   if (item?.properties?.headline?.maxLength !== 32) fail("headline maxLength must be 32");
   if (schema?.$defs?.localizedCopy?.properties?.headline?.maxLength !== 32) {
     fail("localized headline maxLength must be 32");
@@ -283,8 +293,15 @@ export function collectSchemaErrors(schema) {
     fail("level variant must reject extra fields");
   }
   const variantRequired = [...(variant?.required ?? [])].sort();
-  if (variantRequired.join("|") !== "de|deepDiveMarkdown|headline|hook|summaryPoints|takeaway") {
-    fail("level variant must require headline, hook, summaryPoints, takeaway, deepDiveMarkdown, and de");
+  if (variantRequired.join("|") !== "de|deepDiveMarkdown|headline|hook|summaryPoints") {
+    fail("level variant must require headline, hook, summaryPoints, deepDiveMarkdown, and de");
+  }
+  if (variant?.required?.includes("takeaway")) fail("level variant takeaway must not be required");
+  if (variant?.required?.includes("shortTitle")) fail("level variant shortTitle must not be required");
+  if (variant?.properties?.shortTitle?.type !== "string") fail("level variant shortTitle must be a string");
+  if (variant?.properties?.takeaway?.type !== "string") fail("level variant takeaway must be a string");
+  if ((variant?.properties?.takeaway?.minLength ?? 0) > 0) {
+    fail("level variant takeaway must allow an empty string");
   }
   if (variant?.properties?.headline?.maxLength !== 32) fail("level variant headline maxLength must be 32");
   const variantPoints = variant?.properties?.summaryPoints;
@@ -294,9 +311,17 @@ export function collectSchemaErrors(schema) {
   if (variant?.properties?.de?.$ref !== "#/$defs/localizedCopy") {
     fail("level variant de must use localizedCopy");
   }
-  if (schema?.$defs?.localizedCopy?.additionalProperties !== false) {
+  const localized = schema?.$defs?.localizedCopy;
+  if (localized?.additionalProperties !== false) {
     fail("localized copy must reject extra fields");
   }
+  if (localized?.required?.includes("takeaway")) fail("localized takeaway must not be required");
+  if (localized?.required?.includes("shortTitle")) fail("localized shortTitle must not be required");
+  if (localized?.properties?.takeaway?.type !== "string") fail("localized takeaway must be a string");
+  if ((localized?.properties?.takeaway?.minLength ?? 0) > 0) {
+    fail("localized takeaway must allow an empty string");
+  }
+  if (localized?.properties?.shortTitle?.type !== "string") fail("localized shortTitle must be a string");
   for (const key of ["readTimeMinutes", "listenTimeMinutes"]) {
     const field = item?.properties?.[key];
     if (field?.type !== "integer" || field?.minimum !== 1 || field?.maximum !== 30) {
@@ -410,6 +435,10 @@ function checkLevelVariant(fail, warn, path, variant, rootEn, rootDe) {
     if (!VARIANT_KEYS.includes(key)) fail(path, `unexpected field ${key}`);
   }
   checkLocalized(fail, path, copyFieldsOf(variant), warn);
+  checkShortTitle(fail, warn, path, variant);
+  if (typeof variant.shortTitle === "string") {
+    checkGlossaryField(fail, `${path}.shortTitle`, variant.shortTitle, { headline: true });
+  }
   for (const field of CARD_FIELDS) {
     if (!Object.prototype.hasOwnProperty.call(variant, field)) continue;
     if (field === "summaryPoints") {
@@ -427,6 +456,8 @@ function checkLevelVariant(fail, warn, path, variant, rootEn, rootDe) {
   } else {
     checkLocalized(fail, `${path}.de`, variant.de, warn);
     if (variant.de !== null && typeof variant.de === "object" && !Array.isArray(variant.de)) {
+      checkShortTitle(fail, warn, `${path}.de`, variant.de);
+      warnGermanUmlauts(warn, `${path}.de`, variant.de);
       checkCopiedText(fail, `${path}.de`, variant.de, rootDe);
     }
   }
@@ -456,22 +487,157 @@ function checkLevels(fail, warn, path, levels, item) {
   }
 }
 
+// Common German spellings that dropped an umlaut or wrote ß as ss.
+// Longer forms come first so "ueberhaupt" is reported ahead of "ueber".
+const UMLAUT_LESS = [
+  ["ueberhaupt", "überhaupt"],
+  ["uebernehmen", "übernehmen"],
+  ["ueberpruefen", "überprüfen"],
+  ["uebersetzen", "übersetzen"],
+  ["ueber", "über"],
+  ["fuer", "für"],
+  ["fur", "für"],
+  ["uber", "über"],
+  ["arzte", "ärzte"],
+  ["schlaegt", "schlägt"],
+  ["schlagt", "schlägt"],
+  ["moeglich", "möglich"],
+  ["moglich", "möglich"],
+  ["koennen", "können"],
+  ["konnen", "können"],
+  ["muessen", "müssen"],
+  ["mussen", "müssen"],
+  ["waere", "wäre"],
+  ["wuerde", "würde"],
+  ["naechsten", "nächsten"],
+  ["naechster", "nächster"],
+  ["naechste", "nächste"],
+  ["aenderungen", "Änderungen"],
+  ["aenderung", "Änderung"],
+  ["aendern", "ändern"],
+  ["pruefen", "prüfen"],
+  ["prufen", "prüfen"],
+  ["oeffnen", "öffnen"],
+  ["offnen", "öffnen"],
+  ["zurueck", "zurück"],
+  ["zuruck", "zurück"],
+  ["oeffentlich", "öffentlich"],
+  ["offentlich", "öffentlich"],
+  ["waehrend", "während"],
+  ["aehnlich", "ähnlich"],
+  ["ahnlich", "ähnlich"],
+  ["natuerlich", "natürlich"],
+  ["naturlich", "natürlich"],
+  ["zusaetzlich", "zusätzlich"],
+  ["zusatzlich", "zusätzlich"],
+  ["gefaehrlich", "gefährlich"],
+  ["kuerzere", "kürzere"],
+  ["kuerzer", "kürzer"],
+  ["spaeter", "später"],
+  ["frueher", "früher"],
+  ["koennte", "könnte"],
+  ["moechte", "möchte"],
+  ["groesseren", "größeren"],
+  ["groesser", "größer"],
+  ["grossen", "großen"],
+  ["grosser", "größer"],
+  ["grosse", "große"],
+  ["gross", "groß"],
+  ["heisst", "heißt"],
+  ["strassen", "straßen"],
+  ["strasse", "straße"],
+  ["draussen", "draußen"],
+  ["ausserdem", "außerdem"],
+  ["ausser", "außer"],
+  ["weiss", "weiß"],
+  ["fuss", "fuß"],
+  ["offenl\u00e4sst", "offenl\u00e4\u00dft"],
+  ["verl\u00e4sst", "verl\u00e4\u00dft"],
+  ["l\u00e4sst", "l\u00e4\u00dft"],
+  ["schnappsch\u00fcsse", "schnappsch\u00fc\u00dfe"],
+  ["laesst", "l\u00e4\u00dft"],
+  ["verlaesst", "verl\u00e4\u00dft"],
+].sort((left, right) => right[0].length - left[0].length);
+
+function umlautBoundary(word) {
+  const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+  return new RegExp(`(?<![\\p{L}\\p{N}_])${escaped}(?![\\p{L}\\p{N}_])`, "giu");
+}
+
+function applyUmlautCase(sample, replacement) {
+  if (sample.length === 0 || sample[0].toLowerCase() === sample[0]) return replacement;
+  return replacement[0].toUpperCase() + replacement.slice(1);
+}
+
+export function umlautLessSpellings(text) {
+  if (typeof text !== "string" || text === "") return [];
+  const hits = [];
+  for (const [bad, good] of UMLAUT_LESS) {
+    for (const match of text.matchAll(umlautBoundary(bad))) {
+      hits.push({
+        term: match[0],
+        index: match.index ?? 0,
+        expected: applyUmlautCase(match[0], good),
+      });
+    }
+  }
+  hits.sort((left, right) => left.index - right.index || left.term.length - right.term.length);
+  return hits;
+}
+
+function warnGermanUmlauts(warn, path, copy) {
+  if (copy === null || typeof copy !== "object" || Array.isArray(copy)) return;
+  const scan = (fieldPath, value) => {
+    if (typeof value === "string") {
+      for (const hit of umlautLessSpellings(value)) {
+        warn(fieldPath, `umlaut-less spelling "${hit.term}"; use "${hit.expected}"`);
+      }
+      return;
+    }
+    if (!Array.isArray(value)) return;
+    value.forEach((item, index) => scan(`${fieldPath}[${index}]`, item));
+  };
+  for (const [key, value] of Object.entries(copy)) {
+    scan(`${path}.${key}`, value);
+  }
+}
+
+export function shortTitleProblem(value) {
+  if (typeof value !== "string" || value.trim() === "") {
+    return "missing; use about 3-5 words that say what changes";
+  }
+  const length = [...value].length;
+  if (length > MAX_SHORT_TITLE_CHARS) return `is ${length} characters; keep it to about 24`;
+  return null;
+}
+
+function checkShortTitle(fail, warn, path, source) {
+  if (source === null || typeof source !== "object" || Array.isArray(source)) return;
+  if (Object.prototype.hasOwnProperty.call(source, "shortTitle") && typeof source.shortTitle !== "string") {
+    fail(`${path}.shortTitle`, "must be a string");
+    return;
+  }
+  const problem = shortTitleProblem(source.shortTitle);
+  if (problem) warn(`${path}.shortTitle`, problem);
+}
+
 function checkLocalized(fail, path, copy, warn = () => {}) {
   if (copy === null || typeof copy !== "object" || Array.isArray(copy)) {
     fail(path, "localized copy must be an object");
     return;
   }
   for (const key of Object.keys(copy)) {
-    if (!COPY_KEYS.includes(key)) fail(path, `unexpected field ${key}`);
+    if (!ALLOWED_COPY_KEYS.includes(key)) fail(path, `unexpected field ${key}`);
   }
-  for (const key of COPY_KEYS) {
+  for (const key of REQUIRED_COPY_KEYS) {
     if (!(key in copy)) fail(path, `missing ${key}`);
   }
   checkHeadline(fail, warn, path, copy.headline);
-  for (const key of ["hook", "takeaway"]) {
-    if (typeof copy[key] !== "string" || copy[key].trim() === "") {
-      fail(`${path}.${key}`, "must be a non-empty string");
-    }
+  if (typeof copy.hook !== "string" || copy.hook.trim() === "") {
+    fail(`${path}.hook`, "must be a non-empty string");
+  }
+  if (Object.prototype.hasOwnProperty.call(copy, "takeaway") && typeof copy.takeaway !== "string") {
+    fail(`${path}.takeaway`, "must be a string");
   }
   checkSummary(fail, `${path}.summaryPoints`, copy.summaryPoints);
   checkDeepDive(fail, `${path}.deepDiveMarkdown`, copy.deepDiveMarkdown);
@@ -540,18 +706,18 @@ export async function lintFeed(pulse, options = {}) {
         fail(`${path}.${key}`, "must be a positive whole number of minutes from 1 to 30");
       }
     }
-    checkLocalized(
-      fail,
-      path,
-      {
-        headline: item.headline,
-        hook: item.hook,
-        summaryPoints: item.summaryPoints,
-        takeaway: item.takeaway,
-        deepDiveMarkdown: item.deepDiveMarkdown,
-      },
-      warn,
-    );
+    const rootCopy = {
+      headline: item.headline,
+      hook: item.hook,
+      summaryPoints: item.summaryPoints,
+      deepDiveMarkdown: item.deepDiveMarkdown,
+    };
+    if (Object.prototype.hasOwnProperty.call(item, "takeaway")) rootCopy.takeaway = item.takeaway;
+    checkLocalized(fail, path, rootCopy, warn);
+    checkShortTitle(fail, warn, path, item);
+    if (typeof item.shortTitle === "string") {
+      checkGlossaryField(fail, `${path}.shortTitle`, item.shortTitle, { headline: true });
+    }
     for (const field of CARD_FIELDS) {
       if (field === "summaryPoints") {
         if (Array.isArray(item.summaryPoints)) {
@@ -605,6 +771,8 @@ export async function lintFeed(pulse, options = {}) {
     } else {
       for (const [locale, copy] of Object.entries(item.i18n)) {
         checkLocalized(fail, `${path}.i18n.${locale}`, copy, warn);
+        checkShortTitle(fail, warn, `${path}.i18n.${locale}`, copy);
+        if (locale === "de") warnGermanUmlauts(warn, `${path}.i18n.${locale}`, copy);
       }
     }
     if (Object.prototype.hasOwnProperty.call(item, "levels")) {

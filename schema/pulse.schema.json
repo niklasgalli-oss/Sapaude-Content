@@ -22,7 +22,6 @@
         "hook",
         "headline",
         "summaryPoints",
-        "takeaway",
         "deepDiveMarkdown",
         "source",
         "i18n"
@@ -81,6 +80,11 @@
           "maxLength": 32,
           "description": "2-5 words, at most 32 characters (aim for 27 or fewer). Sentence case, unless the whole headline is title case. Glossary terms stay lowercase common nouns. Details belong in hook or summaryPoints."
         },
+        "shortTitle": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optional for older items. About 3-5 words that say what changes, not a bare product name. The validator warns when it is missing or longer than 24 characters."
+        },
         "summaryPoints": {
           "type": "array",
           "minItems": 3,
@@ -93,7 +97,7 @@
         },
         "takeaway": {
           "type": "string",
-          "minLength": 1
+          "description": "Optional. Up to three concrete to-dos the reader can do, each grounded in this item's source. Omit the field or use an empty string when there is no sensible to-do; the app hides the section."
         },
         "deepDiveMarkdown": {
           "type": "string",
@@ -135,7 +139,7 @@
           "type": "object",
           "additionalProperties": false,
           "minProperties": 1,
-          "description": "Optional beginner and advanced variants. Root fields stay the intermediate text. Each variant has headline, hook, summaryPoints (exactly 3), takeaway, deepDiveMarkdown, and de with the same five fields. Omit a whole variant rather than leaving fields empty. Variant text must not copy the corresponding root text.",
+          "description": "Optional beginner and advanced variants. Root fields stay the intermediate text. Each variant has headline, hook, summaryPoints (exactly 3), deepDiveMarkdown, and de. takeaway and shortTitle are optional on the variant and on de. Omit a whole variant rather than leaving fields empty. Variant text must not copy the corresponding root text.",
           "properties": {
             "beginner": {
               "$ref": "#/$defs/levelVariant"
@@ -154,7 +158,6 @@
         "headline",
         "hook",
         "summaryPoints",
-        "takeaway",
         "deepDiveMarkdown"
       ],
       "properties": {
@@ -163,6 +166,11 @@
           "minLength": 1,
           "maxLength": 32,
           "description": "Same limit as the English headline: 2-5 words, at most 32 characters (aim for 27 or fewer). German prose; technical AI terms stay in English."
+        },
+        "shortTitle": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optional. German short title, about 3-5 words that say what changes. The validator warns when it is missing or longer than 24 characters. Technical AI terms stay in English."
         },
         "hook": {
           "type": "string",
@@ -179,7 +187,7 @@
         },
         "takeaway": {
           "type": "string",
-          "minLength": 1
+          "description": "Optional. Up to three concrete German to-dos grounded in this item's source. Omit the field or use an empty string when there is no sensible to-do."
         },
         "deepDiveMarkdown": {
           "type": "string",
@@ -191,12 +199,11 @@
     "levelVariant": {
       "type": "object",
       "additionalProperties": false,
-      "description": "A beginner or advanced telling of the same item. All six fields are required, and the text must differ from the matching root fields.",
+      "description": "A beginner or advanced telling of the same item. headline, hook, summaryPoints, deepDiveMarkdown, and de are required. takeaway and shortTitle may be omitted. The text must differ from the matching root fields.",
       "required": [
         "headline",
         "hook",
         "summaryPoints",
-        "takeaway",
         "deepDiveMarkdown",
         "de"
       ],
@@ -206,6 +213,11 @@
           "minLength": 1,
           "maxLength": 32,
           "description": "Same limit as the root headline: 2-5 words, at most 32 characters (aim for 27 or fewer)."
+        },
+        "shortTitle": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Optional. About 3-5 words that say what changes. The validator warns when it is missing or longer than 24 characters."
         },
         "hook": {
           "type": "string",
@@ -222,7 +234,7 @@
         },
         "takeaway": {
           "type": "string",
-          "minLength": 1
+          "description": "Optional. Up to three concrete to-dos grounded in this item's source. Omit the field or use an empty string when there is no sensible to-do."
         },
         "deepDiveMarkdown": {
           "type": "string",
