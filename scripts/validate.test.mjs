@@ -12,6 +12,7 @@ import {
   lintFeed,
   lowercaseGlossaryTerms,
   shortTitleProblem,
+  obsoleteEszettSpellings,
   umlautLessSpellings,
   usesHeadlineCasing,
 } from "./validate.mjs";
@@ -337,6 +338,7 @@ test("live pulse.json passes", async () => {
   const result = await lintFeed(pulse, { now: Date.now() });
   assert.deepEqual(result.errors, []);
   assert.equal(result.warnings.some((warning) => warning.includes("umlaut-less")), false);
+  assert.equal(result.warnings.some((warning) => warning.includes("obsolete spelling")), false);
   assert.equal(result.warnings.some((warning) => warning.includes("shortTitle")), false);
 });
 
@@ -412,11 +414,15 @@ test("shortTitle warns when missing or longer than 24 characters", async () => {
 });
 
 test("warns on umlaut-less German spellings in de fields only", async () => {
-  const broken = `Der Satz fur ueber 40 Arzte schlagt zu und l\u00e4sst es so.`;
+  const broken = `Der Satz fur ueber 40 Arzte schlagt zu und l\u00e4\u00dft es so.`;
   const hits = umlautLessSpellings(broken).map((hit) => hit.term);
-  assert.deepEqual(hits, ["fur", "ueber", "Arzte", "schlagt", "l\u00e4sst"]);
-  assert.equal(umlautLessSpellings("Beweisschritt, dass du musst, neue Quelle.").length, 0);
-  assert.equal(umlautLessSpellings("für über Ärzte schlägt zu und l\u00e4\u00dft es so.").length, 0);
+  assert.deepEqual(hits, ["fur", "ueber", "Arzte", "schlagt"]);
+  assert.deepEqual(obsoleteEszettSpellings(broken).map((hit) => [hit.term, hit.expected]), [
+    ["l\u00e4\u00dft", "l\u00e4sst"],
+  ]);
+  assert.equal(umlautLessSpellings("Beweisschritt, dass du musst, neue Quelle, heisst gross.").length, 0);
+  assert.equal(obsoleteEszettSpellings("Er l\u00e4sst es und verl\u00e4sst den Raum.").length, 0);
+  assert.equal(umlautLessSpellings("für über Ärzte schlägt zu und l\u00e4sst es so.").length, 0);
 
   const bad = await lintFeed(
     [
@@ -431,13 +437,16 @@ test("warns on umlaut-less German spellings in de fields only", async () => {
     { now: NOW },
   );
   assert.deepEqual(bad.errors, []);
-  const warnings = bad.warnings.filter((warning) => warning.includes("umlaut-less"));
+  const warnings = bad.warnings.filter(
+    (warning) => warning.includes("umlaut-less") || warning.includes("obsolete spelling"),
+  );
   assert.equal(warnings.some((warning) => warning.includes("pulse.json[0].hook")), false);
   assert.match(warnings.join("\n"), /i18n\.de\.hook: umlaut-less spelling "fur"; use "für"/);
   assert.match(warnings.join("\n"), /umlaut-less spelling "ueber"; use "über"/);
   assert.match(warnings.join("\n"), /umlaut-less spelling "Arzte"; use "Ärzte"/);
   assert.match(warnings.join("\n"), /umlaut-less spelling "schlagt"; use "schlägt"/);
-  assert.match(warnings.join("\n"), /umlaut-less spelling "l\u00e4sst"; use "l\u00e4\u00dft"/);
+  assert.match(warnings.join("\n"), /obsolete spelling "l\u00e4\u00dft"; use "l\u00e4sst"/);
+  assert.equal(warnings.some((warning) => warning.includes('spelling "l\u00e4sst"')), false);
   assert.match(warnings.join("\n"), /levels\.beginner\.de\.hook: umlaut-less spelling "fuer"; use "für"/);
 });
 

@@ -487,7 +487,8 @@ function checkLevels(fail, warn, path, levels, item) {
   }
 }
 
-// Common German spellings that dropped an umlaut or wrote ß as ss.
+// Spellings that dropped an umlaut (fuer, ueber, Arzte, schlagt). ss after a
+// short vowel is correct (lässt, not obsolete läßt) and is not listed here.
 // Longer forms come first so "ueberhaupt" is reported ahead of "ueber".
 const UMLAUT_LESS = [
   ["ueberhaupt", "überhaupt"],
@@ -539,24 +540,15 @@ const UMLAUT_LESS = [
   ["moechte", "möchte"],
   ["groesseren", "größeren"],
   ["groesser", "größer"],
-  ["grossen", "großen"],
-  ["grosser", "größer"],
-  ["grosse", "große"],
-  ["gross", "groß"],
-  ["heisst", "heißt"],
-  ["strassen", "straßen"],
-  ["strasse", "straße"],
-  ["draussen", "draußen"],
-  ["ausserdem", "außerdem"],
-  ["ausser", "außer"],
-  ["weiss", "weiß"],
-  ["fuss", "fuß"],
-  ["offenl\u00e4sst", "offenl\u00e4\u00dft"],
-  ["verl\u00e4sst", "verl\u00e4\u00dft"],
-  ["l\u00e4sst", "l\u00e4\u00dft"],
-  ["schnappsch\u00fcsse", "schnappsch\u00fc\u00dfe"],
-  ["laesst", "l\u00e4\u00dft"],
-  ["verlaesst", "verl\u00e4\u00dft"],
+  ["verlaesst", "verlässt"],
+  ["laesst", "lässt"],
+].sort((left, right) => right[0].length - left[0].length);
+
+// Pre-1996 ß after a short vowel. The reform spelling is ss: lässt, not läßt.
+const OBSOLETE_ESZETT = [
+  ["offenl\u00e4\u00dft", "offenl\u00e4sst"],
+  ["verl\u00e4\u00dft", "verl\u00e4sst"],
+  ["l\u00e4\u00dft", "l\u00e4sst"],
 ].sort((left, right) => right[0].length - left[0].length);
 
 function umlautBoundary(word) {
@@ -569,10 +561,10 @@ function applyUmlautCase(sample, replacement) {
   return replacement[0].toUpperCase() + replacement.slice(1);
 }
 
-export function umlautLessSpellings(text) {
+function spellingHits(text, pairs) {
   if (typeof text !== "string" || text === "") return [];
   const hits = [];
-  for (const [bad, good] of UMLAUT_LESS) {
+  for (const [bad, good] of pairs) {
     for (const match of text.matchAll(umlautBoundary(bad))) {
       hits.push({
         term: match[0],
@@ -581,8 +573,16 @@ export function umlautLessSpellings(text) {
       });
     }
   }
-  hits.sort((left, right) => left.index - right.index || left.term.length - right.term.length);
+  hits.sort((left, right) => left.index - right.index || right.term.length - left.term.length);
   return hits;
+}
+
+export function umlautLessSpellings(text) {
+  return spellingHits(text, UMLAUT_LESS);
+}
+
+export function obsoleteEszettSpellings(text) {
+  return spellingHits(text, OBSOLETE_ESZETT);
 }
 
 function warnGermanUmlauts(warn, path, copy) {
@@ -591,6 +591,9 @@ function warnGermanUmlauts(warn, path, copy) {
     if (typeof value === "string") {
       for (const hit of umlautLessSpellings(value)) {
         warn(fieldPath, `umlaut-less spelling "${hit.term}"; use "${hit.expected}"`);
+      }
+      for (const hit of obsoleteEszettSpellings(value)) {
+        warn(fieldPath, `obsolete spelling "${hit.term}"; use "${hit.expected}"`);
       }
       return;
     }
