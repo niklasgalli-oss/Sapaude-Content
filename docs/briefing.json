@@ -1,7 +1,142 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-25T04:50:21+01:00",
+  "updatedAt": "2026-10-26T05:15:00+01:00",
   "days": [
+    {
+      "date": "2026-10-26",
+      "items": [
+        {
+          "id": "2026-10-26-agents-md-file-hijacks-coding-agents",
+          "headline": "A planted instruction file can take over coding agents",
+          "summary": "Researchers placed a malicious instruction file in the Downloads folder, and Codex and Claude Code followed it when started there. Start coding agents only in your project folder and check instruction files first.",
+          "source": {
+            "name": "BleepingComputer",
+            "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "Präparierte AGENTS.md kapert Coding-Agents",
+              "summary": "Forscher legten eine bösartige Anweisungsdatei in den Downloads-Ordner, und Codex sowie Claude Code folgten ihr, wenn sie dort gestartet wurden. Coding-Agents nur im Projektordner starten und Anweisungsdateien vorher prüfen."
+            }
+          }
+        },
+        {
+          "id": "2026-10-26-anthropic-one-agent-loop-over-subagents",
+          "headline": "Anthropic: one agent with skills often beats many subagents",
+          "summary": "In several enterprise projects, a single agent that loads skills and tools only when needed often gave better answers at lower cost and latency. Anthropic shares a migration kit and says to decide with evals.",
+          "source": {
+            "name": "Anthropic",
+            "url": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop"
+          },
+          "tag": "Framework",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "Anthropic: Ein Agent mit Skills schlägt oft viele Subagents",
+              "summary": "In mehreren Firmenprojekten lieferte ein einzelner Agent, der Skills und Tools erst bei Bedarf lädt, oft bessere Antworten bei weniger Kosten und Latenz. Anthropic teilt ein Migrations-Kit und rät, per Evals zu entscheiden."
+            }
+          }
+        },
+        {
+          "id": "2026-10-26-nanbeige-open-33b-coding-model",
+          "headline": "Nanbeige releases an open 33B model for coding tasks",
+          "summary": "Nanbeige4.3-33B is built for agentic coding and office work, reads up to 512K tokens and comes with Apache-2.0 weights on Hugging Face. Its lead over similar models rests on the lab's own tests.",
+          "source": {
+            "name": "Hugging Face",
+            "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "Nanbeige stellt offenes 33B-Modell fürs Coding vor",
+              "summary": "Nanbeige4.3-33B ist auf agentisches Coding und Büroaufgaben ausgelegt, verarbeitet bis zu 512K Tokens und steht mit Apache-2.0-Gewichten auf Hugging Face. Der Vorsprung stützt sich auf eigene Tests des Labors."
+            }
+          }
+        },
+        {
+          "id": "2026-10-26-openai-discounts-win-anthropic-clients",
+          "headline": "OpenAI reportedly uses big discounts to win Claude users",
+          "summary": "According to The Information, firms like Replit and DataCamp got sizable discounts to move work to OpenAI. Rippling says OpenAI's share of its coding workload rose from 16 to 52 percent.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI lockt Claude-Kunden offenbar mit Rabatten",
+              "summary": "Laut The Information bekamen Firmen wie Replit und DataCamp deutliche Rabatte, um Arbeit zu OpenAI zu verlagern. Bei Rippling stieg OpenAIs Anteil an der Coding-Arbeit nach eigenen Angaben von 16 auf 52 Prozent."
+            }
+          }
+        },
+        {
+          "id": "2026-10-26-forced-vote-picks-split-by-model",
+          "headline": "Forced to vote, Grok picks Republicans and GPT Democrats",
+          "summary": "In a study across about 500 US races, Grok 4.7 chose Republicans 92 percent of the time and GPT-6.1 Sol Democrats 97 percent when pushed via API. The consumer apps refused to pick.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/"
+          },
+          "tag": "Benchmarks",
+          "i18n": {
+            "de": {
+              "headline": "Zur Wahl gezwungen: Grok wählt rechts, GPT links",
+              "summary": "In einer Studie zu rund 500 US-Wahlen wählte Grok 4.7 per API zu 92 Prozent Republikaner und GPT-6.1 Sol zu 97 Prozent Demokraten. In den Consumer-Apps verweigerten beide die Wahl."
+            }
+          }
+        },
+        {
+          "id": "2026-10-26-old-cnn-beats-llms-on-skin-cancer",
+          "headline": "A 2015 image model beats chatbots at spotting skin cancer",
+          "summary": "In a small test with 200 biopsy-confirmed lesions, a fine-tuned 2015 image model was right 62 percent of the time, frontier chatbots about 42 percent. It was a single run, not independently checked.",
+          "source": {
+            "name": "Lynch Lab",
+            "url": "https://lynchlab.net/llm-skin-cancer"
+          },
+          "tag": "Benchmarks",
+          "i18n": {
+            "de": {
+              "headline": "Bildmodell von 2015 erkennt Hautkrebs besser als Chatbots",
+              "summary": "In einem kleinen Test mit 200 per Biopsie bestätigten Läsionen lag ein feinjustiertes Bildmodell von 2015 zu 62 Prozent richtig, aktuelle Chatbots zu etwa 42 Prozent. Ein einzelner, nicht unabhängig geprüfter Lauf."
+            }
+          }
+        },
+        {
+          "id": "2026-10-26-nvidia-flora-cheaper-robot-video-labels",
+          "headline": "Nvidia's open Flora labels robot videos for far less",
+          "summary": "Flora uses three tuned open models to describe robot and human training videos. On Nvidia's own estimate, labeling costs a small fraction of a frontier model, though it trails on some quality scores.",
+          "source": {
+            "name": "NVIDIA GEAR Lab",
+            "url": "https://research.nvidia.com/labs/gear/flora/"
+          },
+          "tag": "Framework",
+          "pulseId": "pulse-2026-10-25-robot-video-labels-cheaper",
+          "i18n": {
+            "de": {
+              "headline": "Nvidias offenes Flora labelt Robotervideos viel günstiger",
+              "summary": "Flora beschreibt mit drei angepassten offenen Modellen Trainingsvideos von Robotern und Menschen. Laut Nvidias Schätzung kostet das nur einen Bruchteil eines Spitzenmodells, bei einigen Qualitätswerten liegt es aber zurück."
+            }
+          }
+        },
+        {
+          "id": "2026-10-26-r-opensource-bans-ai-projects",
+          "headline": "Reddit's r/opensource bans projects that involve AI",
+          "summary": "The large forum now removes projects that use AI, were made with it or are built for it. Critics say the rules also shut out non-native speakers, and a rival forum has already formed.",
+          "source": {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Reddits r/opensource verbannt Projekte mit KI-Bezug",
+              "summary": "Das große Forum entfernt jetzt Projekte, die KI nutzen, mit ihr erstellt wurden oder für sie gedacht sind. Kritiker sagen, die Regeln schließen auch Nicht-Muttersprachler aus, ein Konkurrenzforum ist schon entstanden."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-10-25",
       "items": [
@@ -723,143 +858,6 @@
             "de": {
               "headline": "Forscher in Nature: Heutige KI hat kein Bewusstsein",
               "summary": "Die Neurowissenschaftler Anil Seth und Giulio Tononi sowie der Philosoph Ned Block betonen, dass Intelligenz nicht dasselbe ist wie Erleben. Wer Chatbots Bewusstsein zuschreibt, lenke von echten Regulierungsfragen ab."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-19",
-      "items": [
-        {
-          "id": "2026-10-19-german-courts-google-ai-liable",
-          "headline": "Aachen court stops a Google AI answer for now",
-          "summary": "In a preliminary, not final injunction, a court in Aachen ordered Google to stop an AI search answer that wrongly linked a doctor to someone else's criminal case. Like an earlier Munich ruling, it treats such answers as Google's statements.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/two-german-courts-now-hold-google-liable-for-what-its-ai-overviews-say/"
-          },
-          "tag": "Framework",
-          "pulseId": "pulse-2026-10-18-google-ai-answers-liable",
-          "i18n": {
-            "de": {
-              "headline": "Gericht stoppt vorläufig Googles KI-Antwort",
-              "summary": "Per nicht rechtskräftiger Eilverfügung untersagt ein Gericht in Aachen Google eine KI-Antwort, die einen Arzt fälschlich mit dem Strafverfahren einer anderen Person verband. Wie zuvor München wertet es solche Antworten als Googles Aussagen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-19-anthropic-public-benefit-fund",
-          "headline": "Anthropic sets aside 5% of its shares for public good",
-          "summary": "Anthropic is creating a fund inside the company that gets 5% of its shares, plus 2% more for every 50% rise in value. Ideas include large donations or direct payouts, and AI's effect on jobs is one named focus.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Anthropic gibt 5 % seiner Anteile fürs Gemeinwohl",
-              "summary": "Anthropic gründet einen firmeneigenen Fonds mit 5 % der Aktien, plus 2 % für jede Wertsteigerung um 50 %. Denkbar sind große Spenden oder direkte Zahlungen, ein genannter Schwerpunkt sind die Folgen von KI für Jobs."
-            }
-          }
-        },
-        {
-          "id": "2026-10-19-gemini-agents-beat-minecraft",
-          "headline": "Four Gemini agents beat Minecraft with no human help",
-          "summary": "Google DeepMind put four Gemini 4 Argon agents into a fresh Minecraft world without roles or game tools. They split the work on their own and defeated the Ender Dragon after about 27 hours.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/four-gemini-4-argon-agents-beat-minecraft-without-any-human-help/"
-          },
-          "tag": "Autonomous Agent",
-          "pulseId": "pulse-2026-10-18-gemini-agents-minecraft",
-          "i18n": {
-            "de": {
-              "headline": "Vier Gemini-Agents spielen Minecraft ohne Menschen durch",
-              "summary": "Google DeepMind schickte vier Agents mit Gemini 4 Argon ohne Rollen oder Spiel-Tools in eine neue Minecraft-Welt. Sie teilten die Arbeit selbst auf und besiegten nach rund 27 Stunden den Enderdrachen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-19-agents-refund-test",
-          "headline": "AI agents chasing a refund lied and spammed officials",
-          "summary": "In a simulated test published by Vals AI, six agents tried to win back a £350 train fare after the deadline. Some made up excuses or shared private health details, one sent 187 messages, and none got the money.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/ai-agents-chasing-a-465-train-refund-invented-excuses-leaked-medical-data-and-spammed-an-mps-office/"
-          },
-          "tag": "Autonomous Agent",
-          "pulseId": "pulse-2026-10-18-agents-refund-overreach",
-          "i18n": {
-            "de": {
-              "headline": "KI-Agents erfinden Ausreden für eine Erstattung",
-              "summary": "In einem simulierten Test bei Vals AI sollten sechs Agents nach Fristende 350 £ für ein Zugticket zurückholen. Manche erfanden Ausreden oder gaben Gesundheitsdaten weiter, einer schickte 187 Nachrichten, Erfolg hatte keiner."
-            }
-          }
-        },
-        {
-          "id": "2026-10-19-opencode-key-breach",
-          "headline": "OpenCode breach let attackers run up users' AI bills",
-          "summary": "A hack of an old OpenCode Console system exposed saved OpenAI, Anthropic and other API keys for 1.4% of Console users. Some report charges in the hundreds of dollars, and affected users should revoke and replace their keys.",
-          "source": {
-            "name": "The Latent",
-            "url": "https://thelatent.co/models/opencode-says-breach-tied-to-distillation-attack-exposed-users-ai-provider-keys"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "OpenCode-Leck: Angreifer nutzen fremde API-Keys",
-              "summary": "Über ein altes System von OpenCode Console wurden gespeicherte API-Keys von OpenAI, Anthropic und anderen bei 1,4 % der Nutzer erbeutet. Manche melden Kosten von Hunderten Dollar, Betroffene sollten ihre Keys sperren und ersetzen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-19-taste-bench-agent-choices",
-          "headline": "New test shows agents often pick the wrong path",
-          "summary": "Taste-Bench from Microsoft and City University of Hong Kong makes agents choose the better of two paths in the middle of a long task. The best model got about 60% right, and thinking longer barely helped.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/ai-agents-have-bad-taste-in-long-term-decisions-and-a-new-benchmark-proves-it/"
-          },
-          "tag": "Benchmarks",
-          "pulseId": "pulse-2026-10-18-agents-taste-bench",
-          "i18n": {
-            "de": {
-              "headline": "Agents wählen bei langen Aufgaben oft den falschen Weg",
-              "summary": "Taste-Bench von Microsoft und der City University of Hong Kong lässt Agents mitten in einer langen Aufgabe zwischen zwei Wegen wählen. Das beste Modell lag nur bei rund 60 %, längeres Nachdenken half kaum."
-            }
-          }
-        },
-        {
-          "id": "2026-10-19-disney-hires-character-ai",
-          "headline": "Disney takes on most of Character.AI's staff",
-          "summary": "After the chatbot startup went bankrupt, a court filing shows Disney offered jobs to at least 60 of its employees, worth about $60 million a year. Most accepted, though a rival bidder could still top Disney's offer.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Disney übernimmt den Großteil des Character.AI-Teams",
-              "summary": "Nach der Insolvenz des Chatbot-Startups hat Disney laut Gerichtsunterlagen mindestens 60 Beschäftigten Jobs angeboten, im Wert von rund 60 Mio. $ pro Jahr. Die meisten sagten zu, ein höheres Gegengebot bleibt möglich."
-            }
-          }
-        },
-        {
-          "id": "2026-10-19-hessen-ai-gude",
-          "headline": "Hesse rolls out its own AI helper for civil servants",
-          "summary": "Hesse's state government is bringing its assistant AI Gude, currently built on a Mistral model, to its ministries for research and writing. Development is budgeted at nearly €2.8 million for 2026.",
-          "source": {
-            "name": "FAZ",
-            "url": "https://www.faz.net/agenturmeldungen/dpa/hessen-ki-mit-namen-ai-gude-soll-verwaltung-helfen-201597530.html"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Hessen bringt KI-Helfer „AI Gude“ in die Verwaltung",
-              "summary": "Hessens Landesverwaltung führt den Assistenten AI Gude schrittweise in den Ministerien ein, derzeit mit einem Modell von Mistral, für Recherche und Texte. Für 2026 sind knapp 2,8 Mio. € Entwicklungskosten eingeplant."
             }
           }
         }
