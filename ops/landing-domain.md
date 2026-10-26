@@ -10,6 +10,8 @@ The site is published from the `/docs` folder on `main`. The public host is `htt
 - https://sapaude.app/impressum/
 - https://sapaude.app/nutzungsbedingungen/
 - https://sapaude.app/en/terms/
+- https://sapaude.app/daten-loeschen/
+- https://sapaude.app/en/delete-data/
 
 Once GitHub Pages has that custom domain, `https://niklasgalli-oss.github.io/Sapaude-Content/...` redirects to the same path on `https://sapaude.app/...`. The `/Sapaude-Content` prefix is dropped. `www.sapaude.app` redirects to the apex.
 
@@ -106,6 +108,8 @@ From then on, `https://niklasgalli-oss.github.io/Sapaude-Content/privacy/` redir
 - https://sapaude.app/impressum/
 - https://sapaude.app/nutzungsbedingungen/
 - https://sapaude.app/en/terms/
+- https://sapaude.app/daten-loeschen/
+- https://sapaude.app/en/delete-data/
 - https://www.sapaude.app/ redirects to https://sapaude.app/
 - https://niklasgalli-oss.github.io/Sapaude-Content/privacy/ redirects to https://sapaude.app/privacy/
 - https://niklasgalli-oss.github.io/Sapaude-Content/impressum/ redirects to https://sapaude.app/impressum/
@@ -157,6 +161,12 @@ When the Team ID and bundle id exist, the file would be JSON in this shape. `TEA
           { "/": "/nutzungsbedingungen/*", "exclude": true },
           { "/": "/en/terms", "exclude": true },
           { "/": "/en/terms/*", "exclude": true },
+          { "/": "/daten-loeschen", "exclude": true },
+          { "/": "/daten-loeschen/*", "exclude": true },
+          { "/": "/en/delete-data", "exclude": true },
+          { "/": "/en/delete-data/*", "exclude": true },
+          { "/": "/delete-data", "exclude": true },
+          { "/": "/delete-data/*", "exclude": true },
           { "/": "/terms", "exclude": true },
           { "/": "/terms/*", "exclude": true },
           { "/": "/de/nutzungsbedingungen", "exclude": true },

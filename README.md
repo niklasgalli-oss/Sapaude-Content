@@ -29,6 +29,8 @@ The privacy policy and the legal notice (Impressum) are static pages in `docs/`,
 - [Terms of Use](https://sapaude.app/en/terms/) (English)
 - [Support](https://sapaude.app/support/) (German)
 - [Support](https://sapaude.app/en/support/) (English)
+- [Daten löschen](https://sapaude.app/daten-loeschen/) (German)
+- [Delete your data](https://sapaude.app/en/delete-data/) (English)
 
 ## Item shape
 

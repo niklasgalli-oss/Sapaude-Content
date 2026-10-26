@@ -215,7 +215,9 @@ test("name and address stay on the imprint only", () => {
     "docs/en/terms/index.html",
     "docs/nutzungsbedingungen/index.html",
     "docs/support/index.html",
-    "docs/en/support/index.html"
+    "docs/en/support/index.html",
+    "docs/daten-loeschen/index.html",
+    "docs/en/delete-data/index.html"
   ];
   for (const path of publicPages) {
     const html = read(path);
@@ -285,6 +287,8 @@ test("name and address stay on the imprint only", () => {
     read("docs/impressum/index.html"),
     read("docs/support/index.html"),
     read("docs/en/support/index.html"),
+    read("docs/daten-loeschen/index.html"),
+    read("docs/en/delete-data/index.html"),
     dePrivacy,
     enPrivacy,
     deTerms,
@@ -452,6 +456,16 @@ test("sapaude wordmark, claims, and app mismatches", () => {
   assert.match(read("docs/404.html"), /Be brave\. Get smart\./);
   assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/support\//);
   assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/en\/support\//);
+  assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/daten-loeschen\//);
+  assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/en\/delete-data\//);
+  assert.match(read("docs/daten-loeschen/index.html"), /support@sapaude\.app/);
+  assert.match(read("docs/en/delete-data/index.html"), /support@sapaude\.app/);
+  assert.match(read("docs/daten-loeschen/index.html"), /30 Tagen/);
+  assert.match(read("docs/en/delete-data/index.html"), /30 days/);
+  assert.match(read("docs/privacy/index.html"), /daten-loeschen\//);
+  assert.match(read("docs/en/privacy/index.html"), /delete-data\//);
+  assert.match(read("docs/index.html"), /daten-loeschen\//);
+  assert.match(read("docs/en/index.html"), /delete-data\//);
 
   function visible(html) {
     const stripped = html.replace(/https?:\/\/\S*(?:AILA|Sapaude)-Content\S*/g, "");
