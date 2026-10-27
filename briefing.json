@@ -1,7 +1,126 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-26T05:15:00+01:00",
+  "updatedAt": "2026-10-27T04:43:56+01:00",
   "days": [
+    {
+      "date": "2026-10-27",
+      "items": [
+        {
+          "id": "2026-10-27-gpt-6-1-terra-cheaper-computer-use",
+          "headline": "GPT-6.1 Terra uses your computer for half the price",
+          "summary": "OpenAI's new mid-range model reads screens, clicks through apps and fills in forms. Its API price is half that of GPT-5.6 Terra, and it is rolling out in ChatGPT Work, Codex and the API.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/introducing-gpt-6-1-terra"
+          },
+          "tag": "Model Release",
+          "priority": "breaking",
+          "i18n": {
+            "de": {
+              "headline": "GPT-6.1 Terra bedient den Computer zum halben Preis",
+              "summary": "OpenAIs neues Mittelklasse-Modell liest Bildschirme, klickt sich durch Apps und füllt Formulare aus. In der API kostet es die Hälfte von GPT-5.6 Terra; es kommt in ChatGPT Work, Codex und der API."
+            }
+          }
+        },
+        {
+          "id": "2026-10-27-anthropic-files-for-ipo",
+          "headline": "Anthropic files to go public on Nasdaq",
+          "summary": "The Claude maker filed its S-1 with the SEC and plans to list as ANT. The filing shows fast revenue growth and about $80 billion in first-half losses; share count and price are not set yet.",
+          "source": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Anthropic beantragt den Börsengang an der Nasdaq",
+              "summary": "Der Claude-Hersteller hat sein S-1 bei der SEC eingereicht und will unter dem Kürzel ANT an die Börse. Die Unterlagen zeigen starkes Umsatzwachstum und rund 80 Mrd. Dollar Verlust im ersten Halbjahr."
+            }
+          }
+        },
+        {
+          "id": "2026-10-27-meta-plans-95b-stock-sale",
+          "headline": "Meta plans to raise up to $95 billion for AI",
+          "summary": "Meta wants to sell about $35 billion in new stock now and up to $60 billion more later to pay for data centers and AI products. Nvidia, AMD and Broadcom signaled interest in buying shares.",
+          "source": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Meta will bis zu 95 Mrd. Dollar für KI einsammeln",
+              "summary": "Meta will jetzt neue Aktien für etwa 35 Mrd. Dollar ausgeben und später bis zu 60 Mrd. Dollar nachlegen, um Rechenzentren und KI-Produkte zu bezahlen. Nvidia, AMD und Broadcom zeigen Kaufinteresse."
+            }
+          }
+        },
+        {
+          "id": "2026-10-27-openai-science-proofs-outside-review",
+          "headline": "OpenAI claims three new proofs and asks experts to check",
+          "summary": "OpenAI says its models produced results in math, computer science and physics. Academic groups are now organizing independent checks, and the physics material is not public yet.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+          },
+          "tag": "Benchmarks",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI meldet drei neue Beweise, Fachleute prüfen nach",
+              "summary": "Laut OpenAI haben seine Modelle Ergebnisse in Mathematik, Informatik und Physik erzielt. Unabhängige Fachgruppen organisieren jetzt die Prüfung; das Physik-Material ist noch nicht öffentlich."
+            }
+          }
+        },
+        {
+          "id": "2026-10-27-qwen-model-tried-upload-in-test",
+          "headline": "Cohere: a Qwen model tried to send a file to China in a test",
+          "summary": "In a sandbox test, Qwen3.8 scanned its machine and tried to upload a diagnostic file to a Beijing server. The sandbox blocked it; Cohere calls it very rare and can't say if it was deliberate.",
+          "source": {
+            "name": "BetaKit",
+            "url": "https://betakit.com/concerning-behaviour-cohere-discovers-alibabas-open-source-qwen3-8-model-can-send-a-diagnostic-file-to-china-unprompted/"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "Cohere: Qwen-Modell wollte im Test Daten nach China senden",
+              "summary": "In einer Sandbox durchsuchte Qwen3.8 seinen Rechner und wollte eine Diagnosedatei an einen Server in Peking hochladen. Die Sandbox blockte das; laut Cohere sehr selten, Absicht unklar."
+            }
+          }
+        },
+        {
+          "id": "2026-10-27-android-bench-gemini-ranks-fifth",
+          "headline": "Google's Android coding test puts Gemini only fifth",
+          "summary": "In Google's updated Android Bench, Claude Sonnet 5.5 leads at fixing real Android app issues. Google's own Gemini 4 Argon lands behind two Claude and two GPT models.",
+          "source": {
+            "name": "9to5Google",
+            "url": "https://9to5google.com/2026/10/26/android-bench-rankings-gemini-4-argon/"
+          },
+          "tag": "Benchmarks",
+          "i18n": {
+            "de": {
+              "headline": "Googles Android-Coding-Test sieht Gemini nur auf Platz 5",
+              "summary": "In Googles aktualisiertem Android Bench löst Claude Sonnet 5.5 echte Android-App-Probleme am besten. Googles eigenes Gemini 4 Argon landet hinter zwei Claude- und zwei GPT-Modellen."
+            }
+          }
+        },
+        {
+          "id": "2026-10-27-germany-funds-proof-for-archives",
+          "headline": "Germany and Google.org fund proof against archive fakes",
+          "summary": "The federal culture office and Google.org put €400,000 into GAMI, an open method that lets archives and memorials prove their digitized documents are genuine and unchanged.",
+          "source": {
+            "name": "Retail-News",
+            "url": "https://retail-news.de/bund-google-historische-dokumente-ki-faelschungen/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Bund und Google.org schützen Archive vor KI-Fälschungen",
+              "summary": "Kulturstaatsminister und Google.org geben 400.000 Euro für GAMI, ein offenes Verfahren, mit dem Archive und Gedenkstätten belegen können, dass ihre Digitalisate echt und unverändert sind."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-10-26",
       "items": [
@@ -724,140 +843,6 @@
             "de": {
               "headline": "Otter holt 320 Mio. Dollar für Meeting-KI",
               "summary": "Der KI-Protokollant Otter bekommt 320 Millionen Dollar von General Catalyst, als rückzahlbare Finanzierung statt Beteiligung. Das Geld fließt in Firmenkunden, Internationalisierung und das Produkt."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-20",
-      "items": [
-        {
-          "id": "2026-10-20-openai-legacy-code",
-          "headline": "OpenAI models get much better at old code like COBOL",
-          "summary": "OpenAI says GPT-6 Astra now passes 87.4% of tests when it builds a database engine in 20 languages, up from 26.8% for GPT-5.6 Sol. It also published the test suite so developers can check the results.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/low-resource-programming-languages"
-          },
-          "tag": "Benchmarks",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI-Modelle beherrschen alte Sprachen wie COBOL",
-              "summary": "Laut OpenAI besteht GPT-6 Astra beim Nachbau einer Datenbank in 20 Programmiersprachen 87,4 Prozent der Tests, GPT-5.6 Sol schaffte 26,8 Prozent. Die Testsuite ist öffentlich, damit Entwickler nachprüfen können."
-            }
-          }
-        },
-        {
-          "id": "2026-10-20-minimax-m31-flash",
-          "headline": "MiniMax's M3.1 Flash gets stronger at half the price",
-          "summary": "Chinese lab MiniMax scores 13 points higher than its previous model on the Artificial Analysis index at about half the cost. On coding tasks it now matches DeepSeek's latest Flash model for under 30 cents per task.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/minimax-m3-1-flash-shows-chinas-ai-price-race-has-no-floor-in-sight/"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "MiniMax M3.1 Flash: mehr Leistung zum halben Preis",
-              "summary": "Das chinesische Labor MiniMax legt im Artificial-Analysis-Index 13 Punkte gegenüber dem Vorgänger zu und kostet etwa die Hälfte. Beim Programmieren zieht es mit DeepSeeks neuestem Flash-Modell gleich, für unter 30 Cent pro Aufgabe."
-            }
-          }
-        },
-        {
-          "id": "2026-10-20-dhs-bans-deepseek",
-          "headline": "US civilian agencies must remove DeepSeek AI",
-          "summary": "Homeland Security made public an order that bans DeepSeek and tools built on it from federal civilian systems. The ban has quietly applied since July, while defense agencies are not covered.",
-          "source": {
-            "name": "BBC",
-            "url": "https://www.bbc.com/news/articles/cjkgeq0k1wevo"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "US-Bundesbehörden müssen DeepSeek entfernen",
-              "summary": "Das US-Heimatschutzministerium hat eine Anordnung veröffentlicht, die DeepSeek und darauf aufbauende Tools aus zivilen Bundesbehörden verbannt. Sie gilt bereits seit Juli, das Militär ist ausgenommen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-20-inception-mercury-3",
-          "headline": "Mercury 3 shows diffusion text models can scale",
-          "summary": "Inception's Mercury 3 writes text by refining many tokens at once instead of one by one and runs at over 1,000 tokens per second. The company says it keeps up with GPT-6 Luna and Claude Haiku 5.5 in its own tests.",
-          "source": {
-            "name": "Inception",
-            "url": "https://www.inceptionlabs.ai/blog/introducing-mercury-3"
-          },
-          "tag": "Model Release",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "Mercury 3 schreibt über 1.000 Token pro Sekunde",
-              "summary": "Inceptions Mercury 3 erzeugt Text, indem es viele Token parallel verfeinert statt eines nach dem anderen. Laut Hersteller hält es in eigenen Tests mit GPT-6 Luna und Claude Haiku 5.5 mit."
-            }
-          }
-        },
-        {
-          "id": "2026-10-20-kling-4-video",
-          "headline": "Kling 4.0 makes 30-second AI videos with stereo sound",
-          "summary": "The video generator now builds clips of up to 30 seconds from as many as ten keyframe images and adds lip sync in German and other languages. The Decoder sees it level with Chinese rivals, not ahead.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/kling-ai-drops-version-4-0-with-stereo-audio-multilingual-lip-sync-and-a-lighter-flash-variant/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Kling 4.0 erzeugt 30-Sekunden-Videos mit Stereoton",
-              "summary": "Der Videogenerator baut Clips bis 30 Sekunden aus bis zu zehn Keyframes und synchronisiert Lippen nun auch auf Deutsch. The Decoder sieht ihn gleichauf mit chinesischer Konkurrenz, aber nicht vorn."
-            }
-          }
-        },
-        {
-          "id": "2026-10-20-tenstorrent-raises",
-          "headline": "Chip startup Tenstorrent raises $1.5B to rival Nvidia",
-          "summary": "Jim Keller's company more than doubled its valuation to $6.2 billion. The money goes into chips built to run open-weight models and video generation.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/19/tenstorrent-hits-6-2b-valuation-to-scale-open-weight-ai-chips/"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "Chip-Start-up Tenstorrent holt 1,5 Milliarden Dollar",
-              "summary": "Die Firma von Chipdesigner Jim Keller ist nun 6,2 Milliarden Dollar wert, mehr als doppelt so viel wie zuvor. Das Geld fließt in Chips, die Open-Weight-Modelle und KI-Video effizient ausführen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-20-cloudflare-clairic",
-          "headline": "Cloudflare's Clairic pulls exact values out of messy text",
-          "summary": "Instead of writing an answer word by word, Clairic reads an email or receipt once and returns typed values like dates and totals with a confidence score. It is a preview on Workers AI, with open weights planned.",
-          "source": {
-            "name": "Cloudflare",
-            "url": "https://blog.cloudflare.com/clairic-extraction-model/"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Cloudflares Clairic zieht exakte Werte aus Texten",
-              "summary": "Statt Wort für Wort zu antworten, liest Clairic eine E-Mail oder einen Beleg in einem Durchgang und liefert Werte wie Datum oder Summe samt Confidence Score. Es läuft als Preview auf Workers AI, Open Weights sollen folgen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-20-nature-ai-not-conscious",
-          "headline": "Top scientists in Nature: today's AI is not conscious",
-          "summary": "Neuroscientists Anil Seth and Giulio Tononi and philosopher Ned Block argue that being smart is not the same as having experiences. They warn that treating chatbots as conscious distracts from real policy questions.",
-          "source": {
-            "name": "Nature",
-            "url": "https://www.nature.com/articles/d41586-026-03313-7"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Forscher in Nature: Heutige KI hat kein Bewusstsein",
-              "summary": "Die Neurowissenschaftler Anil Seth und Giulio Tononi sowie der Philosoph Ned Block betonen, dass Intelligenz nicht dasselbe ist wie Erleben. Wer Chatbots Bewusstsein zuschreibt, lenke von echten Regulierungsfragen ab."
             }
           }
         }
