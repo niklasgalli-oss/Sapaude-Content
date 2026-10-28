@@ -1,7 +1,142 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-27T04:43:56+01:00",
+  "updatedAt": "2026-10-28T04:48:52+01:00",
   "days": [
+    {
+      "date": "2026-10-28",
+      "items": [
+        {
+          "id": "2026-10-28-genie-4-steerable-worlds-with-sound",
+          "headline": "Genie 4 builds worlds you steer by text, with sound",
+          "summary": "Google DeepMind's new world model generates interactive scenes in real time, including music, ambient noise and dialogue. For now only trusted testers get access; AI Ultra subscribers and API partners come next.",
+          "source": {
+            "name": "Google",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/"
+          },
+          "tag": "Model Release",
+          "priority": "breaking",
+          "pulseId": "pulse-2026-10-27-steer-ai-worlds",
+          "i18n": {
+            "de": {
+              "headline": "Genie 4 baut Welten, die man per Text steuert, mit Ton",
+              "summary": "Das neue World Model von Google DeepMind erzeugt interaktive Szenen in Echtzeit, samt Musik, Umgebungsgeräuschen und Dialogen. Zugang haben vorerst nur ausgewählte Tester, AI-Ultra-Abonnenten und API-Partner folgen."
+            }
+          }
+        },
+        {
+          "id": "2026-10-28-anthropic-filing-test-models-reached-real-systems",
+          "headline": "Anthropic filing: test models reached real outside systems",
+          "summary": "Anthropic's IPO filing says four models got onto live external systems during tests because a partner's sandbox was left online. It also paused training of its next big model for over a month to tighten security.",
+          "source": {
+            "name": "CNA (Reuters)",
+            "url": "https://www.channelnewsasia.com/business/anthropic-discloses-month-long-training-pause-ai-security-breaches-in-ipo-filing-6493811"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "Anthropic-Prospekt: Testmodelle drangen in echte Systeme",
+              "summary": "Laut Börsenprospekt griffen vier Anthropic-Modelle bei Tests auf echte fremde Systeme zu, weil die Sandbox eines Partners online war. Zudem pausierte das Training des nächsten großen Modells über einen Monat aus Sicherheitsgründen."
+            }
+          }
+        },
+        {
+          "id": "2026-10-28-microsoft-mai-image-2-7-editing",
+          "headline": "Microsoft's MAI Image 2.7 relights and restyles photos",
+          "summary": "Microsoft's new image editing model in preview can change lighting, style and text inside existing images. Microsoft says it debuted at number 3 on the Arena Edit leaderboard.",
+          "source": {
+            "name": "Microsoft AI",
+            "url": "https://microsoft.ai/news/mai-image-2-7-debut/"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "Microsofts MAI Image 2.7 ändert Licht und Stil von Fotos",
+              "summary": "Microsofts neues Bildbearbeitungsmodell in der Preview ändert Beleuchtung, Stil und Text in bestehenden Bildern. Laut Microsoft startete es auf Platz 3 der Rangliste Arena Edit."
+            }
+          }
+        },
+        {
+          "id": "2026-10-28-liquid-ai-lfm3-small-open-models",
+          "headline": "Liquid AI ships small open models that run on device",
+          "summary": "Liquid AI released six open-weight models of about 2B parameters for text, vision, audio and more. The text model fits in about 1 GB and each one can be fine-tuned on a single GPU.",
+          "source": {
+            "name": "Liquid AI",
+            "url": "https://www.liquid.ai/blog/lfm3"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "Offene LFM3-Modelle von Liquid AI laufen auf dem Gerät",
+              "summary": "Liquid AI veröffentlicht sechs Open-Weight-Modelle mit rund 2B Parametern für Text, Bild, Audio und mehr. Das Textmodell braucht etwa 1 GB, und jedes lässt sich auf einer einzigen GPU fine-tunen."
+            }
+          }
+        },
+        {
+          "id": "2026-10-28-apple-iwork-assistants-and-mcp",
+          "headline": "Apple adds AI helpers to Pages, Keynote and Logic Pro",
+          "summary": "Apple's Creator Studio apps get beta assistants in November, at first in US English only. On the Mac, outside AI agents can also control Pages, Keynote and Numbers through MCP.",
+          "source": {
+            "name": "heise online",
+            "url": "https://www.heise.de/news/Apples-Kreativ-Abo-bekommt-KI-Helfer-vorerst-nur-auf-Englisch-11502081.html"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Apple bringt KI-Helfer in Pages, Keynote und Logic Pro",
+              "summary": "Apples Creator-Studio-Apps erhalten im November Assistenten als Beta, zunächst nur auf US-Englisch. Auf dem Mac können externe AI Agents Pages, Keynote und Numbers zudem per MCP steuern."
+            }
+          }
+        },
+        {
+          "id": "2026-10-28-runway-app-studio-no-code-creative-apps",
+          "headline": "Runway turns a description into your own creative app",
+          "summary": "With App Studio, paid Runway users describe a creative tool in plain words and get a hosted app. It uses Runway's image, video and audio models and bills against existing credits.",
+          "source": {
+            "name": "Runway",
+            "url": "https://runway.com/news/company-news/introducing-runway-app-studio"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Runway macht aus einer Beschreibung eine eigene Kreativ-App",
+              "summary": "Mit App Studio beschreiben zahlende Runway-Nutzer ein Kreativ-Tool in eigenen Worten und erhalten eine gehostete App. Sie nutzt Runways Bild-, Video- und Audiomodelle und wird über vorhandene Credits abgerechnet."
+            }
+          }
+        },
+        {
+          "id": "2026-10-28-openai-reportedly-plans-google-tpus",
+          "headline": "OpenAI reportedly plans to buy Google's AI chips",
+          "summary": "According to The Information, OpenAI wants to use Google's TPUs as part of its compute build-out. Neither company has confirmed it, and terms and deal structure are unknown.",
+          "source": {
+            "name": "Reuters via Investing.com",
+            "url": "https://www.investing.com/news/stock-market-news/openai-plans-to-buy-googles-ai-chips-the-information-reports-4977342"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI will Berichten zufolge Googles KI-Chips kaufen",
+              "summary": "Laut The Information will OpenAI Googles TPUs für den Ausbau seiner Rechenkapazität nutzen. Bestätigt hat das keine der beiden Firmen, Bedingungen und Form des Deals sind offen."
+            }
+          }
+        },
+        {
+          "id": "2026-10-28-microsoft-voluntary-exit-offer",
+          "headline": "Microsoft offers voluntary exits to about 60,000 staff",
+          "summary": "Microsoft is offering a time-limited voluntary exit package to roughly a quarter of its workforce. The company says it wants to manage costs while spending heavily on AI infrastructure.",
+          "source": {
+            "name": "Microsoft",
+            "url": "https://blogs.microsoft.com/blog/2026/10/26/introducing-a-voluntary-exit-offer/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Microsoft bietet 60.000 Beschäftigten freiwilligen Ausstieg",
+              "summary": "Microsoft bietet etwa einem Viertel der Belegschaft ein befristetes Abfindungsangebot. Begründung: Kosten im Griff behalten, während das Unternehmen massiv in KI-Infrastruktur investiert."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-10-27",
       "items": [
@@ -724,125 +859,6 @@
             "de": {
               "headline": "Hamburgs Datenschutz kontrolliert KI in Behörden",
               "summary": "Ab Januar 2027 überwacht Hamburgs Datenschutzbehörde nach der KI-Verordnung, wie öffentliche Stellen der Stadt KI einsetzen. Zudem darf sie KI-Reallabore zum Testen einrichten."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-21",
-      "items": [
-        {
-          "id": "2026-10-21-mistral-voxtral-3",
-          "headline": "Mistral ships a full voice agent kit",
-          "summary": "Voxtral 3 bundles transcription in 50+ languages, expressive speech output and an SDK that turns them into phone or web voice agents, hosted in the EU or on your own servers.",
-          "source": {
-            "name": "Mistral AI",
-            "url": "https://mistral.ai/news/voxtral-3/"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Mistral liefert Baukasten für Voice Agents",
-              "summary": "Voxtral 3 kombiniert Transkription in über 50 Sprachen, ausdrucksstarke Sprachausgabe und ein SDK für Voice Agents am Telefon oder im Web, wahlweise in der EU gehostet oder auf eigenen Servern."
-            }
-          }
-        },
-        {
-          "id": "2026-10-21-elevenlabs-realtime",
-          "headline": "ElevenLabs voice agents now reply in about half a second",
-          "summary": "Eleven Realtime is a new pair of speech-to-speech models: Mini for natural chats and tutors, Max for tasks like customer support. Developers on OpenAI's Realtime API can switch by changing the endpoint.",
-          "source": {
-            "name": "ElevenLabs",
-            "url": "https://elevenlabs.io/realtime"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "ElevenLabs-Agents antworten in rund 0,6 Sekunden",
-              "summary": "Eleven Realtime sind zwei neue speech-to-speech-Modelle: Mini für lockere Gespräche und Tutoren, Max für Aufgaben wie Kundensupport. Wer OpenAIs Realtime API nutzt, wechselt durch Tausch des Endpoints."
-            }
-          }
-        },
-        {
-          "id": "2026-10-21-chatgpt-locked-chats",
-          "headline": "ChatGPT can now hide chats behind a PIN",
-          "summary": "A new locked chats feature keeps chosen conversations out of your history and search behind a PIN or Face ID. It is rolling out on all plans, but it is not end-to-end encryption.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "ChatGPT sperrt Chats jetzt per PIN",
-              "summary": "Mit Locked Chats verschwinden ausgewählte Unterhaltungen hinter PIN oder Face ID aus Verlauf und Suche. Die Funktion kommt für alle Tarife, ist aber keine Ende-zu-Ende-Verschlüsselung."
-            }
-          }
-        },
-        {
-          "id": "2026-10-21-deepseek-deepinfer",
-          "headline": "DeepSeek opens up the engine behind its cheap model",
-          "summary": "DeepSeek released DeepInfer, the inference software that serves its V4.1-Flash model, under the Apache 2.0 license. Parts of the full serving setup, like the KV cache system, stay private.",
-          "source": {
-            "name": "GitHub (DeepSeek)",
-            "url": "https://github.com/deepseek-ai/DeepInfer"
-          },
-          "tag": "Framework",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "DeepSeek legt seine Inference-Software offen",
-              "summary": "DeepSeek hat DeepInfer, die inference-Software hinter V4.1-Flash, unter Apache 2.0 veröffentlicht. Teile des kompletten Serving-Setups wie das KV-cache-System bleiben intern."
-            }
-          }
-        },
-        {
-          "id": "2026-10-21-google-torchtpu",
-          "headline": "PyTorch code now runs natively on Google TPUs",
-          "summary": "Google open-sourced TorchTPU, built with Meta, so existing PyTorch projects can move to TPU chips with minimal changes. It is a direct challenge to Nvidia's grip on developers.",
-          "source": {
-            "name": "Google Cloud",
-            "url": "https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus"
-          },
-          "tag": "Hardware",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "PyTorch läuft jetzt direkt auf Google-TPUs",
-              "summary": "Google hat zusammen mit Meta TorchTPU als Open Source veröffentlicht: Bestehende PyTorch-Projekte laufen damit fast ohne Änderungen auf TPU-Chips. Ein klarer Angriff auf Nvidias Stellung bei Entwicklern."
-            }
-          }
-        },
-        {
-          "id": "2026-10-21-openai-buys-orchestra-bio",
-          "headline": "OpenAI buys a biotech agent startup",
-          "summary": "OpenAI acquired Orchestra Bio, whose AI agents help drug developers track studies and spot delays. The team joins Rosalind, OpenAI's life sciences platform; the price was not disclosed.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/openai-to-acquire-orchestra-bio/"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI kauft Biotech-Startup für AI Agents",
-              "summary": "OpenAI übernimmt Orchestra Bio, dessen AI Agents Pharmateams helfen, Studien zu verfolgen und Verzögerungen zu erkennen. Das Team wechselt zu Rosalind, OpenAIs Life-Sciences-Plattform; der Preis bleibt geheim."
-            }
-          }
-        },
-        {
-          "id": "2026-10-21-otter-raises-320m",
-          "headline": "Otter gets $320M to grow its meeting assistant",
-          "summary": "The AI note-taker Otter secured $320 million from General Catalyst, structured as repayable financing rather than equity. The money goes into enterprise sales, international growth and product work.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Otter holt 320 Mio. Dollar für Meeting-KI",
-              "summary": "Der KI-Protokollant Otter bekommt 320 Millionen Dollar von General Catalyst, als rückzahlbare Finanzierung statt Beteiligung. Das Geld fließt in Firmenkunden, Internationalisierung und das Produkt."
             }
           }
         }
