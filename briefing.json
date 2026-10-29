@@ -1,7 +1,143 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-28T04:48:52+01:00",
+  "updatedAt": "2026-10-29T04:41:10+01:00",
   "days": [
+    {
+      "date": "2026-10-29",
+      "items": [
+        {
+          "id": "2026-10-29-gemini-4-carbon-tops-index",
+          "headline": "Gemini 4 Carbon takes the top spot, built for security",
+          "summary": "Google DeepMind's new model arrives two weeks after Argon and leads the updated Artificial Analysis index. Google stresses long agent runs and finding and fixing security flaws; cyber defenders get access first.",
+          "source": {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
+          },
+          "tag": "Model Release",
+          "priority": "breaking",
+          "i18n": {
+            "de": {
+              "headline": "Gemini 4 Carbon übernimmt Platz eins, stark bei Security",
+              "summary": "Das neue Modell von Google DeepMind kommt zwei Wochen nach Argon und führt den neuen Index von Artificial Analysis an. Google betont lange Agent-Läufe und das Beheben von Sicherheitslücken; Cyberabwehr-Teams dürfen zuerst ran."
+            }
+          }
+        },
+        {
+          "id": "2026-10-29-android-studio-bring-your-own-agent",
+          "headline": "Android Studio opens up to more than 40 coding agents",
+          "summary": "With bring your own agent, developers can run Claude, Codex and dozens of other coding agents inside Google's IDE. A new terminal tool let agents finish UI tasks 77 percent faster in Google's own tests.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Android Studio öffnet sich für über 40 Coding Agents",
+              "summary": "Mit „Bring Your Own Agent“ laufen Claude, Codex und Dutzende weitere Coding Agents direkt in Googles IDE. Ein neues Terminal-Tool machte Agents bei UI-Aufgaben laut Googles eigenen Tests 77 Prozent schneller."
+            }
+          }
+        },
+        {
+          "id": "2026-10-29-chrome-autofill-uses-gmail",
+          "headline": "Chrome can now fill forms with details from your Gmail",
+          "summary": "An opt-in autofill upgrade suggests things like booking codes, order numbers or addresses it finds in your mail. You switch it on in Chrome's settings.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Chrome füllt Formulare jetzt mit Daten aus deinem Gmail",
+              "summary": "Ein optionales Autofill-Upgrade schlägt etwa Buchungscodes, Bestellnummern oder Adressen vor, die es in deinen Mails findet. Einschalten kannst du es in den Chrome-Einstellungen."
+            }
+          }
+        },
+        {
+          "id": "2026-10-29-nvidia-nemotron-transcribe-open",
+          "headline": "Nvidia's free model transcribes 40 languages and speakers",
+          "summary": "Nemotron 3.5 Transcribe is an open-weight model that turns recordings of up to an hour into text and tells up to eight speakers apart. It runs on a single Nvidia chip but does not handle live streams.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
+          },
+          "tag": "Model Release",
+          "pulseId": "pulse-2026-10-28-who-said-what",
+          "i18n": {
+            "de": {
+              "headline": "Nvidias Gratis-Modell erkennt 40 Sprachen und Sprecher",
+              "summary": "Nemotron 3.5 Transcribe ist ein Open-Weight-Modell, das Aufnahmen bis zu einer Stunde in Text umwandelt und bis zu acht Sprecher unterscheidet. Es läuft auf einem einzigen Nvidia-Chip, aber nicht mit Livestreams."
+            }
+          }
+        },
+        {
+          "id": "2026-10-29-openai-berlin-dots-europe-codex",
+          "headline": "OpenAI: Dots assistant should reach Europe within weeks",
+          "summary": "At its Berlin developer event, OpenAI said wider EU access follows talks with regulators; personal Pro accounts are still locked out. Weekly Codex use in Germany has grown twentyfold since January, it said.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/openai-teases-dots-for-europe-but-its-berlin-devday-was-really-about-building-a-platform/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI: Assistent Dots soll in Wochen nach Europa kommen",
+              "summary": "Beim Entwickler-Event in Berlin sagte OpenAI, der breitere EU-Zugang folge nach Gesprächen mit Regulierern; private Pro-Konten sind noch gesperrt. Die wöchentliche Codex-Nutzung in Deutschland sei seit Januar 20-mal so hoch."
+            }
+          }
+        },
+        {
+          "id": "2026-10-29-cloudflare-cache-bug-leaked-replies",
+          "headline": "Cloudflare: a cache bug mixed other users' data into replies",
+          "summary": "For about two weeks, 155 answers from one hosted model contained fragments of other customers' requests. Cloudflare found no sign of deliberate abuse and fixed its setup and the open-source inference engine.",
+          "source": {
+            "name": "Cloudflare",
+            "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
+          },
+          "tag": "Framework",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "Cloudflare: Cache-Fehler mischte fremde Daten in Antworten",
+              "summary": "Rund zwei Wochen lang enthielten 155 Antworten eines gehosteten Modells Teile fremder Kundenanfragen. Cloudflare fand keine Hinweise auf gezielten Missbrauch und hat Konfiguration und die Open-Source-Inference-Engine korrigiert."
+            }
+          }
+        },
+        {
+          "id": "2026-10-29-microsoft-10b-revenue-from-openai",
+          "headline": "Microsoft earned $10 billion from OpenAI in one quarter",
+          "summary": "Microsoft's filing shows revenue from its OpenAI deals made up almost 11 percent of quarterly sales, even as the two increasingly compete for the same customers.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Microsoft nahm in einem Quartal 10 Mrd. $ mit OpenAI ein",
+              "summary": "Laut Microsofts Pflichtmitteilung machten die Einnahmen aus den OpenAI-Verträgen fast 11 Prozent des Quartalsumsatzes aus, obwohl beide Firmen zunehmend um dieselben Kunden konkurrieren."
+            }
+          }
+        },
+        {
+          "id": "2026-10-29-claude-discount-us-governments",
+          "headline": "US agencies at every level get Claude 40 percent cheaper",
+          "summary": "A new deal with the GSA, the US government's purchasing agency, extends the discount to states and cities. Agencies pay only for what they use, with no minimum order.",
+          "source": {
+            "name": "Anthropic",
+            "url": "https://www.anthropic.com/news/expanding-partnership-gsa"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "US-Behörden aller Ebenen bekommen Claude 40 Prozent billiger",
+              "summary": "Ein neuer Vertrag mit der GSA, der zentralen Einkaufsbehörde der US-Regierung, weitet den Rabatt auf Bundesstaaten und Städte aus. Behörden zahlen nur ihre Nutzung, ohne Mindestabnahme."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-10-28",
       "items": [
@@ -741,124 +877,6 @@
             "de": {
               "headline": "EU-Parlament streitet über Haftung von KI-Firmen",
               "summary": "In der Debatte am Donnerstag forderten Sozialdemokraten und Grüne ein neues KI-Haftungsgesetz, nachdem die Kommission ihren Entwurf zurückgezogen hatte. Mitte-rechts setzt auf Vereinfachung. Abgestimmt wurde nicht."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-22",
-      "items": [
-        {
-          "id": "2026-10-22-claude-duet-proactive-agent",
-          "headline": "Claude Duet messages you first and works in the background",
-          "summary": "Anthropic's new standalone app sends a morning brief, watches your connected apps and keeps working on tasks in its own cloud computer, asking before it sends or pays. Waitlist only, US Pro and Max for now.",
-          "source": {
-            "name": "Anthropic",
-            "url": "https://claude.com/resources/articles/claude-duet"
-          },
-          "tag": "Tools",
-          "priority": "breaking",
-          "i18n": {
-            "de": {
-              "headline": "Claude Duet meldet sich von selbst und arbeitet weiter",
-              "summary": "Die neue App von Anthropic schickt morgens ein Briefing, behält verbundene Apps im Blick und erledigt Aufgaben auf einem eigenen Cloud-Rechner. Vor Senden oder Zahlen fragt sie nach. Vorerst nur per Warteliste in den USA."
-            }
-          }
-        },
-        {
-          "id": "2026-10-22-openai-models-google-cloud",
-          "headline": "Companies can now buy OpenAI models through Google Cloud",
-          "summary": "GPT-6 Astra, GPT-6.1 Sol and GPT-6 Luna are rolling out in a private preview on Google Cloud, billed on the same invoice as Gemini and Claude. Wider availability is planned within weeks.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/openai-models-google-cloud"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI-Modelle gibt es jetzt auch über Google Cloud",
-              "summary": "GPT-6 Astra, GPT-6.1 Sol und GPT-6 Luna starten als Private Preview auf Google Cloud und laufen über dieselbe Rechnung wie Gemini und Claude. Die breite Freigabe soll in einigen Wochen folgen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-22-php2shell-ai-found-flaw",
-          "headline": "AI helped uncover a severe PHP flaw, so update now",
-          "summary": "Wiz, OpenAI and Calif used frontier models to turn old PHP bugs into a working takeover attack that hits nearly every version since 5.4. Patches shipped on October 21 and first attack attempts are already showing up.",
-          "source": {
-            "name": "Wiz",
-            "url": "https://www.wiz.io/blog/php2shell-php-rce"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "KI deckt schwere PHP-Lücke auf: jetzt updaten",
-              "summary": "Wiz, OpenAI und Calif haben mit Frontier-Modellen alte PHP-Fehler zu einem echten Angriff ausgebaut, der fast alle Versionen seit 5.4 betrifft. Patches kamen am 21. Oktober, erste Angriffsversuche laufen bereits."
-            }
-          }
-        },
-        {
-          "id": "2026-10-22-recursive-flint-laptop-coder",
-          "headline": "Free coding model Flint runs on a normal laptop",
-          "summary": "Startup Recursive released Flint under Apache 2.0, a 40B model that uses only 2.5B parameters at a time. It says its own AI research system did most of the development work.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Gratis-Coding-Modell Flint läuft auf dem Laptop",
-              "summary": "Das Start-up Recursive veröffentlicht Flint unter Apache 2.0: 40 Mrd. Parameter, davon nur 2,5 Mrd. pro Schritt aktiv. Den Großteil der Entwicklung soll ein hauseigenes KI-Forschungssystem erledigt haben."
-            }
-          }
-        },
-        {
-          "id": "2026-10-22-claude-scorpion-toxin-binders",
-          "headline": "Claude designs proteins that latch onto scorpion venom",
-          "summary": "In Anthropic's study, Claude ran most of a protein design campaign on its own; 17 of 211 lab-tested designs bound a toxin. Whether they can actually neutralize venom has not been tested yet.",
-          "source": {
-            "name": "Anthropic",
-            "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "Claude entwirft Proteine gegen Skorpiongift",
-              "summary": "In einer Anthropic-Studie steuerte Claude große Teile eines Protein-Designs selbst; 17 von 211 im Labor getesteten Entwürfen banden ein Gift. Ob sie es auch unschädlich machen, ist noch offen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-22-nvidia-dsx-pod-containers",
-          "headline": "Nvidia ships AI data centers ready-built in containers",
-          "summary": "At GTC Berlin, Nvidia showed DSX POD, a design where partners assemble and test whole AI compute units in containers at the factory. Nvidia says setup drops from about six months to as little as 14 days.",
-          "source": {
-            "name": "Nvidia",
-            "url": "https://nvidianews.nvidia.com/news/nvidia-introduces-dsx-pod-ai-factories-to-accelerate-europes-infrastructure-deployment"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "Nvidia liefert KI-Rechenzentren fertig im Container",
-              "summary": "Auf der GTC Berlin zeigte Nvidia DSX POD: Partner bauen komplette KI-Recheneinheiten im Werk in Container und testen sie dort. Laut Nvidia sinkt der Aufbau vor Ort von rund sechs Monaten auf bis zu 14 Tage."
-            }
-          }
-        },
-        {
-          "id": "2026-10-22-hamburg-ai-oversight",
-          "headline": "Hamburg's privacy office will police AI in city agencies",
-          "summary": "From January 2027, Hamburg's data protection authority becomes the AI Act market watchdog for AI used by the city's public bodies, and it may set up regulatory sandboxes for testing.",
-          "source": {
-            "name": "HmbBfDI",
-            "url": "https://datenschutz-hamburg.de/news/ki-einsatz-in-hamburgs-behoerden-hmbbfdi-wird-marktueberwachungsbehoerde"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Hamburgs Datenschutz kontrolliert KI in Behörden",
-              "summary": "Ab Januar 2027 überwacht Hamburgs Datenschutzbehörde nach der KI-Verordnung, wie öffentliche Stellen der Stadt KI einsetzen. Zudem darf sie KI-Reallabore zum Testen einrichten."
             }
           }
         }
