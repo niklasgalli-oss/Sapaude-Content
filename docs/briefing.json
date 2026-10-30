@@ -1,7 +1,142 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-29T04:41:10+01:00",
+  "updatedAt": "2026-10-30T06:55:42+01:00",
   "days": [
+    {
+      "date": "2026-10-30",
+      "items": [
+        {
+          "id": "2026-10-30-mistral-large-4-open-weights",
+          "headline": "Anyone can now download Mistral's trillion-parameter model",
+          "summary": "Mistral published the weights of Mistral Large 4 on Hugging Face, so companies and governments can run it on their own servers. Mistral pitches it for cyber defense and says it needs far fewer tokens per task than GLM-5.3.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
+          },
+          "tag": "Model Release",
+          "priority": "breaking",
+          "i18n": {
+            "de": {
+              "headline": "Mistrals Billionen-Parameter-Modell ist jetzt frei ladbar",
+              "summary": "Mistral hat die Weights von Mistral Large 4 auf Hugging Face gestellt, Firmen und Behörden können es auf eigenen Servern betreiben. Gedacht ist es vor allem für Cyberabwehr, mit deutlich weniger Tokens pro Aufgabe als GLM-5.3."
+            }
+          }
+        },
+        {
+          "id": "2026-10-30-openai-model-spec-five-values",
+          "headline": "OpenAI rewrites its rules for how GPT should behave",
+          "summary": "The updated Model Spec now rests on five values, with faithfulness to human intent first. It adds guidance on memory, context and human oversight, drops most style rules, and OpenAI admits current models don't fully meet it yet.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/updated-model-spec"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI schreibt die Verhaltensregeln für GPT neu",
+              "summary": "Die neue Model Spec baut auf fünf Werten auf, allen voran Treue zur Absicht der Menschen. Neu sind Regeln zu Memory, Kontext und menschlicher Kontrolle, Stilvorgaben fallen weg. Laut OpenAI erfüllen die Modelle sie noch nicht ganz."
+            }
+          }
+        },
+        {
+          "id": "2026-10-30-octoverse-agents-start-prs",
+          "headline": "Agents now start over 40% of pull requests on GitHub",
+          "summary": "GitHub's Octoverse report says the share of pull requests begun by a coding agent rose from 17% in March to over 40% in September. GitHub calls this a lower bound, since it can't detect every agent.",
+          "source": {
+            "name": "GitHub",
+            "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "Agents starten auf GitHub schon über 40 % der Pull Requests",
+              "summary": "Laut GitHubs Octoverse-Report stieg der Anteil der Pull Requests, die ein Coding Agent beginnt, von 17 % im März auf über 40 % im September. GitHub nennt das eine Untergrenze, weil nicht jeder Agent erkannt wird."
+            }
+          }
+        },
+        {
+          "id": "2026-10-30-canada-invests-in-cohere",
+          "headline": "Canada plans to invest up to C$1.6 billion in Cohere",
+          "summary": "The Canadian government wants to take an equity stake in the Toronto AI company, alongside Nvidia, Bell and Schwarz Group. In return Cohere commits to Canadian jobs, computing capacity and keeping its headquarters at home.",
+          "source": {
+            "name": "Prime Minister of Canada",
+            "url": "https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Kanada will bis zu 1,6 Mrd. CAD in Cohere investieren",
+              "summary": "Die kanadische Regierung plant eine Beteiligung an der KI-Firma aus Toronto, neben Nvidia, Bell und der Schwarz Gruppe. Cohere sagt dafür Jobs, Rechenkapazität und den Hauptsitz in Kanada zu."
+            }
+          }
+        },
+        {
+          "id": "2026-10-30-granola-free-dictation",
+          "headline": "Granola now types what you say in any Mac app",
+          "summary": "The meeting-notes app added free voice typing on Mac: press the Fn key, speak, and it inserts cleaned-up text into whatever app you use. Versions for iOS and Windows are announced.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Granola tippt jetzt in jeder Mac-App, was du sagst",
+              "summary": "Die App für Meeting-Notizen kann auf dem Mac jetzt kostenlos diktieren: Fn-Taste drücken, sprechen, und sie fügt bereinigten Text in jede App ein. iOS und Windows sollen folgen."
+            }
+          }
+        },
+        {
+          "id": "2026-10-30-hugging-face-swift-speech",
+          "headline": "Hugging Face brings open speech models to iPhone apps",
+          "summary": "Two new Swift packages let iOS and macOS apps run open speech recognition on the device and get typed yes/no or rating answers from local models. They target iOS 26 and Apple silicon.",
+          "source": {
+            "name": "Hugging Face",
+            "url": "https://huggingface.co/blog/anydecisionmodel"
+          },
+          "tag": "Framework",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "Hugging Face bringt offene Sprachmodelle in iPhone-Apps",
+              "summary": "Zwei neue Swift-Pakete lassen iOS- und macOS-Apps Spracherkennung mit offenen Modellen direkt auf dem Gerät laufen und liefern typisierte Ja/Nein- oder Bewertungsantworten lokaler Modelle. Ziel sind iOS 26 und Apple Silicon."
+            }
+          }
+        },
+        {
+          "id": "2026-10-30-rivian-assistant-for-vw",
+          "headline": "Volkswagen licenses parts of Rivian's AI voice assistant",
+          "summary": "Rivian's investor slides show that its in-car AI assistant is now part of the joint venture with Volkswagen Group. Fees and the VW models that will get it were not disclosed.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Volkswagen lizenziert Teile von Rivians KI-Sprachassistent",
+              "summary": "Laut Rivians Investorenfolien gehört der KI-Assistent im Auto jetzt zum Joint Venture mit dem Volkswagen-Konzern. Gebühren und die VW-Modelle, die ihn bekommen, nannte Rivian nicht."
+            }
+          }
+        },
+        {
+          "id": "2026-10-30-deepgram-buys-pipecat-maker",
+          "headline": "Deepgram buys Daily, the company behind Pipecat",
+          "summary": "The voice AI firm is acquiring the maker of Pipecat, a popular open-source framework for real-time voice agents, and says Pipecat stays open source. The price was not disclosed.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Deepgram kauft Daily, die Firma hinter Pipecat",
+              "summary": "Die Voice-AI-Firma übernimmt den Entwickler von Pipecat, einem beliebten Open-Source-Framework für Voice Agents in Echtzeit. Pipecat soll Open Source bleiben, der Preis ist unbekannt."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-10-29",
       "items": [
@@ -760,123 +895,6 @@
             "de": {
               "headline": "EU-Staaten wollen KI-Training mit Personendaten erleichtern",
               "summary": "Der EU-Rat hat seine Position zum Daten-Omnibus festgelegt: KI-Training mit personenbezogenen Daten soll bei berechtigtem Interesse erlaubt sein. Deutschland stimmte dagegen, beschlossen ist noch nichts."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-23",
-      "items": [
-        {
-          "id": "2026-10-23-1password-agent-sign-in",
-          "headline": "AI agents can sign in for you without seeing passwords",
-          "summary": "1Password now lets supported agents like Claude Duet, ChatGPT Work and Grok Bot log in once you approve on your own device. The password is filled in directly and never reaches the agent.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "KI-Agents loggen sich ein, ohne dein Passwort zu sehen",
-              "summary": "Bei 1Password können unterstützte Agents wie Claude Duet, ChatGPT Work oder Grok Bot sich jetzt nach deiner Freigabe auf dem eigenen Gerät anmelden. Das Passwort sieht der Agent nie. Konten auf 1Password.eu gehen noch nicht."
-            }
-          }
-        },
-        {
-          "id": "2026-10-23-canva-craft-image-model",
-          "headline": "Canva launches its own image model built for design",
-          "summary": "Craft first plans the layout, then renders images up to 2K with readable text. It is live in Canva's Dream Lab and via API, and Canva says it ranks fourth on the DesignArena leaderboard.",
-          "source": {
-            "name": "Canva",
-            "url": "https://www.canva.com/newsroom/news/canva-craft/"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Canva startet ein eigenes Bildmodell für Designs",
-              "summary": "Craft plant zuerst das Layout und erzeugt dann Bilder bis 2K mit lesbarem Text. Es steckt in Dream Lab von Canva und ist per API nutzbar; im DesignArena-Ranking liegt es laut Canva auf Platz vier."
-            }
-          }
-        },
-        {
-          "id": "2026-10-23-openai-decisions-api",
-          "headline": "OpenAI's Decisions API makes quick app choices cheap",
-          "summary": "Now generally available, it answers yes/no, pick-one or rating questions for apps and agents, up to 10x faster than a regular GPT-6 Luna call. Input costs $0.10 per million tokens, output is free.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/decisions-api"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI macht schnelle App-Entscheidungen günstig",
-              "summary": "Die jetzt allgemein verfügbare API beantwortet Ja/Nein-, Auswahl- oder Bewertungsfragen für Apps und Agents, laut OpenAI bis zu 10x schneller als ein normaler GPT-6-Luna-Aufruf. Input kostet 0,10 $ pro Million Tokens."
-            }
-          }
-        },
-        {
-          "id": "2026-10-23-google-agent-compute-engine",
-          "headline": "Google gives each AI agent its own isolated mini computer",
-          "summary": "Agent Compute Engine runs every agent in a small, hardware-isolated virtual machine that pauses when idle. It already powers Gemini and should reach Google Cloud customers as a preview in the coming months.",
-          "source": {
-            "name": "Google Cloud",
-            "url": "https://cloud.google.com/blog/topics/ai-infrastructure/introducing-agent-compute-engine-and-expanded-agent-governance"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Google gibt jedem KI-Agent einen eigenen Mini-Rechner",
-              "summary": "Die Agent Compute Engine startet jeden Agent in einer kleinen, per Hardware abgeschotteten virtuellen Maschine, die im Leerlauf pausiert. Sie läuft schon hinter Gemini; Cloud-Kunden sollen bald eine Preview bekommen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-23-openai-funding-report",
-          "headline": "OpenAI reportedly nears $30B raise at $1.25T value",
-          "summary": "According to media reports, UAE investors and Coatue lead the round, which is meant to bridge the time until a possible IPO. The deal is not final yet.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI soll kurz vor einer 30-Mrd.-Runde stehen",
-              "summary": "Laut Medienberichten führen Investoren aus den VAE und Coatue die Runde bei 1,25 Billionen Dollar Bewertung an. Sie soll die Zeit bis zu einem möglichen Börsengang überbrücken und ist noch nicht abgeschlossen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-23-deepseek-funding-report",
-          "headline": "DeepSeek reportedly raises about $15B after US ban",
-          "summary": "Bloomberg reports one of the largest funding rounds in China's history, with CATL and Tencent named as possible backers. It comes days after US civilian agencies were told to remove DeepSeek.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "DeepSeek soll rund 15 Mrd. Dollar einsammeln",
-              "summary": "Laut Bloomberg ist es eine der größten Finanzierungsrunden in Chinas Geschichte, als mögliche Geldgeber gelten CATL und Tencent. Sie kommt Tage nachdem US-Bundesbehörden DeepSeek entfernen mussten."
-            }
-          }
-        },
-        {
-          "id": "2026-10-23-eu-ai-liability-debate",
-          "headline": "EU lawmakers clash over making AI firms liable for harm",
-          "summary": "In Thursday's European Parliament debate, Socialists and Greens called for a new AI liability law after the Commission dropped its draft, while the center-right stuck to simpler rules. It was a debate, not a vote.",
-          "source": {
-            "name": "Politico Europe",
-            "url": "https://www.politico.eu/article/ursula-von-der-leyen-coalition-fractures-over-need-for-ai-liability-rules/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "EU-Parlament streitet über Haftung von KI-Firmen",
-              "summary": "In der Debatte am Donnerstag forderten Sozialdemokraten und Grüne ein neues KI-Haftungsgesetz, nachdem die Kommission ihren Entwurf zurückgezogen hatte. Mitte-rechts setzt auf Vereinfachung. Abgestimmt wurde nicht."
             }
           }
         }
