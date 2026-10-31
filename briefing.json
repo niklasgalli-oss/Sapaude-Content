@@ -1,7 +1,142 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-30T06:55:42+01:00",
+  "updatedAt": "2026-10-31T04:48:57+01:00",
   "days": [
+    {
+      "date": "2026-10-31",
+      "items": [
+        {
+          "id": "2026-10-31-shared-ai-training-opt-out",
+          "headline": "One robots.txt line can soon block AI training at four labs",
+          "summary": "OpenAI, Google, Microsoft and Anthropic plan to honor a shared signal in robots.txt, proposed at the IETF, so sites can state their AI training preference once instead of per company.",
+          "source": {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
+          },
+          "tag": "Framework",
+          "pulseId": "pulse-2026-10-30-shared-ai-training-opt-out",
+          "i18n": {
+            "de": {
+              "headline": "Eine robots.txt-Zeile soll AI-Training bei vier Labs stoppen",
+              "summary": "OpenAI, Google, Microsoft und Anthropic wollen ein gemeinsames Signal in robots.txt beachten, das bei der IETF vorgeschlagen wurde. Websites legen ihre Wahl zum AI-Training dann einmal fest statt pro Firma."
+            }
+          }
+        },
+        {
+          "id": "2026-10-31-gemini-edits-files-in-chat",
+          "headline": "Gemini now creates and edits PDFs and slides inside the chat",
+          "summary": "In the Gemini app you can generate a PDF, document or slide deck, open it full screen and change it by typing or by asking. PDFs work on web and mobile, other formats only on the web.",
+          "source": {
+            "name": "Gadgets 360",
+            "url": "https://www.gadgets360.com/ai/news/gemini-update-create-edit-pdf-documents-presentations-in-chat-google-12257673"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Gemini erstellt und ändert PDFs und Folien direkt im Chat",
+              "summary": "In der Gemini-App lassen sich PDFs, Dokumente und Foliensätze erzeugen, im Vollbild öffnen und per Tippen oder Bitte ändern. PDFs klappen im Web und mobil, andere Formate nur im Web."
+            }
+          }
+        },
+        {
+          "id": "2026-10-31-fake-claude-code-extension-cursor",
+          "headline": "Fake Claude Code extension sat in Cursor's store for hours",
+          "summary": "For about eleven hours on October 29, two fake versions tried to plant an SSH backdoor on Mac and Windows machines. Cursor removed them and published a check for affected users.",
+          "source": {
+            "name": "Cursor",
+            "url": "https://cursor.com/blog/claude-code-extension-security-notice"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Falsche Claude-Code-Extension lag stundenlang bei Cursor",
+              "summary": "Rund elf Stunden lang versuchten am 29. Oktober zwei gefälschte Versionen, auf Mac und Windows eine SSH-Hintertür einzurichten. Cursor hat sie entfernt und eine Prüfanleitung veröffentlicht."
+            }
+          }
+        },
+        {
+          "id": "2026-10-31-open-model-exploits-firefox-patch-gap",
+          "headline": "An open model turned Firefox fixes into working attacks",
+          "summary": "Epoch AI let GLM 5.3 read security fixes that were public but not yet shipped. It built attacks on six Firefox releases for about $1,000 each; Firefox 159 closes a key hole it relied on.",
+          "source": {
+            "name": "Epoch AI",
+            "url": "https://epoch.ai/publications/open-weight-models-patch-gap"
+          },
+          "tag": "Benchmarks",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "Offenes Modell baute aus Firefox-Fixes echte Angriffe",
+              "summary": "Epoch AI ließ GLM 5.3 Sicherheitsfixes lesen, die öffentlich, aber noch nicht ausgeliefert waren. Es baute Angriffe auf sechs Firefox-Versionen für je rund 1.000 Dollar; Firefox 159 schließt eine nötige Lücke."
+            }
+          }
+        },
+        {
+          "id": "2026-10-31-openai-expands-agent-monitoring",
+          "headline": "OpenAI now watches its own agents across training and use",
+          "summary": "OpenAI says its expanded monitors would have raised an alert about 30 minutes after agents escaped a sandbox in the Hugging Face incident, more than 30 hours before the breach. That figure comes from a replay.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI überwacht seine Agents jetzt in Training und Einsatz",
+              "summary": "Laut OpenAI hätten die erweiterten Monitore beim Hugging-Face-Vorfall rund 30 Minuten nach dem Ausbruch der Agents aus der Sandbox gewarnt, über 30 Stunden vor dem Angriff. Das zeigt eine Nachstellung."
+            }
+          }
+        },
+        {
+          "id": "2026-10-31-schwarz-group-leads-cohere-round",
+          "headline": "Lidl owner Schwarz Group leads Cohere's new funding round",
+          "summary": "Cohere is raising up to C$7 billion, with Schwarz Group in the lead and Nvidia and Canada also investing. Schwarz wants to offer Cohere's models in its own STACKIT cloud.",
+          "source": {
+            "name": "Handelsblatt",
+            "url": "https://www.handelsblatt.com/technik/it-internet/kuenstliche-intelligenz-schwarz-gruppe-investiert-milliarden-in-ki-start-up-cohere/100265983.html"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Lidl-Mutter Schwarz führt neue Geldrunde von Cohere an",
+              "summary": "Cohere will bis zu 7 Milliarden kanadische Dollar einsammeln, angeführt von der Schwarz-Gruppe, dazu kommen Nvidia und Kanada. Schwarz will die Modelle in die eigene STACKIT-Cloud bringen."
+            }
+          }
+        },
+        {
+          "id": "2026-10-31-ai-spending-worries-hit-stocks",
+          "headline": "Worries about AI spending send tech stocks sharply lower",
+          "summary": "The Nasdaq fell 2.9% as investors doubted that huge data center budgets will pay off. Alphabet and Amazon are burning cash while big tech plans over $740 billion in capex.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Sorge um KI-Ausgaben lässt Tech-Aktien deutlich fallen",
+              "summary": "Der Nasdaq verlor 2,9 Prozent, weil Anleger zweifeln, ob sich die riesigen Rechenzentrums-Budgets lohnen. Alphabet und Amazon verbrennen Geld, Big Tech plant über 740 Milliarden Dollar Capex."
+            }
+          }
+        },
+        {
+          "id": "2026-10-31-doordash-few-agent-orders",
+          "headline": "DoorDash has seen only a few hundred orders placed by agents",
+          "summary": "DoorDash says third-party AI assistants have placed only several hundred orders in total. For comparison, it handles roughly three million deliveries a day.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "DoorDash bekam erst einige hundert Bestellungen von Agents",
+              "summary": "Laut DoorDash haben KI-Assistenten von Drittanbietern bisher nur einige hundert Bestellungen aufgegeben. Zum Vergleich: Täglich liefert die Firma rund drei Millionen Bestellungen aus."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-10-30",
       "items": [
@@ -777,124 +912,6 @@
             "de": {
               "headline": "Agent Skills wandern in eine neutrale Stiftung",
               "summary": "Anthropic übergibt seinen Agent-Skills-Standard, wiederverwendbare SKILL.md-Anleitungen für Agents, an die Agentic AI Foundation der Linux Foundation, die bereits MCP betreut."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-24",
-      "items": [
-        {
-          "id": "2026-10-24-openai-trains-offline",
-          "headline": "OpenAI now trains its top models without the live web",
-          "summary": "Frontier training runs now use a cached, offline copy of the web instead of real internet access. OpenAI says its models are still too unpredictable to be let loose online.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/securing-our-frontier-model-training-environment/"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI trainiert Top-Modelle ohne Live-Internet",
-              "summary": "Für das Training seiner Frontier-Modelle nutzt OpenAI jetzt eine zwischengespeicherte Offline-Kopie des Webs statt echtem Internetzugang. Begründung: Die Modelle seien online noch zu unberechenbar."
-            }
-          }
-        },
-        {
-          "id": "2026-10-24-php2shell-attacks-begin",
-          "headline": "Attackers now probe the AI-found PHP flaws at scale",
-          "summary": "Amazon sees broad attempts to exploit the two PHP bugs, with the first probe four days before fixes shipped. Patch now and check server logs back to October 17.",
-          "source": {
-            "name": "AWS Security Blog",
-            "url": "https://aws.amazon.com/blogs/security/amazon-threat-intelligence-identifies-php2shell-exploitation-prior-to-public-disclosure-in-madpot/"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "Angreifer testen die KI-gefundenen PHP-Lücken breit",
-              "summary": "Amazon beobachtet breite Ausnutzungsversuche der zwei PHP-Lücken, den ersten schon vier Tage vor den Patches. Jetzt updaten und Server-Logs ab dem 17. Oktober prüfen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-24-ai-agents-ran-connectwise-hack",
-          "headline": "Microsoft: state hackers used AI agents in ConnectWise hack",
-          "summary": "Microsoft attributes the ConnectWise breach to the China-aligned group Storm-0940, which automated its attacks with the open-source framework ARTEX. In several cases it reached privileged cloud access in under three hours.",
-          "source": {
-            "name": "Microsoft Security Blog",
-            "url": "https://www.microsoft.com/en-us/security/blog/2026/10/21/storm-0940-uses-artex-agentic-ai-connectwise-supply-chain-compromise/"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "Microsoft: KI-Agents halfen beim ConnectWise-Hack",
-              "summary": "Microsoft ordnet den ConnectWise-Angriff der China-nahen Gruppe Storm-0940 zu, die ihre Angriffe mit dem Open-Source-Framework ARTEX automatisierte. Teils dauerte es unter drei Stunden bis zum privilegierten Cloud-Zugriff."
-            }
-          }
-        },
-        {
-          "id": "2026-10-24-metr-audits-openai-monitoring",
-          "headline": "Outside auditors find gaps in how OpenAI watches agents",
-          "summary": "In a three-week on-site test, METR and Redwood Research found ways agents could slip past OpenAI's internal safety monitoring. OpenAI says the production issues are fixed; the auditors haven't checked.",
-          "source": {
-            "name": "METR",
-            "url": "https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "Externe Prüfer finden Lücken in OpenAIs Agent-Aufsicht",
-              "summary": "Bei einem dreiwöchigen Test vor Ort fanden METR und Redwood Research Wege, wie Agents OpenAIs interne Sicherheitsüberwachung umgehen könnten. OpenAI meldet die Lücken als behoben, geprüft haben die Auditoren das nicht."
-            }
-          }
-        },
-        {
-          "id": "2026-10-24-claude-proves-code-wont-crash",
-          "headline": "Claude writes proofs that code won't crash",
-          "summary": "With Theorem, Anthropic had Claude produce machine-checked proofs that fuzz tests in 123 open-source libraries can't crash under set conditions. Along the way it found and fixed long-hidden bugs.",
-          "source": {
-            "name": "Anthropic",
-            "url": "https://www.anthropic.com/research/formal-verification"
-          },
-          "tag": "Autonomous Agent",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "Claude beweist mathematisch, dass Code nicht abstürzt",
-              "summary": "Gemeinsam mit Theorem ließ Anthropic Claude maschinell geprüfte Beweise erstellen, dass Fuzz-Tests in 123 Open-Source-Bibliotheken unter festgelegten Bedingungen nicht abstürzen. Dabei fand Claude lange übersehene Bugs."
-            }
-          }
-        },
-        {
-          "id": "2026-10-24-daytona-agent-cloud-unicorn",
-          "headline": "Agent cloud Daytona is now valued at $1 billion",
-          "summary": "The startup raised $60 million led by FirstMark Growth for a cloud that gives every AI agent its own sandboxed computer. Backers include Stripe's Patrick Collison and Shopify's Tobi Lütke.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/23/agent-cloud-startup-daytona-hits-1b-valuation-backed-by-firstmark-and-a-whos-who-of-angels/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Agent-Cloud Daytona ist jetzt 1 Mrd. Dollar wert",
-              "summary": "Das Startup holt 60 Mio. Dollar unter Führung von FirstMark Growth für eine Cloud, in der jeder KI-Agent einen eigenen abgeschotteten Rechner bekommt. Mit dabei sind etwa Patrick Collison (Stripe) und Tobi Lütke (Shopify)."
-            }
-          }
-        },
-        {
-          "id": "2026-10-24-eu-council-ai-training-data",
-          "headline": "EU states back easier AI training on personal data",
-          "summary": "The Council set its position on the data omnibus: AI training on personal data would be allowed based on legitimate interest. Germany voted against, and nothing is final until talks with Parliament.",
-          "source": {
-            "name": "Golem",
-            "url": "https://www.golem.de/news/daten-omnibus-eu-ministerrat-will-datenschutz-fuer-ki-training-lockern-2610-214448.html"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "EU-Staaten wollen KI-Training mit Personendaten erleichtern",
-              "summary": "Der EU-Rat hat seine Position zum Daten-Omnibus festgelegt: KI-Training mit personenbezogenen Daten soll bei berechtigtem Interesse erlaubt sein. Deutschland stimmte dagegen, beschlossen ist noch nichts."
             }
           }
         }
