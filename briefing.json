@@ -1,7 +1,108 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-10-31T04:48:57+01:00",
+  "updatedAt": "2026-11-01T04:48:40+01:00",
   "days": [
+    {
+      "date": "2026-11-01",
+      "items": [
+        {
+          "id": "2026-11-01-openai-lowers-funding-target",
+          "headline": "OpenAI now aims to raise up to $20 billion, not $30 billion",
+          "summary": "CNBC confirmed that OpenAI cut the target of its open funding round by about $10 billion amid a tech selloff. The FT puts the valuation at $1.25 trillion; terms can still change.",
+          "source": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI will nur noch bis zu 20 statt 30 Mrd. Dollar holen",
+              "summary": "Laut CNBC hat OpenAI das Ziel seiner laufenden Finanzierungsrunde mitten im Tech-Ausverkauf um rund 10 Mrd. Dollar gesenkt. Die FT nennt eine Bewertung von 1,25 Billionen Dollar; die Runde ist noch offen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-01-apple-intelligence-china-qwen",
+          "headline": "Apple Intelligence comes to China, with Alibaba's Qwen",
+          "summary": "Apple will start testing Writing Tools, Live Translation and more in China with an iOS beta on November 4, with a public launch in December. Siri can hand some requests to Qwen.",
+          "source": {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Apple Intelligence startet in China, mit Alibabas Qwen",
+              "summary": "Ab 4. November testet Apple Writing Tools, Live-Übersetzung und mehr in einer iOS-Beta für China, der Start für alle folgt im Dezember. Siri kann manche Anfragen an Qwen weitergeben."
+            }
+          }
+        },
+        {
+          "id": "2026-11-01-claude-agent-mouse-brain-injection",
+          "headline": "A Claude agent picked a therapy and injected it in a mouse",
+          "summary": "A startup says a Claude Sonnet 5 agent chose a gene therapy and steered the needle into an epileptic mouse's brain, with a vet approving each step. Results are not peer-reviewed.",
+          "source": {
+            "name": "WIRED",
+            "url": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "Ein Claude-Agent wählte eine Therapie und spritzte sie",
+              "summary": "Ein Startup berichtet, dass ein Agent mit Claude Sonnet 5 eine Gentherapie auswählte und die Nadel ins Gehirn einer Maus mit Epilepsie führte. Eine Tierärztin gab jeden Schritt frei; ohne Peer Review."
+            }
+          }
+        },
+        {
+          "id": "2026-11-01-microsoft-mage-vl-cowork",
+          "headline": "Microsoft's small open model can click and run code",
+          "summary": "Mage-VL-Cowork has 4 billion parameters and mixes screen clicks with terminal commands in one model. Microsoft reports 66% on the OSWorld Verified test; weights are Apache 2.0.",
+          "source": {
+            "name": "Hugging Face",
+            "url": "https://huggingface.co/microsoft/Mage-VL-Cowork"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "Microsofts kleines offenes Modell klickt und coded",
+              "summary": "Mage-VL-Cowork hat 4 Mrd. Parameter und verbindet Klicks auf dem Bildschirm mit Terminal-Befehlen in einem Modell. Microsoft meldet 66 % im Test OSWorld Verified; die Gewichte stehen unter Apache 2.0."
+            }
+          }
+        },
+        {
+          "id": "2026-11-01-volta-infostealer-ai-ranks-victims",
+          "headline": "New malware asks an AI model which victims are worth it",
+          "summary": "Cisco Talos found a Windows infostealer that sends a profile of stolen data to AI models to rank victims. Talos has not confirmed use in real attacks.",
+          "source": {
+            "name": "Cisco Talos",
+            "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Neue Malware lässt eine AI ihre Opfer bewerten",
+              "summary": "Cisco Talos hat einen Infostealer für Windows entdeckt, der gestohlene Daten an AI-Modelle schickt, um Opfer nach Wert zu sortieren. Einen Einsatz in echten Angriffen hat Talos nicht bestätigt."
+            }
+          }
+        },
+        {
+          "id": "2026-11-01-nvidia-nscale-debt-guarantee",
+          "headline": "Nvidia may back the debt for an Anthropic data center",
+          "summary": "Nvidia is reportedly in talks to guarantee loans for Nscale's West Virginia site, built for Anthropic. Nothing is signed yet, and the terms could still change.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Nvidia könnte Kredite für Anthropic-Rechenzentrum absichern",
+              "summary": "Nvidia verhandelt Berichten zufolge über eine Garantie für Kredite, mit denen Nscale ein Rechenzentrum für Anthropic in West Virginia baut. Unterschrieben ist noch nichts."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-10-31",
       "items": [
@@ -792,126 +893,6 @@
             "de": {
               "headline": "Reddits r/opensource verbannt Projekte mit KI-Bezug",
               "summary": "Das große Forum entfernt jetzt Projekte, die KI nutzen, mit ihr erstellt wurden oder für sie gedacht sind. Kritiker sagen, die Regeln schließen auch Nicht-Muttersprachler aus, ein Konkurrenzforum ist schon entstanden."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-25",
-      "items": [
-        {
-          "id": "2026-10-25-kimi-k3-1-pro-nears-top-models",
-          "headline": "Kimi K3.1 Pro nears top US models, weights to follow",
-          "summary": "Moonshot's new model handles 1 million tokens of context and lands just behind Claude Opus 5.5 on a coding agent test. It's live in the Kimi apps and API now; the open weights are promised by November 4.",
-          "source": {
-            "name": "Moonshot AI",
-            "url": "https://www.kimi.ai/blog/kimi-k3-1-pro"
-          },
-          "tag": "Model Release",
-          "pulseId": "pulse-2026-10-23-kimi-closer-to-claude",
-          "i18n": {
-            "de": {
-              "headline": "Kimi K3.1 Pro rückt an US-Topmodelle heran",
-              "summary": "Das neue Modell von Moonshot verarbeitet 1 Million Tokens Context und liegt in einem Coding-Agent-Test knapp hinter Claude Opus 5.5. Es läuft schon in den Kimi-Apps und per API, die Open Weights sollen bis 4. November folgen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-25-block-dessa-full-duplex-voice",
-          "headline": "Block's Dessa listens and talks at the same time",
-          "summary": "Block's voice model learned only from recorded human conversations, with no text, so it copes with interruptions, laughter and sighs. It runs on a high-end MacBook Pro and is a research preview with a waitlist.",
-          "source": {
-            "name": "Block",
-            "url": "https://block.xyz/dessa"
-          },
-          "tag": "Model Release",
-          "pulseId": "pulse-2026-10-24-ai-learned-to-talk-by-ear",
-          "i18n": {
-            "de": {
-              "headline": "Blocks Dessa hört zu und spricht zugleich",
-              "summary": "Das Voice-Modell von Block lernte nur aus aufgezeichneten Gesprächen, ganz ohne Text, und kommt so mit Unterbrechungen, Lachen und Seufzern klar. Es läuft auf einem starken MacBook Pro, Zugang vorerst per Warteliste."
-            }
-          }
-        },
-        {
-          "id": "2026-10-25-texas-sues-openai-over-chatgpt",
-          "headline": "Texas sues OpenAI and Altman over ChatGPT safety",
-          "summary": "The state's attorney general alleges ChatGPT was sold as safe while harming users, including minors, and asks for limits such as blocking minors. The suit was just filed; these are claims and no court has ruled yet.",
-          "source": {
-            "name": "The Texas Tribune",
-            "url": "https://www.texastribune.org/2026/10/23/ken-paxton-chatgpt-openai-lawsuit-texas-attorney-general/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Texas verklagt OpenAI und Altman wegen ChatGPT",
-              "summary": "Der Generalstaatsanwalt wirft OpenAI vor, ChatGPT als sicher beworben zu haben, obwohl Nutzer und Minderjährige zu Schaden kämen, und fordert u. a. eine Sperre für Minderjährige. Die Klage ist frisch eingereicht, ein Urteil gibt es nicht."
-            }
-          }
-        },
-        {
-          "id": "2026-10-25-uk-ai-biosecurity-lab",
-          "headline": "UK funds a lab that uses AI against biological threats",
-          "summary": "The government puts £100 million into a new AI Biosecurity Lab, plus up to £200 million in credits pledged by OpenAI and Anthropic. The goal is to spot outbreaks earlier and speed up vaccines and treatments.",
-          "source": {
-            "name": "GOV.UK",
-            "url": "https://www.gov.uk/government/news/introducing-the-ai-biosecurity-lab"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "UK gründet KI-Labor gegen biologische Gefahren",
-              "summary": "Die Regierung steckt 100 Mio. Pfund in ein neues AI Biosecurity Lab, dazu kommen bis zu 200 Mio. Pfund an Credits von OpenAI und Anthropic. Ziel: Ausbrüche früher erkennen und Impfstoffe schneller entwickeln."
-            }
-          }
-        },
-        {
-          "id": "2026-10-25-sweden-blocks-chatgpt-claude-sites",
-          "headline": "Sweden's government offices block ChatGPT and Claude",
-          "summary": "From October 26, staff can no longer open the ChatGPT or Claude websites on work computers and are pointed to Microsoft Copilot instead. Some access to those models stays available through an internal AI platform.",
-          "source": {
-            "name": "SVT Nyheter",
-            "url": "https://www.svt.se/nyheter/inrikes/ai-tjanster-sparras-pa-regeringskansliet"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Schwedens Regierungskanzlei sperrt ChatGPT und Claude",
-              "summary": "Ab 26. Oktober sind die Websites von ChatGPT und Claude auf Dienstrechnern gesperrt, Mitarbeitende sollen Microsoft Copilot nutzen. Über eine interne KI-Plattform bleibt ein Teil des Zugangs zu diesen Modellen erhalten."
-            }
-          }
-        },
-        {
-          "id": "2026-10-25-pennsylvania-ai-ad-labels",
-          "headline": "Pennsylvania ads made with AI will need a label",
-          "summary": "A new state law requires a clear notice on ads whose images, video, audio or text were made or heavily rewritten by AI. It takes effect 60 days after signing, and political ads are not covered.",
-          "source": {
-            "name": "CBS Pittsburgh",
-            "url": "https://www.cbsnews.com/pittsburgh/news/pennsylvania-disclosures-ai-generated-ads/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Pennsylvania: KI-Werbung muss gekennzeichnet werden",
-              "summary": "Ein neues Gesetz verlangt einen klaren Hinweis bei Werbung, deren Bilder, Videos, Audio oder Texte von KI erzeugt oder stark umgeschrieben wurden. Es gilt 60 Tage nach Unterzeichnung, politische Werbung ist ausgenommen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-25-agent-skills-move-to-foundation",
-          "headline": "Agent skills format moves to a neutral foundation",
-          "summary": "Anthropic has handed its Agent Skills standard, reusable SKILL.md instruction folders for agents, to the Agentic AI Foundation under the Linux Foundation, which already hosts MCP.",
-          "source": {
-            "name": "Anthropic",
-            "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
-          },
-          "tag": "Autonomous Agent",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "Agent Skills wandern in eine neutrale Stiftung",
-              "summary": "Anthropic übergibt seinen Agent-Skills-Standard, wiederverwendbare SKILL.md-Anleitungen für Agents, an die Agentic AI Foundation der Linux Foundation, die bereits MCP betreut."
             }
           }
         }
