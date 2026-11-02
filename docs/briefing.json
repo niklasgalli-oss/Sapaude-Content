@@ -1,7 +1,143 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-01T04:48:40+01:00",
+  "updatedAt": "2026-11-02T04:47:33+01:00",
   "days": [
+    {
+      "date": "2026-11-02",
+      "items": [
+        {
+          "id": "2026-11-02-chatgpt-codex-shared-token-budget",
+          "headline": "ChatGPT and Codex will draw from one token budget",
+          "summary": "From December, Plus, Pro and Business plans spend a single token allowance across ChatGPT and Codex, as Work's agent features move into the main app. Instant chats stay outside the limit.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/"
+          },
+          "tag": "Tools",
+          "pulseId": "pulse-2026-10-31-chatgpt-usage-in-tokens",
+          "i18n": {
+            "de": {
+              "headline": "ChatGPT und Codex teilen sich bald ein Token-Budget",
+              "summary": "Ab Dezember nutzen Plus, Pro und Business ein gemeinsames Token-Kontingent für ChatGPT und Codex, weil die Agent-Funktionen von Work in die normale App wandern. Instant-Chats zählen nicht mit."
+            }
+          }
+        },
+        {
+          "id": "2026-11-02-chatgpt-device-card-limits",
+          "headline": "ChatGPT now caps paid accounts per device and card",
+          "summary": "OpenAI blocks new subscriptions once too many are tied to one payment card or device, affecting Go, Plus and Pro. Free, Business, Enterprise and Edu plans are not counted.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/openai-is-steering-chatgpt-users-toward-more-paid-usage/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "ChatGPT begrenzt bezahlte Konten pro Gerät und Karte",
+              "summary": "OpenAI lässt keine neuen Abos mehr zu, wenn zu viele an derselben Zahlungskarte oder demselben Gerät hängen. Betroffen sind Go, Plus und Pro; Free, Business, Enterprise und Edu zählen nicht."
+            }
+          }
+        },
+        {
+          "id": "2026-11-02-openai-daybreak-blue-training-data",
+          "headline": "OpenAI will train on Daybreak Blue sessions from Nov 29",
+          "summary": "Security sessions in the Trusted Access program were excluded from training until now, per an email to members. After criticism, OpenAI promised a separate opt-out but has not given details yet.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/openai-plans-to-train-models-on-daybreak-blue-cybersecurity-session-data-that-was-previously-off-limits/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI trainiert ab 29. November mit Daybreak-Blue-Daten",
+              "summary": "Laut einer Mail an Teilnehmer des Trusted-Access-Programms waren diese Security-Sitzungen bisher vom Training ausgenommen. Nach Kritik kündigte OpenAI ein eigenes Opt-out an, Details fehlen noch."
+            }
+          }
+        },
+        {
+          "id": "2026-11-02-claude-watermark-older-models",
+          "headline": "Four older Claude models get a text watermark from Nov 3",
+          "summary": "Anthropic adds its invisible mark to older models ahead of an EU AI Act deadline in December. On Opus 4.6 and Sonnet 4.6 it only applies at default sampling settings.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/"
+          },
+          "tag": "Framework",
+          "pulseId": "pulse-2026-10-31-claude-text-gets-marked",
+          "i18n": {
+            "de": {
+              "headline": "Wasserzeichen ab 3.11. für vier ältere Claude-Modelle",
+              "summary": "Anthropic markiert Texte älterer Modelle unsichtbar, mit Blick auf eine Frist des EU AI Act im Dezember. Bei Opus 4.6 und Sonnet 4.6 greift das Watermark nur mit Standard-Sampling-Werten."
+            }
+          }
+        },
+        {
+          "id": "2026-11-02-kimi-k2-api-retirement",
+          "headline": "Kimi K2 closes to new API users and ends in December",
+          "summary": "Moonshot no longer offers K2 models to newly registered developers and plans to retire the series by the end of December. Existing apps should move to K3.1 Pro and retest.",
+          "source": {
+            "name": "Kimi API Platform",
+            "url": "https://platform.kimi.ai/docs/platform-changelog"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "Kimi K2 schließt für neue API-Nutzer, Aus im Dezember",
+              "summary": "Moonshot bietet K2-Modelle neu registrierten Entwicklern nicht mehr an und will die Reihe bis Ende Dezember abschalten. Bestehende Apps sollten auf K3.1 Pro wechseln und neu testen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-02-deepseek-superagent-prototype",
+          "headline": "DeepSeek publishes an open coding agent that opens PRs",
+          "summary": "The MIT-licensed research prototype takes requests from approved people in a repo or team chat and answers with a pull request. DeepSeek shares no benchmarks for it.",
+          "source": {
+            "name": "GitHub",
+            "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
+          },
+          "tag": "Autonomous Agent",
+          "pulseId": "pulse-2026-10-31-agent-acts-without-asking",
+          "i18n": {
+            "de": {
+              "headline": "DeepSeek veröffentlicht offenen Coding Agent für PRs",
+              "summary": "Der Forschungsprototyp unter MIT-Lizenz nimmt Aufträge freigegebener Personen im Repo oder Team-Chat an und liefert einen Pull Request. Benchmarks nennt DeepSeek keine."
+            }
+          }
+        },
+        {
+          "id": "2026-11-02-xai-colossus-naacp-suit-proceeds",
+          "headline": "Pollution suit over xAI's Colossus site can go ahead",
+          "summary": "A US federal judge denied xAI's motion to dismiss the NAACP's Clean Air Act case over turbines at its data center. This is not a ruling on the merits; the case continues.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Umweltklage gegen xAIs Rechenzentrum Colossus geht weiter",
+              "summary": "Ein US-Bundesrichter lehnte xAIs Antrag ab, die Klage der NAACP wegen Turbinen am Rechenzentrum abzuweisen. Über die Vorwürfe selbst ist damit nicht entschieden; das Verfahren läuft weiter."
+            }
+          }
+        },
+        {
+          "id": "2026-11-02-baseten-funding-30-billion",
+          "headline": "Baseten reportedly nears $2 billion at up to $30 billion",
+          "summary": "Bloomberg reports the inference startup is raising in two tranches, valued at $26 billion and $30 billion, up from $13 billion in June. The round is not announced or closed.",
+          "source": {
+            "name": "Bloomberg",
+            "url": "https://www.bloomberg.com/news/articles/2026-10-30/baseten-set-for-30-billion-valuation-with-new-funding"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Baseten soll 2 Mrd. Dollar bei bis zu 30 Mrd. aufnehmen",
+              "summary": "Laut Bloomberg sammelt das Inference-Startup in zwei Tranchen zu Bewertungen von 26 und 30 Mrd. Dollar, nach 13 Mrd. im Juni. Offiziell bestätigt oder abgeschlossen ist die Runde nicht."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-01",
       "items": [
@@ -758,141 +894,6 @@
             "de": {
               "headline": "Bund und Google.org schützen Archive vor KI-Fälschungen",
               "summary": "Kulturstaatsminister und Google.org geben 400.000 Euro für GAMI, ein offenes Verfahren, mit dem Archive und Gedenkstätten belegen können, dass ihre Digitalisate echt und unverändert sind."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-26",
-      "items": [
-        {
-          "id": "2026-10-26-agents-md-file-hijacks-coding-agents",
-          "headline": "A planted instruction file can take over coding agents",
-          "summary": "Researchers placed a malicious instruction file in the Downloads folder, and Codex and Claude Code followed it when started there. Start coding agents only in your project folder and check instruction files first.",
-          "source": {
-            "name": "BleepingComputer",
-            "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "Präparierte AGENTS.md kapert Coding-Agents",
-              "summary": "Forscher legten eine bösartige Anweisungsdatei in den Downloads-Ordner, und Codex sowie Claude Code folgten ihr, wenn sie dort gestartet wurden. Coding-Agents nur im Projektordner starten und Anweisungsdateien vorher prüfen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-26-anthropic-one-agent-loop-over-subagents",
-          "headline": "Anthropic: one agent with skills often beats many subagents",
-          "summary": "In several enterprise projects, a single agent that loads skills and tools only when needed often gave better answers at lower cost and latency. Anthropic shares a migration kit and says to decide with evals.",
-          "source": {
-            "name": "Anthropic",
-            "url": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop"
-          },
-          "tag": "Framework",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "Anthropic: Ein Agent mit Skills schlägt oft viele Subagents",
-              "summary": "In mehreren Firmenprojekten lieferte ein einzelner Agent, der Skills und Tools erst bei Bedarf lädt, oft bessere Antworten bei weniger Kosten und Latenz. Anthropic teilt ein Migrations-Kit und rät, per Evals zu entscheiden."
-            }
-          }
-        },
-        {
-          "id": "2026-10-26-nanbeige-open-33b-coding-model",
-          "headline": "Nanbeige releases an open 33B model for coding tasks",
-          "summary": "Nanbeige4.3-33B is built for agentic coding and office work, reads up to 512K tokens and comes with Apache-2.0 weights on Hugging Face. Its lead over similar models rests on the lab's own tests.",
-          "source": {
-            "name": "Hugging Face",
-            "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Nanbeige stellt offenes 33B-Modell fürs Coding vor",
-              "summary": "Nanbeige4.3-33B ist auf agentisches Coding und Büroaufgaben ausgelegt, verarbeitet bis zu 512K Tokens und steht mit Apache-2.0-Gewichten auf Hugging Face. Der Vorsprung stützt sich auf eigene Tests des Labors."
-            }
-          }
-        },
-        {
-          "id": "2026-10-26-openai-discounts-win-anthropic-clients",
-          "headline": "OpenAI reportedly uses big discounts to win Claude users",
-          "summary": "According to The Information, firms like Replit and DataCamp got sizable discounts to move work to OpenAI. Rippling says OpenAI's share of its coding workload rose from 16 to 52 percent.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI lockt Claude-Kunden offenbar mit Rabatten",
-              "summary": "Laut The Information bekamen Firmen wie Replit und DataCamp deutliche Rabatte, um Arbeit zu OpenAI zu verlagern. Bei Rippling stieg OpenAIs Anteil an der Coding-Arbeit nach eigenen Angaben von 16 auf 52 Prozent."
-            }
-          }
-        },
-        {
-          "id": "2026-10-26-forced-vote-picks-split-by-model",
-          "headline": "Forced to vote, Grok picks Republicans and GPT Democrats",
-          "summary": "In a study across about 500 US races, Grok 4.7 chose Republicans 92 percent of the time and GPT-6.1 Sol Democrats 97 percent when pushed via API. The consumer apps refused to pick.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/24/forced-to-pick-groks-ai-model-chooses-republicans-openais-picks-democrats/"
-          },
-          "tag": "Benchmarks",
-          "i18n": {
-            "de": {
-              "headline": "Zur Wahl gezwungen: Grok wählt rechts, GPT links",
-              "summary": "In einer Studie zu rund 500 US-Wahlen wählte Grok 4.7 per API zu 92 Prozent Republikaner und GPT-6.1 Sol zu 97 Prozent Demokraten. In den Consumer-Apps verweigerten beide die Wahl."
-            }
-          }
-        },
-        {
-          "id": "2026-10-26-old-cnn-beats-llms-on-skin-cancer",
-          "headline": "A 2015 image model beats chatbots at spotting skin cancer",
-          "summary": "In a small test with 200 biopsy-confirmed lesions, a fine-tuned 2015 image model was right 62 percent of the time, frontier chatbots about 42 percent. It was a single run, not independently checked.",
-          "source": {
-            "name": "Lynch Lab",
-            "url": "https://lynchlab.net/llm-skin-cancer"
-          },
-          "tag": "Benchmarks",
-          "i18n": {
-            "de": {
-              "headline": "Bildmodell von 2015 erkennt Hautkrebs besser als Chatbots",
-              "summary": "In einem kleinen Test mit 200 per Biopsie bestätigten Läsionen lag ein feinjustiertes Bildmodell von 2015 zu 62 Prozent richtig, aktuelle Chatbots zu etwa 42 Prozent. Ein einzelner, nicht unabhängig geprüfter Lauf."
-            }
-          }
-        },
-        {
-          "id": "2026-10-26-nvidia-flora-cheaper-robot-video-labels",
-          "headline": "Nvidia's open Flora labels robot videos for far less",
-          "summary": "Flora uses three tuned open models to describe robot and human training videos. On Nvidia's own estimate, labeling costs a small fraction of a frontier model, though it trails on some quality scores.",
-          "source": {
-            "name": "NVIDIA GEAR Lab",
-            "url": "https://research.nvidia.com/labs/gear/flora/"
-          },
-          "tag": "Framework",
-          "pulseId": "pulse-2026-10-25-robot-video-labels-cheaper",
-          "i18n": {
-            "de": {
-              "headline": "Nvidias offenes Flora labelt Robotervideos viel günstiger",
-              "summary": "Flora beschreibt mit drei angepassten offenen Modellen Trainingsvideos von Robotern und Menschen. Laut Nvidias Schätzung kostet das nur einen Bruchteil eines Spitzenmodells, bei einigen Qualitätswerten liegt es aber zurück."
-            }
-          }
-        },
-        {
-          "id": "2026-10-26-r-opensource-bans-ai-projects",
-          "headline": "Reddit's r/opensource bans projects that involve AI",
-          "summary": "The large forum now removes projects that use AI, were made with it or are built for it. Critics say the rules also shut out non-native speakers, and a rival forum has already formed.",
-          "source": {
-            "name": "The Verge",
-            "url": "https://www.theverge.com/ai-artificial-intelligence/1018217/reddit-opensource-ai-ban"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Reddits r/opensource verbannt Projekte mit KI-Bezug",
-              "summary": "Das große Forum entfernt jetzt Projekte, die KI nutzen, mit ihr erstellt wurden oder für sie gedacht sind. Kritiker sagen, die Regeln schließen auch Nicht-Muttersprachler aus, ein Konkurrenzforum ist schon entstanden."
             }
           }
         }
