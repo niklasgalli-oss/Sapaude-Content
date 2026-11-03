@@ -514,9 +514,12 @@ test("legal hygiene, SEO files, and JSON-LD on landing pages", () => {
     const data = parseLdJson(html);
     assert.equal(data["@context"], "https://schema.org");
     assert.ok(Array.isArray(data["@graph"]));
-    const types = data["@graph"].map((node) => node["@type"]);
+    const types = data["@graph"].flatMap((node) =>
+      Array.isArray(node["@type"]) ? node["@type"] : [node["@type"]]
+    );
     assert.ok(types.includes("Organization"));
     assert.ok(types.includes("MobileApplication"));
+    assert.ok(types.includes("SoftwareApplication"));
     assert.ok(types.includes("WebSite"));
     assert.ok(types.includes("FAQPage"));
   }
