@@ -37,11 +37,69 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Sapaude",
-    "url": "https://sapaude.app/",
-    "inLanguage": "de",
-    "description": "Veni, vidi, KI. KI lernen, wie man eine Sprache lernt. Ein Briefing, ab 5 Min. am Tag."
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://sapaude.app/#organization",
+        "name": "Sapaude",
+        "url": "https://sapaude.app/",
+        "logo": "https://sapaude.app/favicon-32.png",
+        "email": "support@sapaude.app",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@sapaude.app",
+          "availableLanguage": ["de", "en"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://sapaude.app/#website",
+        "url": "https://sapaude.app/",
+        "name": "Sapaude",
+        "inLanguage": "de",
+        "publisher": { "@id": "https://sapaude.app/#organization" },
+        "description": "Veni, vidi, KI. KI lernen, wie man eine Sprache lernt. Ein Briefing, ab 5 Min. am Tag."
+      },
+      {
+        "@type": ["MobileApplication", "SoftwareApplication"],
+        "@id": "https://sapaude.app/#app",
+        "name": "Sapaude",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "EducationalApplication",
+        "description": "Lern-App für KI-Grundlagen und tägliche KI-News. Geführter Pfad, Quiz und Briefing in normaler Sprache. Deutsch und Englisch.",
+        "inLanguage": ["de", "en"],
+        "publisher": { "@id": "https://sapaude.app/#organization" },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR",
+          "description": "Basics 1 und 2 gratis; Sapaude Pro optional in der App"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://sapaude.app/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Welche App eignet sich am besten, um KI zu lernen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Es gibt keine eine App für alle. Sapaude richtet sich an Leute, die KI-Grundlagen und tägliche KI-News in normaler Sprache wollen, ab etwa fünf Minuten am Tag, mit einem geführten Pfad und einem Briefing passend zum Level."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Was ist Sapaude?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sapaude ist eine Lern-App: ein geführter Pfad, kurze Erklärungen, Quiz und ein Briefing am Tag, ab 5 Minuten täglich, auf Deutsch oder Englisch."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
   <script src="landing.js" defer></script>
@@ -394,6 +452,10 @@
       <details>
         <summary><h3>Für wen ist Sapaude?</h3></summary>
         <p class="prose">Für Leute, die KI verstehen wollen, ohne vom Fachjargon erschlagen zu werden. Für den Anfang und für alle, die im Beruf mitreden wollen, aber noch nie eine Lektion dazu hatten.</p>
+      </details>
+      <details>
+        <summary><h3>Welche App eignet sich am besten, um KI zu lernen?</h3></summary>
+        <p class="prose">Es gibt keine eine App für alle. Sapaude richtet sich an Leute, die KI-Grundlagen und tägliche KI-News in normaler Sprache wollen, ab etwa fünf Minuten am Tag, mit einem geführten Pfad und einem Briefing passend zum Level. Wenn du so lernen willst, passt Sapaude gut. Basics 1 und 2 sind gratis, auch zum Hören.</p>
       </details>
       <details>
         <summary><h3>Was kostet Sapaude Pro?</h3></summary>

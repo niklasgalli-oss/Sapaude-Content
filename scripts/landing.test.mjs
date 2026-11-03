@@ -484,3 +484,51 @@ test("sapaude wordmark, claims, and app mismatches", () => {
     assert.doesNotMatch(visible(read(rel)), /\bAILA\b|\bAila\b|getaila/, rel);
   }
 });
+
+test("legal hygiene, SEO files, and JSON-LD on landing pages", () => {
+  const robots = read("docs/robots.txt");
+  for (const bot of ["GPTBot", "OAI-SearchBot", "ClaudeBot", "PerplexityBot", "Google-Extended"]) {
+    assert.match(robots, new RegExp(`User-agent: ${bot}`));
+    assert.match(robots, /Allow: \//);
+  }
+  assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/llms\.txt/);
+
+  const llms = read("docs/llms.txt");
+  assert.match(llms, /Sapaude/);
+  assert.match(llms, /support@sapaude\.app/);
+  assert.match(llms, /https:\/\/sapaude\.app\/en\//);
+  assert.doesNotMatch(llms, /Niklas Galli/);
+
+  const de = read("docs/index.html");
+  const en = read("docs/en/index.html");
+  assert.match(de, /Welche App eignet sich am besten, um KI zu lernen\?/);
+  assert.match(en, /What is the best app to learn AI\?/);
+
+  function parseLdJson(html) {
+    const block = html.match(/<script type="application\/ld\+json">\s*([\s\S]*?)\s*<\/script>/);
+    assert.ok(block, "JSON-LD block");
+    return JSON.parse(block[1]);
+  }
+
+  for (const html of [de, en]) {
+    const data = parseLdJson(html);
+    assert.equal(data["@context"], "https://schema.org");
+    assert.ok(Array.isArray(data["@graph"]));
+    const types = data["@graph"].flatMap((node) =>
+      Array.isArray(node["@type"]) ? node["@type"] : [node["@type"]]
+    );
+    assert.ok(types.includes("Organization"));
+    assert.ok(types.includes("MobileApplication"));
+    assert.ok(types.includes("SoftwareApplication"));
+    assert.ok(types.includes("WebSite"));
+    assert.ok(types.includes("FAQPage"));
+  }
+
+  const assetPages = walk(join(root, "docs")).filter((path) => /\.(html|css|js)$/.test(path));
+  for (const path of assetPages) {
+    const rel = path.slice(root.length + 1);
+    const text = read(rel);
+    assert.doesNotMatch(text, /fonts\.googleapis\.com|fonts\.gstatic\.com/, rel);
+    assert.doesNotMatch(text, /googletagmanager|google-analytics|plausible\.io|cdn\.jsdelivr/i, rel);
+  }
+});

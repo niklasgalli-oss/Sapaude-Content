@@ -178,6 +178,21 @@ When the Team ID and bundle id exist, the file would be JSON in this shape. `TEA
 }
 ```
 
+## Cookies, trackers, and consent (EU/DE)
+
+The public site is static HTML, CSS, and JavaScript from this repository on GitHub Pages. Fonts are self-hosted under `docs/assets/` (Fraunces and Source Sans 3, OFL in `docs/assets/OFL.txt`). There is no Google Fonts, no tag manager, no analytics SDK, no social embeds, and no third-party scripts on the product or legal pages.
+
+The landing page may `fetch` same-origin `https://sapaude.app/briefing.json` to refresh up to three briefing cards. That request sets no cookie and is not an analytics tool. GitHub Pages receives the usual connection data (including IP) for every HTTP request; the privacy policy names GitHub as controller for that hosting traffic. The site operator does not run a separate analytics layer on top.
+
+Because nothing loads that requires consent under the ePrivacy / TTDSG model (no non-essential cookies, no cross-site tracking, no third-party marketing or analytics scripts), **no cookie banner is shown**. The Datenschutzerklärung / privacy policy states that explicitly and matches what the pages load. If a future change adds consent-requiring resources, either remove them or add a minimal banner before go-live.
+
+## Discoverability (search and LLMs)
+
+- `docs/robots.txt` allows all crawlers, including `GPTBot`, `OAI-SearchBot`, `ClaudeBot`, `PerplexityBot`, and `Google-Extended`, and points to the sitemap.
+- `docs/sitemap.xml` lists the public URLs on `https://sapaude.app/`.
+- `docs/llms.txt` is a plain-language summary for AI systems (what Sapaude is, audience, key URLs, contact).
+- Product pages (`docs/index.html`, `docs/en/index.html`) carry title, meta description, canonical, hreflang, Open Graph, Twitter cards, and JSON-LD (`Organization`, `MobileApplication`, `WebSite`, `FAQPage`).
+
 ## Local preview
 
 GitHub Pages publishes `/docs` from `main` only, not from a pull request branch.
