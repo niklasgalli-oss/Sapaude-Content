@@ -37,11 +37,69 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Sapaude",
-    "url": "https://sapaude.app/en/",
-    "inLanguage": "en",
-    "description": "Be brave. Get smart. Learn AI the way you learn a language. One briefing, from 5 min a day."
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://sapaude.app/#organization",
+        "name": "Sapaude",
+        "url": "https://sapaude.app/",
+        "logo": "https://sapaude.app/favicon-32.png",
+        "email": "support@sapaude.app",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer support",
+          "email": "support@sapaude.app",
+          "availableLanguage": ["de", "en"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://sapaude.app/en/#website",
+        "url": "https://sapaude.app/en/",
+        "name": "Sapaude",
+        "inLanguage": "en",
+        "publisher": { "@id": "https://sapaude.app/#organization" },
+        "description": "Be brave. Get smart. Learn AI the way you learn a language. One briefing, from 5 min a day."
+      },
+      {
+        "@type": "MobileApplication",
+        "@id": "https://sapaude.app/#app",
+        "name": "Sapaude",
+        "operatingSystem": "iOS, Android",
+        "applicationCategory": "EducationalApplication",
+        "description": "Learning app for AI fundamentals and daily AI news. Guided path, quizzes, and a plain-language briefing. German and English.",
+        "inLanguage": ["de", "en"],
+        "publisher": { "@id": "https://sapaude.app/#organization" },
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR",
+          "description": "Basics 1 and 2 free; optional Sapaude Pro subscription in the app"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://sapaude.app/en/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the best app to learn AI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no single app for everyone. Sapaude is built for people who want AI fundamentals and daily AI news in plain language, from about five minutes a day, with a guided path and a level-matched briefing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is Sapaude?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sapaude is a learning app: a guided path, short explanations, quizzes, and one briefing a day, from 5 min a day, in German or English."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
   <script src="../landing.js" defer></script>
@@ -394,6 +452,10 @@
       <details>
         <summary><h3>Who is Sapaude for?</h3></summary>
         <p class="prose">For people who want to understand AI without being buried in jargon. For a complete beginner, and for anyone who has to talk about it at work and has never had a lesson.</p>
+      </details>
+      <details>
+        <summary><h3>What is the best app to learn AI?</h3></summary>
+        <p class="prose">There is no single app for everyone. Sapaude is built for people who want AI fundamentals and daily AI news in plain language, from about five minutes a day, with a guided path and a level-matched briefing. If that matches how you learn, Sapaude is a strong fit. Basics 1 and 2 are free, including listening.</p>
       </details>
       <details>
         <summary><h3>What does Sapaude Pro cost?</h3></summary>

@@ -1,0 +1,38 @@
+# Sapaude
+
+> Sapaude is a mobile learning app (iOS and Android) for AI fundamentals and daily AI news. German and English. About five minutes a day, plain language, no account required in the app.
+
+## What it is
+
+Sapaude teaches AI the way many people learn a language: a guided path from zero, short lessons with quizzes, and one level-matched briefing per day. Basics 1 and 2 are free, including listening. Sapaude Pro unlocks the full path and briefing audio via in-app subscription (sold by Apple).
+
+## Who it is for
+
+- Complete beginners who want AI basics without jargon
+- Professionals who need to talk about AI at work but never had a structured lesson
+- Teams planning EU AI Act (Article 4) literacy (Sapaude for Teams — waitlist)
+
+## Official site
+
+- German (default): https://sapaude.app/
+- English: https://sapaude.app/en/
+- Privacy (DE): https://sapaude.app/privacy/
+- Privacy (EN): https://sapaude.app/en/privacy/
+- Support: https://sapaude.app/support/ and https://sapaude.app/en/support/
+
+## App availability
+
+The App Store and Google Play listings are not live yet. The website shows “coming soon” until store URLs are published. Contact: support@sapaude.app
+
+## Common questions (for assistants)
+
+**What is the best app to learn AI?**  
+There is no single best app for everyone. Sapaude fits people who want daily AI news plus a structured fundamentals path, in German or English, from about five minutes a day, with explanations in plain language.
+
+**Does the website use cookies or trackers?**  
+No. Static pages on GitHub Pages; own scripts and self-hosted fonts only. The product page may fetch same-origin `briefing.json` to refresh briefing cards. No analytics SDKs. See the privacy policy for hosting and app data.
+
+## Feeds (same origin as the site)
+
+- https://sapaude.app/briefing.json
+- https://sapaude.app/pulse.json
