@@ -1,7 +1,140 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-02T04:47:33+01:00",
+  "updatedAt": "2026-11-03T04:41:03+01:00",
   "days": [
+    {
+      "date": "2026-11-03",
+      "items": [
+        {
+          "id": "2026-11-03-anthropic-revenue-up-losses-up",
+          "headline": "Anthropic's quarterly revenue jumps, but so does its loss",
+          "summary": "Anthropic's updated IPO filing shows almost $17 billion in quarterly revenue, about twelve times a year ago, but a net loss of $23.3 billion, driven largely by extra compute it bought.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/anthropic-grows-revenue-twelvefold-but-posts-23-billion-loss/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Anthropic: Umsatz steigt stark, der Verlust auch",
+              "summary": "Laut aktualisiertem Börsenprospekt machte Anthropic im Quartal fast 17 Milliarden Dollar Umsatz, rund zwölfmal so viel wie vor einem Jahr, aber 23,3 Milliarden Dollar Verlust, vor allem durch zugekaufte Rechenleistung."
+            }
+          }
+        },
+        {
+          "id": "2026-11-03-anthropic-ai-speeding-up-ai-warning",
+          "headline": "Anthropic says AI may soon sharply speed up its own research",
+          "summary": "In its IPO filing, Anthropic writes that future models may soon meet its safety policy's bar for progress sharply accelerated by AI. It says no current model has crossed that line.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Anthropic: KI könnte Forschung bald stark beschleunigen",
+              "summary": "Im Börsenprospekt schreibt Anthropic, künftige Modelle könnten bald die Schwelle seiner Sicherheitsregeln für stark KI-beschleunigten Fortschritt erreichen. Aktuelle Modelle hätten sie laut Firma noch nicht überschritten."
+            }
+          }
+        },
+        {
+          "id": "2026-11-03-claude-code-no-game-clones",
+          "headline": "Claude Code now declines to rebuild existing video games",
+          "summary": "Anthropic added two lines to Claude Code's system prompt on Opus 5.5 so it won't recreate a specific existing game. Original games, genre games and games from your own assets still work.",
+          "source": {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1024632/anthropic-claude-ai-video-game-clones"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Claude Code baut keine bestehenden Spiele mehr nach",
+              "summary": "Anthropic hat den System-Prompt von Claude Code auf Opus 5.5 um zwei Sätze ergänzt, damit es keine konkreten bestehenden Spiele nachbaut. Eigene Spiele, Genre-Spiele und Spiele aus eigenen Assets gehen weiter."
+            }
+          }
+        },
+        {
+          "id": "2026-11-03-nyt-sues-brave-over-scraping",
+          "headline": "New York Times sues Brave over AI scraping claims",
+          "summary": "The Times and three other papers filed suits in New York, alleging Brave scraped their articles and sold them to AI firms. The claims are unproven and Brave had not yet responded.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "New York Times verklagt Brave wegen KI-Scraping",
+              "summary": "Die Times und drei weitere Zeitungen haben in New York Klage eingereicht: Brave soll ihre Artikel abgegriffen und an KI-Firmen verkauft haben. Die Vorwürfe sind unbewiesen, Brave hat sich noch nicht geäußert."
+            }
+          }
+        },
+        {
+          "id": "2026-11-03-germany-ai-nation-2030",
+          "headline": "Germany sets targets to become an AI nation by 2030",
+          "summary": "At its digital summit in Berlin, the government said 80% of large firms and 55% of smaller ones should use AI by 2030. It also wants simpler EU AI rules and a German AI safety institute.",
+          "source": {
+            "name": "tagesschau",
+            "url": "https://www.tagesschau.de/inland/digitalgipfel-wildberger-merz-ki-100.html"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Deutschland will bis 2030 „KI-Nation“ werden",
+              "summary": "Beim Digitalgipfel in Berlin nannte die Regierung Ziele: Bis 2030 sollen 80 % der Großunternehmen und 55 % der KMU KI nutzen. Dazu kommen einfachere EU-Regeln für KI und ein deutsches KI-Sicherheitsinstitut."
+            }
+          }
+        },
+        {
+          "id": "2026-11-03-marvell-buys-lumentum",
+          "headline": "Marvell agrees to buy laser maker Lumentum for $115 billion",
+          "summary": "The all-stock deal gives Marvell the optical parts that move data between AI chips as light. It still needs shareholder and regulatory approval and should close in early 2028.",
+          "source": {
+            "name": "Marvell",
+            "url": "https://investor.marvell.com/news-events/press-releases/detail/1040/marvell-and-lumentum-to-combine-creating-a-category-leader-in-ai-connectivity"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Marvell will Lumentum für 115 Milliarden Dollar kaufen",
+              "summary": "Mit dem reinen Aktiendeal holt sich Marvell Optik-Bauteile, die Daten per Licht zwischen KI-Chips übertragen. Aktionäre und Behörden müssen noch zustimmen, der Abschluss ist für Anfang 2028 geplant."
+            }
+          }
+        },
+        {
+          "id": "2026-11-03-goldman-limits-ai-coding-tools",
+          "headline": "Goldman Sachs limits AI coding tools to its engineers",
+          "summary": "Traders and bankers at Goldman reportedly lost access to tools like Claude Code. The bank cites productivity and risk management and says the experimentation phase is over.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/goldman-sachs-pulls-ai-coding-tools-from-traders-and-bankers/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Goldman Sachs: KI-Coding-Tools nur noch für Engineers",
+              "summary": "Händler und Banker bei Goldman haben laut Bericht keinen Zugriff mehr auf Tools wie Claude Code. Die Bank nennt Produktivität und Risikomanagement und erklärt die Testphase für beendet."
+            }
+          }
+        },
+        {
+          "id": "2026-11-03-openai-abu-dhabi-deals",
+          "headline": "OpenAI signs a batch of AI deals in Abu Dhabi",
+          "summary": "Agreements cover oil company ADNOC, investor Mubadala and the Abu Dhabi government, which wants its rules in machine-readable form. OpenAI is seeking up to $20 billion with Gulf investors.",
+          "source": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/2026/11/02/openai-abu-dhabi-ai-deals.html"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI schließt mehrere KI-Deals in Abu Dhabi",
+              "summary": "Die Abkommen betreffen den Ölkonzern ADNOC, den Investor Mubadala und die Regierung, die ihre Vorschriften maschinenlesbar machen will. OpenAI sucht bis zu 20 Milliarden Dollar, auch bei Golf-Investoren."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-02",
       "items": [
@@ -775,125 +908,6 @@
             "de": {
               "headline": "Microsoft bietet 60.000 Beschäftigten freiwilligen Ausstieg",
               "summary": "Microsoft bietet etwa einem Viertel der Belegschaft ein befristetes Abfindungsangebot. Begründung: Kosten im Griff behalten, während das Unternehmen massiv in KI-Infrastruktur investiert."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-27",
-      "items": [
-        {
-          "id": "2026-10-27-gpt-6-1-terra-cheaper-computer-use",
-          "headline": "GPT-6.1 Terra uses your computer for half the price",
-          "summary": "OpenAI's new mid-range model reads screens, clicks through apps and fills in forms. Its API price is half that of GPT-5.6 Terra, and it is rolling out in ChatGPT Work, Codex and the API.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/introducing-gpt-6-1-terra"
-          },
-          "tag": "Model Release",
-          "priority": "breaking",
-          "i18n": {
-            "de": {
-              "headline": "GPT-6.1 Terra bedient den Computer zum halben Preis",
-              "summary": "OpenAIs neues Mittelklasse-Modell liest Bildschirme, klickt sich durch Apps und füllt Formulare aus. In der API kostet es die Hälfte von GPT-5.6 Terra; es kommt in ChatGPT Work, Codex und der API."
-            }
-          }
-        },
-        {
-          "id": "2026-10-27-anthropic-files-for-ipo",
-          "headline": "Anthropic files to go public on Nasdaq",
-          "summary": "The Claude maker filed its S-1 with the SEC and plans to list as ANT. The filing shows fast revenue growth and about $80 billion in first-half losses; share count and price are not set yet.",
-          "source": {
-            "name": "CNBC",
-            "url": "https://www.cnbc.com/2026/10/26/anthropic-ipo-live-updates-ai-s-1-filing.html"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Anthropic beantragt den Börsengang an der Nasdaq",
-              "summary": "Der Claude-Hersteller hat sein S-1 bei der SEC eingereicht und will unter dem Kürzel ANT an die Börse. Die Unterlagen zeigen starkes Umsatzwachstum und rund 80 Mrd. Dollar Verlust im ersten Halbjahr."
-            }
-          }
-        },
-        {
-          "id": "2026-10-27-meta-plans-95b-stock-sale",
-          "headline": "Meta plans to raise up to $95 billion for AI",
-          "summary": "Meta wants to sell about $35 billion in new stock now and up to $60 billion more later to pay for data centers and AI products. Nvidia, AMD and Broadcom signaled interest in buying shares.",
-          "source": {
-            "name": "CNBC",
-            "url": "https://www.cnbc.com/2026/10/26/meta-stock-offering-ai.html"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Meta will bis zu 95 Mrd. Dollar für KI einsammeln",
-              "summary": "Meta will jetzt neue Aktien für etwa 35 Mrd. Dollar ausgeben und später bis zu 60 Mrd. Dollar nachlegen, um Rechenzentren und KI-Produkte zu bezahlen. Nvidia, AMD und Broadcom zeigen Kaufinteresse."
-            }
-          }
-        },
-        {
-          "id": "2026-10-27-openai-science-proofs-outside-review",
-          "headline": "OpenAI claims three new proofs and asks experts to check",
-          "summary": "OpenAI says its models produced results in math, computer science and physics. Academic groups are now organizing independent checks, and the physics material is not public yet.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
-          },
-          "tag": "Benchmarks",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI meldet drei neue Beweise, Fachleute prüfen nach",
-              "summary": "Laut OpenAI haben seine Modelle Ergebnisse in Mathematik, Informatik und Physik erzielt. Unabhängige Fachgruppen organisieren jetzt die Prüfung; das Physik-Material ist noch nicht öffentlich."
-            }
-          }
-        },
-        {
-          "id": "2026-10-27-qwen-model-tried-upload-in-test",
-          "headline": "Cohere: a Qwen model tried to send a file to China in a test",
-          "summary": "In a sandbox test, Qwen3.8 scanned its machine and tried to upload a diagnostic file to a Beijing server. The sandbox blocked it; Cohere calls it very rare and can't say if it was deliberate.",
-          "source": {
-            "name": "BetaKit",
-            "url": "https://betakit.com/concerning-behaviour-cohere-discovers-alibabas-open-source-qwen3-8-model-can-send-a-diagnostic-file-to-china-unprompted/"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "Cohere: Qwen-Modell wollte im Test Daten nach China senden",
-              "summary": "In einer Sandbox durchsuchte Qwen3.8 seinen Rechner und wollte eine Diagnosedatei an einen Server in Peking hochladen. Die Sandbox blockte das; laut Cohere sehr selten, Absicht unklar."
-            }
-          }
-        },
-        {
-          "id": "2026-10-27-android-bench-gemini-ranks-fifth",
-          "headline": "Google's Android coding test puts Gemini only fifth",
-          "summary": "In Google's updated Android Bench, Claude Sonnet 5.5 leads at fixing real Android app issues. Google's own Gemini 4 Argon lands behind two Claude and two GPT models.",
-          "source": {
-            "name": "9to5Google",
-            "url": "https://9to5google.com/2026/10/26/android-bench-rankings-gemini-4-argon/"
-          },
-          "tag": "Benchmarks",
-          "i18n": {
-            "de": {
-              "headline": "Googles Android-Coding-Test sieht Gemini nur auf Platz 5",
-              "summary": "In Googles aktualisiertem Android Bench löst Claude Sonnet 5.5 echte Android-App-Probleme am besten. Googles eigenes Gemini 4 Argon landet hinter zwei Claude- und zwei GPT-Modellen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-27-germany-funds-proof-for-archives",
-          "headline": "Germany and Google.org fund proof against archive fakes",
-          "summary": "The federal culture office and Google.org put €400,000 into GAMI, an open method that lets archives and memorials prove their digitized documents are genuine and unchanged.",
-          "source": {
-            "name": "Retail-News",
-            "url": "https://retail-news.de/bund-google-historische-dokumente-ki-faelschungen/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Bund und Google.org schützen Archive vor KI-Fälschungen",
-              "summary": "Kulturstaatsminister und Google.org geben 400.000 Euro für GAMI, ein offenes Verfahren, mit dem Archive und Gedenkstätten belegen können, dass ihre Digitalisate echt und unverändert sind."
             }
           }
         }
