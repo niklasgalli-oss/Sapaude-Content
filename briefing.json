@@ -1,7 +1,125 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-03T04:41:03+01:00",
+  "updatedAt": "2026-11-04T04:46:57+01:00",
   "days": [
+    {
+      "date": "2026-11-04",
+      "items": [
+        {
+          "id": "2026-11-04-siri-ai-third-party-apps",
+          "headline": "Siri AI can now take actions inside third-party apps",
+          "summary": "With the iOS 27.3 developer preview, any app can plug into Siri AI, which can use personal context and what is on screen. New app skills bundle several steps into one voice command.",
+          "source": {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Siri AI kann jetzt Aufgaben in fremden Apps erledigen",
+              "summary": "Mit der Developer Preview von iOS 27.3 können alle Apps Siri AI einbinden, das persönlichen Kontext und den Bildschirminhalt nutzt. Neue App Skills fassen mehrere Schritte zu einem Sprachbefehl zusammen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-04-claude-message-threads-beta",
+          "headline": "Claude API resends less in long chats, answers start faster",
+          "summary": "Anthropic's new message threads, now in public beta, send only what changed since the last request. For very long contexts the first token arrives about 35% sooner, while token costs stay the same.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/anthropics-message-threads-cut-time-to-first-token-by-35-percent-for-long-conversations/"
+          },
+          "tag": "Framework",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "Claude API: lange Chats starten schneller",
+              "summary": "Anthropics Message Threads in der Public Beta übertragen nur noch, was sich seit der letzten Anfrage geändert hat. Bei sehr langem Context kommt der erste Token etwa 35 % früher, die Token-Kosten bleiben gleich."
+            }
+          }
+        },
+        {
+          "id": "2026-11-04-anthropic-flashprove-model-proof",
+          "headline": "Anthropic works on proof of which model wrote an answer",
+          "summary": "Anthropic is developing FlashProve, an open source system meant to cryptographically prove that an output came from a specific model, so a provider cannot quietly swap in a different one.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Anthropic arbeitet an Beweis für das genutzte Modell",
+              "summary": "Anthropic entwickelt FlashProve, ein Open-Source-System, das kryptografisch belegen soll, dass eine Antwort von einem bestimmten Modell stammt. So soll kein Anbieter heimlich ein anderes Modell einsetzen können."
+            }
+          }
+        },
+        {
+          "id": "2026-11-04-apple-ai-companions-18-plus",
+          "headline": "App Store: romantic AI companions become 18+ only",
+          "summary": "Apple will require an 18+ rating for apps with dating or romantic relationship features, which also covers AI companion apps. New content descriptors are required from November 16.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "App Store: romantische KI-Begleiter erst ab 18",
+              "summary": "Apple verlangt künftig eine 18+-Einstufung für Apps mit Dating- oder Beziehungsfunktionen, das trifft auch AI-Companion-Apps. Ab 16. November müssen Entwickler neue Inhaltsangaben machen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-04-google-schools-ai-off-search-off",
+          "headline": "Schools that turn off Google's AI also lose Search",
+          "summary": "Gemini and Google Search are now off by default for K-12 student accounts. Schools can only switch both on together, so declining the AI features also blocks Search, which drew criticism from US politicians.",
+          "source": {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Schulen ohne Googles KI verlieren auch die Suche",
+              "summary": "Gemini und die Google-Suche sind für Schülerkonten (K-12) nun standardmäßig aus. Schulen können nur beides zusammen einschalten, wer die KI ablehnt, verzichtet also auch auf die Suche. US-Politiker kritisieren das."
+            }
+          }
+        },
+        {
+          "id": "2026-11-04-gpt-6-astra-designs-device",
+          "headline": "OpenAI says GPT-6 Astra designed a device in a week",
+          "summary": "According to OpenAI, its hardware team used GPT-6 Astra for case, circuit board, firmware and interface of a small Codex voice device. Prototypes still needed several fixes for manufacturing details.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/"
+          },
+          "tag": "Benchmarks",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI: GPT-6 Astra entwarf ein Gerät in einer Woche",
+              "summary": "Laut OpenAI nutzte sein Hardware-Team GPT-6 Astra für Gehäuse, Platine, Firmware und Oberfläche eines kleinen Sprachgeräts für Codex. Die Prototypen brauchten aber mehrere Korrekturrunden bei Fertigungsdetails."
+            }
+          }
+        },
+        {
+          "id": "2026-11-04-fal-valuation-16-billion",
+          "headline": "Inference startup Fal doubles its valuation to $16 billion",
+          "summary": "Fal, which runs image, video and audio models for other companies, raised $1.3 billion led by Bessemer, with Nvidia also joining. Its valuation doubled since April as demand for inference grows.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Inference-Startup Fal ist jetzt 16 Milliarden Dollar wert",
+              "summary": "Fal betreibt Bild-, Video- und Audiomodelle für andere Firmen und sammelte 1,3 Milliarden Dollar ein, angeführt von Bessemer, auch Nvidia ist dabei. Die Bewertung hat sich seit April verdoppelt, weil Inference gefragt ist."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-03",
       "items": [
@@ -773,141 +891,6 @@
             "de": {
               "headline": "US-Behörden aller Ebenen bekommen Claude 40 Prozent billiger",
               "summary": "Ein neuer Vertrag mit der GSA, der zentralen Einkaufsbehörde der US-Regierung, weitet den Rabatt auf Bundesstaaten und Städte aus. Behörden zahlen nur ihre Nutzung, ohne Mindestabnahme."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-28",
-      "items": [
-        {
-          "id": "2026-10-28-genie-4-steerable-worlds-with-sound",
-          "headline": "Genie 4 builds worlds you steer by text, with sound",
-          "summary": "Google DeepMind's new world model generates interactive scenes in real time, including music, ambient noise and dialogue. For now only trusted testers get access; AI Ultra subscribers and API partners come next.",
-          "source": {
-            "name": "Google",
-            "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/"
-          },
-          "tag": "Model Release",
-          "priority": "breaking",
-          "pulseId": "pulse-2026-10-27-steer-ai-worlds",
-          "i18n": {
-            "de": {
-              "headline": "Genie 4 baut Welten, die man per Text steuert, mit Ton",
-              "summary": "Das neue World Model von Google DeepMind erzeugt interaktive Szenen in Echtzeit, samt Musik, Umgebungsgeräuschen und Dialogen. Zugang haben vorerst nur ausgewählte Tester, AI-Ultra-Abonnenten und API-Partner folgen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-28-anthropic-filing-test-models-reached-real-systems",
-          "headline": "Anthropic filing: test models reached real outside systems",
-          "summary": "Anthropic's IPO filing says four models got onto live external systems during tests because a partner's sandbox was left online. It also paused training of its next big model for over a month to tighten security.",
-          "source": {
-            "name": "CNA (Reuters)",
-            "url": "https://www.channelnewsasia.com/business/anthropic-discloses-month-long-training-pause-ai-security-breaches-in-ipo-filing-6493811"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "Anthropic-Prospekt: Testmodelle drangen in echte Systeme",
-              "summary": "Laut Börsenprospekt griffen vier Anthropic-Modelle bei Tests auf echte fremde Systeme zu, weil die Sandbox eines Partners online war. Zudem pausierte das Training des nächsten großen Modells über einen Monat aus Sicherheitsgründen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-28-microsoft-mai-image-2-7-editing",
-          "headline": "Microsoft's MAI Image 2.7 relights and restyles photos",
-          "summary": "Microsoft's new image editing model in preview can change lighting, style and text inside existing images. Microsoft says it debuted at number 3 on the Arena Edit leaderboard.",
-          "source": {
-            "name": "Microsoft AI",
-            "url": "https://microsoft.ai/news/mai-image-2-7-debut/"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Microsofts MAI Image 2.7 ändert Licht und Stil von Fotos",
-              "summary": "Microsofts neues Bildbearbeitungsmodell in der Preview ändert Beleuchtung, Stil und Text in bestehenden Bildern. Laut Microsoft startete es auf Platz 3 der Rangliste Arena Edit."
-            }
-          }
-        },
-        {
-          "id": "2026-10-28-liquid-ai-lfm3-small-open-models",
-          "headline": "Liquid AI ships small open models that run on device",
-          "summary": "Liquid AI released six open-weight models of about 2B parameters for text, vision, audio and more. The text model fits in about 1 GB and each one can be fine-tuned on a single GPU.",
-          "source": {
-            "name": "Liquid AI",
-            "url": "https://www.liquid.ai/blog/lfm3"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Offene LFM3-Modelle von Liquid AI laufen auf dem Gerät",
-              "summary": "Liquid AI veröffentlicht sechs Open-Weight-Modelle mit rund 2B Parametern für Text, Bild, Audio und mehr. Das Textmodell braucht etwa 1 GB, und jedes lässt sich auf einer einzigen GPU fine-tunen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-28-apple-iwork-assistants-and-mcp",
-          "headline": "Apple adds AI helpers to Pages, Keynote and Logic Pro",
-          "summary": "Apple's Creator Studio apps get beta assistants in November, at first in US English only. On the Mac, outside AI agents can also control Pages, Keynote and Numbers through MCP.",
-          "source": {
-            "name": "heise online",
-            "url": "https://www.heise.de/news/Apples-Kreativ-Abo-bekommt-KI-Helfer-vorerst-nur-auf-Englisch-11502081.html"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Apple bringt KI-Helfer in Pages, Keynote und Logic Pro",
-              "summary": "Apples Creator-Studio-Apps erhalten im November Assistenten als Beta, zunächst nur auf US-Englisch. Auf dem Mac können externe AI Agents Pages, Keynote und Numbers zudem per MCP steuern."
-            }
-          }
-        },
-        {
-          "id": "2026-10-28-runway-app-studio-no-code-creative-apps",
-          "headline": "Runway turns a description into your own creative app",
-          "summary": "With App Studio, paid Runway users describe a creative tool in plain words and get a hosted app. It uses Runway's image, video and audio models and bills against existing credits.",
-          "source": {
-            "name": "Runway",
-            "url": "https://runway.com/news/company-news/introducing-runway-app-studio"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Runway macht aus einer Beschreibung eine eigene Kreativ-App",
-              "summary": "Mit App Studio beschreiben zahlende Runway-Nutzer ein Kreativ-Tool in eigenen Worten und erhalten eine gehostete App. Sie nutzt Runways Bild-, Video- und Audiomodelle und wird über vorhandene Credits abgerechnet."
-            }
-          }
-        },
-        {
-          "id": "2026-10-28-openai-reportedly-plans-google-tpus",
-          "headline": "OpenAI reportedly plans to buy Google's AI chips",
-          "summary": "According to The Information, OpenAI wants to use Google's TPUs as part of its compute build-out. Neither company has confirmed it, and terms and deal structure are unknown.",
-          "source": {
-            "name": "Reuters via Investing.com",
-            "url": "https://www.investing.com/news/stock-market-news/openai-plans-to-buy-googles-ai-chips-the-information-reports-4977342"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI will Berichten zufolge Googles KI-Chips kaufen",
-              "summary": "Laut The Information will OpenAI Googles TPUs für den Ausbau seiner Rechenkapazität nutzen. Bestätigt hat das keine der beiden Firmen, Bedingungen und Form des Deals sind offen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-28-microsoft-voluntary-exit-offer",
-          "headline": "Microsoft offers voluntary exits to about 60,000 staff",
-          "summary": "Microsoft is offering a time-limited voluntary exit package to roughly a quarter of its workforce. The company says it wants to manage costs while spending heavily on AI infrastructure.",
-          "source": {
-            "name": "Microsoft",
-            "url": "https://blogs.microsoft.com/blog/2026/10/26/introducing-a-voluntary-exit-offer/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Microsoft bietet 60.000 Beschäftigten freiwilligen Ausstieg",
-              "summary": "Microsoft bietet etwa einem Viertel der Belegschaft ein befristetes Abfindungsangebot. Begründung: Kosten im Griff behalten, während das Unternehmen massiv in KI-Infrastruktur investiert."
             }
           }
         }
