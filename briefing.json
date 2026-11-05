@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-05T04:50:00+01:00",
+  "updatedAt": "2026-11-05T05:05:00+01:00",
   "days": [
     {
       "date": "2026-11-05",
@@ -72,19 +72,18 @@
           }
         },
         {
-          "id": "2026-11-05-weight-space-programming-astra",
-          "headline": "GPT-6 Astra edits another model's weights without training",
-          "summary": "MIT CSAIL researchers show GPT-6 Astra can read and rewrite neural network weights in natural language, calling it weight-space programming. On Qwen3.5-0.8B it changed 0.016% of weights and raised MATH-500 from 7.9% to 48.1%.",
+          "id": "2026-11-05-meta-acquires-conductor",
+          "headline": "Meta buys Conductor for multi-agent coding workspaces",
+          "summary": "Meta has acquired Conductor, an AI coding startup that runs multiple agents in parallel workspaces for software projects. Core features keep working into early next year, while Conductor's cloud service shuts down on November 20.",
           "source": {
-            "name": "MIT CSAIL",
-            "url": "https://rikiyat.github.io/blog/weight-space-programming/"
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/"
           },
-          "tag": "Framework",
-          "level": "advanced",
+          "tag": "Tools",
           "i18n": {
             "de": {
-              "headline": "GPT-6 Astra ändert Modell-Weights ohne Training",
-              "summary": "Forscher am MIT CSAIL zeigen, dass GPT-6 Astra Neural-Network-Weights in natürlicher Sprache lesen und umschreiben kann (Weight-Space Programming). Bei Qwen3.5-0.8B änderte Astra 0,016 % der Weights und hob MATH-500 von 7,9 % auf 48,1 %."
+              "headline": "Meta kauft Conductor für Multi-Agent-Coding-Workspaces",
+              "summary": "Meta hat Conductor übernommen, ein KI-Coding-Startup, das mehrere Agenten in parallelen Workspaces für Softwareprojekte laufen lässt. Kernfunktionen bleiben bis Anfang nächsten Jahres; der Cloud-Dienst von Conductor endet am 20. November."
             }
           }
         },
