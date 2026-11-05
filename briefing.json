@@ -1,7 +1,128 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-04T04:46:57+01:00",
+  "updatedAt": "2026-11-05T04:50:00+01:00",
   "days": [
+    {
+      "date": "2026-11-05",
+      "items": [
+        {
+          "id": "2026-11-05-openai-acquires-pierre",
+          "headline": "OpenAI buys Pierre to strengthen Codex code review",
+          "summary": "OpenAI will acquire Pierre Computer Company, whose Trees and Diffs libraries already power browsing and change review in Codex. Code Storage should move into Codex after closing; open-source projects stay open, pending regulatory approval.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/openai-to-acquire-pierre/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI kauft Pierre für bessere Codex-Code-Reviews",
+              "summary": "OpenAI übernimmt Pierre Computer Company, dessen Libraries Trees und Diffs schon Dateibrowser und Diff-Ansicht in Codex antreiben. Code Storage soll nach dem Closing in Codex landen; Open-Source bleibt offen, die Freigabe steht noch aus."
+            }
+          }
+        },
+        {
+          "id": "2026-11-05-chatgpt-images-2-6-gifs",
+          "headline": "ChatGPT Images 2.6 can turn prompts into animated GIFs",
+          "summary": "OpenAI's Images 2.6 update lets ChatGPT and Codex users create animated GIFs from a text prompt or photo, then adjust speed and edit frames. It rolls out on all plans, and the API adds GPT-Image-2.6 Flare and Sunburst.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/introducing-images-2-6/"
+          },
+          "tag": "Tools",
+          "priority": "breaking",
+          "i18n": {
+            "de": {
+              "headline": "ChatGPT Images 2.6 macht aus Prompts animierte GIFs",
+              "summary": "Mit Images 2.6 können ChatGPT- und Codex-Nutzer aus Text oder Foto animierte GIFs erzeugen, Tempo anpassen und Einzelbilder editieren. Das Update läuft auf allen Plänen; die API bekommt GPT-Image-2.6 Flare und Sunburst."
+            }
+          }
+        },
+        {
+          "id": "2026-11-05-openai-linux-948-lpes",
+          "headline": "OpenAI agents find 948 Linux privilege-escalation bugs",
+          "summary": "An OpenAI cyber pipeline with an upcoming model validated 948 Linux local privilege-escalation flaws and built exploits plus patch drafts for about $1.2M in API cost. Humans review findings before reports go via Patch the Planet partners.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/"
+          },
+          "tag": "Autonomous Agent",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI-Agenten finden 948 Linux-Privilege-Escalation-Bugs",
+              "summary": "Eine OpenAI-Cyber-Pipeline mit einem kommenden Modell hat 948 Local-Privilege-Escalation-Lücken in Linux validiert und Exploits plus Patch-Entwürfe gebaut (~1,2 Mio. $ API). Menschen prüfen vor dem Melden über Patch-the-Planet-Partner."
+            }
+          }
+        },
+        {
+          "id": "2026-11-05-us-midterms-data-center-backlash",
+          "headline": "US midterms amplify pushback against AI data centers",
+          "summary": "After Democrats won both chambers of Congress, TechCrunch reports stronger odds of limits on where AI data centers can be built. Local bans already hit states such as Ohio, and a national moratorium bill would still face a possible veto.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "US-Zwischenwahl stärkt Widerstand gegen KI-Rechenzentren",
+              "summary": "Nach dem Demokraten-Sieg in beiden Kongresskammern sieht TechCrunch höhere Chancen für Grenzen beim Bau von KI-Rechenzentren. Lokale Verbote gab es schon etwa in Ohio; ein nationales Moratorium müsste weiter mit einem Veto rechnen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-05-weight-space-programming-astra",
+          "headline": "GPT-6 Astra edits another model's weights without training",
+          "summary": "MIT CSAIL researchers show GPT-6 Astra can read and rewrite neural network weights in natural language, calling it weight-space programming. On Qwen3.5-0.8B it changed 0.016% of weights and raised MATH-500 from 7.9% to 48.1%.",
+          "source": {
+            "name": "MIT CSAIL",
+            "url": "https://rikiyat.github.io/blog/weight-space-programming/"
+          },
+          "tag": "Framework",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "GPT-6 Astra ändert Modell-Weights ohne Training",
+              "summary": "Forscher am MIT CSAIL zeigen, dass GPT-6 Astra Neural-Network-Weights in natürlicher Sprache lesen und umschreiben kann (Weight-Space Programming). Bei Qwen3.5-0.8B änderte Astra 0,016 % der Weights und hob MATH-500 von 7,9 % auf 48,1 %."
+            }
+          }
+        },
+        {
+          "id": "2026-11-05-google-agile-deliberation",
+          "headline": "Google's Agile Deliberation helps define fuzzy image labels",
+          "summary": "Google Research open-sourced Agile Deliberation, a human-in-the-loop flow that splits subjective image categories and shows borderline cases so people refine rules. In 18 live sessions it cut labeling stress and built stronger classifiers.",
+          "source": {
+            "name": "Google Research",
+            "url": "https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Googles Agile Deliberation schärft unscharfe Bild-Labels",
+              "summary": "Google Research hat Agile Deliberation open-sourced: ein Human-in-the-Loop-Ablauf, der subjektive Bildkategorien zerlegt und Grenzfälle zeigt. In 18 Live-Sessions sank der Label-Stress; Classifier wurden stärker."
+            }
+          }
+        },
+        {
+          "id": "2026-11-05-daybreak-red-aws-govcloud",
+          "headline": "OpenAI Daybreak Red reaches AWS GovCloud for cyber work",
+          "summary": "GPT-5.6 Cyber is now available to approved customers in AWS GovCloud (US-East) through Daybreak Red on Amazon Bedrock for authorized vulnerability research. Access needs OpenAI Daybreak approval plus separate AWS provisioning.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/daybreak-red-aws-govcloud"
+          },
+          "tag": "Tools",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI Daybreak Red erreicht AWS GovCloud für Cyber",
+              "summary": "GPT-5.6 Cyber steht zugelassenen Kunden in AWS GovCloud (US-East) über Daybreak Red auf Amazon Bedrock für autorisierte Vulnerability-Forschung bereit. Zugang braucht OpenAI-Daybreak-Freigabe und separate AWS-Provisionierung."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-04",
       "items": [
@@ -755,142 +876,6 @@
             "de": {
               "headline": "Deepgram kauft Daily, die Firma hinter Pipecat",
               "summary": "Die Voice-AI-Firma übernimmt den Entwickler von Pipecat, einem beliebten Open-Source-Framework für Voice Agents in Echtzeit. Pipecat soll Open Source bleiben, der Preis ist unbekannt."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-29",
-      "items": [
-        {
-          "id": "2026-10-29-gemini-4-carbon-tops-index",
-          "headline": "Gemini 4 Carbon takes the top spot, built for security",
-          "summary": "Google DeepMind's new model arrives two weeks after Argon and leads the updated Artificial Analysis index. Google stresses long agent runs and finding and fixing security flaws; cyber defenders get access first.",
-          "source": {
-            "name": "The Verge",
-            "url": "https://www.theverge.com/tech/1021339/google-gemini-4-carbon-cybersecurity-frontier"
-          },
-          "tag": "Model Release",
-          "priority": "breaking",
-          "i18n": {
-            "de": {
-              "headline": "Gemini 4 Carbon übernimmt Platz eins, stark bei Security",
-              "summary": "Das neue Modell von Google DeepMind kommt zwei Wochen nach Argon und führt den neuen Index von Artificial Analysis an. Google betont lange Agent-Läufe und das Beheben von Sicherheitslücken; Cyberabwehr-Teams dürfen zuerst ran."
-            }
-          }
-        },
-        {
-          "id": "2026-10-29-android-studio-bring-your-own-agent",
-          "headline": "Android Studio opens up to more than 40 coding agents",
-          "summary": "With bring your own agent, developers can run Claude, Codex and dozens of other coding agents inside Google's IDE. A new terminal tool let agents finish UI tasks 77 percent faster in Google's own tests.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/google-opens-android-development-to-third-party-ai-agents-and-unveils-new-gemini-apis/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Android Studio öffnet sich für über 40 Coding Agents",
-              "summary": "Mit „Bring Your Own Agent“ laufen Claude, Codex und Dutzende weitere Coding Agents direkt in Googles IDE. Ein neues Terminal-Tool machte Agents bei UI-Aufgaben laut Googles eigenen Tests 77 Prozent schneller."
-            }
-          }
-        },
-        {
-          "id": "2026-10-29-chrome-autofill-uses-gmail",
-          "headline": "Chrome can now fill forms with details from your Gmail",
-          "summary": "An opt-in autofill upgrade suggests things like booking codes, order numbers or addresses it finds in your mail. You switch it on in Chrome's settings.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/28/chromes-ai-powered-autofill-can-now-dig-through-your-gmail-to-fill-out-forms/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Chrome füllt Formulare jetzt mit Daten aus deinem Gmail",
-              "summary": "Ein optionales Autofill-Upgrade schlägt etwa Buchungscodes, Bestellnummern oder Adressen vor, die es in deinen Mails findet. Einschalten kannst du es in den Chrome-Einstellungen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-29-nvidia-nemotron-transcribe-open",
-          "headline": "Nvidia's free model transcribes 40 languages and speakers",
-          "summary": "Nemotron 3.5 Transcribe is an open-weight model that turns recordings of up to an hour into text and tells up to eight speakers apart. It runs on a single Nvidia chip but does not handle live streams.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/"
-          },
-          "tag": "Model Release",
-          "pulseId": "pulse-2026-10-28-who-said-what",
-          "i18n": {
-            "de": {
-              "headline": "Nvidias Gratis-Modell erkennt 40 Sprachen und Sprecher",
-              "summary": "Nemotron 3.5 Transcribe ist ein Open-Weight-Modell, das Aufnahmen bis zu einer Stunde in Text umwandelt und bis zu acht Sprecher unterscheidet. Es läuft auf einem einzigen Nvidia-Chip, aber nicht mit Livestreams."
-            }
-          }
-        },
-        {
-          "id": "2026-10-29-openai-berlin-dots-europe-codex",
-          "headline": "OpenAI: Dots assistant should reach Europe within weeks",
-          "summary": "At its Berlin developer event, OpenAI said wider EU access follows talks with regulators; personal Pro accounts are still locked out. Weekly Codex use in Germany has grown twentyfold since January, it said.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/openai-teases-dots-for-europe-but-its-berlin-devday-was-really-about-building-a-platform/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI: Assistent Dots soll in Wochen nach Europa kommen",
-              "summary": "Beim Entwickler-Event in Berlin sagte OpenAI, der breitere EU-Zugang folge nach Gesprächen mit Regulierern; private Pro-Konten sind noch gesperrt. Die wöchentliche Codex-Nutzung in Deutschland sei seit Januar 20-mal so hoch."
-            }
-          }
-        },
-        {
-          "id": "2026-10-29-cloudflare-cache-bug-leaked-replies",
-          "headline": "Cloudflare: a cache bug mixed other users' data into replies",
-          "summary": "For about two weeks, 155 answers from one hosted model contained fragments of other customers' requests. Cloudflare found no sign of deliberate abuse and fixed its setup and the open-source inference engine.",
-          "source": {
-            "name": "Cloudflare",
-            "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
-          },
-          "tag": "Framework",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "Cloudflare: Cache-Fehler mischte fremde Daten in Antworten",
-              "summary": "Rund zwei Wochen lang enthielten 155 Antworten eines gehosteten Modells Teile fremder Kundenanfragen. Cloudflare fand keine Hinweise auf gezielten Missbrauch und hat Konfiguration und die Open-Source-Inference-Engine korrigiert."
-            }
-          }
-        },
-        {
-          "id": "2026-10-29-microsoft-10b-revenue-from-openai",
-          "headline": "Microsoft earned $10 billion from OpenAI in one quarter",
-          "summary": "Microsoft's filing shows revenue from its OpenAI deals made up almost 11 percent of quarterly sales, even as the two increasingly compete for the same customers.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/28/microsoft-recorded-10-billion-in-revenue-from-openai/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Microsoft nahm in einem Quartal 10 Mrd. $ mit OpenAI ein",
-              "summary": "Laut Microsofts Pflichtmitteilung machten die Einnahmen aus den OpenAI-Verträgen fast 11 Prozent des Quartalsumsatzes aus, obwohl beide Firmen zunehmend um dieselben Kunden konkurrieren."
-            }
-          }
-        },
-        {
-          "id": "2026-10-29-claude-discount-us-governments",
-          "headline": "US agencies at every level get Claude 40 percent cheaper",
-          "summary": "A new deal with the GSA, the US government's purchasing agency, extends the discount to states and cities. Agencies pay only for what they use, with no minimum order.",
-          "source": {
-            "name": "Anthropic",
-            "url": "https://www.anthropic.com/news/expanding-partnership-gsa"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "US-Behörden aller Ebenen bekommen Claude 40 Prozent billiger",
-              "summary": "Ein neuer Vertrag mit der GSA, der zentralen Einkaufsbehörde der US-Regierung, weitet den Rabatt auf Bundesstaaten und Städte aus. Behörden zahlen nur ihre Nutzung, ohne Mindestabnahme."
             }
           }
         }
