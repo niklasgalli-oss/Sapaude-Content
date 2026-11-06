@@ -1,7 +1,112 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-05T05:05:00+01:00",
+  "updatedAt": "2026-11-06T04:50:00+01:00",
   "days": [
+    {
+      "date": "2026-11-06",
+      "items": [
+        {
+          "id": "2026-11-06-openai-gpt-6-cyber",
+          "headline": "OpenAI launches GPT-6 Cyber for authorized security work",
+          "summary": "GPT-6 Cyber is OpenAI's new cybersecurity model for finding and validating vulnerabilities within researcher-set scope. It scores 48.5% on ExploitGym, up from 32.1% for GPT-5.6 Cyber, and starts on Daybreak Red for approved customers.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/introducing-gpt-6-cyber"
+          },
+          "tag": "Model Release",
+          "priority": "breaking",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI startet GPT-6 Cyber für autorisierte Security-Arbeit",
+              "summary": "GPT-6 Cyber ist OpenAIs neues Cybersecurity-Modell zum Finden und Validieren von Schwachstellen in gesetztem Scope. Auf ExploitGym erreicht es 48,5 % (vorher 32,1 % bei GPT-5.6 Cyber) und startet über Daybreak Red für freigegebene Kunden."
+            }
+          }
+        },
+        {
+          "id": "2026-11-06-gemini-omni-1-2-flash",
+          "headline": "Gemini Omni 1.2 Flash makes 15-second videos cheaper",
+          "summary": "Google's Gemini Omni 1.2 Flash is generally available on the Gemini API and Cloud. Clips can run 3 to 15 seconds, multi-turn conversational edits work on full clips, and 720p video costs about $0.07 per second after a 30% price cut.",
+          "source": {
+            "name": "Google",
+            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
+          },
+          "tag": "Tools",
+          "priority": "breaking",
+          "i18n": {
+            "de": {
+              "headline": "Gemini Omni 1.2 Flash: 15-Sekunden-Video günstiger",
+              "summary": "Googles Gemini Omni 1.2 Flash ist GA in der Gemini API und in Cloud. Clips laufen 3 bis 15 Sekunden, Multi-Turn-Edits funktionieren über volle Clips, und 720p kostet etwa 0,07 $ pro Sekunde nach 30 % Preissenkung."
+            }
+          }
+        },
+        {
+          "id": "2026-11-06-claude-personal-finance",
+          "headline": "Claude Personal Finance connects US banks via Plaid",
+          "summary": "Anthropic's Personal Finance beta lets US Pro, Max, and Ultra users link bank and card accounts through Plaid and ask about spending in plain language. Access is read-only; Claude cannot move or invest money, and hub chats skip training.",
+          "source": {
+            "name": "Anthropic",
+            "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Claude Personal Finance verbindet US-Konten via Plaid",
+              "summary": "Anthropics Personal-Finance-Beta lässt US-Nutzer auf Pro, Max und Ultra Bank- und Kartenkonten via Plaid verknüpfen und Ausgabenfragen stellen. Zugang ist read-only; Claude bewegt oder investiert kein Geld, Hub-Chats trainieren nicht."
+            }
+          }
+        },
+        {
+          "id": "2026-11-06-cursor-build-live-apps",
+          "headline": "Cursor cloud agents can now publish live shareable apps",
+          "summary": "Cursor can scaffold a web app, add Postgres and SSO auth, run security checks, then deploy a shareable link from a cloud agent. On paid plans with cloud agents; team apps stay behind Cursor sign-in, and individuals can share publicly.",
+          "source": {
+            "name": "Cursor",
+            "url": "https://cursor.com/changelog/build-live-apps"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Cursor-Cloud-Agenten publizieren jetzt live Apps",
+              "summary": "Cursor kann per Cloud-Agent eine Web-App aufsetzen, Postgres und SSO-Auth einrichten, Security-Checks fahren und einen Link deployen. Auf Paid-Plänen mit Cloud Agents; Team-Apps hinter Cursor-Login, Individuen können öffentlich teilen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-06-mistral-studio-agents",
+          "headline": "Mistral Studio adds managed agents, workflows, and apps",
+          "summary": "Mistral expands Studio so teams can build managed agents, durable workflows, and hosted apps on Mistral Large 4 (Le Chonk), connected to enterprise data via connectors and MCP. Deployments run in cloud, VPC, on-premises, or hybrid setups.",
+          "source": {
+            "name": "Mistral",
+            "url": "https://mistral.ai/news/build-with-studio/"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "Mistral Studio: Managed Agents, Workflows und Apps",
+              "summary": "Mistral erweitert Studio: Teams bauen Managed Agents, Workflows und gehostete Apps auf Mistral Large 4 (Le Chonk), verbunden mit Unternehmensdaten über Connectors und MCP. Deployments laufen in Cloud, VPC, On-Premises oder hybrid."
+            }
+          }
+        },
+        {
+          "id": "2026-11-06-ernie-5-5-flash-base",
+          "headline": "Baidu opens ERNIE 5.5 Flash Base weights for fine-tuning",
+          "summary": "Baidu released ERNIE-5.5-Flash-Base, a 280B MoE base model with 14B active parameters pretrained on 33.5T tokens, on Hugging Face before mid- or post-training. The license territory excludes the EU, UK, and South Korea.",
+          "source": {
+            "name": "Baidu",
+            "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/"
+          },
+          "tag": "Model Release",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "Baidu öffnet ERNIE-5.5-Flash-Base-Gewichte",
+              "summary": "Baidu hat ERNIE-5.5-Flash-Base veröffentlicht: ein 280B-MoE-Basismodell mit 14B aktiven Parametern und 33,5T Pretraining-Tokens auf Hugging Face, ohne Mid- oder Post-Training. Die Lizenz-Territory schließt EU, UK und Südkorea aus."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-05",
       "items": [
@@ -740,141 +845,6 @@
             "de": {
               "headline": "DoorDash bekam erst einige hundert Bestellungen von Agents",
               "summary": "Laut DoorDash haben KI-Assistenten von Drittanbietern bisher nur einige hundert Bestellungen aufgegeben. Zum Vergleich: Täglich liefert die Firma rund drei Millionen Bestellungen aus."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-30",
-      "items": [
-        {
-          "id": "2026-10-30-mistral-large-4-open-weights",
-          "headline": "Anyone can now download Mistral's trillion-parameter model",
-          "summary": "Mistral published the weights of Mistral Large 4 on Hugging Face, so companies and governments can run it on their own servers. Mistral pitches it for cyber defense and says it needs far fewer tokens per task than GLM-5.3.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
-          },
-          "tag": "Model Release",
-          "priority": "breaking",
-          "i18n": {
-            "de": {
-              "headline": "Mistrals Billionen-Parameter-Modell ist jetzt frei ladbar",
-              "summary": "Mistral hat die Weights von Mistral Large 4 auf Hugging Face gestellt, Firmen und Behörden können es auf eigenen Servern betreiben. Gedacht ist es vor allem für Cyberabwehr, mit deutlich weniger Tokens pro Aufgabe als GLM-5.3."
-            }
-          }
-        },
-        {
-          "id": "2026-10-30-openai-model-spec-five-values",
-          "headline": "OpenAI rewrites its rules for how GPT should behave",
-          "summary": "The updated Model Spec now rests on five values, with faithfulness to human intent first. It adds guidance on memory, context and human oversight, drops most style rules, and OpenAI admits current models don't fully meet it yet.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/updated-model-spec"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI schreibt die Verhaltensregeln für GPT neu",
-              "summary": "Die neue Model Spec baut auf fünf Werten auf, allen voran Treue zur Absicht der Menschen. Neu sind Regeln zu Memory, Kontext und menschlicher Kontrolle, Stilvorgaben fallen weg. Laut OpenAI erfüllen die Modelle sie noch nicht ganz."
-            }
-          }
-        },
-        {
-          "id": "2026-10-30-octoverse-agents-start-prs",
-          "headline": "Agents now start over 40% of pull requests on GitHub",
-          "summary": "GitHub's Octoverse report says the share of pull requests begun by a coding agent rose from 17% in March to over 40% in September. GitHub calls this a lower bound, since it can't detect every agent.",
-          "source": {
-            "name": "GitHub",
-            "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "Agents starten auf GitHub schon über 40 % der Pull Requests",
-              "summary": "Laut GitHubs Octoverse-Report stieg der Anteil der Pull Requests, die ein Coding Agent beginnt, von 17 % im März auf über 40 % im September. GitHub nennt das eine Untergrenze, weil nicht jeder Agent erkannt wird."
-            }
-          }
-        },
-        {
-          "id": "2026-10-30-canada-invests-in-cohere",
-          "headline": "Canada plans to invest up to C$1.6 billion in Cohere",
-          "summary": "The Canadian government wants to take an equity stake in the Toronto AI company, alongside Nvidia, Bell and Schwarz Group. In return Cohere commits to Canadian jobs, computing capacity and keeping its headquarters at home.",
-          "source": {
-            "name": "Prime Minister of Canada",
-            "url": "https://www.pm.gc.ca/en/news/news-releases/2026/10/29/canada-announces-landmark-investment-cohere-scale-secure-sovereign-ai"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Kanada will bis zu 1,6 Mrd. CAD in Cohere investieren",
-              "summary": "Die kanadische Regierung plant eine Beteiligung an der KI-Firma aus Toronto, neben Nvidia, Bell und der Schwarz Gruppe. Cohere sagt dafür Jobs, Rechenkapazität und den Hauptsitz in Kanada zu."
-            }
-          }
-        },
-        {
-          "id": "2026-10-30-granola-free-dictation",
-          "headline": "Granola now types what you say in any Mac app",
-          "summary": "The meeting-notes app added free voice typing on Mac: press the Fn key, speak, and it inserts cleaned-up text into whatever app you use. Versions for iOS and Windows are announced.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Granola tippt jetzt in jeder Mac-App, was du sagst",
-              "summary": "Die App für Meeting-Notizen kann auf dem Mac jetzt kostenlos diktieren: Fn-Taste drücken, sprechen, und sie fügt bereinigten Text in jede App ein. iOS und Windows sollen folgen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-30-hugging-face-swift-speech",
-          "headline": "Hugging Face brings open speech models to iPhone apps",
-          "summary": "Two new Swift packages let iOS and macOS apps run open speech recognition on the device and get typed yes/no or rating answers from local models. They target iOS 26 and Apple silicon.",
-          "source": {
-            "name": "Hugging Face",
-            "url": "https://huggingface.co/blog/anydecisionmodel"
-          },
-          "tag": "Framework",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "Hugging Face bringt offene Sprachmodelle in iPhone-Apps",
-              "summary": "Zwei neue Swift-Pakete lassen iOS- und macOS-Apps Spracherkennung mit offenen Modellen direkt auf dem Gerät laufen und liefern typisierte Ja/Nein- oder Bewertungsantworten lokaler Modelle. Ziel sind iOS 26 und Apple Silicon."
-            }
-          }
-        },
-        {
-          "id": "2026-10-30-rivian-assistant-for-vw",
-          "headline": "Volkswagen licenses parts of Rivian's AI voice assistant",
-          "summary": "Rivian's investor slides show that its in-car AI assistant is now part of the joint venture with Volkswagen Group. Fees and the VW models that will get it were not disclosed.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Volkswagen lizenziert Teile von Rivians KI-Sprachassistent",
-              "summary": "Laut Rivians Investorenfolien gehört der KI-Assistent im Auto jetzt zum Joint Venture mit dem Volkswagen-Konzern. Gebühren und die VW-Modelle, die ihn bekommen, nannte Rivian nicht."
-            }
-          }
-        },
-        {
-          "id": "2026-10-30-deepgram-buys-pipecat-maker",
-          "headline": "Deepgram buys Daily, the company behind Pipecat",
-          "summary": "The voice AI firm is acquiring the maker of Pipecat, a popular open-source framework for real-time voice agents, and says Pipecat stays open source. The price was not disclosed.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/29/deepgram-acquires-pipecat-maker-daily-to-bolster-its-voice-ai-infrastructure/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Deepgram kauft Daily, die Firma hinter Pipecat",
-              "summary": "Die Voice-AI-Firma übernimmt den Entwickler von Pipecat, einem beliebten Open-Source-Framework für Voice Agents in Echtzeit. Pipecat soll Open Source bleiben, der Preis ist unbekannt."
             }
           }
         }
