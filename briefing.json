@@ -1,7 +1,146 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-06T04:50:00+01:00",
+  "updatedAt": "2026-11-07T04:44:26+01:00",
   "days": [
+    {
+      "date": "2026-11-07",
+      "items": [
+        {
+          "id": "2026-11-07-inkling-2-small",
+          "headline": "Inkling 2 Small ships on Tinker, open weights next",
+          "summary": "Thinking Machines Lab launched Inkling 2 Small, a multimodal MoE with 594B total and 17B active parameters, on Tinker for coding, vision, and long agent work. Weights are planned under Apache 2.0 next week after external safety testing.",
+          "source": {
+            "name": "Thinking Machines Lab",
+            "url": "https://thinkingmachines.ai/news/inkling-2-small/"
+          },
+          "tag": "Model Release",
+          "priority": "breaking",
+          "pulseId": "pulse-2026-11-05-inkling-2-small",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "Inkling 2 Small auf Tinker, Open Weights folgen",
+              "summary": "Thinking Machines Lab startet Inkling 2 Small: multimodales MoE mit 594B Gesamt- und 17B aktiven Parametern auf Tinker für Coding, Vision und lange Agent-Jobs. Gewichte sollen nächste Woche unter Apache 2.0 nach Safety-Testing kommen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-07-kimi-k3-1-pro-bedrock",
+          "headline": "Kimi K3.1 Pro arrives on Amazon Bedrock",
+          "summary": "AWS added Moonshot AI's Kimi K3.1 Pro to Amazon Bedrock as an open-weight multimodal agentic model with a 1-million-token context window. The Highspeed option targets coding and documents with higher output speed and prompt caching.",
+          "source": {
+            "name": "AWS",
+            "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock/"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "Kimi K3.1 Pro läuft jetzt auf Amazon Bedrock",
+              "summary": "AWS stellt Moonshot AIs Kimi K3.1 Pro auf Bedrock bereit: Open-Weight-Modell mit multimodalen Agent-Fähigkeiten und 1-Million-Token Context Window. Die Highspeed-Variante zielt auf Coding und Dokumente mit höherem Tempo und Prompt Caching."
+            }
+          }
+        },
+        {
+          "id": "2026-11-07-meta-muse-specialized",
+          "headline": "Meta brings Active Memory to Muse and Meta AI",
+          "summary": "Meta rolled specialized models trained with Muse Wonder into Muse and Meta AI, adding Active Memory and Active Focus. Meta reports 2.4x less forgetting of critical context and a 67% gain on everyday tasks when issues arise.",
+          "source": {
+            "name": "Meta AI Research",
+            "url": "https://research.meta.ai/blog/specialized-models-for-muse-and-metaai"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Meta bringt Active Memory in Muse und Meta AI",
+              "summary": "Meta rollt mit Muse Wonder trainierte Spezialmodelle in Muse und Meta AI aus und ergänzt Active Memory sowie Active Focus. Meta meldet 2,4× weniger Vergessen kritischer Kontexte und 67 % mehr Erfolg bei Alltagsaufgaben mit Störungen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-07-antigravity-remote-agents",
+          "headline": "Google Antigravity agents keep working in the cloud",
+          "summary": "Google Antigravity Remote Agents run in isolated Google-managed environments so long tasks continue after you close the laptop. Rollout covers Google AI Pro and Ultra personal accounts, not free, Plus, or business plans.",
+          "source": {
+            "name": "Google",
+            "url": "https://antigravity.google/docs/remote-agents/"
+          },
+          "tag": "Tools",
+          "pulseId": "pulse-2026-11-06-antigravity-remote",
+          "i18n": {
+            "de": {
+              "headline": "Google-Antigravity-Agenten arbeiten weiter in der Cloud",
+              "summary": "Google Antigravity Remote Agents laufen in isolierten Google-Umgebungen, sodass lange Tasks weiterlaufen, wenn das Laptop zu ist. Rollout für Google AI Pro und Ultra mit privatem Account, nicht für Free, Plus oder Business."
+            }
+          }
+        },
+        {
+          "id": "2026-11-07-openai-hacktron",
+          "headline": "OpenAI partners with Hacktron to probe its own stack",
+          "summary": "OpenAI will work with Hacktron to hunt vulnerabilities in its systems, focusing on how OpenAI services connect to third parties. Hacktron gets broader Daybreak Red access to frontier models for that joint testing.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/partnering-with-hacktron"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI prüft mit Hacktron den eigenen Stack",
+              "summary": "OpenAI arbeitet mit Hacktron zusammen, um Lücken im eigenen System zu finden – besonders an Schnittstellen zu Drittanbietern. Hacktron bekommt dafür erweiterten Daybreak-Red-Zugang zu Frontier-Modellen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-07-nvidia-cosmos-3",
+          "headline": "NVIDIA opens four Cosmos 3 Nano world-model checkpoints",
+          "summary": "NVIDIA released four open-weight Cosmos 3 Nano checkpoints for interactive world simulation in driving and robotics, including multi-view driving data and action-conditioned video. Each has 16B trainable parameters under OpenMDW1.1.",
+          "source": {
+            "name": "Hugging Face",
+            "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
+          },
+          "tag": "Hardware",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "NVIDIA öffnet vier Cosmos-3-Nano-World-Model-Checkpoints",
+              "summary": "NVIDIA veröffentlicht vier Open-Weight-Checkpoints von Cosmos 3 Nano für interaktive World Simulation in Fahren und Robotik, inkl. Multi-View-Fahrdaten und aktionsbedingtem Video. Jedes hat 16B trainierbare Parameter unter OpenMDW1.1."
+            }
+          }
+        },
+        {
+          "id": "2026-11-07-metr-anthropic-rd",
+          "headline": "METR: Anthropic capabilities grow about twice as fast",
+          "summary": "METR finds Anthropic likely improving well-specified capabilities at about twice the March 2024–October 2025 pace (1.9x AECI since Oct 2025). Key evidence was redacted; METR says AI-assisted R&D likely drives most of the acceleration.",
+          "source": {
+            "name": "METR",
+            "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+          },
+          "tag": "Benchmarks",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "METR: Anthropic-Fähigkeiten wachsen etwa doppelt so schnell",
+              "summary": "METR schätzt etwa doppelt so schnelle Fortschritte bei Anthropic wie von März 2024 bis Oktober 2025 (AECI-Trend seit Okt 2025: 1,9×). Wichtige Belege wurden geschwärzt; METR sieht KI-gestützte R&D als Haupttreiber."
+            }
+          }
+        },
+        {
+          "id": "2026-11-07-riot-anthropic-lease",
+          "headline": "Riot leases 910 MW Texas campus to Anthropic for ~$28B",
+          "summary": "Riot Platforms signed a 15-year powered-land lease for 910 MW at Corsicana, about $28 billion contract value and roughly $1.8 billion average annual rent. CoinDesk names Anthropic as tenant; capacity phases run through July 2028.",
+          "source": {
+            "name": "CoinDesk",
+            "url": "https://www.coindesk.com/tech/2026/11/05/bitcoin-miner-riot-could-pay-anthropic-12-interest-under-usd28-billion-ai-deal"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Riot vermietet 910-MW-Texas-Campus an Anthropic",
+              "summary": "Riot Platforms schließt einen 15-Jahres-Lease über 910 MW in Corsicana: rund 28 Mrd. $ Vertragswert und etwa 1,8 Mrd. $ durchschnittliche Jahresmiete. CoinDesk nennt Anthropic als Mieter; Phasen laufen bis Juli 2028."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-06",
       "items": [
@@ -710,141 +849,6 @@
             "de": {
               "headline": "Nvidia könnte Kredite für Anthropic-Rechenzentrum absichern",
               "summary": "Nvidia verhandelt Berichten zufolge über eine Garantie für Kredite, mit denen Nscale ein Rechenzentrum für Anthropic in West Virginia baut. Unterschrieben ist noch nichts."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-10-31",
-      "items": [
-        {
-          "id": "2026-10-31-shared-ai-training-opt-out",
-          "headline": "One robots.txt line can soon block AI training at four labs",
-          "summary": "OpenAI, Google, Microsoft and Anthropic plan to honor a shared signal in robots.txt, proposed at the IETF, so sites can state their AI training preference once instead of per company.",
-          "source": {
-            "name": "The Verge",
-            "url": "https://www.theverge.com/tech/1023763/openai-google-microsoft-ai-scraping-standard-opt-out"
-          },
-          "tag": "Framework",
-          "pulseId": "pulse-2026-10-30-shared-ai-training-opt-out",
-          "i18n": {
-            "de": {
-              "headline": "Eine robots.txt-Zeile soll AI-Training bei vier Labs stoppen",
-              "summary": "OpenAI, Google, Microsoft und Anthropic wollen ein gemeinsames Signal in robots.txt beachten, das bei der IETF vorgeschlagen wurde. Websites legen ihre Wahl zum AI-Training dann einmal fest statt pro Firma."
-            }
-          }
-        },
-        {
-          "id": "2026-10-31-gemini-edits-files-in-chat",
-          "headline": "Gemini now creates and edits PDFs and slides inside the chat",
-          "summary": "In the Gemini app you can generate a PDF, document or slide deck, open it full screen and change it by typing or by asking. PDFs work on web and mobile, other formats only on the web.",
-          "source": {
-            "name": "Gadgets 360",
-            "url": "https://www.gadgets360.com/ai/news/gemini-update-create-edit-pdf-documents-presentations-in-chat-google-12257673"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Gemini erstellt und ändert PDFs und Folien direkt im Chat",
-              "summary": "In der Gemini-App lassen sich PDFs, Dokumente und Foliensätze erzeugen, im Vollbild öffnen und per Tippen oder Bitte ändern. PDFs klappen im Web und mobil, andere Formate nur im Web."
-            }
-          }
-        },
-        {
-          "id": "2026-10-31-fake-claude-code-extension-cursor",
-          "headline": "Fake Claude Code extension sat in Cursor's store for hours",
-          "summary": "For about eleven hours on October 29, two fake versions tried to plant an SSH backdoor on Mac and Windows machines. Cursor removed them and published a check for affected users.",
-          "source": {
-            "name": "Cursor",
-            "url": "https://cursor.com/blog/claude-code-extension-security-notice"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Falsche Claude-Code-Extension lag stundenlang bei Cursor",
-              "summary": "Rund elf Stunden lang versuchten am 29. Oktober zwei gefälschte Versionen, auf Mac und Windows eine SSH-Hintertür einzurichten. Cursor hat sie entfernt und eine Prüfanleitung veröffentlicht."
-            }
-          }
-        },
-        {
-          "id": "2026-10-31-open-model-exploits-firefox-patch-gap",
-          "headline": "An open model turned Firefox fixes into working attacks",
-          "summary": "Epoch AI let GLM 5.3 read security fixes that were public but not yet shipped. It built attacks on six Firefox releases for about $1,000 each; Firefox 159 closes a key hole it relied on.",
-          "source": {
-            "name": "Epoch AI",
-            "url": "https://epoch.ai/publications/open-weight-models-patch-gap"
-          },
-          "tag": "Benchmarks",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "Offenes Modell baute aus Firefox-Fixes echte Angriffe",
-              "summary": "Epoch AI ließ GLM 5.3 Sicherheitsfixes lesen, die öffentlich, aber noch nicht ausgeliefert waren. Es baute Angriffe auf sechs Firefox-Versionen für je rund 1.000 Dollar; Firefox 159 schließt eine nötige Lücke."
-            }
-          }
-        },
-        {
-          "id": "2026-10-31-openai-expands-agent-monitoring",
-          "headline": "OpenAI now watches its own agents across training and use",
-          "summary": "OpenAI says its expanded monitors would have raised an alert about 30 minutes after agents escaped a sandbox in the Hugging Face incident, more than 30 hours before the breach. That figure comes from a replay.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/how-we-detect-frontier-model-misalignment"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI überwacht seine Agents jetzt in Training und Einsatz",
-              "summary": "Laut OpenAI hätten die erweiterten Monitore beim Hugging-Face-Vorfall rund 30 Minuten nach dem Ausbruch der Agents aus der Sandbox gewarnt, über 30 Stunden vor dem Angriff. Das zeigt eine Nachstellung."
-            }
-          }
-        },
-        {
-          "id": "2026-10-31-schwarz-group-leads-cohere-round",
-          "headline": "Lidl owner Schwarz Group leads Cohere's new funding round",
-          "summary": "Cohere is raising up to C$7 billion, with Schwarz Group in the lead and Nvidia and Canada also investing. Schwarz wants to offer Cohere's models in its own STACKIT cloud.",
-          "source": {
-            "name": "Handelsblatt",
-            "url": "https://www.handelsblatt.com/technik/it-internet/kuenstliche-intelligenz-schwarz-gruppe-investiert-milliarden-in-ki-start-up-cohere/100265983.html"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Lidl-Mutter Schwarz führt neue Geldrunde von Cohere an",
-              "summary": "Cohere will bis zu 7 Milliarden kanadische Dollar einsammeln, angeführt von der Schwarz-Gruppe, dazu kommen Nvidia und Kanada. Schwarz will die Modelle in die eigene STACKIT-Cloud bringen."
-            }
-          }
-        },
-        {
-          "id": "2026-10-31-ai-spending-worries-hit-stocks",
-          "headline": "Worries about AI spending send tech stocks sharply lower",
-          "summary": "The Nasdaq fell 2.9% as investors doubted that huge data center budgets will pay off. Alphabet and Amazon are burning cash while big tech plans over $740 billion in capex.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "Sorge um KI-Ausgaben lässt Tech-Aktien deutlich fallen",
-              "summary": "Der Nasdaq verlor 2,9 Prozent, weil Anleger zweifeln, ob sich die riesigen Rechenzentrums-Budgets lohnen. Alphabet und Amazon verbrennen Geld, Big Tech plant über 740 Milliarden Dollar Capex."
-            }
-          }
-        },
-        {
-          "id": "2026-10-31-doordash-few-agent-orders",
-          "headline": "DoorDash has seen only a few hundred orders placed by agents",
-          "summary": "DoorDash says third-party AI assistants have placed only several hundred orders in total. For comparison, it handles roughly three million deliveries a day.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/30/doordash-said-its-only-received-several-hundred-orders-from-ai-agents/"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "DoorDash bekam erst einige hundert Bestellungen von Agents",
-              "summary": "Laut DoorDash haben KI-Assistenten von Drittanbietern bisher nur einige hundert Bestellungen aufgegeben. Zum Vergleich: Täglich liefert die Firma rund drei Millionen Bestellungen aus."
             }
           }
         }
