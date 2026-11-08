@@ -1,7 +1,125 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-07T04:44:26+01:00",
+  "updatedAt": "2026-11-08T04:41:16+01:00",
   "days": [
+    {
+      "date": "2026-11-08",
+      "items": [
+        {
+          "id": "2026-11-08-openai-11b-round",
+          "headline": "OpenAI raises $11 billion at a $1.25 trillion value",
+          "summary": "According to Bloomberg, OpenAI has closed a first $11 billion slice of a round that could reach about $20 billion. The valuation is below the $1.4 trillion it reportedly aimed for in September.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI sammelt 11 Mrd. Dollar bei 1,25 Billionen ein",
+              "summary": "Laut Bloomberg hat OpenAI einen ersten Teil von 11 Milliarden Dollar abgeschlossen, die Runde könnte auf rund 20 Milliarden wachsen. Die Bewertung liegt unter den 1,4 Billionen, die im September angepeilt worden sein sollen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-08-deepmind-legacy-rsa",
+          "headline": "DeepMind agents find two weak spots in old 1024-bit RSA",
+          "summary": "Google DeepMind says human-guided AI agents found faster signature forgery and cheaper batch factoring for legacy 1024-bit RSA. Modern keys of 2048 bits or more are not affected, and part of the work is still theoretical.",
+          "source": {
+            "name": "Interesting Engineering",
+            "url": "https://interestingengineering.com/ai-robotics/1600x-faster-google-deepmind-agents-expose-weaknesses-in-older-encryption-methods"
+          },
+          "tag": "Autonomous Agent",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "DeepMind-Agents finden Lücken im alten RSA-1024",
+              "summary": "Laut Google DeepMind haben KI-Agents unter menschlicher Anleitung zwei Schwächen im veralteten 1024-Bit-RSA gefunden. Moderne Schlüssel ab 2048 Bit sind nicht betroffen, ein Teil der Ergebnisse ist bisher nur theoretisch."
+            }
+          }
+        },
+        {
+          "id": "2026-11-08-biobasicsbench",
+          "headline": "OpenAI tests agents on everyday lab data",
+          "summary": "BioBasicsBench, built with biotech firm Ligo, has 100 tasks where agents read raw gels, images, and instrument output and must flag weak evidence. OpenAI says GPT-6 Astra scored 66.7%, still with gaps on controls.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/"
+          },
+          "tag": "Benchmarks",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI prüft Agents an echten Labordaten",
+              "summary": "BioBasicsBench, entwickelt mit dem Biotech-Unternehmen Ligo, umfasst 100 Aufgaben mit rohen Labordaten, bei denen Agents auch zu dünne Belege erkennen müssen. GPT-6 Astra kommt laut OpenAI auf 66,7 Prozent."
+            }
+          }
+        },
+        {
+          "id": "2026-11-08-ripple-65b-preview",
+          "headline": "Ripple-65B Preview: open coding model under Apache 2.0",
+          "summary": "Chip design firm Ricursive Intelligence released a dense 65B model on Hugging Face that it says leads open US models on TerminalBench 2.1. It trails Inkling 2 Small but should be easier to run on your own hardware.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/ripple-65b-preview-delivers-strong-agentic-coding-results-as-a-fully-apache-2-0-open-us-model/"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "Ripple-65B Preview: offenes Coding-Modell",
+              "summary": "Der Chipdesigner Ricursive Intelligence stellt ein 65B-Modell unter Apache 2.0 auf Hugging Face. Bei TerminalBench 2.1 sieht er es vorn unter offenen US-Modellen, hinter Inkling 2 Small, aber leichter selbst zu betreiben."
+            }
+          }
+        },
+        {
+          "id": "2026-11-08-alexa-text-shopping",
+          "headline": "US shoppers can now text Alexa to search and buy",
+          "summary": "Amazon is inviting selected US customers to shop with its Alexa agent by text message: search, compare, add to cart, buy, and track prices or orders. A wider rollout is planned in the coming weeks.",
+          "source": {
+            "name": "Amazon",
+            "url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Alexa nimmt in den USA Einkäufe per SMS an",
+              "summary": "Amazon lädt ausgewählte US-Kunden ein, per Textnachricht mit dem Alexa-Agent einzukaufen: suchen, vergleichen, bestellen und Preise verfolgen. Eine breitere Einführung soll in den nächsten Wochen folgen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-08-smartwatch-hypertension",
+          "headline": "Google's smartwatch AI spots signs of high blood pressure",
+          "summary": "In a Nature study with 196 people, a model using only smartwatch pulse and motion sensors flagged hypertension in 65.8% of cases. Google says it is a screening hint for a doctor's visit, not a diagnosis.",
+          "source": {
+            "name": "Google Research",
+            "url": "https://research.google/blog/detecting-signs-of-hypertension-using-wearable-sensors/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Smartwatch-KI erkennt Hinweise auf Bluthochdruck",
+              "summary": "In einer Nature-Studie mit 196 Personen erkannte ein Modell nur aus Puls- und Bewegungssensoren der Smartwatch 65,8 Prozent der Bluthochdruck-Fälle. Google sieht das als Anlass für einen Arztbesuch, nicht als Diagnose."
+            }
+          }
+        },
+        {
+          "id": "2026-11-08-google-buys-crusoe-site",
+          "headline": "Google takes over Crusoe's unfinished Wyoming campus",
+          "summary": "Crusoe sold its planned data center site in Wyoming to Google, which plans to invest $17 billion there. The price was not disclosed; Google had reportedly raised concerns about the project's cost and timeline.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Google übernimmt Crusoes Rechenzentrum in Wyoming",
+              "summary": "Crusoe verkauft sein unfertiges Rechenzentrumsprojekt in Wyoming an Google, das dort 17 Milliarden Dollar investieren will. Den Kaufpreis nannten beide nicht."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-07",
       "items": [
@@ -748,107 +866,6 @@
             "de": {
               "headline": "Baseten soll 2 Mrd. Dollar bei bis zu 30 Mrd. aufnehmen",
               "summary": "Laut Bloomberg sammelt das Inference-Startup in zwei Tranchen zu Bewertungen von 26 und 30 Mrd. Dollar, nach 13 Mrd. im Juni. Offiziell bestätigt oder abgeschlossen ist die Runde nicht."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-11-01",
-      "items": [
-        {
-          "id": "2026-11-01-openai-lowers-funding-target",
-          "headline": "OpenAI now aims to raise up to $20 billion, not $30 billion",
-          "summary": "CNBC confirmed that OpenAI cut the target of its open funding round by about $10 billion amid a tech selloff. The FT puts the valuation at $1.25 trillion; terms can still change.",
-          "source": {
-            "name": "CNBC",
-            "url": "https://www.cnbc.com/2026/10/31/openai-fundraising-20-billion-valuation.html"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI will nur noch bis zu 20 statt 30 Mrd. Dollar holen",
-              "summary": "Laut CNBC hat OpenAI das Ziel seiner laufenden Finanzierungsrunde mitten im Tech-Ausverkauf um rund 10 Mrd. Dollar gesenkt. Die FT nennt eine Bewertung von 1,25 Billionen Dollar; die Runde ist noch offen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-01-apple-intelligence-china-qwen",
-          "headline": "Apple Intelligence comes to China, with Alibaba's Qwen",
-          "summary": "Apple will start testing Writing Tools, Live Translation and more in China with an iOS beta on November 4, with a public launch in December. Siri can hand some requests to Qwen.",
-          "source": {
-            "name": "The Verge",
-            "url": "https://www.theverge.com/tech/1023974/apple-intelligence-china-ios-27-3"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Apple Intelligence startet in China, mit Alibabas Qwen",
-              "summary": "Ab 4. November testet Apple Writing Tools, Live-Übersetzung und mehr in einer iOS-Beta für China, der Start für alle folgt im Dezember. Siri kann manche Anfragen an Qwen weitergeben."
-            }
-          }
-        },
-        {
-          "id": "2026-11-01-claude-agent-mouse-brain-injection",
-          "headline": "A Claude agent picked a therapy and injected it in a mouse",
-          "summary": "A startup says a Claude Sonnet 5 agent chose a gene therapy and steered the needle into an epileptic mouse's brain, with a vet approving each step. Results are not peer-reviewed.",
-          "source": {
-            "name": "WIRED",
-            "url": "https://www.wired.com/story/an-ai-agent-did-brain-surgery-on-live-mouse/"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "Ein Claude-Agent wählte eine Therapie und spritzte sie",
-              "summary": "Ein Startup berichtet, dass ein Agent mit Claude Sonnet 5 eine Gentherapie auswählte und die Nadel ins Gehirn einer Maus mit Epilepsie führte. Eine Tierärztin gab jeden Schritt frei; ohne Peer Review."
-            }
-          }
-        },
-        {
-          "id": "2026-11-01-microsoft-mage-vl-cowork",
-          "headline": "Microsoft's small open model can click and run code",
-          "summary": "Mage-VL-Cowork has 4 billion parameters and mixes screen clicks with terminal commands in one model. Microsoft reports 66% on the OSWorld Verified test; weights are Apache 2.0.",
-          "source": {
-            "name": "Hugging Face",
-            "url": "https://huggingface.co/microsoft/Mage-VL-Cowork"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Microsofts kleines offenes Modell klickt und coded",
-              "summary": "Mage-VL-Cowork hat 4 Mrd. Parameter und verbindet Klicks auf dem Bildschirm mit Terminal-Befehlen in einem Modell. Microsoft meldet 66 % im Test OSWorld Verified; die Gewichte stehen unter Apache 2.0."
-            }
-          }
-        },
-        {
-          "id": "2026-11-01-volta-infostealer-ai-ranks-victims",
-          "headline": "New malware asks an AI model which victims are worth it",
-          "summary": "Cisco Talos found a Windows infostealer that sends a profile of stolen data to AI models to rank victims. Talos has not confirmed use in real attacks.",
-          "source": {
-            "name": "Cisco Talos",
-            "url": "https://blog.talosintelligence.com/appraisal-by-ai-model-driven-victim-prioritization-in-the-volta-infostealer/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Neue Malware lässt eine AI ihre Opfer bewerten",
-              "summary": "Cisco Talos hat einen Infostealer für Windows entdeckt, der gestohlene Daten an AI-Modelle schickt, um Opfer nach Wert zu sortieren. Einen Einsatz in echten Angriffen hat Talos nicht bestätigt."
-            }
-          }
-        },
-        {
-          "id": "2026-11-01-nvidia-nscale-debt-guarantee",
-          "headline": "Nvidia may back the debt for an Anthropic data center",
-          "summary": "Nvidia is reportedly in talks to guarantee loans for Nscale's West Virginia site, built for Anthropic. Nothing is signed yet, and the terms could still change.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "Nvidia könnte Kredite für Anthropic-Rechenzentrum absichern",
-              "summary": "Nvidia verhandelt Berichten zufolge über eine Garantie für Kredite, mit denen Nscale ein Rechenzentrum für Anthropic in West Virginia baut. Unterschrieben ist noch nichts."
             }
           }
         }
