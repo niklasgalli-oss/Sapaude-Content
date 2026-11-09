@@ -7,6 +7,7 @@ import {
   canonicalSourceUrl,
   collectSchemaErrors,
   explainsSubject,
+  glossaryGlossHits,
   glossaryViolations,
   httpsUrlError,
   lintFeed,
@@ -670,4 +671,63 @@ test("deep dive headings stay short and never end with a period", async () => {
   const period = specificDeepDive(["One", "Two ends here.", "Three", "Four"]);
   const dotted = await lintFeed([item({ deepDiveMarkdown: period })], { now: NOW });
   assert.match(dotted.errors.join("\n"), /section 2 heading .* must not end with a period/);
+});
+
+test("rejects mid-sentence glossary glosses and classroom frames", async () => {
+  const door = await lintFeed(
+    [item({ hook: "Text from the Grok API, the door a program uses to ask Grok for writing." })],
+    { now: NOW },
+  );
+  assert.match(door.errors.join("\n"), /door-a-program/);
+
+  const token = await lintFeed(
+    [
+      item({
+        i18n: {
+          de: copy({ hook: "Danach folgt ein Token. Ein Token ist ein Baustein, den das Modell nimmt." }),
+        },
+      }),
+    ],
+    { now: NOW },
+  );
+  assert.match(token.errors.join("\n"), /ein-token-ist/);
+
+  const classroom = await lintFeed(
+    [
+      item({
+        deepDiveMarkdown: [
+          "## The Hook",
+          "",
+          "Think of a task you handed over before a meeting. The slide comes back finished.",
+          "",
+          "## The Core Mechanism",
+          "",
+          "A short section.",
+          "",
+          "## The Trade-off",
+          "",
+          "A short section.",
+          "",
+          "## Practical Takeaway",
+          "",
+          "A short section.",
+          "",
+        ].join("\n"),
+      }),
+    ],
+    { now: NOW },
+  );
+  assert.match(classroom.errors.join("\n"), /classroom-meeting-slide/);
+
+  assert.deepEqual(glossaryGlossHits("The model picks tokens and adds no markup."), []);
+  assert.deepEqual(
+    glossaryGlossHits("Es war vorhersagbar, der Agent meldete sich also an, nachdem er den Endpunkt gefunden hatte."),
+    [],
+  );
+  assert.equal(
+    glossaryGlossHits("ob ein größeres Modell, mehr Reasoning, also mehr Nachdenken vor der Antwort").some((hit) => hit.id === "term-also"),
+    true,
+  );
+  const clean = await lintFeed([item()], { now: NOW });
+  assert.equal(clean.errors.filter((error) => error.includes("glossary gloss")).length, 0);
 });

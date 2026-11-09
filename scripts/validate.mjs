@@ -201,6 +201,46 @@ export function explainsSubject(text) {
   return false;
 }
 
+// Mid-sentence glossary glosses and invented classroom frames. Niklas asked
+// (9 Nov 2026) that news stay close to the source and never define a standard
+// AI term inside another sentence ("API, also die Schnittstelle" / "the door
+// a program uses"). These are errors, not warnings: do not soften prose just
+// to satisfy explainsSubject().
+const GLOSS_GLOSS_PATTERNS = [
+  { id: "door-a-program", re: /\bthe door a (?:program|system|app|computer|service)\b/i },
+  { id: "also-die-schnittstelle", re: /\balso die Schnittstelle\b/i },
+  { id: "ein-token-ist", re: /\bEin Token ist\b/ },
+  { id: "a-token-is", re: /\bA tokens? is\b/i },
+  { id: "ein-header-ist", re: /\bEin Header ist\b/ },
+  { id: "a-header-is", re: /\bA headers? is\b/i },
+  { id: "heisst-hier", re: /\bhei(?:ß|ss)t hier\b/i },
+  {
+    id: "term-also",
+    re: /\b(?:API|Token|Tokens|Header|Prompt|Agent|Watermark|Benchmark|Modell)\b[^.!?\n]{0,48},\s+also\b/i,
+  },
+  { id: "classroom-meeting-slide", re: /before a meeting[\s\S]{0,120}\bslide\b/i },
+];
+
+export function glossaryGlossHits(text) {
+  if (typeof text !== "string" || text.trim() === "") return [];
+  const hits = [];
+  for (const { id, re } of GLOSS_GLOSS_PATTERNS) {
+    const match = text.match(re);
+    if (match) hits.push({ id, match: match[0] });
+  }
+  return hits;
+}
+
+function checkGlossaryGlosses(fail, path, text) {
+  if (typeof text !== "string") return;
+  for (const hit of glossaryGlossHits(text)) {
+    fail(
+      path,
+      `mid-sentence glossary gloss (${hit.id}): "${hit.match}". Write the fact without defining the term in the same sentence`,
+    );
+  }
+}
+
 export function httpsUrlError(url) {
   if (typeof url !== "string" || url.trim() === "" || /\s/.test(url)) {
     return "must be a well-formed https URL";
@@ -644,6 +684,17 @@ function checkLocalized(fail, path, copy, warn = () => {}) {
   }
   checkSummary(fail, `${path}.summaryPoints`, copy.summaryPoints);
   checkDeepDive(fail, `${path}.deepDiveMarkdown`, copy.deepDiveMarkdown);
+  if (typeof copy.headline === "string") checkGlossaryGlosses(fail, `${path}.headline`, copy.headline);
+  if (typeof copy.hook === "string") checkGlossaryGlosses(fail, `${path}.hook`, copy.hook);
+  if (typeof copy.takeaway === "string") checkGlossaryGlosses(fail, `${path}.takeaway`, copy.takeaway);
+  if (Array.isArray(copy.summaryPoints)) {
+    copy.summaryPoints.forEach((point, index) => {
+      if (typeof point === "string") checkGlossaryGlosses(fail, `${path}.summaryPoints[${index}]`, point);
+    });
+  }
+  if (typeof copy.deepDiveMarkdown === "string") {
+    checkGlossaryGlosses(fail, `${path}.deepDiveMarkdown`, copy.deepDiveMarkdown);
+  }
 }
 
 function checkGlossaryField(fail, path, text, { headline = false } = {}) {
