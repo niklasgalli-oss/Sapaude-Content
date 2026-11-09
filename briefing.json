@@ -1,7 +1,142 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-08T04:41:16+01:00",
+  "updatedAt": "2026-11-09T04:45:59+01:00",
   "days": [
+    {
+      "date": "2026-11-09",
+      "items": [
+        {
+          "id": "2026-11-09-anthropic-ipo-lower-valuation",
+          "headline": "Anthropic sticks to its IPO plan, at a lower price",
+          "summary": "Per investors cited by the Financial Times, Anthropic still wants to list before Thanksgiving and raise $80–100 billion at $1.25–1.75 trillion, below the $2 trillion some had hoped for after a tech selloff.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/anthropic-pushes-ahead-with-pre-thanksgiving-ipo-despite-tech-selloff-accepts-lower-valuation/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Anthropic hält am Börsengang fest, aber billiger",
+              "summary": "Laut von der Financial Times zitierten Investoren will Anthropic noch vor Thanksgiving an die Börse und 80 bis 100 Mrd. Dollar einsammeln, bewertet mit 1,25 bis 1,75 Billionen statt der erhofften 2 Billionen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-09-nvidia-board-review-ceo",
+          "headline": "Nvidia's board opens an independent review of its CEO",
+          "summary": "The board reacts to reports that Jensen Huang was targeted by a foreign intelligence effort. It says it has no reason to believe company secrets or national security were compromised.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Nvidia-Board lässt Vorwürfe um CEO unabhängig prüfen",
+              "summary": "Anlass sind Berichte, Jensen Huang sei Ziel eines ausländischen Geheimdienstes gewesen. Laut Board gibt es bisher keinen Hinweis, dass Firmengeheimnisse oder die nationale Sicherheit betroffen sind."
+            }
+          }
+        },
+        {
+          "id": "2026-11-09-co-design-bench",
+          "headline": "Real user requests trip up coding agents",
+          "summary": "Alibaba's Co-Design Bench has agents rework web apps from real change requests. The best of ten models, GPT-6 Astra, fully solves only 26.4% of tasks, though older benchmarks show scores above 99%.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/"
+          },
+          "tag": "Benchmarks",
+          "i18n": {
+            "de": {
+              "headline": "Coding-Agents scheitern an echten Nutzerwünschen",
+              "summary": "Im Co-Design Bench von Alibaba sollen Agents Web-Apps nach echten Änderungswünschen umbauen. Selbst der Spitzenreiter GPT-6 Astra löst nur 26,4 % der Aufgaben vollständig, ältere Benchmarks zeigen über 99 %."
+            }
+          }
+        },
+        {
+          "id": "2026-11-09-claude-code-secrets-github",
+          "headline": "Claude Code settings file leaks secrets on GitHub",
+          "summary": "Apiiro found 1,122 public copies of Claude Code's local settings file holding passwords or API keys, saved via \"don't ask again\". Its advice: rotate every key first, then clean git history.",
+          "source": {
+            "name": "The Hacker News",
+            "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Claude-Code-Datei verrät Passwörter auf GitHub",
+              "summary": "Apiiro fand 1.122 öffentliche Kopien von .claude/settings.local.json mit Passwörtern oder API-Keys, gespeichert über „nicht mehr fragen“. Rat: erst alle Keys tauschen, dann die git-Historie bereinigen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-09-muse-spaces",
+          "headline": "Muse builds trackers and planners from one chat idea",
+          "summary": "Meta's new Spaces turn a described idea into a project board, planner or tracker in the Muse sidebar. Connected apps keep them updated in the background.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/"
+          },
+          "tag": "Tools",
+          "pulseId": "pulse-2026-11-06-muse-spaces",
+          "i18n": {
+            "de": {
+              "headline": "Muse baut Planer und Tracker aus einer Chat-Idee",
+              "summary": "Mit Spaces macht Meta aus einer beschriebenen Idee ein Projektboard, einen Planer oder Tracker in der Muse-Seitenleiste. Verbundene Apps halten sie im Hintergrund aktuell."
+            }
+          }
+        },
+        {
+          "id": "2026-11-09-open-models-cyber-gap",
+          "headline": "Open models close in on closed ones in hacking tests",
+          "summary": "In Vals AI's CyberOffense benchmark, GPT-6 Sol reached 80.8% of attack goals in simulated company networks. The open-weight DeepSeek V4.1 Flash hit 72.8% at about a seventh of the cost per run.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/the-gap-between-open-and-closed-ai-models-in-cyber-capabilities-keeps-shrinking/"
+          },
+          "tag": "Benchmarks",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "Offene Modelle holen bei Hacking-Tests auf",
+              "summary": "Im CyberOffense-Benchmark von Vals AI erreichte GPT-6 Sol 80,8 % der Angriffsziele in simulierten Firmennetzen. Das Open-Weights-Modell DeepSeek V4.1 Flash kam auf 72,8 % bei etwa einem Siebtel der Kosten."
+            }
+          }
+        },
+        {
+          "id": "2026-11-09-eu-ai-act-december-deadline",
+          "headline": "EU AI Act: watermark and nudify-app ban from Dec 2",
+          "summary": "From Dec 2, 2026, generative AI systems sold before Aug 2 must add machine-readable watermarks, and apps that make non-consensual nude images are banned in the EU.",
+          "source": {
+            "name": "The European Post",
+            "url": "https://theeuropeanpost.eu/european-affairs/ai-act-omnibus-sets-2-december-deadline-for-deepfake-watermarks/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "AI Act: Wasserzeichen und Nudify-Verbot ab 2.12.",
+              "summary": "Ab 2. Dezember 2026 müssen generative KI-Systeme, die schon vor dem 2. August auf dem Markt waren, maschinenlesbare Wasserzeichen setzen. Apps für nicht einvernehmliche Nacktbilder sind dann in der EU verboten."
+            }
+          }
+        },
+        {
+          "id": "2026-11-09-underdog-woof-speech",
+          "headline": "Underdog's 32 MB voice model runs offline in the browser",
+          "summary": "Startup Underdog released Woof, a 31-million-parameter speech model anyone can download. It runs on most devices without internet, shown in a small browser game.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "32-MB-Sprachmodell läuft offline im Browser",
+              "summary": "Das Start-up Underdog hat Woof veröffentlicht, ein frei herunterladbares Sprachmodell mit 31 Mio. Parametern. Es läuft ohne Internet auf den meisten Geräten, gezeigt in einem kleinen Browser-Spiel."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-08",
       "items": [
@@ -730,142 +865,6 @@
             "de": {
               "headline": "OpenAI schließt mehrere KI-Deals in Abu Dhabi",
               "summary": "Die Abkommen betreffen den Ölkonzern ADNOC, den Investor Mubadala und die Regierung, die ihre Vorschriften maschinenlesbar machen will. OpenAI sucht bis zu 20 Milliarden Dollar, auch bei Golf-Investoren."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-11-02",
-      "items": [
-        {
-          "id": "2026-11-02-chatgpt-codex-shared-token-budget",
-          "headline": "ChatGPT and Codex will draw from one token budget",
-          "summary": "From December, Plus, Pro and Business plans spend a single token allowance across ChatGPT and Codex, as Work's agent features move into the main app. Instant chats stay outside the limit.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/openais-upcoming-chat-and-work-merger-in-chatgpt-signals-the-end-of-all-you-can-prompt-pricing/"
-          },
-          "tag": "Tools",
-          "pulseId": "pulse-2026-10-31-chatgpt-usage-in-tokens",
-          "i18n": {
-            "de": {
-              "headline": "ChatGPT und Codex teilen sich bald ein Token-Budget",
-              "summary": "Ab Dezember nutzen Plus, Pro und Business ein gemeinsames Token-Kontingent für ChatGPT und Codex, weil die Agent-Funktionen von Work in die normale App wandern. Instant-Chats zählen nicht mit."
-            }
-          }
-        },
-        {
-          "id": "2026-11-02-chatgpt-device-card-limits",
-          "headline": "ChatGPT now caps paid accounts per device and card",
-          "summary": "OpenAI blocks new subscriptions once too many are tied to one payment card or device, affecting Go, Plus and Pro. Free, Business, Enterprise and Edu plans are not counted.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/openai-is-steering-chatgpt-users-toward-more-paid-usage/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "ChatGPT begrenzt bezahlte Konten pro Gerät und Karte",
-              "summary": "OpenAI lässt keine neuen Abos mehr zu, wenn zu viele an derselben Zahlungskarte oder demselben Gerät hängen. Betroffen sind Go, Plus und Pro; Free, Business, Enterprise und Edu zählen nicht."
-            }
-          }
-        },
-        {
-          "id": "2026-11-02-openai-daybreak-blue-training-data",
-          "headline": "OpenAI will train on Daybreak Blue sessions from Nov 29",
-          "summary": "Security sessions in the Trusted Access program were excluded from training until now, per an email to members. After criticism, OpenAI promised a separate opt-out but has not given details yet.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/openai-plans-to-train-models-on-daybreak-blue-cybersecurity-session-data-that-was-previously-off-limits/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI trainiert ab 29. November mit Daybreak-Blue-Daten",
-              "summary": "Laut einer Mail an Teilnehmer des Trusted-Access-Programms waren diese Security-Sitzungen bisher vom Training ausgenommen. Nach Kritik kündigte OpenAI ein eigenes Opt-out an, Details fehlen noch."
-            }
-          }
-        },
-        {
-          "id": "2026-11-02-claude-watermark-older-models",
-          "headline": "Four older Claude models get a text watermark from Nov 3",
-          "summary": "Anthropic adds its invisible mark to older models ahead of an EU AI Act deadline in December. On Opus 4.6 and Sonnet 4.6 it only applies at default sampling settings.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/anthropics-watermark-rollout-leaves-a-loophole-on-two-older-claude-models/"
-          },
-          "tag": "Framework",
-          "pulseId": "pulse-2026-10-31-claude-text-gets-marked",
-          "i18n": {
-            "de": {
-              "headline": "Wasserzeichen ab 3.11. für vier ältere Claude-Modelle",
-              "summary": "Anthropic markiert Texte älterer Modelle unsichtbar, mit Blick auf eine Frist des EU AI Act im Dezember. Bei Opus 4.6 und Sonnet 4.6 greift das Watermark nur mit Standard-Sampling-Werten."
-            }
-          }
-        },
-        {
-          "id": "2026-11-02-kimi-k2-api-retirement",
-          "headline": "Kimi K2 closes to new API users and ends in December",
-          "summary": "Moonshot no longer offers K2 models to newly registered developers and plans to retire the series by the end of December. Existing apps should move to K3.1 Pro and retest.",
-          "source": {
-            "name": "Kimi API Platform",
-            "url": "https://platform.kimi.ai/docs/platform-changelog"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Kimi K2 schließt für neue API-Nutzer, Aus im Dezember",
-              "summary": "Moonshot bietet K2-Modelle neu registrierten Entwicklern nicht mehr an und will die Reihe bis Ende Dezember abschalten. Bestehende Apps sollten auf K3.1 Pro wechseln und neu testen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-02-deepseek-superagent-prototype",
-          "headline": "DeepSeek publishes an open coding agent that opens PRs",
-          "summary": "The MIT-licensed research prototype takes requests from approved people in a repo or team chat and answers with a pull request. DeepSeek shares no benchmarks for it.",
-          "source": {
-            "name": "GitHub",
-            "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
-          },
-          "tag": "Autonomous Agent",
-          "pulseId": "pulse-2026-10-31-agent-acts-without-asking",
-          "i18n": {
-            "de": {
-              "headline": "DeepSeek veröffentlicht offenen Coding Agent für PRs",
-              "summary": "Der Forschungsprototyp unter MIT-Lizenz nimmt Aufträge freigegebener Personen im Repo oder Team-Chat an und liefert einen Pull Request. Benchmarks nennt DeepSeek keine."
-            }
-          }
-        },
-        {
-          "id": "2026-11-02-xai-colossus-naacp-suit-proceeds",
-          "headline": "Pollution suit over xAI's Colossus site can go ahead",
-          "summary": "A US federal judge denied xAI's motion to dismiss the NAACP's Clean Air Act case over turbines at its data center. This is not a ruling on the merits; the case continues.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/10/31/judge-allows-naacp-lawsuit-over-xai-data-center-pollution-to-move-forward/"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "Umweltklage gegen xAIs Rechenzentrum Colossus geht weiter",
-              "summary": "Ein US-Bundesrichter lehnte xAIs Antrag ab, die Klage der NAACP wegen Turbinen am Rechenzentrum abzuweisen. Über die Vorwürfe selbst ist damit nicht entschieden; das Verfahren läuft weiter."
-            }
-          }
-        },
-        {
-          "id": "2026-11-02-baseten-funding-30-billion",
-          "headline": "Baseten reportedly nears $2 billion at up to $30 billion",
-          "summary": "Bloomberg reports the inference startup is raising in two tranches, valued at $26 billion and $30 billion, up from $13 billion in June. The round is not announced or closed.",
-          "source": {
-            "name": "Bloomberg",
-            "url": "https://www.bloomberg.com/news/articles/2026-10-30/baseten-set-for-30-billion-valuation-with-new-funding"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "Baseten soll 2 Mrd. Dollar bei bis zu 30 Mrd. aufnehmen",
-              "summary": "Laut Bloomberg sammelt das Inference-Startup in zwei Tranchen zu Bewertungen von 26 und 30 Mrd. Dollar, nach 13 Mrd. im Juni. Offiziell bestätigt oder abgeschlossen ist die Runde nicht."
             }
           }
         }
