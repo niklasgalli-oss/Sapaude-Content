@@ -1,7 +1,127 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-10T04:47:05+01:00",
+  "updatedAt": "2026-11-11T04:44:49+01:00",
   "days": [
+    {
+      "date": "2026-11-11",
+      "items": [
+        {
+          "id": "2026-11-11-gemini-4-carbon",
+          "headline": "Gemini 4 Carbon is out for developers and Ultra users",
+          "summary": "Google released Gemini 4 Carbon, its strongest model for long agentic tasks and cybersecurity. Via API it costs $2 per million input tokens and $10 per million output tokens, the same introductory price as Gemini 4 Argon.",
+          "source": {
+            "name": "Google",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
+          },
+          "tag": "Model Release",
+          "priority": "breaking",
+          "pulseId": "pulse-2026-11-10-gemini-carbon-agent-teams",
+          "i18n": {
+            "de": {
+              "headline": "Gemini 4 Carbon ist da, für Entwickler und Ultra-Abos",
+              "summary": "Google hat Gemini 4 Carbon freigegeben, sein stärkstes Modell für lange agentische Aufgaben und Cybersecurity. Per API kostet es 2 Dollar pro Million Input-Tokens und 10 Dollar pro Million Output-Tokens, wie Gemini 4 Argon zum Start."
+            }
+          }
+        },
+        {
+          "id": "2026-11-11-anthropic-ipo-price-range",
+          "headline": "Anthropic sets IPO range at $70 to $78 per share",
+          "summary": "Anthropic started its IPO roadshow and plans to offer 825 million shares on Nasdaq under the ticker ANT. The registration is not yet effective; CNBC's sources expect pricing on November 18.",
+          "source": {
+            "name": "Anthropic",
+            "url": "https://www.anthropic.com/news/roadshow-launch"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Anthropic peilt 70 bis 78 Dollar je Aktie an",
+              "summary": "Anthropic hat die Roadshow für den Börsengang gestartet und will 825 Millionen Aktien an der Nasdaq unter dem Kürzel ANT anbieten. Die Registrierung ist noch nicht wirksam, laut CNBC-Quellen soll der Preis am 18. November feststehen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-11-businesses-in-chatgpt",
+          "headline": "Companies can now claim their profile in ChatGPT",
+          "summary": "OpenAI launched Businesses in ChatGPT in beta: firms can update their details and see aggregated mention and click data. Eligible US online shops can also publish Business Agents that answer customer questions.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/introducing-businesses-chatgpt"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Firmen können ihr Profil in ChatGPT jetzt selbst pflegen",
+              "summary": "OpenAI startet Businesses in ChatGPT als Beta: Firmen pflegen ihre Angaben und sehen gesammelte Daten zu Erwähnungen und Klicks. Berechtigte US-Onlinehändler können zusätzlich Business Agents für Kundenfragen veröffentlichen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-11-gemini-robotics-2-5",
+          "headline": "Gemini Robotics 2.5 sorts car parts in a Mercedes pilot",
+          "summary": "Google DeepMind's new vision-language-action model helped Apptronik humanoids sort parts on Mercedes-Benz lines in Hungary and Germany. DeepMind reports a 96% success rate in this proof of concept.",
+          "source": {
+            "name": "Google DeepMind",
+            "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "Gemini Robotics 2.5 sortiert Teile im Mercedes-Test",
+              "summary": "Mit dem neuen Vision-Language-Action-Modell von Google DeepMind sortierten Apptronik-Humanoide Teile an Mercedes-Bändern in Ungarn und Deutschland. DeepMind nennt für den Machbarkeitstest eine Erfolgsquote von 96 %."
+            }
+          }
+        },
+        {
+          "id": "2026-11-11-alphaproof-code-signal",
+          "headline": "AI agents formally verify Signal's encryption code",
+          "summary": "Google DeepMind's AlphaProof Code used prover agents and human-reviewed Lean specifications to check security properties of Signal's compiled code. The proofs are public on GitHub.",
+          "source": {
+            "name": "Google DeepMind",
+            "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+          },
+          "tag": "Autonomous Agent",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "KI-Agenten prüfen Signals Verschlüsselung formal",
+              "summary": "Mit AlphaProof Code haben Prover-Agenten von Google DeepMind auf Basis von Menschen geprüfter Lean-Spezifikationen Sicherheitseigenschaften von Signals kompiliertem Code nachgewiesen. Die Beweise liegen offen auf GitHub."
+            }
+          }
+        },
+        {
+          "id": "2026-11-11-minimax-h3-image",
+          "headline": "MiniMax opens H3-Image for fast 4K image generation",
+          "summary": "MiniMax released open weights for H3-Image, which generates and edits images up to 4096 by 4096 pixels and can use up to 16 reference images. MiniMax says a 4K image takes under 10 seconds.",
+          "source": {
+            "name": "MiniMax",
+            "url": "https://www.minimax.io/blog/minimax-h3-image"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "MiniMax gibt H3-Image für schnelle 4K-Bilder frei",
+              "summary": "MiniMax hat die Open Weights von H3-Image veröffentlicht. Das Modell erzeugt und bearbeitet Bilder bis 4096 × 4096 Pixel und nutzt bis zu 16 Referenzbilder; ein 4K-Bild soll laut MiniMax unter 10 Sekunden dauern."
+            }
+          }
+        },
+        {
+          "id": "2026-11-11-alexa-com-germany",
+          "headline": "Alexa+ now works in the browser in Germany",
+          "summary": "Amazon opened Alexa.com to Alexa+ early-access users in Germany; the assistant now handles shopping, smart-home control and planning on laptops and desktops, not just on Echo devices and in the app.",
+          "source": {
+            "name": "Amazon",
+            "url": "https://www.aboutamazon.de/news/amazon-devices-und-services/-alexa-im-browser"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Alexa+ läuft in Deutschland jetzt auch im Browser",
+              "summary": "Amazon hat Alexa.com für Alexa+-Early-Access-Nutzer in Deutschland geöffnet. Die Assistentin hilft dort beim Einkaufen, steuert das Smart Home und plant, also auch am Laptop statt nur auf Echo-Geräten und in der App."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-10",
       "items": [
@@ -733,124 +853,6 @@
             "de": {
               "headline": "OpenAI Daybreak Red erreicht AWS GovCloud für Cyber",
               "summary": "GPT-5.6 Cyber steht zugelassenen Kunden in AWS GovCloud (US-East) über Daybreak Red auf Amazon Bedrock für autorisierte Vulnerability-Forschung bereit. Zugang braucht OpenAI-Daybreak-Freigabe und separate AWS-Provisionierung."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-11-04",
-      "items": [
-        {
-          "id": "2026-11-04-siri-ai-third-party-apps",
-          "headline": "Siri AI can now take actions inside third-party apps",
-          "summary": "With the iOS 27.3 developer preview, any app can plug into Siri AI, which can use personal context and what is on screen. New app skills bundle several steps into one voice command.",
-          "source": {
-            "name": "The Verge",
-            "url": "https://www.theverge.com/tech/1025694/apple-siri-ai-third-party-apps"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Siri AI kann jetzt Aufgaben in fremden Apps erledigen",
-              "summary": "Mit der Developer Preview von iOS 27.3 können alle Apps Siri AI einbinden, das persönlichen Kontext und den Bildschirminhalt nutzt. Neue App Skills fassen mehrere Schritte zu einem Sprachbefehl zusammen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-04-claude-message-threads-beta",
-          "headline": "Claude API resends less in long chats, answers start faster",
-          "summary": "Anthropic's new message threads, now in public beta, send only what changed since the last request. For very long contexts the first token arrives about 35% sooner, while token costs stay the same.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/anthropics-message-threads-cut-time-to-first-token-by-35-percent-for-long-conversations/"
-          },
-          "tag": "Framework",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "Claude API: lange Chats starten schneller",
-              "summary": "Anthropics Message Threads in der Public Beta übertragen nur noch, was sich seit der letzten Anfrage geändert hat. Bei sehr langem Context kommt der erste Token etwa 35 % früher, die Token-Kosten bleiben gleich."
-            }
-          }
-        },
-        {
-          "id": "2026-11-04-anthropic-flashprove-model-proof",
-          "headline": "Anthropic works on proof of which model wrote an answer",
-          "summary": "Anthropic is developing FlashProve, an open source system meant to cryptographically prove that an output came from a specific model, so a provider cannot quietly swap in a different one.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Anthropic arbeitet an Beweis für das genutzte Modell",
-              "summary": "Anthropic entwickelt FlashProve, ein Open-Source-System, das kryptografisch belegen soll, dass eine Antwort von einem bestimmten Modell stammt. So soll kein Anbieter heimlich ein anderes Modell einsetzen können."
-            }
-          }
-        },
-        {
-          "id": "2026-11-04-apple-ai-companions-18-plus",
-          "headline": "App Store: romantic AI companions become 18+ only",
-          "summary": "Apple will require an 18+ rating for apps with dating or romantic relationship features, which also covers AI companion apps. New content descriptors are required from November 16.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/11/03/apple-restricts-dating-apps-and-ai-companions-to-users-18-and-up/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "App Store: romantische KI-Begleiter erst ab 18",
-              "summary": "Apple verlangt künftig eine 18+-Einstufung für Apps mit Dating- oder Beziehungsfunktionen, das trifft auch AI-Companion-Apps. Ab 16. November müssen Entwickler neue Inhaltsangaben machen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-04-google-schools-ai-off-search-off",
-          "headline": "Schools that turn off Google's AI also lose Search",
-          "summary": "Gemini and Google Search are now off by default for K-12 student accounts. Schools can only switch both on together, so declining the AI features also blocks Search, which drew criticism from US politicians.",
-          "source": {
-            "name": "The Verge",
-            "url": "https://www.theverge.com/tech/1025411/google-turn-off-search-ai-features"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Schulen ohne Googles KI verlieren auch die Suche",
-              "summary": "Gemini und die Google-Suche sind für Schülerkonten (K-12) nun standardmäßig aus. Schulen können nur beides zusammen einschalten, wer die KI ablehnt, verzichtet also auch auf die Suche. US-Politiker kritisieren das."
-            }
-          }
-        },
-        {
-          "id": "2026-11-04-gpt-6-astra-designs-device",
-          "headline": "OpenAI says GPT-6 Astra designed a device in a week",
-          "summary": "According to OpenAI, its hardware team used GPT-6 Astra for case, circuit board, firmware and interface of a small Codex voice device. Prototypes still needed several fixes for manufacturing details.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/openai-says-gpt-6-astra-designed-a-hardware-device-from-scratch-in-under-a-week/"
-          },
-          "tag": "Benchmarks",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI: GPT-6 Astra entwarf ein Gerät in einer Woche",
-              "summary": "Laut OpenAI nutzte sein Hardware-Team GPT-6 Astra für Gehäuse, Platine, Firmware und Oberfläche eines kleinen Sprachgeräts für Codex. Die Prototypen brauchten aber mehrere Korrekturrunden bei Fertigungsdetails."
-            }
-          }
-        },
-        {
-          "id": "2026-11-04-fal-valuation-16-billion",
-          "headline": "Inference startup Fal doubles its valuation to $16 billion",
-          "summary": "Fal, which runs image, video and audio models for other companies, raised $1.3 billion led by Bessemer, with Nvidia also joining. Its valuation doubled since April as demand for inference grows.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "Inference-Startup Fal ist jetzt 16 Milliarden Dollar wert",
-              "summary": "Fal betreibt Bild-, Video- und Audiomodelle für andere Firmen und sammelte 1,3 Milliarden Dollar ein, angeführt von Bessemer, auch Nvidia ist dabei. Die Bewertung hat sich seit April verdoppelt, weil Inference gefragt ist."
             }
           }
         }
