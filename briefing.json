@@ -1,7 +1,142 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-11T04:44:49+01:00",
+  "updatedAt": "2026-11-12T04:48:00+01:00",
   "days": [
+    {
+      "date": "2026-11-12",
+      "items": [
+        {
+          "id": "2026-11-12-claude-sheets-meetings",
+          "headline": "Claude adds spreadsheets, whiteboards and meetings",
+          "summary": "Anthropic launched Claude Sheets and Claude Whiteboards in beta and made dashboards generally available as Claude Data. Claude Meetings, a beta for Team and Enterprise, lets Claude join Google Meet calls and start tasks.",
+          "source": {
+            "name": "Anthropic",
+            "url": "https://claude.com/resources/articles/sheets-whiteboards-data"
+          },
+          "tag": "Tools",
+          "pulseId": "pulse-2026-11-11-claude-builds-sheets",
+          "i18n": {
+            "de": {
+              "headline": "Claude kann jetzt Tabellen, Whiteboards und Meetings",
+              "summary": "Anthropic startet Claude Sheets und Claude Whiteboards als Beta, Dashboards laufen jetzt regulär als Claude Data. Mit Claude Meetings, einer Beta für Team- und Enterprise-Kunden, sitzt Claude in Google-Meet-Calls und legt Aufgaben an."
+            }
+          }
+        },
+        {
+          "id": "2026-11-12-gemini-apple-carplay",
+          "headline": "Gemini now talks with you in Apple CarPlay",
+          "summary": "Google is rolling out a Gemini app for Apple CarPlay worldwide. iPhone users can hold hands-free voice conversations while driving, for example to catch up on email or prepare for a meeting.",
+          "source": {
+            "name": "Google",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/"
+          },
+          "tag": "Tools",
+          "pulseId": "pulse-2026-11-11-gemini-talks-in-the-car",
+          "i18n": {
+            "de": {
+              "headline": "Gemini spricht jetzt auch in Apple CarPlay",
+              "summary": "Google verteilt weltweit eine Gemini-App für Apple CarPlay. Wer ein iPhone nutzt, kann während der Fahrt freihändig mit Gemini sprechen, etwa um Mails durchzugehen oder sich auf ein Meeting vorzubereiten."
+            }
+          }
+        },
+        {
+          "id": "2026-11-12-qwen4-max-preview",
+          "headline": "Alibaba opens a short preview of Qwen4-Max",
+          "summary": "Alibaba released Qwen4-Max-Preview, a new flagship model for text, image and video understanding, reasoning and tool use. The preview runs only through its Token Plan and is scheduled to end on November 25.",
+          "source": {
+            "name": "Alibaba Cloud",
+            "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "Alibaba testet Qwen4-Max in kurzer Preview",
+              "summary": "Alibaba hat Qwen4-Max-Preview veröffentlicht, ein neues Spitzenmodell für Text, Bild- und Videoverständnis, Reasoning und Tool-Nutzung. Die Preview läuft nur über den Token Plan und soll am 25. November enden."
+            }
+          }
+        },
+        {
+          "id": "2026-11-12-alphagenome-2",
+          "headline": "AlphaGenome 2 predicts DNA effects per cell type",
+          "summary": "Google DeepMind's AlphaGenome 2 estimates how genetic variants change gene activity in hundreds of human cell types. It is open to non-commercial research and is not meant for clinical diagnosis.",
+          "source": {
+            "name": "Google DeepMind",
+            "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "AlphaGenome 2 sagt DNA-Effekte je Zelltyp voraus",
+              "summary": "AlphaGenome 2 von Google DeepMind schätzt, wie genetische Varianten die Genaktivität in Hunderten menschlicher Zelltypen verändern. Das Modell steht für nicht-kommerzielle Forschung bereit, nicht für klinische Diagnosen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-12-runway-praxis-1-open",
+          "headline": "Runway releases its robot model Praxis-1 openly",
+          "summary": "Runway published weights and code for Praxis-1, a world action model for robot arms, under the Apache 2.0 license. Robotics teams can now run and adapt it on their own hardware.",
+          "source": {
+            "name": "Runway",
+            "url": "https://runway.com/news/company-news/praxis-1-is-now-available"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "Runway gibt Robotermodell Praxis-1 frei",
+              "summary": "Runway hat Gewichte und Code von Praxis-1, einem World Action Model für Roboterarme, unter der Apache-2.0-Lizenz veröffentlicht. Robotik-Teams können es jetzt selbst betreiben und an eigene Hardware anpassen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-12-openai-control-room",
+          "headline": "OpenAI can stop research models within 35 seconds",
+          "summary": "OpenAI described Control Room, a central system that tracks model jobs across its research infrastructure. Once staff decide to intervene, it halts a job's model output within 35 seconds.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/control-room"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI stoppt Forschungsmodelle in 35 Sekunden",
+              "summary": "OpenAI hat Control Room vorgestellt, ein zentrales System, das Modell-Jobs in der eigenen Forschungsinfrastruktur überwacht. Fällt die Entscheidung einzugreifen, stoppt es die Ausgabe eines Jobs innerhalb von 35 Sekunden."
+            }
+          }
+        },
+        {
+          "id": "2026-11-12-new-york-raise-portal",
+          "headline": "New York opens registration for big AI labs",
+          "summary": "Under the RAISE Act, large frontier AI developers must register with New York by January 1, 2027. From then on they must publish safety frameworks and report critical safety incidents within 72 hours.",
+          "source": {
+            "name": "New York State",
+            "url": "https://www.governor.ny.gov/news/governor-hochul-declares-ny-will-lead-nation-ai-science-and-safety-launches-new-research"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "New York startet Registrierung für große KI-Labs",
+              "summary": "Nach dem RAISE Act müssen sich große Frontier-KI-Entwickler bis 1. Januar 2027 in New York registrieren. Ab dann müssen sie Sicherheitskonzepte veröffentlichen und kritische Vorfälle binnen 72 Stunden melden."
+            }
+          }
+        },
+        {
+          "id": "2026-11-12-united-blocks-ai-agents",
+          "headline": "United won't let AI agents book flights",
+          "summary": "United Airlines is restricting third-party AI agents on its booking platforms, citing data security and regulation. Assistants may still show flight options, but customers have to complete the purchase themselves.",
+          "source": {
+            "name": "CNBC",
+            "url": "https://www.cnbc.com/2026/11/11/united-airlines-ai-agents.html"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "United lässt KI-Agenten keine Flüge buchen",
+              "summary": "United Airlines schränkt den Zugriff fremder KI-Agenten auf seine Buchungsplattformen ein und verweist auf Datensicherheit und Vorschriften. Assistenten dürfen Flüge anzeigen, den Kauf müssen Kunden selbst abschließen."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-11",
       "items": [
@@ -733,126 +868,6 @@
             "de": {
               "headline": "Baidu öffnet ERNIE-5.5-Flash-Base-Gewichte",
               "summary": "Baidu hat ERNIE-5.5-Flash-Base veröffentlicht: ein 280B-MoE-Basismodell mit 14B aktiven Parametern und 33,5T Pretraining-Tokens auf Hugging Face, ohne Mid- oder Post-Training. Die Lizenz-Territory schließt EU, UK und Südkorea aus."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-11-05",
-      "items": [
-        {
-          "id": "2026-11-05-openai-acquires-pierre",
-          "headline": "OpenAI buys Pierre to strengthen Codex code review",
-          "summary": "OpenAI will acquire Pierre Computer Company, whose Trees and Diffs libraries already power browsing and change review in Codex. Code Storage should move into Codex after closing; open-source projects stay open, pending regulatory approval.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/openai-to-acquire-pierre/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI kauft Pierre für bessere Codex-Code-Reviews",
-              "summary": "OpenAI übernimmt Pierre Computer Company, dessen Libraries Trees und Diffs schon Dateibrowser und Diff-Ansicht in Codex antreiben. Code Storage soll nach dem Closing in Codex landen; Open-Source bleibt offen, die Freigabe steht noch aus."
-            }
-          }
-        },
-        {
-          "id": "2026-11-05-chatgpt-images-2-6-gifs",
-          "headline": "ChatGPT Images 2.6 can turn prompts into animated GIFs",
-          "summary": "OpenAI's Images 2.6 update lets ChatGPT and Codex users create animated GIFs from a text prompt or photo, then adjust speed and edit frames. It rolls out on all plans, and the API adds GPT-Image-2.6 Flare and Sunburst.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/introducing-images-2-6/"
-          },
-          "tag": "Tools",
-          "priority": "breaking",
-          "i18n": {
-            "de": {
-              "headline": "ChatGPT Images 2.6 macht aus Prompts animierte GIFs",
-              "summary": "Mit Images 2.6 können ChatGPT- und Codex-Nutzer aus Text oder Foto animierte GIFs erzeugen, Tempo anpassen und Einzelbilder editieren. Das Update läuft auf allen Plänen; die API bekommt GPT-Image-2.6 Flare und Sunburst."
-            }
-          }
-        },
-        {
-          "id": "2026-11-05-openai-linux-948-lpes",
-          "headline": "OpenAI agents find 948 Linux privilege-escalation bugs",
-          "summary": "An OpenAI cyber pipeline with an upcoming model validated 948 Linux local privilege-escalation flaws and built exploits plus patch drafts for about $1.2M in API cost. Humans review findings before reports go via Patch the Planet partners.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/a-thousand-fewer-paths-to-root/"
-          },
-          "tag": "Autonomous Agent",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI-Agenten finden 948 Linux-Privilege-Escalation-Bugs",
-              "summary": "Eine OpenAI-Cyber-Pipeline mit einem kommenden Modell hat 948 Local-Privilege-Escalation-Lücken in Linux validiert und Exploits plus Patch-Entwürfe gebaut (~1,2 Mio. $ API). Menschen prüfen vor dem Melden über Patch-the-Planet-Partner."
-            }
-          }
-        },
-        {
-          "id": "2026-11-05-us-midterms-data-center-backlash",
-          "headline": "US midterms amplify pushback against AI data centers",
-          "summary": "After Democrats won both chambers of Congress, TechCrunch reports stronger odds of limits on where AI data centers can be built. Local bans already hit states such as Ohio, and a national moratorium bill would still face a possible veto.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "US-Zwischenwahl stärkt Widerstand gegen KI-Rechenzentren",
-              "summary": "Nach dem Demokraten-Sieg in beiden Kongresskammern sieht TechCrunch höhere Chancen für Grenzen beim Bau von KI-Rechenzentren. Lokale Verbote gab es schon etwa in Ohio; ein nationales Moratorium müsste weiter mit einem Veto rechnen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-05-meta-acquires-conductor",
-          "headline": "Meta buys Conductor for multi-agent coding workspaces",
-          "summary": "Meta has acquired Conductor, an AI coding startup that runs multiple agents in parallel workspaces for software projects. Core features keep working into early next year, while Conductor's cloud service shuts down on November 20.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Meta kauft Conductor für Multi-Agent-Coding-Workspaces",
-              "summary": "Meta hat Conductor übernommen, ein KI-Coding-Startup, das mehrere Agenten in parallelen Workspaces für Softwareprojekte laufen lässt. Kernfunktionen bleiben bis Anfang nächsten Jahres; der Cloud-Dienst von Conductor endet am 20. November."
-            }
-          }
-        },
-        {
-          "id": "2026-11-05-google-agile-deliberation",
-          "headline": "Google's Agile Deliberation helps define fuzzy image labels",
-          "summary": "Google Research open-sourced Agile Deliberation, a human-in-the-loop flow that splits subjective image categories and shows borderline cases so people refine rules. In 18 live sessions it cut labeling stress and built stronger classifiers.",
-          "source": {
-            "name": "Google Research",
-            "url": "https://research.google/blog/agile-deliberation-how-ai-helps-humans-define-the-gray-areas/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Googles Agile Deliberation schärft unscharfe Bild-Labels",
-              "summary": "Google Research hat Agile Deliberation open-sourced: ein Human-in-the-Loop-Ablauf, der subjektive Bildkategorien zerlegt und Grenzfälle zeigt. In 18 Live-Sessions sank der Label-Stress; Classifier wurden stärker."
-            }
-          }
-        },
-        {
-          "id": "2026-11-05-daybreak-red-aws-govcloud",
-          "headline": "OpenAI Daybreak Red reaches AWS GovCloud for cyber work",
-          "summary": "GPT-5.6 Cyber is now available to approved customers in AWS GovCloud (US-East) through Daybreak Red on Amazon Bedrock for authorized vulnerability research. Access needs OpenAI Daybreak approval plus separate AWS provisioning.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/daybreak-red-aws-govcloud"
-          },
-          "tag": "Tools",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI Daybreak Red erreicht AWS GovCloud für Cyber",
-              "summary": "GPT-5.6 Cyber steht zugelassenen Kunden in AWS GovCloud (US-East) über Daybreak Red auf Amazon Bedrock für autorisierte Vulnerability-Forschung bereit. Zugang braucht OpenAI-Daybreak-Freigabe und separate AWS-Provisionierung."
             }
           }
         }
