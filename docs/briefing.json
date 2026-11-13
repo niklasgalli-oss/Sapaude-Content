@@ -1,7 +1,126 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-12T04:48:00+01:00",
+  "updatedAt": "2026-11-13T04:45:38+01:00",
   "days": [
+    {
+      "date": "2026-11-13",
+      "items": [
+        {
+          "id": "2026-11-13-gemini-4-hydrogen",
+          "headline": "Gemini 4 Hydrogen is fast and now powers Google Search",
+          "summary": "Google released Gemini 4 Hydrogen, a fast model for everyday coding and agent tasks at $1.50/$7.50 per million tokens. It is the new default in AI Mode and is rolling out in the Gemini app and API.",
+          "source": {
+            "name": "Google",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
+          },
+          "tag": "Model Release",
+          "priority": "breaking",
+          "i18n": {
+            "de": {
+              "headline": "Gemini 4 Hydrogen: schnell und jetzt in der Google-Suche",
+              "summary": "Google bringt mit Gemini 4 Hydrogen ein schnelles Modell für Coding- und Agenten-Aufgaben im Alltag, für 1,50/7,50 Dollar pro Million Tokens. In AI Mode ist es jetzt Standard, dazu kommt es in die Gemini-App und die API."
+            }
+          }
+        },
+        {
+          "id": "2026-11-13-nvidia-ceo-transition",
+          "headline": "Jensen Huang steps down as Nvidia CEO",
+          "summary": "Nvidia says Jensen Huang resigned as CEO and board member, effective immediately. CFO Colette Kress leads as interim CEO while the board searches for a permanent successor.",
+          "source": {
+            "name": "NVIDIA",
+            "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Jensen Huang tritt als Nvidia-Chef zurück",
+              "summary": "Laut Nvidia hat Jensen Huang seinen Posten als CEO und seinen Sitz im Board mit sofortiger Wirkung abgegeben. Finanzchefin Colette Kress führt das Unternehmen übergangsweise, der Vorstand sucht einen dauerhaften Nachfolger."
+            }
+          }
+        },
+        {
+          "id": "2026-11-13-lawsuit-to-freeze-ai",
+          "headline": "Nonprofits sue five AI labs to pause new models",
+          "summary": "A coalition of advocacy groups filed suit in San Francisco against Anthropic, Google, Meta, OpenAI and SpaceXSI, asking a court to halt new models over safety risks. The case has just been filed; no court has ruled.",
+          "source": {
+            "name": "AP News",
+            "url": "https://apnews.com/article/artificial-intelligence-ai-lawsuit-cyberattacks-anthropic-openai-03ece37b96979fe834f60976648504ba"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Klage soll fünf KI-Labore bei neuen Modellen stoppen",
+              "summary": "Mehrere Verbraucher- und Sicherheitsgruppen haben in San Francisco gegen Anthropic, Google, Meta, OpenAI und SpaceXSI geklagt, um neue Modelle zu stoppen. Die Klage ist eingereicht, entschieden ist nichts."
+            }
+          }
+        },
+        {
+          "id": "2026-11-13-openai-daybreak-security",
+          "headline": "OpenAI's new agents test and patch company code",
+          "summary": "OpenAI added Daybreak Red Team, which probes web apps for vulnerabilities in early access, and Daybreak Defense Factory, which finds and fixes flaws in codebases. Engineers review each proposed patch.",
+          "source": {
+            "name": "The Register",
+            "url": "https://www.theregister.com/security/2026/11/12/openai-launches-security-products-tells-orgs-theyre-doomed-if-they-dont-use-them/5309500"
+          },
+          "tag": "Autonomous Agent",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI-Agenten prüfen und flicken Firmencode",
+              "summary": "OpenAI startet Daybreak Red Team, das Web-Apps in Early Access auf Schwachstellen testet, und Daybreak Defense Factory, das Lücken im Code findet und behebt. Jeden Patch geben Engineers vorher frei."
+            }
+          }
+        },
+        {
+          "id": "2026-11-13-mirendil-raises-1b",
+          "headline": "Mirendil raises $1 billion for agent-run AI research",
+          "summary": "Startup Mirendil closed a $1 billion Series A led by Kleiner Perkins and Clearlake. It builds tools where hundreds of agents write code and run experiments, so small teams can do frontier AI research.",
+          "source": {
+            "name": "Mirendil",
+            "url": "https://mirendil.com/news/series-a/"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "Mirendil holt 1 Milliarde Dollar für Agenten-Forschung",
+              "summary": "Das Start-up Mirendil hat eine Series A über 1 Milliarde Dollar abgeschlossen, angeführt von Kleiner Perkins und Clearlake. Mit seinen Tools schreiben Hunderte Agenten Code und fahren Experimente."
+            }
+          }
+        },
+        {
+          "id": "2026-11-13-openai-child-safety-research",
+          "headline": "OpenAI funds research on AI and children's safety",
+          "summary": "OpenAI signed a charter on safer AI for children at the Paris Peace Forum and pledged $2 million for shared research tools. It also says it wants to work with EU policymakers on the planned EU Kids Act.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/children-first-declaration"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI fördert Forschung zu KI und Kinderschutz",
+              "summary": "OpenAI hat beim Paris Peace Forum eine Charta für sicherere KI für Kinder unterzeichnet und 2 Millionen Dollar für gemeinsame Forschungswerkzeuge zugesagt. Beim geplanten EU Kids Act will das Unternehmen mit der EU-Politik reden."
+            }
+          }
+        },
+        {
+          "id": "2026-11-13-openai-india-local-inference",
+          "headline": "OpenAI's API can now run requests inside India",
+          "summary": "Eligible businesses can now have API requests processed and answered within India, starting with GPT-6 Luna. The goal is to meet local data rules, for example in financial services.",
+          "source": {
+            "name": "The Hindu",
+            "url": "https://www.thehindu.com/business/openai-now-allows-enterprises-to-process-ai-requests-within-india/article71692799.ece"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI verarbeitet API-Anfragen jetzt auch in Indien",
+              "summary": "Berechtigte Unternehmen können API-Anfragen jetzt komplett in Indien verarbeiten lassen, zunächst mit GPT-6 Luna. So sollen lokale Datenregeln erfüllt werden, etwa im Finanzsektor."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-12",
       "items": [
@@ -763,111 +882,6 @@
             "de": {
               "headline": "Riot vermietet 910-MW-Texas-Campus an Anthropic",
               "summary": "Riot Platforms schließt einen 15-Jahres-Lease über 910 MW in Corsicana: rund 28 Mrd. $ Vertragswert und etwa 1,8 Mrd. $ durchschnittliche Jahresmiete. CoinDesk nennt Anthropic als Mieter; Phasen laufen bis Juli 2028."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-11-06",
-      "items": [
-        {
-          "id": "2026-11-06-openai-gpt-6-cyber",
-          "headline": "OpenAI launches GPT-6 Cyber for authorized security work",
-          "summary": "GPT-6 Cyber is OpenAI's new cybersecurity model for finding and validating vulnerabilities within researcher-set scope. It scores 48.5% on ExploitGym, up from 32.1% for GPT-5.6 Cyber, and starts on Daybreak Red for approved customers.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/introducing-gpt-6-cyber"
-          },
-          "tag": "Model Release",
-          "priority": "breaking",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI startet GPT-6 Cyber für autorisierte Security-Arbeit",
-              "summary": "GPT-6 Cyber ist OpenAIs neues Cybersecurity-Modell zum Finden und Validieren von Schwachstellen in gesetztem Scope. Auf ExploitGym erreicht es 48,5 % (vorher 32,1 % bei GPT-5.6 Cyber) und startet über Daybreak Red für freigegebene Kunden."
-            }
-          }
-        },
-        {
-          "id": "2026-11-06-gemini-omni-1-2-flash",
-          "headline": "Gemini Omni 1.2 Flash makes 15-second videos cheaper",
-          "summary": "Google's Gemini Omni 1.2 Flash is generally available on the Gemini API and Cloud. Clips can run 3 to 15 seconds, multi-turn conversational edits work on full clips, and 720p video costs about $0.07 per second after a 30% price cut.",
-          "source": {
-            "name": "Google",
-            "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash/"
-          },
-          "tag": "Tools",
-          "priority": "breaking",
-          "i18n": {
-            "de": {
-              "headline": "Gemini Omni 1.2 Flash: 15-Sekunden-Video günstiger",
-              "summary": "Googles Gemini Omni 1.2 Flash ist GA in der Gemini API und in Cloud. Clips laufen 3 bis 15 Sekunden, Multi-Turn-Edits funktionieren über volle Clips, und 720p kostet etwa 0,07 $ pro Sekunde nach 30 % Preissenkung."
-            }
-          }
-        },
-        {
-          "id": "2026-11-06-claude-personal-finance",
-          "headline": "Claude Personal Finance connects US banks via Plaid",
-          "summary": "Anthropic's Personal Finance beta lets US Pro, Max, and Ultra users link bank and card accounts through Plaid and ask about spending in plain language. Access is read-only; Claude cannot move or invest money, and hub chats skip training.",
-          "source": {
-            "name": "Anthropic",
-            "url": "https://claude.com/resources/articles/introducing-personal-finance-in-claude"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Claude Personal Finance verbindet US-Konten via Plaid",
-              "summary": "Anthropics Personal-Finance-Beta lässt US-Nutzer auf Pro, Max und Ultra Bank- und Kartenkonten via Plaid verknüpfen und Ausgabenfragen stellen. Zugang ist read-only; Claude bewegt oder investiert kein Geld, Hub-Chats trainieren nicht."
-            }
-          }
-        },
-        {
-          "id": "2026-11-06-cursor-build-live-apps",
-          "headline": "Cursor cloud agents can now publish live shareable apps",
-          "summary": "Cursor can scaffold a web app, add Postgres and SSO auth, run security checks, then deploy a shareable link from a cloud agent. On paid plans with cloud agents; team apps stay behind Cursor sign-in, and individuals can share publicly.",
-          "source": {
-            "name": "Cursor",
-            "url": "https://cursor.com/changelog/build-live-apps"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Cursor-Cloud-Agenten publizieren jetzt live Apps",
-              "summary": "Cursor kann per Cloud-Agent eine Web-App aufsetzen, Postgres und SSO-Auth einrichten, Security-Checks fahren und einen Link deployen. Auf Paid-Plänen mit Cloud Agents; Team-Apps hinter Cursor-Login, Individuen können öffentlich teilen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-06-mistral-studio-agents",
-          "headline": "Mistral Studio adds managed agents, workflows, and apps",
-          "summary": "Mistral expands Studio so teams can build managed agents, durable workflows, and hosted apps on Mistral Large 4 (Le Chonk), connected to enterprise data via connectors and MCP. Deployments run in cloud, VPC, on-premises, or hybrid setups.",
-          "source": {
-            "name": "Mistral",
-            "url": "https://mistral.ai/news/build-with-studio/"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "Mistral Studio: Managed Agents, Workflows und Apps",
-              "summary": "Mistral erweitert Studio: Teams bauen Managed Agents, Workflows und gehostete Apps auf Mistral Large 4 (Le Chonk), verbunden mit Unternehmensdaten über Connectors und MCP. Deployments laufen in Cloud, VPC, On-Premises oder hybrid."
-            }
-          }
-        },
-        {
-          "id": "2026-11-06-ernie-5-5-flash-base",
-          "headline": "Baidu opens ERNIE 5.5 Flash Base weights for fine-tuning",
-          "summary": "Baidu released ERNIE-5.5-Flash-Base, a 280B MoE base model with 14B active parameters pretrained on 33.5T tokens, on Hugging Face before mid- or post-training. The license territory excludes the EU, UK, and South Korea.",
-          "source": {
-            "name": "Baidu",
-            "url": "https://ernie.baidu.com/release/ernie-5-5-flash-base/"
-          },
-          "tag": "Model Release",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "Baidu öffnet ERNIE-5.5-Flash-Base-Gewichte",
-              "summary": "Baidu hat ERNIE-5.5-Flash-Base veröffentlicht: ein 280B-MoE-Basismodell mit 14B aktiven Parametern und 33,5T Pretraining-Tokens auf Hugging Face, ohne Mid- oder Post-Training. Die Lizenz-Territory schließt EU, UK und Südkorea aus."
             }
           }
         }
