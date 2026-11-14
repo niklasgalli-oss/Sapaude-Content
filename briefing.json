@@ -1,7 +1,144 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-13T04:45:38+01:00",
+  "updatedAt": "2026-11-14T04:46:45+01:00",
   "days": [
+    {
+      "date": "2026-11-14",
+      "items": [
+        {
+          "id": "2026-11-14-chatgpt-wallet",
+          "headline": "ChatGPT agents can now pay for purchases",
+          "summary": "OpenAI launched ChatGPT Wallet with Visa, Mastercard and American Express. Agents pay with a token instead of your card number, and you confirm every purchase with Face ID or a fingerprint; first for Pro users in the US.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/introducing-chatgpt-wallet/"
+          },
+          "tag": "Tools",
+          "pulseId": "pulse-2026-11-13-chatgpt-agents-can-pay",
+          "i18n": {
+            "de": {
+              "headline": "ChatGPT-Agenten können jetzt bezahlen",
+              "summary": "OpenAI startet ChatGPT Wallet mit Visa, Mastercard und American Express. Agents zahlen mit einem Token statt der Kartennummer, jeder Kauf wird per Face ID oder Fingerabdruck bestätigt. Zunächst nur für Pro-Nutzer in den USA."
+            }
+          }
+        },
+        {
+          "id": "2026-11-14-eu-ai-summit-dublin",
+          "headline": "EU leaders hold their first AI summit in Dublin",
+          "summary": "At an informal summit, EU leaders discussed how Europe can catch up in AI while managing its risks. Commission chief von der Leyen put the investment need at €500 billion, from private money and the next EU budget.",
+          "source": {
+            "name": "WELT",
+            "url": "https://www.welt.de/wirtschaft/article6af76f157f8bbad09ea62d26/gipfeltreffen-in-dublin-haben-keine-zeit-zu-verlieren-eukommission-veranschlagt-halbe-billion-euro-fuer-ki-investitionen.html"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Erster KI-Gipfel der EU-Spitzen in Dublin",
+              "summary": "Bei einem informellen Gipfel berieten die EU-Staats- und Regierungschefs, wie Europa bei KI aufholen und Risiken begrenzen kann. Von der Leyen beziffert den Investitionsbedarf auf 500 Milliarden Euro aus privatem Kapital und EU-Haushalt."
+            }
+          }
+        },
+        {
+          "id": "2026-11-14-claude-for-manufacturing",
+          "headline": "Claude gets a plugin for factory software",
+          "summary": "Anthropic's Claude for Manufacturing connects to tools like Autodesk Fusion, NetSuite and Infor. It drafts quotes, compares suppliers and writes quality reports for Team and Enterprise customers; key steps still need human approval.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "Claude bekommt ein Plugin für Fabrik-Software",
+              "summary": "Claude for Manufacturing von Anthropic greift auf Programme wie Autodesk Fusion, NetSuite und Infor zu. Es erstellt Angebote, vergleicht Lieferanten und schreibt Qualitätsberichte. Wichtige Schritte muss weiter ein Mensch freigeben."
+            }
+          }
+        },
+        {
+          "id": "2026-11-14-gemini-glasses-preorder",
+          "headline": "Gemini smart glasses are open for pre-order",
+          "summary": "Google's glasses with Warby Parker, Gentle Monster and Samsung can now be pre-ordered in the US and reach stores on December 10. Gemini helps with directions, live translation and photos, and they also work with iPhones.",
+          "source": {
+            "name": "Google",
+            "url": "https://blog.google/innovation-and-ai/technology/xr-ar/google-intelligent-eyewear-collections-pre-order/"
+          },
+          "tag": "Hardware",
+          "pulseId": "pulse-2026-11-13-gemini-glasses-preorder",
+          "i18n": {
+            "de": {
+              "headline": "Gemini-Brillen jetzt vorbestellbar",
+              "summary": "Googles Brillen mit Warby Parker, Gentle Monster und Samsung lassen sich in den USA vorbestellen und kommen am 10. Dezember in die Läden. Gemini hilft bei Navigation, Live-Übersetzung und Fotos, auch mit dem iPhone."
+            }
+          }
+        },
+        {
+          "id": "2026-11-14-notion-chats-fireworks-breach",
+          "headline": "Notion AI chats exposed in a vendor hack",
+          "summary": "A breach at AI provider Fireworks let attackers see some Notion AI chat transcripts, affecting under 1% of workspaces. Notion revoked leaked API keys and has contacted affected customers.",
+          "source": {
+            "name": "Notion",
+            "url": "https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor"
+          },
+          "tag": "Tools",
+          "pulseId": "pulse-2026-11-13-notion-ai-chats-exposed",
+          "i18n": {
+            "de": {
+              "headline": "Notion-AI-Chats bei Dienstleister-Hack offengelegt",
+              "summary": "Über einen Angriff auf den KI-Anbieter Fireworks konnten Angreifer einige Chatverläufe aus Notion AI einsehen, betroffen sind weniger als 1 Prozent der Workspaces. Notion hat geleakte API-Keys gesperrt und Betroffene informiert."
+            }
+          }
+        },
+        {
+          "id": "2026-11-14-spacex-74b-ai-campuses",
+          "headline": "SpaceX plans $74 billion in AI computing sites",
+          "summary": "SpaceX wants to spend more than $74 billion on AI supercomputing campuses in Texas and Arizona. The Arizona site alone is planned at about $50 billion and still needs local approval.",
+          "source": {
+            "name": "UPI",
+            "url": "https://www.upi.com/Top_News/US/2026/11/12/spacex-musk-AI-supercomputing-texas-arizona/8361794521839/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "SpaceX plant 74 Milliarden Dollar für KI-Rechenzentren",
+              "summary": "SpaceX will mehr als 74 Milliarden Dollar in KI-Rechenzentren in Texas und Arizona stecken. Allein der Standort in Arizona soll rund 50 Milliarden kosten und braucht noch eine Genehmigung vor Ort."
+            }
+          }
+        },
+        {
+          "id": "2026-11-14-inkling-2-small-open-weights",
+          "headline": "Thinking Machines releases Inkling 2 Small weights",
+          "summary": "Thinking Machines Lab put Inkling 2 Small on Hugging Face under Apache 2.0. The mixture-of-experts model has 594B parameters, 17B active per token, reads images and needs large GPU clusters to run.",
+          "source": {
+            "name": "Thinking Machines Lab",
+            "url": "https://thinkingmachines.ai/news/inkling-2-small/"
+          },
+          "tag": "Model Release",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "Thinking Machines gibt Inkling 2 Small frei",
+              "summary": "Thinking Machines Lab stellt Inkling 2 Small unter Apache 2.0 auf Hugging Face. Das mixture-of-experts-Modell hat 594B Parameter, davon 17B aktiv pro Token, versteht Bilder und braucht große GPU-Cluster."
+            }
+          }
+        },
+        {
+          "id": "2026-11-14-ai-shopping-risky-sites",
+          "headline": "AI chatbots sometimes point shoppers to fake stores",
+          "summary": "In tests by brand-protection firm Podqi, risky shops showed up in 15% of Perplexity answers, 8% of ChatGPT answers and 4% of Gemini answers. Check the shop address before you pay.",
+          "source": {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
+          },
+          "tag": "Benchmarks",
+          "i18n": {
+            "de": {
+              "headline": "KI-Chatbots verweisen teils auf Fake-Shops",
+              "summary": "In Tests der Markenschutzfirma Podqi tauchten riskante Shops in 15 Prozent der Antworten von Perplexity auf, bei ChatGPT in 8 und bei Gemini in 4 Prozent. Vor dem Bezahlen also die Shop-Adresse prüfen."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-13",
       "items": [
@@ -743,145 +880,6 @@
             "de": {
               "headline": "Google übernimmt Crusoes Rechenzentrum in Wyoming",
               "summary": "Crusoe verkauft sein unfertiges Rechenzentrumsprojekt in Wyoming an Google, das dort 17 Milliarden Dollar investieren will. Den Kaufpreis nannten beide nicht."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-11-07",
-      "items": [
-        {
-          "id": "2026-11-07-inkling-2-small",
-          "headline": "Inkling 2 Small ships on Tinker, open weights next",
-          "summary": "Thinking Machines Lab launched Inkling 2 Small, a multimodal MoE with 594B total and 17B active parameters, on Tinker for coding, vision, and long agent work. Weights are planned under Apache 2.0 next week after external safety testing.",
-          "source": {
-            "name": "Thinking Machines Lab",
-            "url": "https://thinkingmachines.ai/news/inkling-2-small/"
-          },
-          "tag": "Model Release",
-          "priority": "breaking",
-          "pulseId": "pulse-2026-11-05-inkling-2-small",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "Inkling 2 Small auf Tinker, Open Weights folgen",
-              "summary": "Thinking Machines Lab startet Inkling 2 Small: multimodales MoE mit 594B Gesamt- und 17B aktiven Parametern auf Tinker für Coding, Vision und lange Agent-Jobs. Gewichte sollen nächste Woche unter Apache 2.0 nach Safety-Testing kommen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-07-kimi-k3-1-pro-bedrock",
-          "headline": "Kimi K3.1 Pro arrives on Amazon Bedrock",
-          "summary": "AWS added Moonshot AI's Kimi K3.1 Pro to Amazon Bedrock as an open-weight multimodal agentic model with a 1-million-token context window. The Highspeed option targets coding and documents with higher output speed and prompt caching.",
-          "source": {
-            "name": "AWS",
-            "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/moonshot-ai-kimi-k3-1-pro-on-amazon-bedrock/"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Kimi K3.1 Pro läuft jetzt auf Amazon Bedrock",
-              "summary": "AWS stellt Moonshot AIs Kimi K3.1 Pro auf Bedrock bereit: Open-Weight-Modell mit multimodalen Agent-Fähigkeiten und 1-Million-Token Context Window. Die Highspeed-Variante zielt auf Coding und Dokumente mit höherem Tempo und Prompt Caching."
-            }
-          }
-        },
-        {
-          "id": "2026-11-07-meta-muse-specialized",
-          "headline": "Meta brings Active Memory to Muse and Meta AI",
-          "summary": "Meta rolled specialized models trained with Muse Wonder into Muse and Meta AI, adding Active Memory and Active Focus. Meta reports 2.4x less forgetting of critical context and a 67% gain on everyday tasks when issues arise.",
-          "source": {
-            "name": "Meta AI Research",
-            "url": "https://research.meta.ai/blog/specialized-models-for-muse-and-metaai"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Meta bringt Active Memory in Muse und Meta AI",
-              "summary": "Meta rollt mit Muse Wonder trainierte Spezialmodelle in Muse und Meta AI aus und ergänzt Active Memory sowie Active Focus. Meta meldet 2,4× weniger Vergessen kritischer Kontexte und 67 % mehr Erfolg bei Alltagsaufgaben mit Störungen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-07-antigravity-remote-agents",
-          "headline": "Google Antigravity agents keep working in the cloud",
-          "summary": "Google Antigravity Remote Agents run in isolated Google-managed environments so long tasks continue after you close the laptop. Rollout covers Google AI Pro and Ultra personal accounts, not free, Plus, or business plans.",
-          "source": {
-            "name": "Google",
-            "url": "https://antigravity.google/docs/remote-agents/"
-          },
-          "tag": "Tools",
-          "pulseId": "pulse-2026-11-06-antigravity-remote",
-          "i18n": {
-            "de": {
-              "headline": "Google-Antigravity-Agenten arbeiten weiter in der Cloud",
-              "summary": "Google Antigravity Remote Agents laufen in isolierten Google-Umgebungen, sodass lange Tasks weiterlaufen, wenn das Laptop zu ist. Rollout für Google AI Pro und Ultra mit privatem Account, nicht für Free, Plus oder Business."
-            }
-          }
-        },
-        {
-          "id": "2026-11-07-openai-hacktron",
-          "headline": "OpenAI partners with Hacktron to probe its own stack",
-          "summary": "OpenAI will work with Hacktron to hunt vulnerabilities in its systems, focusing on how OpenAI services connect to third parties. Hacktron gets broader Daybreak Red access to frontier models for that joint testing.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/partnering-with-hacktron"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI prüft mit Hacktron den eigenen Stack",
-              "summary": "OpenAI arbeitet mit Hacktron zusammen, um Lücken im eigenen System zu finden – besonders an Schnittstellen zu Drittanbietern. Hacktron bekommt dafür erweiterten Daybreak-Red-Zugang zu Frontier-Modellen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-07-nvidia-cosmos-3",
-          "headline": "NVIDIA opens four Cosmos 3 Nano world-model checkpoints",
-          "summary": "NVIDIA released four open-weight Cosmos 3 Nano checkpoints for interactive world simulation in driving and robotics, including multi-view driving data and action-conditioned video. Each has 16B trainable parameters under OpenMDW1.1.",
-          "source": {
-            "name": "Hugging Face",
-            "url": "https://huggingface.co/blog/nvidia/cosmos-interactive-world-simulation"
-          },
-          "tag": "Hardware",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "NVIDIA öffnet vier Cosmos-3-Nano-World-Model-Checkpoints",
-              "summary": "NVIDIA veröffentlicht vier Open-Weight-Checkpoints von Cosmos 3 Nano für interaktive World Simulation in Fahren und Robotik, inkl. Multi-View-Fahrdaten und aktionsbedingtem Video. Jedes hat 16B trainierbare Parameter unter OpenMDW1.1."
-            }
-          }
-        },
-        {
-          "id": "2026-11-07-metr-anthropic-rd",
-          "headline": "METR: Anthropic capabilities grow about twice as fast",
-          "summary": "METR finds Anthropic likely improving well-specified capabilities at about twice the March 2024–October 2025 pace (1.9x AECI since Oct 2025). Key evidence was redacted; METR says AI-assisted R&D likely drives most of the acceleration.",
-          "source": {
-            "name": "METR",
-            "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
-          },
-          "tag": "Benchmarks",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "METR: Anthropic-Fähigkeiten wachsen etwa doppelt so schnell",
-              "summary": "METR schätzt etwa doppelt so schnelle Fortschritte bei Anthropic wie von März 2024 bis Oktober 2025 (AECI-Trend seit Okt 2025: 1,9×). Wichtige Belege wurden geschwärzt; METR sieht KI-gestützte R&D als Haupttreiber."
-            }
-          }
-        },
-        {
-          "id": "2026-11-07-riot-anthropic-lease",
-          "headline": "Riot leases 910 MW Texas campus to Anthropic for ~$28B",
-          "summary": "Riot Platforms signed a 15-year powered-land lease for 910 MW at Corsicana, about $28 billion contract value and roughly $1.8 billion average annual rent. CoinDesk names Anthropic as tenant; capacity phases run through July 2028.",
-          "source": {
-            "name": "CoinDesk",
-            "url": "https://www.coindesk.com/tech/2026/11/05/bitcoin-miner-riot-could-pay-anthropic-12-interest-under-usd28-billion-ai-deal"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "Riot vermietet 910-MW-Texas-Campus an Anthropic",
-              "summary": "Riot Platforms schließt einen 15-Jahres-Lease über 910 MW in Corsicana: rund 28 Mrd. $ Vertragswert und etwa 1,8 Mrd. $ durchschnittliche Jahresmiete. CoinDesk nennt Anthropic als Mieter; Phasen laufen bis Juli 2028."
             }
           }
         }
