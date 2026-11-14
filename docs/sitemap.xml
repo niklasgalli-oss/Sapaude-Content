@@ -69,6 +69,14 @@
     <lastmod>2026-11-14</lastmod>
   </url>
   <url>
+    <loc>https://sapaude.app/briefing/2026-11-14-gpu-fingerprints-in-weights/</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/briefing/2026-11-14-poppy-agents-shopify/</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
     <loc>https://sapaude.app/briefing/2026-11-13-gemini-glasses-preorder/</loc>
     <lastmod>2026-11-13</lastmod>
   </url>
@@ -109,14 +117,6 @@
     <lastmod>2026-11-12</lastmod>
   </url>
   <url>
-    <loc>https://sapaude.app/briefing/2026-11-12-openai-can-halt-models/</loc>
-    <lastmod>2026-11-12</lastmod>
-  </url>
-  <url>
-    <loc>https://sapaude.app/briefing/2026-11-11-united-blocks-ai-agents/</loc>
-    <lastmod>2026-11-11</lastmod>
-  </url>
-  <url>
     <loc>https://sapaude.app/briefing/tag/2026-11-14/</loc>
     <lastmod>2026-11-14</lastmod>
   </url>
@@ -143,6 +143,14 @@
   <url>
     <loc>https://sapaude.app/briefing/tag/2026-11-08/</loc>
     <lastmod>2026-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/en/briefing/2026-11-14-gpu-fingerprints-in-weights/</loc>
+    <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/en/briefing/2026-11-14-poppy-agents-shopify/</loc>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/en/briefing/2026-11-13-gemini-glasses-preorder/</loc>
@@ -185,14 +193,6 @@
     <lastmod>2026-11-12</lastmod>
   </url>
   <url>
-    <loc>https://sapaude.app/en/briefing/2026-11-12-openai-can-halt-models/</loc>
-    <lastmod>2026-11-12</lastmod>
-  </url>
-  <url>
-    <loc>https://sapaude.app/en/briefing/2026-11-11-united-blocks-ai-agents/</loc>
-    <lastmod>2026-11-11</lastmod>
-  </url>
-  <url>
     <loc>https://sapaude.app/en/briefing/tag/2026-11-14/</loc>
     <lastmod>2026-11-14</lastmod>
   </url>
@@ -222,7 +222,7 @@
   </url>
   <url>
     <loc>https://sapaude.app/briefing/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/briefing/2026-11-11-gemini-answers-yes-or-no/</loc>
@@ -233,8 +233,16 @@
     <lastmod>2026-11-11</lastmod>
   </url>
   <url>
+    <loc>https://sapaude.app/briefing/2026-11-11-united-blocks-ai-agents/</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/briefing/2026-11-12-openai-can-halt-models/</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
     <loc>https://sapaude.app/en/briefing/</loc>
-    <lastmod>2026-11-13</lastmod>
+    <lastmod>2026-11-14</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/en/briefing/2026-11-11-gemini-answers-yes-or-no/</loc>
@@ -243,5 +251,13 @@
   <url>
     <loc>https://sapaude.app/en/briefing/2026-11-11-gemini-talks-in-the-car/</loc>
     <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/en/briefing/2026-11-11-united-blocks-ai-agents/</loc>
+    <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/en/briefing/2026-11-12-openai-can-halt-models/</loc>
+    <lastmod>2026-11-12</lastmod>
   </url>
 </urlset>
