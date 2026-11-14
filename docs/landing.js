@@ -5,8 +5,11 @@
  * listing exists. An empty value keeps the coming-soon lines: English says
  * "Coming soon on App Store" and "Coming soon on Google Play". German says
  * "Demnächst im App Store" and "Demnächst bei Google Play". Neither page
- * shows a Download on the App Store badge while this stays empty. Google Play
- * has no URL yet, so that line stays coming soon.
+ * shows a Download on the App Store badge while this stays empty.
+ * SAPAUDE_PLAY_STORE_URL stays "" until the public Play listing exists.
+ * An empty value leaves the coming-soon line. A https://play.google.com
+ * product URL turns that line into a link and uses data-play-label.
+ * Do not set either constant to a placeholder.
  *
  * Apple's badge must link to the product page. When the listing is live, set
  * this to the https://apps.apple.com/... URL. The page then shows Apple's
@@ -15,6 +18,7 @@
  * ("Laden im App Store"). App Store stays in English on the badge.
  */
 const SAPAUDE_APP_STORE_URL = "";
+const SAPAUDE_PLAY_STORE_URL = "";
 
 const SAPAUDE_BRIEFING_URL = "https://sapaude.app/briefing.json";
 
@@ -51,6 +55,34 @@ function appStoreProductUrl(value) {
   }
   if (url.protocol !== "https:" || url.hostname !== "apps.apple.com") return "";
   return url.toString();
+}
+
+function playStoreProductUrl(value) {
+  if (typeof value !== "string") return "";
+  const trimmed = value.trim();
+  if (!trimmed) return "";
+  let url;
+  try {
+    url = new URL(trimmed);
+  } catch {
+    return "";
+  }
+  if (url.protocol !== "https:" || url.hostname !== "play.google.com") return "";
+  return url.toString();
+}
+
+function wirePlay() {
+  const root = document.querySelector("[data-sapaude-store]");
+  if (!root) return;
+  const href = playStoreProductUrl(SAPAUDE_PLAY_STORE_URL);
+  if (!href) return;
+  const pending = root.querySelector("[data-store-play]");
+  if (!pending) return;
+  const link = document.createElement("a");
+  link.className = "store-pending store-play";
+  link.href = href;
+  link.textContent = pending.dataset.playLabel || pending.textContent;
+  pending.replaceWith(link);
 }
 
 function wireStore() {
@@ -227,6 +259,7 @@ function wirePhoneShots() {
 }
 
 wireStore();
+wirePlay();
 loadBriefing();
 wirePhoneShots();
 wireEditionMotion();

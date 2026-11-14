@@ -24,7 +24,10 @@ jobs:
           node-version: "22"
 
       - name: Run validator tests
-        run: node --test scripts/validate.test.mjs scripts/validate-briefing.test.mjs scripts/landing.test.mjs
+        run: node --test scripts/validate.test.mjs scripts/validate-briefing.test.mjs scripts/landing.test.mjs scripts/render-pages.test.mjs
+
+      - name: Check rendered briefing pages
+        run: node scripts/render-pages.mjs --check
 
       - name: Validate pulse.json
         # Off on push and pull_request. Publishers often block automated clients.

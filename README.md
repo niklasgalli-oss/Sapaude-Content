@@ -60,9 +60,13 @@ Run the check locally:
 ```bash
 node scripts/validate.mjs
 node scripts/validate-briefing.mjs
-node --test scripts/validate.test.mjs scripts/validate-briefing.test.mjs
+node --test scripts/validate.test.mjs scripts/validate-briefing.test.mjs scripts/landing.test.mjs scripts/render-pages.test.mjs
 node scripts/validate.mjs --check-urls
+node scripts/render-pages.mjs
+node scripts/render-pages.mjs --check
 ```
+
+`scripts/render-pages.mjs` writes the public briefing pages under `docs/briefing/` and `docs/en/briefing/` from `pulse.json` and `briefing.json`, refreshes the three cards on the home pages, and rewrites `docs/sitemap.xml`. It does not change the JSON files. Run it after a feed update and commit the HTML. `node scripts/render-pages.mjs --check` fails when the HTML is behind the feeds. On `main`, the render workflow commits that HTML when a feed file changes.
 
 `--check-urls` requests each source URL and requires HTTP 200. It is off by default, including on push and pull request, because a publisher can block an automated client. Run the GitHub Actions workflow manually with the `check_urls` input when you want that check in CI.
 

@@ -286,6 +286,36 @@ footer {
   font-size: 0.95rem;
 }
 
+.kicker {
+  margin: 0 0 0.35rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.crumbs,
+.article-source {
+  color: var(--muted);
+}
+
+main a {
+  overflow-wrap: anywhere;
+}
+
+main article + article {
+  margin-top: 1.6rem;
+}
+
+caption {
+  caption-side: bottom;
+  text-align: left;
+  color: var(--muted);
+  font-size: 0.92rem;
+  padding-top: 0.45rem;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
