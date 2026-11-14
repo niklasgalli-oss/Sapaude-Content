@@ -108,6 +108,8 @@ test("App Store URL is one empty constant", () => {
   const js = read("docs/landing.js");
   assert.match(js, /const SAPAUDE_APP_STORE_URL = "";/);
   assert.equal((js.match(/const SAPAUDE_APP_STORE_URL/g) || []).length, 1);
+  assert.match(js, /const SAPAUDE_PLAY_STORE_URL = "";/);
+  assert.equal((js.match(/const SAPAUDE_PLAY_STORE_URL/g) || []).length, 1);
   assert.match(js, /const SAPAUDE_BRIEFING_URL = "https:\/\/sapaude\.app\/briefing\.json"/);
   assert.doesNotMatch(js, /AILA_/);
 });
@@ -323,7 +325,8 @@ test("story row, path, briefing fallback, and teams copy stay in sync", () => {
     assert.match(html, /Core/);
     assert.match(html, /Depth/);
     assert.match(html, /7/);
-    assert.doesNotMatch(html, /€|\$\s?\d/);
+    const withoutBriefing = html.replace(/<section\b[^>]*\bid="briefing"[\s\S]*?<\/section>/, "");
+    assert.doesNotMatch(withoutBriefing, /€|\$\s?\d/);
   }
 
   assert.match(de, /So lernst du mit Sapaude/);
@@ -337,17 +340,25 @@ test("story row, path, briefing fallback, and teams copy stay in sync", () => {
   assert.match(de, /ab 5 Min\./);
   assert.match(de, /Ohne Fachjargon/);
   assert.match(de, /Mehrmals täglich/);
-  assert.doesNotMatch(de, /Jeden Morgen|7-Tage-Plan|5 Minuten am Tag/);
+  const body = (html) => html.slice(html.search(/<body\b/i));
+  assert.doesNotMatch(body(de), /Jeden Morgen|7-Tage-Plan|5 Minuten am Tag/);
   assert.match(en, /from 5 min/);
   assert.match(en, /Without jargon/);
   assert.match(en, /Fresh several times/);
-  assert.doesNotMatch(en, /Every morning|7-day plan|5 minutes a day/);
+  assert.doesNotMatch(body(en), /Every morning|7-day plan|5 minutes a day/);
   assert.match(de, /Neue Wörter werden beim ersten Mal in normaler Sprache erklärt\./);
   assert.match(en, /New words are explained in plain language the first time they appear\./);
   assert.match(de, /ausreichende KI-Kompetenz ihrer Mitarbeitenden/);
   assert.match(en, /sufficient level of AI literacy/);
-  assert.doesNotMatch(de, /Duolingo|müssen Unternehmen, die KI einsetzen, ihre Mitarbeitenden schulen/);
-  assert.doesNotMatch(en, /Duolingo|have to train their staff/);
+  const stakes = (html) => {
+    const start = html.indexOf('id="stakes"');
+    const end = html.indexOf('id="faq"', start);
+    return html.slice(start, end === -1 ? html.length : end);
+  };
+  assert.doesNotMatch(stakes(de), /Duolingo/);
+  assert.doesNotMatch(stakes(en), /Duolingo/);
+  assert.doesNotMatch(de, /müssen Unternehmen, die KI einsetzen, ihre Mitarbeitenden schulen/);
+  assert.doesNotMatch(en, /have to train their staff/);
   assert.match(de, /Das Monatsabo hat keine Testphase/);
   assert.match(en, /The monthly plan has no trial/);
   assert.match(de, /Auf die Warteliste/);
@@ -416,8 +427,8 @@ test("sapaude wordmark, claims, and app mismatches", () => {
   assert.match(en, /class="hero-claim">Be brave\. Get smart\./);
   assert.match(de, /class="footer-claim">Veni, vidi, KI\./);
   assert.match(en, /class="footer-claim">Be brave\. Get smart\./);
-  assert.match(de, /content="Veni, vidi, KI\./);
-  assert.match(en, /content="Be brave\. Get smart\./);
+  assert.match(de, /content="Sapaude\. Veni, vidi, KI\."/);
+  assert.match(en, /content="Sapaude\. Be brave\. Get smart\."/);
   assert.doesNotMatch(de, /Be brave/);
   assert.doesNotMatch(en, /Veni, vidi/);
   assert.doesNotMatch(de, /Sapere aude/);
@@ -447,8 +458,9 @@ test("sapaude wordmark, claims, and app mismatches", () => {
   assert.match(en, /Listening to the briefing is part of Sapaude Pro/);
   assert.doesNotMatch(de, /Briefing bleibt frei/);
   assert.doesNotMatch(en, /Briefing stays free/);
-  assert.match(de, /data-briefing-date datetime="2026-10-22"/);
-  assert.match(en, /data-briefing-date datetime="2026-10-22"/);
+  const briefingDay = JSON.parse(read("briefing.json")).updatedAt.slice(0, 10);
+  assert.match(de, new RegExp(`data-briefing-date datetime="${briefingDay}"`));
+  assert.match(en, new RegExp(`data-briefing-date datetime="${briefingDay}"`));
   assert.match(read("docs/landing.js"), /Europe\/Berlin/);
   assert.match(read("docs/support/index.html"), /Veni, vidi, KI\./);
   assert.match(read("docs/en/support/index.html"), /Be brave\. Get smart\./);
@@ -487,11 +499,13 @@ test("sapaude wordmark, claims, and app mismatches", () => {
 
 test("legal hygiene, SEO files, and JSON-LD on landing pages", () => {
   const robots = read("docs/robots.txt");
-  for (const bot of ["GPTBot", "OAI-SearchBot", "ClaudeBot", "PerplexityBot", "Google-Extended"]) {
+  for (const bot of ["GPTBot", "OAI-SearchBot", "ClaudeBot", "Claude-SearchBot", "PerplexityBot", "Google-Extended"]) {
     assert.match(robots, new RegExp(`User-agent: ${bot}`));
     assert.match(robots, /Allow: \//);
   }
-  assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/llms\.txt/);
+  assert.doesNotMatch(read("docs/sitemap.xml"), /llms\.txt/);
+  assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/briefing\//);
+  assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/ki-lernen-app\//);
 
   const llms = read("docs/llms.txt");
   assert.match(llms, /Sapaude/);

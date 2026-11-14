@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sapaude — Learn AI like a language</title>
-  <meta name="description" content="Be brave. Get smart. Learn AI the way you learn a language. A guided path from zero, articles when you want the mechanism, and one briefing, from 5 min a day. Coming soon on the App Store and Google Play.">
+  <title>Sapaude — Learn AI like a language, from 5 minutes a day</title>
+  <meta name="description" content="Sapaude is a learning app for AI basics and a daily briefing in plain language. A guided path, quizzes, German and English. Basics 1 and 2 are free.">
   <link rel="canonical" href="https://sapaude.app/en/">
   <link rel="alternate" hreflang="en" href="https://sapaude.app/en/">
   <link rel="alternate" hreflang="de" href="https://sapaude.app/">
@@ -13,16 +13,16 @@
   <meta property="og:site_name" content="Sapaude">
   <meta property="og:locale" content="en_GB">
   <meta property="og:locale:alternate" content="de_DE">
-  <meta property="og:title" content="Sapaude — Learn AI like a language">
-  <meta property="og:description" content="Be brave. Get smart. Learn AI the way you learn a language. A path from zero, articles, and one briefing a day.">
+  <meta property="og:title" content="Sapaude — Learn AI like a language, from 5 minutes a day">
+  <meta property="og:description" content="Sapaude is a learning app for AI basics and a daily briefing in plain language. A guided path, quizzes, German and English. Basics 1 and 2 are free.">
   <meta property="og:url" content="https://sapaude.app/en/">
   <meta property="og:image" content="https://sapaude.app/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Sapaude. Be brave. Get smart.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sapaude — Learn AI like a language">
-  <meta name="twitter:description" content="Be brave. Get smart. Learn AI the way you learn a language. A path from zero, articles, and one briefing a day.">
+  <meta name="twitter:title" content="Sapaude — Learn AI like a language, from 5 minutes a day">
+  <meta name="twitter:description" content="Sapaude is a learning app for AI basics and a daily briefing in plain language. A guided path, quizzes, German and English. Basics 1 and 2 are free.">
   <meta name="twitter:image" content="https://sapaude.app/og.png">
   <meta name="twitter:image:alt" content="Sapaude. Be brave. Get smart.">
   <meta name="theme-color" content="#F6F1E8">
@@ -43,7 +43,12 @@
         "@id": "https://sapaude.app/#organization",
         "name": "Sapaude",
         "url": "https://sapaude.app/",
-        "logo": "https://sapaude.app/favicon-32.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sapaude.app/logo-512.png",
+          "width": 512,
+          "height": 512
+        },
         "email": "support@sapaude.app",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -59,7 +64,7 @@
         "name": "Sapaude",
         "inLanguage": "en",
         "publisher": { "@id": "https://sapaude.app/#organization" },
-        "description": "Be brave. Get smart. Learn AI the way you learn a language. One briefing, from 5 min a day."
+        "description": "Sapaude is a learning app for AI basics and a daily briefing in plain language. A guided path, quizzes, German and English. Basics 1 and 2 are free."
       },
       {
         "@type": ["MobileApplication", "SoftwareApplication"],
@@ -69,6 +74,19 @@
         "applicationCategory": "EducationalApplication",
         "description": "Learning app for AI fundamentals and daily AI news. Guided path, quizzes, and a plain-language briefing. German and English.",
         "inLanguage": ["de", "en"],
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Guided learning path in three levels",
+          "Short lessons and quizzes in plain language",
+          "Daily AI briefing matched to your level",
+          "German and English",
+          "Basics 1 and 2 free, including listening"
+        ],
+        "screenshot": [
+          "https://sapaude.app/assets/screens/en/home-780.webp",
+          "https://sapaude.app/assets/screens/en/basics-780.webp",
+          "https://sapaude.app/assets/screens/en/activity-780.webp"
+        ],
         "publisher": { "@id": "https://sapaude.app/#organization" },
         "offers": {
           "@type": "Offer",
@@ -83,18 +101,66 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "What is the best app to learn AI?",
+            "name": "What is Sapaude?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "There is no single app for everyone. Sapaude is built for people who want AI fundamentals and daily AI news in plain language, from about five minutes a day, with a guided path and a level-matched briefing."
+              "text": "Sapaude is a learning app: a guided path, short explanations, quizzes, and one briefing a day. You choose from 5 min a day: 5, 10, or 15. One reminder stays on the device. The app sets its time from when you usually open Sapaude. There is no clock to pick. The briefing includes everyday tools and is matched to your level."
             }
           },
           {
             "@type": "Question",
-            "name": "What is Sapaude?",
+            "name": "Who is Sapaude for?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sapaude is a learning app: a guided path, short explanations, quizzes, and one briefing a day, from 5 min a day, in German or English."
+              "text": "For people who want to understand AI without being buried in jargon. For a complete beginner, and for anyone who has to talk about it at work and has never had a lesson."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the best app to learn AI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "There is no single app for everyone. Sapaude is built for people who want AI fundamentals and daily AI news in plain language, from about five minutes a day, with a guided path and a level-matched briefing. If that matches how you learn, Sapaude is a strong fit. Basics 1 and 2 are free, including listening. More on which app fits for learning AI and on Duolingo for AI."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does Sapaude Pro cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sapaude Pro is monthly or yearly. You see the prices in the app before you buy. Only the yearly plan has a one-week free trial. Apple bills it automatically after seven days unless you cancel at least 24 hours before the trial ends in the Apple ID subscription settings. The monthly plan has no trial and is billed immediately. Apple sells and bills it, not this website. Basics 1 and 2, including listening, are free. Listening to the briefing is part of Sapaude Pro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I cancel?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In your Apple ID subscription settings. On iPhone, open Settings, tap your name, then Subscriptions, and cancel Sapaude Pro there. An email to us does not end the Apple subscription."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which languages are there?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "German and English. You switch the language in the app."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What about Android?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sapaude is coming soon on iPhone. Android follows. Until each listing is live, this page says coming soon on the App Store and on Google Play."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What happens to my data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Reading progress, quiz progress, bookmarks, settings, and an optional name stay on your device. The app does not require a name. This website sets no cookies and uses no third-party trackers. The privacy policy is the full account. How to delete the data is on Delete your data."
             }
           }
         ]
@@ -145,7 +211,7 @@
           <div class="store" id="get-the-app" data-sapaude-store data-badge="../assets/app-store-badge-en.svg" data-badge-alt="Download on the App Store">
             <p class="store-row">
               <span class="store-pending" data-store-pending>Coming soon on App Store</span>
-              <span class="store-pending store-play">Coming soon on Google Play</span>
+              <span class="store-pending store-play" data-store-play data-play-label="Get it on Google Play">Coming soon on Google Play</span>
             </p>
           </div>
         </div>
@@ -365,29 +431,43 @@
           <p class="section-eyebrow"><span>(02)</span><span class="section-eyebrow-dot" aria-hidden="true"></span><span>Once a day</span></p>
           <h2 class="reveal-text">Daily AI Briefing</h2>
         </div>
-        <p class="meta">Latest briefing · <time data-briefing-date datetime="2026-10-22">22 October 2026</time></p>
+        <p class="meta">Latest briefing · <time data-briefing-date datetime="2026-11-14">14 November 2026</time></p>
       </div>
       <p class="lede prose">Curated AI news, in our own words. From the lab and from tools people actually use. In the app, the briefing is matched to your level. Listening to the briefing is part of Sapaude Pro.</p>
       <ol class="brief-list" data-briefing-list>
-        <li class="brief-item">
-          <p class="item-meta">AI agents</p>
-          <h3>Test models got past locked doors</h3>
-          <p>OpenAI describes cases where models, during testing, reached data they were not supposed to see and did not say so in the answer.</p>
-          <p class="item-source"><a href="https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/">The Decoder</a></p>
-        </li>
+        <!-- briefing:cards -->
         <li class="brief-item">
           <p class="item-meta">Everyday tool</p>
-          <h3>Replit now starts on ChatGPT</h3>
-          <p>The coding tool Replit uses ChatGPT unless you pick something else. Claude is still there if you want it.</p>
-          <p class="item-source"><a href="https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/">TechCrunch</a></p>
+          <h3>ChatGPT agents can now pay for purchases</h3>
+          <p>OpenAI launched ChatGPT Wallet with Visa, Mastercard and American Express. Agents pay with a token instead of your card number, and you confirm every purchase with Face ID or a fingerprint; first for Pro users in the US.</p>
+          <p class="item-source"><a href="https://openai.com/index/introducing-chatgpt-wallet/">OpenAI</a></p>
         </li>
         <li class="brief-item">
           <p class="item-meta">In the background</p>
-          <h3>Meta removes a clause about AI training</h3>
-          <p>Its business terms had wording that made sites worry about training data. Meta took that wording out. Site owners can still block the crawler.</p>
-          <p class="item-source"><a href="https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/">TechCrunch</a></p>
+          <h3>EU leaders hold their first AI summit in Dublin</h3>
+          <p>At an informal summit, EU leaders discussed how Europe can catch up in AI while managing its risks. Commission chief von der Leyen put the investment need at €500 billion, from private money and the next EU budget.</p>
+          <p class="item-source"><a href="https://www.welt.de/wirtschaft/article6af76f157f8bbad09ea62d26/gipfeltreffen-in-dublin-haben-keine-zeit-zu-verlieren-eukommission-veranschlagt-halbe-billion-euro-fuer-ki-investitionen.html">WELT</a></p>
         </li>
+        <li class="brief-item">
+          <p class="item-meta">AI agents</p>
+          <h3>Claude gets a plugin for factory software</h3>
+          <p>Anthropic's Claude for Manufacturing connects to tools like Autodesk Fusion, NetSuite and Infor. It drafts quotes, compares suppliers and writes quality reports for Team and Enterprise customers; key steps still need human approval.</p>
+          <p class="item-source"><a href="https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/">The Decoder</a></p>
+        </li>
+        <!-- /briefing:cards -->
       </ol>
+      <!-- briefing:more -->
+      <nav class="brief-more" aria-label="More to read">
+        <p class="prose"><a href="briefing/tag/2026-11-14/">All short items for 14 November 2026</a></p>
+        <ul>
+        <li><a href="briefing/2026-11-13-gemini-glasses-preorder/">Gemini glasses on preorder</a></li>
+        <li><a href="briefing/2026-11-13-chatgpt-agents-can-pay/">ChatGPT agents can pay now</a></li>
+        <li><a href="briefing/2026-11-13-notion-ai-chats-exposed/">Notion AI chats got exposed</a></li>
+        <li><a href="briefing/2026-11-12-ai-agents-patch-code/">OpenAI agents hunt app bugs</a></li>
+        </ul>
+        <p class="prose"><a href="briefing/">All long articles</a> · <a href="best-app-to-learn-ai/">Learn AI</a> · <a href="duolingo-for-ai/">Duolingo for AI</a></p>
+      </nav>
+      <!-- /briefing:more -->
     </section>
 
     <section class="essay" id="stakes">
@@ -455,7 +535,7 @@
       </details>
       <details>
         <summary><h3>What is the best app to learn AI?</h3></summary>
-        <p class="prose">There is no single app for everyone. Sapaude is built for people who want AI fundamentals and daily AI news in plain language, from about five minutes a day, with a guided path and a level-matched briefing. If that matches how you learn, Sapaude is a strong fit. Basics 1 and 2 are free, including listening.</p>
+        <p class="prose">There is no single app for everyone. Sapaude is built for people who want AI fundamentals and daily AI news in plain language, from about five minutes a day, with a guided path and a level-matched briefing. If that matches how you learn, Sapaude is a strong fit. Basics 1 and 2 are free, including listening. More on <a href="best-app-to-learn-ai/">which app fits for learning AI</a> and on <a href="duolingo-for-ai/">Duolingo for AI</a>.</p>
       </details>
       <details>
         <summary><h3>What does Sapaude Pro cost?</h3></summary>
@@ -487,13 +567,21 @@
           <span class="brand-inline">sapaude<span class="brand-dot" aria-hidden="true"></span></span><br>
           <a href="mailto:support@sapaude.app">support@sapaude.app</a>
         </address>
-        <nav class="footer-nav" aria-label="Legal">
-          <a href="../impressum/">Impressum</a>
-          <a href="privacy/">Privacy</a>
-          <a href="delete-data/">Delete your data</a>
-          <a href="terms/">Terms</a>
-          <a href="support/">Support</a>
-        </nav>
+        <div>
+          <nav class="footer-nav" aria-label="Read">
+            <a href="briefing/">Briefing</a>
+            <a href="best-app-to-learn-ai/">Learn AI</a>
+            <a href="duolingo-for-ai/">Duolingo for AI</a>
+            <a href="about/">About</a>
+          </nav>
+          <nav class="footer-nav" aria-label="Legal">
+            <a href="../impressum/">Impressum</a>
+            <a href="privacy/">Privacy</a>
+            <a href="delete-data/">Delete your data</a>
+            <a href="terms/">Terms</a>
+            <a href="support/">Support</a>
+          </nav>
+        </div>
         <div>
           <p class="fine">This page sets no cookies and loads no third-party trackers. Some content is generated or assisted by AI.</p>
           <p class="fine">Apple, App Store, and iPhone are trademarks of Apple Inc., registered in the U.S. and other countries. Google Play is a trademark of Google LLC.</p>

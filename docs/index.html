@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sapaude — KI lernen wie eine Sprache</title>
-  <meta name="description" content="Veni, vidi, KI. KI lernen, wie man eine Sprache lernt. Ein geführter Pfad von null, Artikel, wenn du den Mechanismus willst, und ein Briefing, ab 5 Min. am Tag. Demnächst im App Store und bei Google Play.">
+  <title>Sapaude — KI lernen wie eine Sprache, ab 5 Minuten am Tag</title>
+  <meta name="description" content="Sapaude ist die Lern-App für KI-Grundlagen und ein tägliches Briefing in normaler Sprache. Geführter Pfad, Quiz, Deutsch und Englisch. Basics 1 und 2 sind frei.">
   <link rel="canonical" href="https://sapaude.app/">
   <link rel="alternate" hreflang="de" href="https://sapaude.app/">
   <link rel="alternate" hreflang="en" href="https://sapaude.app/en/">
@@ -13,16 +13,16 @@
   <meta property="og:site_name" content="Sapaude">
   <meta property="og:locale" content="de_DE">
   <meta property="og:locale:alternate" content="en_GB">
-  <meta property="og:title" content="Sapaude — KI lernen wie eine Sprache">
-  <meta property="og:description" content="Veni, vidi, KI. KI lernen, wie man eine Sprache lernt. Ein Pfad von null, Artikel und ein Briefing am Tag.">
+  <meta property="og:title" content="Sapaude — KI lernen wie eine Sprache, ab 5 Minuten am Tag">
+  <meta property="og:description" content="Sapaude ist die Lern-App für KI-Grundlagen und ein tägliches Briefing in normaler Sprache. Geführter Pfad, Quiz, Deutsch und Englisch. Basics 1 und 2 sind frei.">
   <meta property="og:url" content="https://sapaude.app/">
   <meta property="og:image" content="https://sapaude.app/og-de.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Sapaude. Veni, vidi, KI.">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Sapaude — KI lernen wie eine Sprache">
-  <meta name="twitter:description" content="Veni, vidi, KI. KI lernen, wie man eine Sprache lernt. Ein Pfad von null, Artikel und ein Briefing am Tag.">
+  <meta name="twitter:title" content="Sapaude — KI lernen wie eine Sprache, ab 5 Minuten am Tag">
+  <meta name="twitter:description" content="Sapaude ist die Lern-App für KI-Grundlagen und ein tägliches Briefing in normaler Sprache. Geführter Pfad, Quiz, Deutsch und Englisch. Basics 1 und 2 sind frei.">
   <meta name="twitter:image" content="https://sapaude.app/og-de.png">
   <meta name="twitter:image:alt" content="Sapaude. Veni, vidi, KI.">
   <meta name="theme-color" content="#F6F1E8">
@@ -43,7 +43,12 @@
         "@id": "https://sapaude.app/#organization",
         "name": "Sapaude",
         "url": "https://sapaude.app/",
-        "logo": "https://sapaude.app/favicon-32.png",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://sapaude.app/logo-512.png",
+          "width": 512,
+          "height": 512
+        },
         "email": "support@sapaude.app",
         "contactPoint": {
           "@type": "ContactPoint",
@@ -59,7 +64,7 @@
         "name": "Sapaude",
         "inLanguage": "de",
         "publisher": { "@id": "https://sapaude.app/#organization" },
-        "description": "Veni, vidi, KI. KI lernen, wie man eine Sprache lernt. Ein Briefing, ab 5 Min. am Tag."
+        "description": "Sapaude ist die Lern-App für KI-Grundlagen und ein tägliches Briefing in normaler Sprache. Geführter Pfad, Quiz, Deutsch und Englisch. Basics 1 und 2 sind frei."
       },
       {
         "@type": ["MobileApplication", "SoftwareApplication"],
@@ -69,6 +74,19 @@
         "applicationCategory": "EducationalApplication",
         "description": "Lern-App für KI-Grundlagen und tägliche KI-News. Geführter Pfad, Quiz und Briefing in normaler Sprache. Deutsch und Englisch.",
         "inLanguage": ["de", "en"],
+        "isAccessibleForFree": true,
+        "featureList": [
+          "Geführter Pfad in drei Stufen",
+          "Kurze Lektionen und Quiz in normaler Sprache",
+          "Tägliches KI-Briefing passend zum Level",
+          "Deutsch und Englisch",
+          "Basics 1 und 2 kostenfrei, auch zum Hören"
+        ],
+        "screenshot": [
+          "https://sapaude.app/assets/screens/de/home-780.webp",
+          "https://sapaude.app/assets/screens/de/basics-780.webp",
+          "https://sapaude.app/assets/screens/de/activity-780.webp"
+        ],
         "publisher": { "@id": "https://sapaude.app/#organization" },
         "offers": {
           "@type": "Offer",
@@ -83,18 +101,66 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Welche App eignet sich am besten, um KI zu lernen?",
+            "name": "Was ist Sapaude?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Es gibt keine eine App für alle. Sapaude richtet sich an Leute, die KI-Grundlagen und tägliche KI-News in normaler Sprache wollen, ab etwa fünf Minuten am Tag, mit einem geführten Pfad und einem Briefing passend zum Level."
+              "text": "Sapaude ist eine Lern-App: ein geführter Pfad, kurze Erklärungen, Quiz und ein Briefing am Tag. Du wählst ab 5 Min. am Tag: 5, 10 oder 15. Eine Erinnerung bleibt auf dem Gerät. Die App setzt die Uhrzeit aus der Zeit, zu der du Sapaude gewöhnlich öffnest. Es gibt keine Uhr zum Einstellen. Das Briefing enthält auch Alltags-Werkzeuge und passt zu deinem Level."
             }
           },
           {
             "@type": "Question",
-            "name": "Was ist Sapaude?",
+            "name": "Für wen ist Sapaude?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sapaude ist eine Lern-App: ein geführter Pfad, kurze Erklärungen, Quiz und ein Briefing am Tag, ab 5 Minuten täglich, auf Deutsch oder Englisch."
+              "text": "Für Leute, die KI verstehen wollen, ohne vom Fachjargon erschlagen zu werden. Für den Anfang und für alle, die im Beruf mitreden wollen, aber noch nie eine Lektion dazu hatten."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Welche App eignet sich am besten, um KI zu lernen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Es gibt nicht die eine App für alle. Sapaude richtet sich an Leute, die KI-Grundlagen und tägliche KI-News in normaler Sprache wollen, ab etwa fünf Minuten am Tag, mit einem geführten Pfad und einem Briefing passend zum Level. Wenn du so lernen willst, passt Sapaude gut. Basics 1 und 2 sind gratis, auch zum Hören. Ausführlicher: Welche App eignet sich, um KI zu lernen? und Duolingo für KI."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Was kostet Sapaude Pro?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sapaude Pro gibt es monatlich und jährlich. Die Preise siehst du in der App, bevor du kaufst. Nur das Jahresabo hat eine kostenlose Testphase von einer Woche. Apple rechnet danach automatisch ab, wenn du nicht mindestens 24 Stunden vor Ende der Testphase in den Abonnement-Einstellungen der Apple-ID kündigst. Das Monatsabo hat keine Testphase und wird sofort abgerechnet. Verkauf und Abrechnung laufen über Apple, nicht über diese Website. Basics 1 und 2, einschließlich Hören, sind frei. Hören im Briefing gehört zu Sapaude Pro."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie kündige ich?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In den Abonnement-Einstellungen deiner Apple-ID. Öffne auf dem iPhone Einstellungen, tippe auf deinen Namen, dann auf Abonnements, und kündige Sapaude Pro dort. Eine Kündigung bei uns per E-Mail beendet das Apple-Abo nicht."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Welche Sprachen gibt es?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Deutsch und Englisch. Du stellst die Sprache in der App um."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Und Android?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sapaude kommt demnächst für das iPhone. Android folgt. Bis ein Eintrag live ist, steht hier: demnächst im App Store und bei Google Play."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Was passiert mit meinen Daten?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lesefortschritt, Quiz-Fortschritt, Lesezeichen, Einstellungen und ein optionaler Name bleiben auf deinem Gerät. Die App verlangt keinen Namen. Diese Website setzt keine Cookies und nutzt keine Tracker von Dritten. Die Datenschutzerklärung beschreibt es vollständig. Wie du die Daten löschst, steht unter Daten löschen."
             }
           }
         ]
@@ -145,7 +211,7 @@
           <div class="store" id="get-the-app" data-sapaude-store data-badge="assets/app-store-badge-de.svg" data-badge-alt="Laden im App Store">
             <p class="store-row">
               <span class="store-pending" data-store-pending>Demnächst im App Store</span>
-              <span class="store-pending store-play">Demnächst bei Google Play</span>
+              <span class="store-pending store-play" data-store-play data-play-label="Bei Google Play">Demnächst bei Google Play</span>
             </p>
           </div>
         </div>
@@ -365,29 +431,43 @@
           <p class="section-eyebrow"><span>(02)</span><span class="section-eyebrow-dot" aria-hidden="true"></span><span>Einmal am Tag</span></p>
           <h2 class="reveal-text">Tägliches KI-Briefing</h2>
         </div>
-        <p class="meta">Aktuelles Briefing · <time data-briefing-date datetime="2026-10-22">22. Oktober 2026</time></p>
+        <p class="meta">Aktuelles Briefing · <time data-briefing-date datetime="2026-11-14">14. November 2026</time></p>
       </div>
       <p class="lede prose">Kuratierte KI-Nachrichten, in eigenen Worten. Aus dem Labor und aus Werkzeugen, die man wirklich benutzt. In der App passt das Briefing zu deinem Level. Hören im Briefing ist Sapaude Pro.</p>
       <ol class="brief-list" data-briefing-list>
-        <li class="brief-item">
-          <p class="item-meta">KI-Agenten</p>
-          <h3>Testmodelle haben Sperren umgangen</h3>
-          <p>OpenAI beschreibt Fälle, in denen Modelle sich beim Testen Zugang zu gesperrten Daten verschafft und das in der Antwort nicht erwähnt haben.</p>
-          <p class="item-source"><a href="https://the-decoder.com/an-openai-model-hacked-a-government-site-grabbed-24-years-of-hospital-data-and-kept-it-quiet/">The Decoder</a></p>
-        </li>
+        <!-- briefing:cards -->
         <li class="brief-item">
           <p class="item-meta">Alltags-Tool</p>
-          <h3>Replit startet jetzt mit ChatGPT</h3>
-          <p>Das Programmier-Werkzeug Replit nimmt ChatGPT als Voreinstellung. Claude bleibt auswählbar.</p>
-          <p class="item-source"><a href="https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/">TechCrunch</a></p>
+          <h3>ChatGPT-Agenten können jetzt bezahlen</h3>
+          <p>OpenAI startet ChatGPT Wallet mit Visa, Mastercard und American Express. Agents zahlen mit einem Token statt der Kartennummer, jeder Kauf wird per Face ID oder Fingerabdruck bestätigt. Zunächst nur für Pro-Nutzer in den USA.</p>
+          <p class="item-source"><a href="https://openai.com/index/introducing-chatgpt-wallet/">OpenAI</a></p>
         </li>
         <li class="brief-item">
           <p class="item-meta">Im Hintergrund</p>
-          <h3>Meta streicht eine Klausel zum KI-Training</h3>
-          <p>In den Geschäftsbedingungen stand eine Formulierung, die Websites Sorgen wegen Trainingsdaten gemacht hat. Meta hat sie entfernt. Betreiber können den Abruf weiter blockieren.</p>
-          <p class="item-source"><a href="https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/">TechCrunch</a></p>
+          <h3>Erster KI-Gipfel der EU-Spitzen in Dublin</h3>
+          <p>Bei einem informellen Gipfel berieten die EU-Staats- und Regierungschefs, wie Europa bei KI aufholen und Risiken begrenzen kann. Von der Leyen beziffert den Investitionsbedarf auf 500 Milliarden Euro aus privatem Kapital und EU-Haushalt.</p>
+          <p class="item-source"><a href="https://www.welt.de/wirtschaft/article6af76f157f8bbad09ea62d26/gipfeltreffen-in-dublin-haben-keine-zeit-zu-verlieren-eukommission-veranschlagt-halbe-billion-euro-fuer-ki-investitionen.html">WELT</a></p>
         </li>
+        <li class="brief-item">
+          <p class="item-meta">KI-Agenten</p>
+          <h3>Claude bekommt ein Plugin für Fabrik-Software</h3>
+          <p>Claude for Manufacturing von Anthropic greift auf Programme wie Autodesk Fusion, NetSuite und Infor zu. Es erstellt Angebote, vergleicht Lieferanten und schreibt Qualitätsberichte. Wichtige Schritte muss weiter ein Mensch freigeben.</p>
+          <p class="item-source"><a href="https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/">The Decoder</a></p>
+        </li>
+        <!-- /briefing:cards -->
       </ol>
+      <!-- briefing:more -->
+      <nav class="brief-more" aria-label="Weitere Texte">
+        <p class="prose"><a href="briefing/tag/2026-11-14/">Alle Kurzmeldungen vom 14. November 2026</a></p>
+        <ul>
+        <li><a href="briefing/2026-11-13-gemini-glasses-preorder/">Gemini-Brille vorbestellbar</a></li>
+        <li><a href="briefing/2026-11-13-chatgpt-agents-can-pay/">ChatGPT kann jetzt bezahlen</a></li>
+        <li><a href="briefing/2026-11-13-notion-ai-chats-exposed/">Notion-KI-Chats abgegriffen</a></li>
+        <li><a href="briefing/2026-11-12-ai-agents-patch-code/">OpenAI-Agents jagen Lücken</a></li>
+        </ul>
+        <p class="prose"><a href="briefing/">Alle langen Texte</a> · <a href="ki-lernen-app/">KI lernen</a> · <a href="duolingo-fuer-ki/">Duolingo für KI</a></p>
+      </nav>
+      <!-- /briefing:more -->
     </section>
 
     <section class="essay" id="stakes">
@@ -455,7 +535,7 @@
       </details>
       <details>
         <summary><h3>Welche App eignet sich am besten, um KI zu lernen?</h3></summary>
-        <p class="prose">Es gibt keine eine App für alle. Sapaude richtet sich an Leute, die KI-Grundlagen und tägliche KI-News in normaler Sprache wollen, ab etwa fünf Minuten am Tag, mit einem geführten Pfad und einem Briefing passend zum Level. Wenn du so lernen willst, passt Sapaude gut. Basics 1 und 2 sind gratis, auch zum Hören.</p>
+        <p class="prose">Es gibt nicht die eine App für alle. Sapaude richtet sich an Leute, die KI-Grundlagen und tägliche KI-News in normaler Sprache wollen, ab etwa fünf Minuten am Tag, mit einem geführten Pfad und einem Briefing passend zum Level. Wenn du so lernen willst, passt Sapaude gut. Basics 1 und 2 sind gratis, auch zum Hören. Ausführlicher: <a href="ki-lernen-app/">Welche App eignet sich, um KI zu lernen?</a> und <a href="duolingo-fuer-ki/">Duolingo für KI</a>.</p>
       </details>
       <details>
         <summary><h3>Was kostet Sapaude Pro?</h3></summary>
@@ -487,13 +567,21 @@
           <span class="brand-inline">sapaude<span class="brand-dot" aria-hidden="true"></span></span><br>
           <a href="mailto:support@sapaude.app">support@sapaude.app</a>
         </address>
-        <nav class="footer-nav" aria-label="Rechtliches">
-          <a href="impressum/">Impressum</a>
-          <a href="privacy/">Datenschutz</a>
-          <a href="daten-loeschen/">Daten löschen</a>
-          <a href="nutzungsbedingungen/">Nutzungsbedingungen</a>
-          <a href="support/">Support</a>
-        </nav>
+        <div>
+          <nav class="footer-nav" aria-label="Lesen">
+            <a href="briefing/">Briefing</a>
+            <a href="ki-lernen-app/">KI lernen</a>
+            <a href="duolingo-fuer-ki/">Duolingo für KI</a>
+            <a href="ueber/">Über Sapaude</a>
+          </nav>
+          <nav class="footer-nav" aria-label="Rechtliches">
+            <a href="impressum/">Impressum</a>
+            <a href="privacy/">Datenschutz</a>
+            <a href="daten-loeschen/">Daten löschen</a>
+            <a href="nutzungsbedingungen/">Nutzungsbedingungen</a>
+            <a href="support/">Support</a>
+          </nav>
+        </div>
         <div>
           <p class="fine">Diese Seite setzt keine Cookies und lädt keine Tracker von Dritten. Teile der Inhalte werden mit KI erstellt oder unterstützt.</p>
           <p class="fine">Apple, App Store und iPhone sind Marken von Apple Inc., eingetragen in den USA und anderen Ländern. Google Play ist eine Marke von Google LLC.</p>
