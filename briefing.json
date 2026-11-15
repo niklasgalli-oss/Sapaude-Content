@@ -1,7 +1,140 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-14T04:46:45+01:00",
+  "updatedAt": "2026-11-15T04:52:19+01:00",
   "days": [
+    {
+      "date": "2026-11-15",
+      "items": [
+        {
+          "id": "2026-11-15-anthropic-ipo-china-orders",
+          "headline": "Banks reject Chinese orders for Anthropic's IPO",
+          "summary": "Bloomberg reports that several banks are turning away orders from mainland China and Hong Kong, partly citing US export rules. Pricing is set for November 18, followed by Nasdaq trading under the ticker ANT.",
+          "source": {
+            "name": "The Decoder",
+            "url": "https://the-decoder.com/banks-bar-chinese-and-hong-kong-investors-from-anthropic-ipo-over-us-export-controls/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Banken weisen China-Orders für Anthropic ab",
+              "summary": "Laut Bloomberg lehnen mehrere Banken Kaufaufträge aus China und Hongkong für den Anthropic-Börsengang ab, teils mit Verweis auf US-Exportregeln. Der Ausgabepreis soll am kommenden Mittwoch feststehen, danach startet der Nasdaq-Handel."
+            }
+          }
+        },
+        {
+          "id": "2026-11-15-fbi-artex-alert",
+          "headline": "FBI warns of an open-source AI hacking framework",
+          "summary": "The FBI says attackers are using ARTEX, which turns a language model into an automated attack tool. In some intrusions, it took under three hours to get from first targeting to privileged access.",
+          "source": {
+            "name": "The Record",
+            "url": "https://therecord.media/artex-ai-tool-fbi-flash-alert"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "FBI warnt vor KI-Angriffswerkzeug ARTEX",
+              "summary": "Laut FBI nutzen Angreifer das Open-Source-Framework ARTEX, das ein Sprachmodell zum automatisierten Angriffswerkzeug macht. Teils vergingen vom ersten Ziel bis zu privilegiertem Zugriff weniger als drei Stunden."
+            }
+          }
+        },
+        {
+          "id": "2026-11-15-gemini-google-wallet",
+          "headline": "Gemini can now analyze your Google Wallet spending",
+          "summary": "All Gemini app users in the US can connect Google Wallet and ask about budgets, spending or forgotten subscriptions. Bank and card accounts can optionally be linked through Plaid.",
+          "source": {
+            "name": "Google",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/google-wallet-gemini-app/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Gemini wertet jetzt Google-Wallet-Ausgaben aus",
+              "summary": "Alle Nutzer der Gemini-App in den USA können Google Wallet verbinden und nach Budget, Ausgaben oder vergessenen Abos fragen. Bank- und Kartenkonten lassen sich optional über Plaid anbinden."
+            }
+          }
+        },
+        {
+          "id": "2026-11-15-nvidia-approaches-arm-ceo",
+          "headline": "Nvidia board sounds out Arm CEO as Huang successor",
+          "summary": "According to the Financial Times, Nvidia's board approached Arm chief Rene Haas as one of several candidates to replace Jensen Huang. Nothing is agreed, and finance chief Colette Kress remains interim CEO.",
+          "source": {
+            "name": "CNA (Reuters)",
+            "url": "https://www.channelnewsasia.com/business/nvidia-approached-arm-ceo-haas-succeed-huang-ft-reports-6550286"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Nvidia fragt Arm-Chef Haas als Nachfolger an",
+              "summary": "Laut Financial Times hat der Nvidia-Aufsichtsrat Arm-Chef Rene Haas als einen von mehreren Kandidaten für die Huang-Nachfolge angesprochen. Entschieden ist nichts, Finanzchefin Colette Kress führt kommissarisch."
+            }
+          }
+        },
+        {
+          "id": "2026-11-15-openai-robotics-reorg",
+          "headline": "OpenAI folds its robotics team into research",
+          "summary": "OpenAI dissolved its standalone robotics team and moved the researchers into its main research and applied groups. It wants general-purpose models to control robots and calls the move a reorganization, not a retreat.",
+          "source": {
+            "name": "Fortune",
+            "url": "https://fortune.com/2026/11/13/openai-disbands-robotics-team-as-its-general-models-start-running-robots/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI löst eigenes Robotik-Team auf",
+              "summary": "OpenAI verteilt die Forscher seines Robotik-Teams auf die zentrale Forschung und die Applied-Sparte. Künftig sollen allgemeine Modelle Roboter steuern; OpenAI spricht von Umbau, nicht von Rückzug."
+            }
+          }
+        },
+        {
+          "id": "2026-11-15-langchain-series-c",
+          "headline": "LangChain raises $300 million at a $3 billion valuation",
+          "summary": "The Series C was led by CapitalG, with GIC, DFJ Growth, IVP and Sapphire Ventures joining. LangChain says more than 7,000 organizations use its LangSmith platform to run and monitor agents.",
+          "source": {
+            "name": "LangChain",
+            "url": "https://www.langchain.com/blog/series-c"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "LangChain sammelt 300 Millionen Dollar ein",
+              "summary": "Die Series C bei einer Bewertung von 3 Milliarden Dollar führt CapitalG an, dazu kommen GIC, DFJ Growth, IVP und Sapphire. Über 7.000 Organisationen nutzen laut LangChain die Plattform LangSmith für ihre Agents."
+            }
+          }
+        },
+        {
+          "id": "2026-11-15-llama-cpp-1-0",
+          "headline": "llama.cpp reaches version 1.0 with a stable API",
+          "summary": "The widely used library for running models locally shipped its first stable major release. From now on, changes that break its interface get a new major version number, so apps built on it can rely on it more safely.",
+          "source": {
+            "name": "Hugging Face",
+            "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "llama.cpp erreicht Version 1.0 mit stabiler API",
+              "summary": "Die verbreitete Bibliothek für lokal laufende Modelle hat ihre erste stabile Hauptversion veröffentlicht. Brechende Änderungen an der Schnittstelle bekommen künftig eine neue Hauptversion, darauf aufbauende Apps werden so verlässlicher."
+            }
+          }
+        },
+        {
+          "id": "2026-11-15-cursor-incident-update",
+          "headline": "Cursor explains how its extension marketplace was hit",
+          "summary": "An access key leaked at vendor Fireworks led an attacker into Cursor systems and to a tampered Claude Code extension that up to 5,000 users may have received. Cursor says most customers were unaffected.",
+          "source": {
+            "name": "Cursor",
+            "url": "https://cursor.com/blog/security-incident-update"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Cursor erklärt den Angriff auf seinen Marktplatz",
+              "summary": "Ein bei Dienstleister Fireworks offengelegter Schlüssel führte einen Angreifer in Cursors Systeme und zu einer manipulierten Claude-Code-Erweiterung für bis zu 5.000 Nutzer. Die meisten Kunden waren laut Cursor nicht betroffen."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-14",
       "items": [
@@ -762,124 +895,6 @@
             "de": {
               "headline": "32-MB-Sprachmodell läuft offline im Browser",
               "summary": "Das Start-up Underdog hat Woof veröffentlicht, ein frei herunterladbares Sprachmodell mit 31 Mio. Parametern. Es läuft ohne Internet auf den meisten Geräten, gezeigt in einem kleinen Browser-Spiel."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-11-08",
-      "items": [
-        {
-          "id": "2026-11-08-openai-11b-round",
-          "headline": "OpenAI raises $11 billion at a $1.25 trillion value",
-          "summary": "According to Bloomberg, OpenAI has closed a first $11 billion slice of a round that could reach about $20 billion. The valuation is below the $1.4 trillion it reportedly aimed for in September.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/11/06/openai-reportedly-raises-an-additional-11-billion-at-a-1-25-trillion-valuation/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI sammelt 11 Mrd. Dollar bei 1,25 Billionen ein",
-              "summary": "Laut Bloomberg hat OpenAI einen ersten Teil von 11 Milliarden Dollar abgeschlossen, die Runde könnte auf rund 20 Milliarden wachsen. Die Bewertung liegt unter den 1,4 Billionen, die im September angepeilt worden sein sollen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-08-deepmind-legacy-rsa",
-          "headline": "DeepMind agents find two weak spots in old 1024-bit RSA",
-          "summary": "Google DeepMind says human-guided AI agents found faster signature forgery and cheaper batch factoring for legacy 1024-bit RSA. Modern keys of 2048 bits or more are not affected, and part of the work is still theoretical.",
-          "source": {
-            "name": "Interesting Engineering",
-            "url": "https://interestingengineering.com/ai-robotics/1600x-faster-google-deepmind-agents-expose-weaknesses-in-older-encryption-methods"
-          },
-          "tag": "Autonomous Agent",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "DeepMind-Agents finden Lücken im alten RSA-1024",
-              "summary": "Laut Google DeepMind haben KI-Agents unter menschlicher Anleitung zwei Schwächen im veralteten 1024-Bit-RSA gefunden. Moderne Schlüssel ab 2048 Bit sind nicht betroffen, ein Teil der Ergebnisse ist bisher nur theoretisch."
-            }
-          }
-        },
-        {
-          "id": "2026-11-08-biobasicsbench",
-          "headline": "OpenAI tests agents on everyday lab data",
-          "summary": "BioBasicsBench, built with biotech firm Ligo, has 100 tasks where agents read raw gels, images, and instrument output and must flag weak evidence. OpenAI says GPT-6 Astra scored 66.7%, still with gaps on controls.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/"
-          },
-          "tag": "Benchmarks",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI prüft Agents an echten Labordaten",
-              "summary": "BioBasicsBench, entwickelt mit dem Biotech-Unternehmen Ligo, umfasst 100 Aufgaben mit rohen Labordaten, bei denen Agents auch zu dünne Belege erkennen müssen. GPT-6 Astra kommt laut OpenAI auf 66,7 Prozent."
-            }
-          }
-        },
-        {
-          "id": "2026-11-08-ripple-65b-preview",
-          "headline": "Ripple-65B Preview: open coding model under Apache 2.0",
-          "summary": "Chip design firm Ricursive Intelligence released a dense 65B model on Hugging Face that it says leads open US models on TerminalBench 2.1. It trails Inkling 2 Small but should be easier to run on your own hardware.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/ripple-65b-preview-delivers-strong-agentic-coding-results-as-a-fully-apache-2-0-open-us-model/"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Ripple-65B Preview: offenes Coding-Modell",
-              "summary": "Der Chipdesigner Ricursive Intelligence stellt ein 65B-Modell unter Apache 2.0 auf Hugging Face. Bei TerminalBench 2.1 sieht er es vorn unter offenen US-Modellen, hinter Inkling 2 Small, aber leichter selbst zu betreiben."
-            }
-          }
-        },
-        {
-          "id": "2026-11-08-alexa-text-shopping",
-          "headline": "US shoppers can now text Alexa to search and buy",
-          "summary": "Amazon is inviting selected US customers to shop with its Alexa agent by text message: search, compare, add to cart, buy, and track prices or orders. A wider rollout is planned in the coming weeks.",
-          "source": {
-            "name": "Amazon",
-            "url": "https://www.aboutamazon.com/news/retail/alexa-for-shopping-text-to-shop"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Alexa nimmt in den USA Einkäufe per SMS an",
-              "summary": "Amazon lädt ausgewählte US-Kunden ein, per Textnachricht mit dem Alexa-Agent einzukaufen: suchen, vergleichen, bestellen und Preise verfolgen. Eine breitere Einführung soll in den nächsten Wochen folgen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-08-smartwatch-hypertension",
-          "headline": "Google's smartwatch AI spots signs of high blood pressure",
-          "summary": "In a Nature study with 196 people, a model using only smartwatch pulse and motion sensors flagged hypertension in 65.8% of cases. Google says it is a screening hint for a doctor's visit, not a diagnosis.",
-          "source": {
-            "name": "Google Research",
-            "url": "https://research.google/blog/detecting-signs-of-hypertension-using-wearable-sensors/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Smartwatch-KI erkennt Hinweise auf Bluthochdruck",
-              "summary": "In einer Nature-Studie mit 196 Personen erkannte ein Modell nur aus Puls- und Bewegungssensoren der Smartwatch 65,8 Prozent der Bluthochdruck-Fälle. Google sieht das als Anlass für einen Arztbesuch, nicht als Diagnose."
-            }
-          }
-        },
-        {
-          "id": "2026-11-08-google-buys-crusoe-site",
-          "headline": "Google takes over Crusoe's unfinished Wyoming campus",
-          "summary": "Crusoe sold its planned data center site in Wyoming to Google, which plans to invest $17 billion there. The price was not disclosed; Google had reportedly raised concerns about the project's cost and timeline.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "Google übernimmt Crusoes Rechenzentrum in Wyoming",
-              "summary": "Crusoe verkauft sein unfertiges Rechenzentrumsprojekt in Wyoming an Google, das dort 17 Milliarden Dollar investieren will. Den Kaufpreis nannten beide nicht."
             }
           }
         }
