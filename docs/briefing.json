@@ -1,7 +1,141 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-15T04:52:19+01:00",
+  "updatedAt": "2026-11-16T04:43:03+01:00",
   "days": [
+    {
+      "date": "2026-11-16",
+      "items": [
+        {
+          "id": "2026-11-16-openai-astra-physics-proof",
+          "headline": "OpenAI's GPT-6 Astra helps with a physics proof",
+          "summary": "OpenAI has launched a science blog. In its first guest post, UCSB physicist Nathaniel Craig says GPT-6 Astra led the detailed proof for his candidate lattice definition of the Standard Model.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/step-toward-defining-the-standard-model/"
+          },
+          "tag": "Benchmarks",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "GPT-6 Astra hilft bei einem Physik-Beweis",
+              "summary": "OpenAI startet einen Wissenschaftsblog. Im ersten Gastbeitrag berichtet der Physiker Nathaniel Craig, dass GPT-6 Astra den detaillierten Beweis für seine Gitter-Definition des Standardmodells maßgeblich ausgearbeitet hat."
+            }
+          }
+        },
+        {
+          "id": "2026-11-16-claude-enterprise-unified",
+          "headline": "Claude Enterprise merges chat and Cowork",
+          "summary": "Enterprise teams now use one Claude for quick questions and longer tasks. When work needs code or files, it continues in a cloud environment run by Anthropic, and admins control access by role.",
+          "source": {
+            "name": "Anthropic",
+            "url": "https://claude.com/resources/articles/unified-claude-enterprise"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Claude Enterprise vereint Chat und Cowork",
+              "summary": "In Claude Enterprise beginnt jetzt jede Aufgabe als Chat. Braucht sie Code oder Dateien, arbeitet Claude in einer Cloud-Umgebung von Anthropic weiter. Admins steuern den Zugriff über Rollen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-16-apple-health-ai-study",
+          "headline": "Apple tests health chatbot answers in a new study",
+          "summary": "With OpenEvidence, Apple launched a US study app that answers health questions using clinical journals. It aims for up to 200,000 iPhone users over more than 12 months, and the data is not used for model training.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/15/apple-launches-new-app-to-study-how-people-use-ai-for-health/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Apple testet KI-Antworten auf Gesundheitsfragen",
+              "summary": "Zusammen mit OpenEvidence startet Apple in den USA eine Studien-App, die Gesundheitsfragen auf Basis medizinischer Fachjournale beantwortet. Geplant sind bis zu 200.000 Teilnehmende über mehr als zwölf Monate."
+            }
+          }
+        },
+        {
+          "id": "2026-11-16-antigravity-teamwork",
+          "headline": "Google opens its research agent teams in Antigravity",
+          "summary": "Google Research says /teamwork agent teams helped experts solve open problems in math, chemistry and kernel optimization. Developers can now use the same tools in Antigravity.",
+          "source": {
+            "name": "Google Research",
+            "url": "https://research.google/blog/advancing-science-engineering-with-antigravitys-teamwork-feature/"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "Google öffnet Forschungs-Agenten in Antigravity",
+              "summary": "Laut Google Research haben Agent-Teams mit /teamwork gemeinsam mit Fachleuten offene Probleme in Mathematik, Chemie und Kernel-Optimierung gelöst. Entwickler können die Werkzeuge jetzt in Antigravity nutzen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-16-haru-4b-speech-model",
+          "headline": "Haru-4B listens and speaks at the same time",
+          "summary": "Higurashi released open weights for Haru-4B, a speech model you can interrupt mid-sentence like on a phone call. It reaches about 65 ms latency on a MacBook and is a base model meant for research.",
+          "source": {
+            "name": "Higurashi",
+            "url": "https://blog.higurashi.ai/melte/haru4b/"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "Haru-4B hört und spricht gleichzeitig",
+              "summary": "Higurashi veröffentlicht die Open Weights von Haru-4B. Das Sprachmodell lässt sich wie am Telefon unterbrechen und reagiert auf einem MacBook in etwa 65 ms. Es ist ein Basismodell für die Forschung."
+            }
+          }
+        },
+        {
+          "id": "2026-11-16-elevenai-notes-dictation",
+          "headline": "ElevenLabs tests an app for meeting notes and dictation",
+          "summary": "ElevenAI records meetings, answers questions across past calls and turns speech into clean text in any app, in more than 90 languages. It is still in preview with early-access sign-up.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "ElevenLabs testet App für Protokolle und Diktat",
+              "summary": "ElevenAI schreibt Meetings mit, beantwortet Fragen zu früheren Gesprächen und macht aus Sprache sauberen Text in jeder App, in über 90 Sprachen. Die App ist noch in der Preview, Zugang gibt es per Warteliste."
+            }
+          }
+        },
+        {
+          "id": "2026-11-16-grey-market-api-keys",
+          "headline": "Cheap AI API keys let a middleman read everything",
+          "summary": "heise bought a key worth $50 in model credit for €2.20. Real Anthropic models answered, but via an opaque gateway whose operator can read and alter every prompt, according to a security expert.",
+          "source": {
+            "name": "heise online",
+            "url": "https://www.heise.de/ratgeber/KI-Zugang-fuer-2-Euro-Diese-Gefahren-lauern-hinter-den-Billig-APIs-11523882.html"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Billige API-Keys: Ein Vermittler liest alles mit",
+              "summary": "heise kaufte für 2,20 Euro einen Key mit 50 Dollar Guthaben. Es antworteten zwar Anthropic-Modelle, doch über ein undurchsichtiges Gateway, dessen Betreiber laut einem Sicherheitsexperten jeden Prompt mitlesen und ändern kann."
+            }
+          }
+        },
+        {
+          "id": "2026-11-16-huang-weighs-nvidia-return",
+          "headline": "Report: Jensen Huang discusses a return to Nvidia",
+          "summary": "The Financial Times reports that the former Nvidia CEO has discussed a comeback with close allies. A public letter backing his return has over 150,000 signatures, though many are hard to verify.",
+          "source": {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/tech/1033999/jensen-huang-return-nvidia-megaspeed"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Bericht: Jensen Huang erwägt Nvidia-Rückkehr",
+              "summary": "Laut Financial Times hat der frühere Nvidia-Chef mit Vertrauten über ein Comeback gesprochen. Ein offener Brief für seine Rückkehr hat über 150.000 Unterschriften, deren Echtheit sich aber oft kaum prüfen lässt."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-15",
       "items": [
@@ -760,141 +894,6 @@
             "de": {
               "headline": "Anthropic kauft offenbar Gasgeneratoren für 3,4 Mrd.",
               "summary": "Laut Financial Times hat Anthropic bestehende Bestellungen für Gasgeneratoren mit 1,7 Gigawatt Leistung übernommen, um künftige Rechenzentren zu versorgen. Strom ist zum Engpass für das KI-Wachstum geworden."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-11-09",
-      "items": [
-        {
-          "id": "2026-11-09-anthropic-ipo-lower-valuation",
-          "headline": "Anthropic sticks to its IPO plan, at a lower price",
-          "summary": "Per investors cited by the Financial Times, Anthropic still wants to list before Thanksgiving and raise $80–100 billion at $1.25–1.75 trillion, below the $2 trillion some had hoped for after a tech selloff.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/anthropic-pushes-ahead-with-pre-thanksgiving-ipo-despite-tech-selloff-accepts-lower-valuation/"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Anthropic hält am Börsengang fest, aber billiger",
-              "summary": "Laut von der Financial Times zitierten Investoren will Anthropic noch vor Thanksgiving an die Börse und 80 bis 100 Mrd. Dollar einsammeln, bewertet mit 1,25 bis 1,75 Billionen statt der erhofften 2 Billionen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-09-nvidia-board-review-ceo",
-          "headline": "Nvidia's board opens an independent review of its CEO",
-          "summary": "The board reacts to reports that Jensen Huang was targeted by a foreign intelligence effort. It says it has no reason to believe company secrets or national security were compromised.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/11/08/nvidia-says-its-investigating-ceo-jensen-huangs-relationship-with-possible-chinese-spy/"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "Nvidia-Board lässt Vorwürfe um CEO unabhängig prüfen",
-              "summary": "Anlass sind Berichte, Jensen Huang sei Ziel eines ausländischen Geheimdienstes gewesen. Laut Board gibt es bisher keinen Hinweis, dass Firmengeheimnisse oder die nationale Sicherheit betroffen sind."
-            }
-          }
-        },
-        {
-          "id": "2026-11-09-co-design-bench",
-          "headline": "Real user requests trip up coding agents",
-          "summary": "Alibaba's Co-Design Bench has agents rework web apps from real change requests. The best of ten models, GPT-6 Astra, fully solves only 26.4% of tasks, though older benchmarks show scores above 99%.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/ai-coding-agents-still-need-human-cleanup-on-nearly-three-out-of-four-tasks-in-a-real-world-test/"
-          },
-          "tag": "Benchmarks",
-          "i18n": {
-            "de": {
-              "headline": "Coding-Agents scheitern an echten Nutzerwünschen",
-              "summary": "Im Co-Design Bench von Alibaba sollen Agents Web-Apps nach echten Änderungswünschen umbauen. Selbst der Spitzenreiter GPT-6 Astra löst nur 26,4 % der Aufgaben vollständig, ältere Benchmarks zeigen über 99 %."
-            }
-          }
-        },
-        {
-          "id": "2026-11-09-claude-code-secrets-github",
-          "headline": "Claude Code settings file leaks secrets on GitHub",
-          "summary": "Apiiro found 1,122 public copies of Claude Code's local settings file holding passwords or API keys, saved via \"don't ask again\". Its advice: rotate every key first, then clean git history.",
-          "source": {
-            "name": "The Hacker News",
-            "url": "https://thehackernews.com/2026/11/claude-codes-dont-ask-again-file.html"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Claude-Code-Datei verrät Passwörter auf GitHub",
-              "summary": "Apiiro fand 1.122 öffentliche Kopien von .claude/settings.local.json mit Passwörtern oder API-Keys, gespeichert über „nicht mehr fragen“. Rat: erst alle Keys tauschen, dann die git-Historie bereinigen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-09-muse-spaces",
-          "headline": "Muse builds trackers and planners from one chat idea",
-          "summary": "Meta's new Spaces turn a described idea into a project board, planner or tracker in the Muse sidebar. Connected apps keep them updated in the background.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/"
-          },
-          "tag": "Tools",
-          "pulseId": "pulse-2026-11-06-muse-spaces",
-          "i18n": {
-            "de": {
-              "headline": "Muse baut Planer und Tracker aus einer Chat-Idee",
-              "summary": "Mit Spaces macht Meta aus einer beschriebenen Idee ein Projektboard, einen Planer oder Tracker in der Muse-Seitenleiste. Verbundene Apps halten sie im Hintergrund aktuell."
-            }
-          }
-        },
-        {
-          "id": "2026-11-09-open-models-cyber-gap",
-          "headline": "Open models close in on closed ones in hacking tests",
-          "summary": "In Vals AI's CyberOffense benchmark, GPT-6 Sol reached 80.8% of attack goals in simulated company networks. The open-weight DeepSeek V4.1 Flash hit 72.8% at about a seventh of the cost per run.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/the-gap-between-open-and-closed-ai-models-in-cyber-capabilities-keeps-shrinking/"
-          },
-          "tag": "Benchmarks",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "Offene Modelle holen bei Hacking-Tests auf",
-              "summary": "Im CyberOffense-Benchmark von Vals AI erreichte GPT-6 Sol 80,8 % der Angriffsziele in simulierten Firmennetzen. Das Open-Weights-Modell DeepSeek V4.1 Flash kam auf 72,8 % bei etwa einem Siebtel der Kosten."
-            }
-          }
-        },
-        {
-          "id": "2026-11-09-eu-ai-act-december-deadline",
-          "headline": "EU AI Act: watermark and nudify-app ban from Dec 2",
-          "summary": "From Dec 2, 2026, generative AI systems sold before Aug 2 must add machine-readable watermarks, and apps that make non-consensual nude images are banned in the EU.",
-          "source": {
-            "name": "The European Post",
-            "url": "https://theeuropeanpost.eu/european-affairs/ai-act-omnibus-sets-2-december-deadline-for-deepfake-watermarks/"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "AI Act: Wasserzeichen und Nudify-Verbot ab 2.12.",
-              "summary": "Ab 2. Dezember 2026 müssen generative KI-Systeme, die schon vor dem 2. August auf dem Markt waren, maschinenlesbare Wasserzeichen setzen. Apps für nicht einvernehmliche Nacktbilder sind dann in der EU verboten."
-            }
-          }
-        },
-        {
-          "id": "2026-11-09-underdog-woof-speech",
-          "headline": "Underdog's 32 MB voice model runs offline in the browser",
-          "summary": "Startup Underdog released Woof, a 31-million-parameter speech model anyone can download. It runs on most devices without internet, shown in a small browser game.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "32-MB-Sprachmodell läuft offline im Browser",
-              "summary": "Das Start-up Underdog hat Woof veröffentlicht, ein frei herunterladbares Sprachmodell mit 31 Mio. Parametern. Es läuft ohne Internet auf den meisten Geräten, gezeigt in einem kleinen Browser-Spiel."
             }
           }
         }
