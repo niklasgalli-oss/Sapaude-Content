@@ -1540,7 +1540,7 @@ summary:focus-visible {
 .phone-screen {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 1170 / 2532;
+  aspect-ratio: 1206 / 2622;
   border-radius: 10cqw;
   background: var(--bg);
   line-height: 0;
