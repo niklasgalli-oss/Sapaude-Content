@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sapaude.app/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/en/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/ki-lernen-app/</loc>
@@ -69,6 +69,10 @@
     <lastmod>2026-11-14</lastmod>
   </url>
   <url>
+    <loc>https://sapaude.app/briefing/2026-11-16-apple-tests-health-ai/</loc>
+    <lastmod>2026-11-16</lastmod>
+  </url>
+  <url>
     <loc>https://sapaude.app/briefing/2026-11-15-claude-reads-goedel/</loc>
     <lastmod>2026-11-15</lastmod>
   </url>
@@ -113,8 +117,8 @@
     <lastmod>2026-11-12</lastmod>
   </url>
   <url>
-    <loc>https://sapaude.app/briefing/2026-11-12-gemini-hydrogen-fast/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://sapaude.app/briefing/tag/2026-11-16/</loc>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/briefing/tag/2026-11-15/</loc>
@@ -141,8 +145,8 @@
     <lastmod>2026-11-10</lastmod>
   </url>
   <url>
-    <loc>https://sapaude.app/briefing/tag/2026-11-09/</loc>
-    <lastmod>2026-11-09</lastmod>
+    <loc>https://sapaude.app/en/briefing/2026-11-16-apple-tests-health-ai/</loc>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/en/briefing/2026-11-15-claude-reads-goedel/</loc>
@@ -189,8 +193,8 @@
     <lastmod>2026-11-12</lastmod>
   </url>
   <url>
-    <loc>https://sapaude.app/en/briefing/2026-11-12-gemini-hydrogen-fast/</loc>
-    <lastmod>2026-11-12</lastmod>
+    <loc>https://sapaude.app/en/briefing/tag/2026-11-16/</loc>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/en/briefing/tag/2026-11-15/</loc>
@@ -217,12 +221,8 @@
     <lastmod>2026-11-10</lastmod>
   </url>
   <url>
-    <loc>https://sapaude.app/en/briefing/tag/2026-11-09/</loc>
-    <lastmod>2026-11-09</lastmod>
-  </url>
-  <url>
     <loc>https://sapaude.app/briefing/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/briefing/2026-11-11-gemini-answers-yes-or-no/</loc>
@@ -245,6 +245,10 @@
     <lastmod>2026-11-12</lastmod>
   </url>
   <url>
+    <loc>https://sapaude.app/briefing/2026-11-12-gemini-hydrogen-fast/</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
     <loc>https://sapaude.app/briefing/2026-11-12-lawsuit-to-freeze-ai/</loc>
     <lastmod>2026-11-12</lastmod>
   </url>
@@ -257,8 +261,12 @@
     <lastmod>2026-11-08</lastmod>
   </url>
   <url>
+    <loc>https://sapaude.app/briefing/tag/2026-11-09/</loc>
+    <lastmod>2026-11-09</lastmod>
+  </url>
+  <url>
     <loc>https://sapaude.app/en/briefing/</loc>
-    <lastmod>2026-11-15</lastmod>
+    <lastmod>2026-11-16</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/en/briefing/2026-11-11-gemini-answers-yes-or-no/</loc>
@@ -281,6 +289,10 @@
     <lastmod>2026-11-12</lastmod>
   </url>
   <url>
+    <loc>https://sapaude.app/en/briefing/2026-11-12-gemini-hydrogen-fast/</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
     <loc>https://sapaude.app/en/briefing/2026-11-12-lawsuit-to-freeze-ai/</loc>
     <lastmod>2026-11-12</lastmod>
   </url>
@@ -291,5 +303,9 @@
   <url>
     <loc>https://sapaude.app/en/briefing/tag/2026-11-08/</loc>
     <lastmod>2026-11-08</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/en/briefing/tag/2026-11-09/</loc>
+    <lastmod>2026-11-09</lastmod>
   </url>
 </urlset>
