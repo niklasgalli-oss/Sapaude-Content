@@ -172,7 +172,7 @@ test("landing assets stay self-hosted and flat-colored", () => {
   assert.equal(existsSync(join(root, "docs/assets/fraunces-latin-600.woff2")), true);
   assert.equal(existsSync(join(root, "docs/assets/sapaude-head-full.webp")), true);
   for (const pose of ["idle", "blink", "think", "cheer", "present"]) {
-    assert.equal(existsSync(join(root, `docs/assets/sapaude-book/${pose}.webp`)), true);
+    assert.equal(existsSync(join(root, `docs/assets/sapaude-book/${pose}.webp`)), false);
   }
   assert.match(css, /@keyframes sapaude-bob/);
   assert.match(css, /@keyframes sapaude-blink/);
@@ -460,8 +460,8 @@ test("sapaude wordmark, claims, and app mismatches", () => {
   assert.doesNotMatch(en, /Prompts/);
   assert.match(de, /was ein Token ist/);
   assert.match(en, /what a token is/);
-  assert.match(de, /Hören im Briefing ist Sapaude Pro/);
-  assert.match(en, /Listening to the briefing is part of Sapaude Pro/);
+  assert.match(de, /Hören im Briefing ist Sapaude Premium/);
+  assert.match(en, /Listening to the briefing is part of Sapaude Premium/);
   assert.doesNotMatch(de, /Briefing bleibt frei/);
   assert.doesNotMatch(en, /Briefing stays free/);
   const briefingDay = JSON.parse(read("briefing.json")).updatedAt.slice(0, 10);
@@ -550,5 +550,25 @@ test("legal hygiene, SEO files, and JSON-LD on landing pages", () => {
     const text = read(rel);
     assert.doesNotMatch(text, /fonts\.googleapis\.com|fonts\.gstatic\.com/, rel);
     assert.doesNotMatch(text, /googletagmanager|google-analytics|plausible\.io|cdn\.jsdelivr/i, rel);
+  }
+});
+
+test("Sapi and Sapaude Pro stay out of docs HTML", () => {
+  const pages = walk(join(root, "docs")).filter((path) => path.endsWith(".html"));
+  assert.ok(pages.length >= 12);
+  // PR #26 rewrites the homepage JSON-LD block and these two FAQ answers.
+  // They still say Sapaude Pro on this branch so the diffs do not overlap.
+  const ownedFaq = /<details>\s*<summary><h3>(?:Was kostet Sapaude Pro\?|Wie kündige ich\?|What does Sapaude Pro cost\?|How do I cancel\?)<\/h3><\/summary>[\s\S]*?<\/details>/g;
+  for (const path of pages) {
+    const rel = path.slice(root.length + 1);
+    const html = read(rel);
+    assert.doesNotMatch(html, /\bSapi\b/, rel);
+    assert.doesNotMatch(html, /assets\/sapaude-book\//, rel);
+    let copy = html;
+    if (rel === "docs/index.html" || rel === "docs/en/index.html") {
+      copy = copy.replace(/<script type="application\/ld\+json">[\s\S]*?<\/script>/g, "");
+      copy = copy.replace(ownedFaq, "");
+    }
+    assert.doesNotMatch(copy, /Sapaude Pro/, rel);
   }
 });
