@@ -47,11 +47,16 @@
 
 :root {
   color-scheme: light;
-  --bg: #F6F1E8;
+  --bg: #F3EEE4;
   --text: #1C1916;
-  --muted: #6B635A;
-  --line: #E3DACD;
-  --focus: #1E6E8C;
+  --muted: #5C554C;
+  --line: rgba(28, 25, 22, 0.12);
+  --focus: #1A5F78;
+  --glass: rgba(255, 252, 247, 0.66);
+  --sheet: #FBF8F2;
+  --rim: rgba(255, 255, 255, 0.78);
+  --orb-a: #c5dde8;
+  --orb-b: #d5e6d6;
   --serif: "Fraunces", "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
   --sans: "Source Sans 3", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
 }
@@ -70,6 +75,7 @@ body {
   margin: 0;
   background: var(--bg);
   color: var(--text);
+  position: relative;
   font-family: var(--sans);
   font-size: 1.0625rem;
   font-weight: 400;
@@ -86,8 +92,8 @@ body {
 .skip {
   position: absolute;
   left: 0.75rem;
-  top: 0.75rem;
-  transform: translateY(-150%);
+  top: 0;
+  transform: translateY(calc(-100% - 12px));
   background: var(--text);
   color: var(--bg);
   padding: 0.4rem 0.7rem;
@@ -101,9 +107,16 @@ body {
 }
 
 .wrap {
+  position: relative;
   max-width: 42rem;
-  margin: 0 auto;
-  padding: 1.35rem 1.2rem 4rem;
+  margin: clamp(0.75rem, 2vw, 1.25rem) auto 1.25rem;
+  padding: 1.35rem 1.2rem 2.6rem;
+  background: var(--glass);
+  border: 1px solid var(--rim);
+  border-radius: 28px;
+  box-shadow: 0 18px 48px rgba(28, 25, 22, 0.08), inset 0 1px 0 rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px) saturate(1.3);
+  -webkit-backdrop-filter: blur(16px) saturate(1.3);
 }
 
 .site-header {
@@ -114,7 +127,7 @@ body {
   gap: 0.75rem 1.25rem;
   margin-bottom: 0.45rem;
   padding-bottom: 0.75rem;
-  border-bottom: 3px solid var(--text);
+  border-bottom: 1px solid var(--line);
 }
 
 .brand {
@@ -161,7 +174,7 @@ body {
 }
 
 main {
-  border-top: 1px solid var(--text);
+  border-top: 1px solid var(--line);
   padding-top: 1.35rem;
 }
 
@@ -280,8 +293,7 @@ th {
 footer {
   margin-top: 2.75rem;
   padding-top: 0.85rem;
-  border-top: 3px solid var(--text);
-  box-shadow: 0 -4px 0 0 var(--bg), 0 -5px 0 0 var(--text);
+  border-top: 1px solid var(--line);
   color: var(--muted);
   font-size: 0.95rem;
 }
@@ -316,9 +328,83 @@ caption {
   padding-top: 0.45rem;
 }
 
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  z-index: -1;
+  pointer-events: none;
+  border-radius: 50%;
+  filter: blur(46px);
+}
+
+body::before {
+  width: 40vw;
+  height: 40vw;
+  min-width: 16rem;
+  min-height: 16rem;
+  top: -12vw;
+  right: -8vw;
+  background: var(--orb-a);
+  opacity: 0.9;
+}
+
+body::after {
+  width: 34vw;
+  height: 34vw;
+  min-width: 14rem;
+  min-height: 14rem;
+  left: -10vw;
+  bottom: -8vw;
+  background: var(--orb-b);
+  opacity: 0.75;
+}
+
 @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  body::before,
+  body::after {
+    display: none;
+  }
+
+  .wrap {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: var(--sheet);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: dark;
+    --bg: #101614;
+    --text: #F4EFE6;
+    --muted: #C9C0B4;
+    --line: rgba(244, 239, 230, 0.16);
+    --focus: #8FCFE3;
+    --glass: rgba(244, 239, 230, 0.08);
+    --sheet: #1A221F;
+    --rim: rgba(255, 255, 255, 0.16);
+    --orb-a: #1A4A58;
+    --orb-b: #1C4036;
+  }
+
+  .wrap {
+    box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  }
+
+  ::selection {
+    background: #3C9EC4;
+    color: #07141A;
+  }
+
+  a:hover {
+    color: var(--text);
   }
 }
 

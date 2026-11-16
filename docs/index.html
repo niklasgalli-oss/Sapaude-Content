@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-itunes-app" content="app-id=6825464359">
   <title>Sapaude — KI lernen wie eine Sprache, ab 5 Minuten am Tag</title>
   <meta name="description" content="Sapaude ist die Lern-App für KI-Grundlagen und ein tägliches Briefing in normaler Sprache. Geführter Pfad, Quiz, Deutsch und Englisch. Basics 1 und 2 sind frei.">
   <link rel="canonical" href="https://sapaude.app/">
@@ -25,7 +26,8 @@
   <meta name="twitter:description" content="Sapaude ist die Lern-App für KI-Grundlagen und ein tägliches Briefing in normaler Sprache. Geführter Pfad, Quiz, Deutsch und Englisch. Basics 1 und 2 sind frei.">
   <meta name="twitter:image" content="https://sapaude.app/og-de.png">
   <meta name="twitter:image:alt" content="Sapaude. Veni, vidi, KI.">
-  <meta name="theme-color" content="#F6F1E8">
+  <meta name="theme-color" content="#F3EEE4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101614" media="(prefers-color-scheme: dark)">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
@@ -71,6 +73,7 @@
         "@id": "https://sapaude.app/#app",
         "name": "Sapaude",
         "operatingSystem": "iOS, Android",
+        "installUrl": "https://apps.apple.com/app/id6825464359",
         "applicationCategory": "EducationalApplication",
         "description": "Lern-App für KI-Grundlagen und tägliche KI-News. Geführter Pfad, Quiz und Briefing in normaler Sprache. Deutsch und Englisch.",
         "inLanguage": ["de", "en"],
@@ -152,7 +155,7 @@
             "name": "Und Android?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sapaude kommt demnächst für das iPhone. Android folgt. Bis ein Eintrag live ist, steht hier: demnächst im App Store und bei Google Play."
+              "text": "Sapaude ist jetzt im App Store für das iPhone. Android folgt. Bei Google Play ist die App noch nicht verfügbar."
             }
           },
           {
@@ -171,6 +174,7 @@
   <script src="landing.js" defer></script>
 </head>
 <body>
+  <div class="canopy" aria-hidden="true"></div>
   <a class="skip" href="#content">Zum Inhalt</a>
   <div class="nav-backdrop" id="nav-backdrop"></div>
   <nav class="mobile-nav" id="mobile-nav-panel" aria-label="Abschnitte" inert>
@@ -210,8 +214,13 @@
           <p class="hero-sub">KI-Grundlagen und tägliche KI-News · ab 5 Min. am Tag · Basics 1 &amp; 2 gratis – auch zum Hören</p>
           <div class="store" id="get-the-app" data-sapaude-store data-badge="assets/app-store-badge-de.svg" data-badge-alt="Laden im App Store">
             <p class="store-row">
-              <span class="store-pending" data-store-pending>Demnächst im App Store</span>
-              <span class="store-pending store-play" data-store-play data-play-label="Bei Google Play">Demnächst bei Google Play</span>
+              <a class="store-link" href="https://apps.apple.com/app/id6825464359">
+                <img src="assets/app-store-badge-de.svg" alt="Laden im App Store" width="144" height="48">
+              </a>
+              <span class="store-note">
+                <span class="store-now">Jetzt im App Store</span>
+                <span class="store-pending store-play" data-store-play data-play-label="Bei Google Play">Demnächst bei Google Play</span>
+              </span>
             </p>
           </div>
         </div>
@@ -239,14 +248,6 @@
                 </div>
               </div>
             </figure>
-          </div>
-          <div class="hero-sapaude">
-            <div class="sapaude-book" data-sapaude-book>
-              <img class="sapaude-pose sapaude-pose-idle" src="assets/sapaude-book/idle.webp" alt="" width="512" height="512" decoding="async">
-              <img class="sapaude-pose sapaude-pose-blink" src="assets/sapaude-book/blink.webp" alt="" width="512" height="512" aria-hidden="true" decoding="async" fetchpriority="low">
-              <img class="sapaude-pose sapaude-pose-present" src="assets/sapaude-book/present.webp" alt="" width="512" height="512" aria-hidden="true" decoding="async" fetchpriority="low">
-            </div>
-            <p class="hero-bubble">Hi, ich bin Sapi</p>
           </div>
         </div>
       </div>
@@ -433,7 +434,7 @@
         </div>
         <p class="meta">Aktuelles Briefing · <time data-briefing-date datetime="2026-11-16">16. November 2026</time></p>
       </div>
-      <p class="lede prose">Kuratierte KI-Nachrichten, in eigenen Worten. Aus dem Labor und aus Werkzeugen, die man wirklich benutzt. In der App passt das Briefing zu deinem Level. Hören im Briefing ist Sapaude Pro.</p>
+      <p class="lede prose">Kuratierte KI-Nachrichten, in eigenen Worten. Aus dem Labor und aus Werkzeugen, die man wirklich benutzt. Im Hintergrund liegen die Bauteile, die diese Werkzeuge antreiben. In der App passt das Briefing zu deinem Level. Hören im Briefing ist Sapaude Pro.</p>
       <ol class="brief-list" data-briefing-list>
         <!-- briefing:cards -->
         <li class="brief-item">
@@ -551,7 +552,7 @@
       </details>
       <details>
         <summary><h3>Und Android?</h3></summary>
-        <p class="prose">Sapaude kommt demnächst für das iPhone. Android folgt. Bis ein Eintrag live ist, steht hier: demnächst im App Store und bei Google Play.</p>
+        <p class="prose">Sapaude ist jetzt im App Store für das iPhone. Android folgt. Bei Google Play ist die App noch nicht verfügbar.</p>
       </details>
       <details>
         <summary><h3>Was passiert mit meinen Daten?</h3></summary>
@@ -588,17 +589,10 @@
         </div>
       </div>
       <p class="footer-claim">Veni, vidi, KI.</p>
+      <p class="brand-motto" lang="la">sapere aude</p>
       <p class="wordmark" aria-hidden="true">sapaude<span class="brand-dot"></span></p>
     </div>
   </footer>
-  <a class="sapaude-float" href="#screens">
-    <div class="sapaude-book" data-sapaude-book>
-      <img class="sapaude-pose sapaude-pose-idle" src="assets/sapaude-book/idle.webp" alt="" width="512" height="512" decoding="async">
-      <img class="sapaude-pose sapaude-pose-blink" src="assets/sapaude-book/blink.webp" alt="" width="512" height="512" aria-hidden="true" decoding="async" fetchpriority="low">
-      <img class="sapaude-pose sapaude-pose-present" src="assets/sapaude-book/present.webp" alt="" width="512" height="512" aria-hidden="true" decoding="async" fetchpriority="low">
-    </div>
-    <span class="visually-hidden">Hi, ich bin Sapi</span>
-  </a>
   <button type="button" class="back-top" id="back-to-top">Nach oben</button>
 </body>
 </html>

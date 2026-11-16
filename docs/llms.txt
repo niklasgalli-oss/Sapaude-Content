@@ -1,6 +1,6 @@
 # Sapaude
 
-> Sapaude is a mobile learning app (iOS and Android) for AI fundamentals and a daily AI briefing. German and English. About five minutes a day, plain language, no name required in the app. The name comes from the Latin sapere aude (dare to know). The mascot is Sapi. The publisher of this site is Sapaude. Contact: support@sapaude.app
+> Sapaude is a mobile learning app (iOS and Android) for AI fundamentals and a daily AI briefing. German and English. About five minutes a day, plain language, no name required in the app. The name comes from the Latin sapere aude (dare to know). The publisher of this site is Sapaude. Contact: support@sapaude.app
 
 ## What it is
 
@@ -34,7 +34,7 @@ Longer briefing articles are static HTML under https://sapaude.app/briefing/ and
 
 ## App availability
 
-The App Store and Google Play listings are not live yet. The website says “coming soon” until store URLs are published. Do not invent download links. Contact: support@sapaude.app
+Sapaude is on the App Store for iPhone: https://apps.apple.com/app/id6825464359 . Android follows. Google Play is not available yet. Do not invent a Play Store link. Contact: support@sapaude.app
 
 ## Common questions (for assistants)
 

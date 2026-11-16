@@ -106,7 +106,7 @@ test("apple-app-site-association is not a file", () => {
 
 test("App Store URL is one empty constant", () => {
   const js = read("docs/landing.js");
-  assert.match(js, /const SAPAUDE_APP_STORE_URL = "";/);
+  assert.match(js, /const SAPAUDE_APP_STORE_URL = "https:\/\/apps\.apple\.com\/app\/id6825464359";/);
   assert.equal((js.match(/const SAPAUDE_APP_STORE_URL/g) || []).length, 1);
   assert.match(js, /const SAPAUDE_PLAY_STORE_URL = "";/);
   assert.equal((js.match(/const SAPAUDE_PLAY_STORE_URL/g) || []).length, 1);
@@ -134,12 +134,18 @@ test("English and German pages carry the landing sections", () => {
     assert.doesNotMatch(html, /fonts\.googleapis\.com/);
     assert.doesNotMatch(html, /googletagmanager|google-analytics|plausible|cdn\.jsdelivr/i);
   }
-  assert.match(en, /Coming soon on App Store/);
-  assert.match(en, /Coming soon on Google Play/);
+  assert.match(en, /Now on the App Store/);
+  assert.match(en, /Download on the App Store/);
+  assert.match(en, /Coming soon to Google Play/);
+  assert.match(en, /apple-itunes-app" content="app-id=6825464359"/);
+  assert.match(en, /https:\/\/apps\.apple\.com\/app\/id6825464359/);
   assert.match(en, /Learn AI/);
   assert.match(en, /Android follows/);
-  assert.match(de, /Demnächst im App Store/);
+  assert.match(de, /Jetzt im App Store/);
+  assert.match(de, /Laden im App Store/);
   assert.match(de, /Demnächst bei Google Play/);
+  assert.match(de, /apple-itunes-app" content="app-id=6825464359"/);
+  assert.match(de, /https:\/\/apps\.apple\.com\/app\/id6825464359/);
   assert.match(de, /Android folgt/);
   assert.match(de, /KI lernen/);
   assert.match(en, /<html lang="en">/);
@@ -172,8 +178,8 @@ test("landing assets stay self-hosted and flat-colored", () => {
   assert.match(css, /@keyframes sapaude-blink/);
   const en = read("docs/en/index.html");
   const de = read("docs/index.html");
-  assert.match(en, /assets\/sapaude-book\/idle\.webp/);
-  assert.match(de, /assets\/sapaude-book\/idle\.webp/);
+  assert.doesNotMatch(en, /sapaude-book/);
+  assert.doesNotMatch(de, /sapaude-book/);
   assert.doesNotMatch(en, /sapaude-head-full/);
   assert.doesNotMatch(de, /sapaude-head-full/);
   assert.equal(existsSync(join(root, "docs/assets/source-sans-3-latin-400.woff2")), true);
@@ -442,8 +448,8 @@ test("sapaude wordmark, claims, and app mismatches", () => {
   assert.match(en, /Basics 1 &amp; 2 free – listening included/);
   assert.doesNotMatch(de, /Copilot|Lernpfad|Arbeit 01/);
   assert.doesNotMatch(en, /Copilot|Learning path|Work 01/);
-  assert.match(de, /ich bin Sapi/);
-  assert.match(en, /I'm Sapi/);
+  assert.doesNotMatch(de, /Sapi/);
+  assert.doesNotMatch(en, /Sapi/);
   assert.match(css, /#3C9EC4/);
   assert.match(legal, /#3C9EC4/);
   assert.match(read("docs/favicon.svg"), /#F6F1E8/);
