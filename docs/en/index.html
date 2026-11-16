@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="apple-itunes-app" content="app-id=6825464359">
   <title>Sapaude — Learn AI like a language, from 5 minutes a day</title>
   <meta name="description" content="Sapaude is a learning app for AI basics and a daily briefing in plain language. A guided path, quizzes, German and English. Basics 1 and 2 are free.">
   <link rel="canonical" href="https://sapaude.app/en/">
@@ -25,7 +26,8 @@
   <meta name="twitter:description" content="Sapaude is a learning app for AI basics and a daily briefing in plain language. A guided path, quizzes, German and English. Basics 1 and 2 are free.">
   <meta name="twitter:image" content="https://sapaude.app/og.png">
   <meta name="twitter:image:alt" content="Sapaude. Be brave. Get smart.">
-  <meta name="theme-color" content="#F6F1E8">
+  <meta name="theme-color" content="#F3EEE4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101614" media="(prefers-color-scheme: dark)">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="icon" href="../favicon.svg" type="image/svg+xml">
   <link rel="icon" href="../favicon-32.png" sizes="32x32" type="image/png">
@@ -71,6 +73,7 @@
         "@id": "https://sapaude.app/#app",
         "name": "Sapaude",
         "operatingSystem": "iOS, Android",
+        "installUrl": "https://apps.apple.com/app/id6825464359",
         "applicationCategory": "EducationalApplication",
         "description": "Learning app for AI fundamentals and daily AI news. Guided path, quizzes, and a plain-language briefing. German and English.",
         "inLanguage": ["de", "en"],
@@ -152,7 +155,7 @@
             "name": "What about Android?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Sapaude is coming soon on iPhone. Android follows. Until each listing is live, this page says coming soon on the App Store and on Google Play."
+              "text": "Sapaude is on the App Store for iPhone now. Android follows. It is not on Google Play yet."
             }
           },
           {
@@ -171,6 +174,7 @@
   <script src="../landing.js" defer></script>
 </head>
 <body>
+  <div class="canopy" aria-hidden="true"></div>
   <a class="skip" href="#content">Skip to content</a>
   <div class="nav-backdrop" id="nav-backdrop"></div>
   <nav class="mobile-nav" id="mobile-nav-panel" aria-label="Sections" inert>
@@ -210,8 +214,13 @@
           <p class="hero-sub">AI basics and daily AI news · from 5 min a day · Basics 1 &amp; 2 free – listening included</p>
           <div class="store" id="get-the-app" data-sapaude-store data-badge="../assets/app-store-badge-en.svg" data-badge-alt="Download on the App Store">
             <p class="store-row">
-              <span class="store-pending" data-store-pending>Coming soon on App Store</span>
-              <span class="store-pending store-play" data-store-play data-play-label="Get it on Google Play">Coming soon on Google Play</span>
+              <a class="store-link" href="https://apps.apple.com/app/id6825464359">
+                <img src="../assets/app-store-badge-en.svg" alt="Download on the App Store" width="144" height="48">
+              </a>
+              <span class="store-note">
+                <span class="store-now">Now on the App Store</span>
+                <span class="store-pending store-play" data-store-play data-play-label="Get it on Google Play">Coming soon to Google Play</span>
+              </span>
             </p>
           </div>
         </div>
@@ -222,7 +231,7 @@
                 <div class="phone-screen">
                   <picture>
                     <source type="image/avif" srcset="../assets/screens/en/activity-390.avif 390w, ../assets/screens/en/activity-780.avif 780w" sizes="(min-width: 960px) 250px, 46vw">
-                    <img class="phone-shot" src="../assets/screens/en/activity-780.webp" srcset="../assets/screens/en/activity-390.webp 390w, ../assets/screens/en/activity-780.webp 780w" sizes="(min-width: 960px) 250px, 46vw" alt="Activity in Sapaude: daily missions, no streak yet, and zero readings." width="780" height="1688" fetchpriority="high" decoding="async">
+                    <img class="phone-shot" src="../assets/screens/en/activity-780.webp" srcset="../assets/screens/en/activity-390.webp 390w, ../assets/screens/en/activity-780.webp 780w" sizes="(min-width: 960px) 250px, 46vw" alt="Activity in Sapaude: a 6 day streak, 74 minutes this week, and 2 readings." width="780" height="1695" fetchpriority="high" decoding="async">
                   </picture>
                   <span class="phone-island" aria-hidden="true"></span>
                 </div>
@@ -233,20 +242,12 @@
                 <div class="phone-screen">
                   <picture>
                     <source type="image/avif" srcset="../assets/screens/en/home-390.avif 390w, ../assets/screens/en/home-780.avif 780w" sizes="(min-width: 960px) 250px, 46vw">
-                    <img class="phone-shot" src="../assets/screens/en/home-780.webp" srcset="../assets/screens/en/home-390.webp 390w, ../assets/screens/en/home-780.webp 780w" sizes="(min-width: 960px) 250px, 46vw" alt="Sapaude home: the lesson What you can already do with a chat, and today's briefing." width="780" height="1688" fetchpriority="low" decoding="async">
+                    <img class="phone-shot" src="../assets/screens/en/home-780.webp" srcset="../assets/screens/en/home-390.webp 390w, ../assets/screens/en/home-780.webp 780w" sizes="(min-width: 960px) 250px, 46vw" alt="Sapaude home: today's briefing, with Gemini in Apps Script, ChatGPT for researchers, and Qwen4-Max cuts task cost." width="780" height="1695" fetchpriority="low" decoding="async">
                   </picture>
                   <span class="phone-island" aria-hidden="true"></span>
                 </div>
               </div>
             </figure>
-          </div>
-          <div class="hero-sapaude">
-            <div class="sapaude-book" data-sapaude-book>
-              <img class="sapaude-pose sapaude-pose-idle" src="../assets/sapaude-book/idle.webp" alt="" width="512" height="512" decoding="async">
-              <img class="sapaude-pose sapaude-pose-blink" src="../assets/sapaude-book/blink.webp" alt="" width="512" height="512" aria-hidden="true" decoding="async" fetchpriority="low">
-              <img class="sapaude-pose sapaude-pose-present" src="../assets/sapaude-book/present.webp" alt="" width="512" height="512" aria-hidden="true" decoding="async" fetchpriority="low">
-            </div>
-            <p class="hero-bubble">Hi, I'm Sapi</p>
           </div>
         </div>
       </div>
@@ -329,7 +330,7 @@
             <div class="phone-screen">
               <picture>
                 <source type="image/avif" srcset="../assets/screens/en/basics-390.avif 390w, ../assets/screens/en/basics-780.avif 780w" sizes="(min-width: 1100px) 16rem, 64vw">
-                <img class="phone-shot" src="../assets/screens/en/basics-780.webp" srcset="../assets/screens/en/basics-390.webp 390w, ../assets/screens/en/basics-780.webp 780w" sizes="(min-width: 1100px) 16rem, 64vw" alt="Discover in Sapaude: Basics lessons, including Next token, Fluent but false, and Temperature." width="780" height="1688" loading="lazy" decoding="async">
+                <img class="phone-shot" src="../assets/screens/en/basics-780.webp" srcset="../assets/screens/en/basics-390.webp 390w, ../assets/screens/en/basics-780.webp 780w" sizes="(min-width: 1100px) 16rem, 64vw" alt="Discover in Sapaude: core foundations, including embeddings and attention, the context window, and what happens inside a chatbot." width="780" height="1695" loading="lazy" decoding="async">
               </picture>
               <span class="phone-island" aria-hidden="true"></span>
             </div>
@@ -340,7 +341,7 @@
             <div class="phone-screen">
               <picture>
                 <source type="image/avif" srcset="../assets/screens/en/home-390.avif 390w, ../assets/screens/en/home-780.avif 780w" sizes="(min-width: 1100px) 16rem, 64vw">
-                <img class="phone-shot" src="../assets/screens/en/home-780.webp" srcset="../assets/screens/en/home-390.webp 390w, ../assets/screens/en/home-780.webp 780w" sizes="(min-width: 1100px) 16rem, 64vw" alt="Sapaude home: the lesson What you can already do with a chat, and today's briefing." width="780" height="1688" loading="lazy" decoding="async">
+                <img class="phone-shot" src="../assets/screens/en/home-780.webp" srcset="../assets/screens/en/home-390.webp 390w, ../assets/screens/en/home-780.webp 780w" sizes="(min-width: 1100px) 16rem, 64vw" alt="Sapaude home: today's briefing, with Gemini in Apps Script, ChatGPT for researchers, and Qwen4-Max cuts task cost." width="780" height="1695" loading="lazy" decoding="async">
               </picture>
               <span class="phone-island" aria-hidden="true"></span>
             </div>
@@ -351,7 +352,7 @@
             <div class="phone-screen">
               <picture>
                 <source type="image/avif" srcset="../assets/screens/en/reader-390.avif 390w, ../assets/screens/en/reader-780.avif 780w" sizes="(min-width: 1100px) 16rem, 64vw">
-                <img class="phone-shot" src="../assets/screens/en/reader-780.webp" srcset="../assets/screens/en/reader-390.webp 390w, ../assets/screens/en/reader-780.webp 780w" sizes="(min-width: 1100px) 16rem, 64vw" alt="A lesson in Sapaude: All of Uber now works with AI." width="780" height="1688" loading="lazy" decoding="async">
+                <img class="phone-shot" src="../assets/screens/en/reader-780.webp" srcset="../assets/screens/en/reader-390.webp 390w, ../assets/screens/en/reader-780.webp 780w" sizes="(min-width: 1100px) 16rem, 64vw" alt="A term in Sapaude: frontier model, explained in plain language." width="780" height="1695" loading="lazy" decoding="async">
               </picture>
               <span class="phone-island" aria-hidden="true"></span>
             </div>
@@ -362,7 +363,7 @@
             <div class="phone-screen">
               <picture>
                 <source type="image/avif" srcset="../assets/screens/en/briefing-390.avif 390w, ../assets/screens/en/briefing-780.avif 780w" sizes="(min-width: 1100px) 16rem, 64vw">
-                <img class="phone-shot" src="../assets/screens/en/briefing-780.webp" srcset="../assets/screens/en/briefing-390.webp 390w, ../assets/screens/en/briefing-780.webp 780w" sizes="(min-width: 1100px) 16rem, 64vw" alt="The daily briefing in Sapaude on October 22, with covers across two days." width="780" height="1688" loading="lazy" decoding="async">
+                <img class="phone-shot" src="../assets/screens/en/briefing-780.webp" srcset="../assets/screens/en/briefing-390.webp 390w, ../assets/screens/en/briefing-780.webp 780w" sizes="(min-width: 1100px) 16rem, 64vw" alt="The daily briefing in Sapaude on November 16, with covers across two days." width="780" height="1695" loading="lazy" decoding="async">
               </picture>
               <span class="phone-island" aria-hidden="true"></span>
             </div>
@@ -433,7 +434,7 @@
         </div>
         <p class="meta">Latest briefing · <time data-briefing-date datetime="2026-11-16">16 November 2026</time></p>
       </div>
-      <p class="lede prose">Curated AI news, in our own words. From the lab and from tools people actually use. In the app, the briefing is matched to your level. Listening to the briefing is part of Sapaude Pro.</p>
+      <p class="lede prose">Curated AI news, in our own words. From the lab and from tools people actually use. In the background are the parts that drive those tools. In the app, the briefing is matched to your level. Listening to the briefing is part of Sapaude Pro.</p>
       <ol class="brief-list" data-briefing-list>
         <!-- briefing:cards -->
         <li class="brief-item">
@@ -551,7 +552,7 @@
       </details>
       <details>
         <summary><h3>What about Android?</h3></summary>
-        <p class="prose">Sapaude is coming soon on iPhone. Android follows. Until each listing is live, this page says coming soon on the App Store and on Google Play.</p>
+        <p class="prose">Sapaude is on the App Store for iPhone now. Android follows. It is not on Google Play yet.</p>
       </details>
       <details>
         <summary><h3>What happens to my data?</h3></summary>
@@ -588,17 +589,10 @@
         </div>
       </div>
       <p class="footer-claim">Be brave. Get smart.</p>
+      <p class="brand-motto" lang="la">sapere aude</p>
       <p class="wordmark" aria-hidden="true">sapaude<span class="brand-dot"></span></p>
     </div>
   </footer>
-  <a class="sapaude-float" href="#screens">
-    <div class="sapaude-book" data-sapaude-book>
-      <img class="sapaude-pose sapaude-pose-idle" src="../assets/sapaude-book/idle.webp" alt="" width="512" height="512" decoding="async">
-      <img class="sapaude-pose sapaude-pose-blink" src="../assets/sapaude-book/blink.webp" alt="" width="512" height="512" aria-hidden="true" decoding="async" fetchpriority="low">
-      <img class="sapaude-pose sapaude-pose-present" src="../assets/sapaude-book/present.webp" alt="" width="512" height="512" aria-hidden="true" decoding="async" fetchpriority="low">
-    </div>
-    <span class="visually-hidden">Hi, I'm Sapi</span>
-  </a>
   <button type="button" class="back-top" id="back-to-top">Top</button>
 </body>
 </html>

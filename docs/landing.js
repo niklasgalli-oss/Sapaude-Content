@@ -1,23 +1,22 @@
 /**
  * Sapaude landing config.
  *
- * SAPAUDE_APP_STORE_URL is the only App Store link. Leave it as "" until the
- * listing exists. An empty value keeps the coming-soon lines: English says
- * "Coming soon on App Store" and "Coming soon on Google Play". German says
- * "Demnächst im App Store" and "Demnächst bei Google Play". Neither page
- * shows a Download on the App Store badge while this stays empty.
+ * SAPAUDE_APP_STORE_URL is the only App Store link in this file. The home
+ * pages also render Apple's official badge in HTML, so the link works with
+ * JavaScript off. English says "Download on the App Store" and "Now on the
+ * App Store". German says "Laden im App Store" and "Jetzt im App Store".
  * SAPAUDE_PLAY_STORE_URL stays "" until the public Play listing exists.
- * An empty value leaves the coming-soon line. A https://play.google.com
- * product URL turns that line into a link and uses data-play-label.
+ * An empty value leaves the muted line: English "Coming soon to Google Play",
+ * German "Demnächst bei Google Play". A https://play.google.com product URL
+ * turns that line into a link and uses data-play-label.
  * Do not set either constant to a placeholder.
  *
- * Apple's badge must link to the product page. When the listing is live, set
- * this to the https://apps.apple.com/... URL. The page then shows Apple's
- * official badge, unmodified, once, at 48px (minimum 40px) with 12px of clear
- * space. English uses the US-UK artwork. German uses the DE artwork
- * ("Laden im App Store"). App Store stays in English on the badge.
+ * Apple's badge links to the product page, unmodified, once, at 48px
+ * (minimum 40px) with 12px of clear space. English uses the US-UK artwork.
+ * German uses the DE artwork ("Laden im App Store"). App Store stays in
+ * English on the badge.
  */
-const SAPAUDE_APP_STORE_URL = "";
+const SAPAUDE_APP_STORE_URL = "https://apps.apple.com/app/id6825464359";
 const SAPAUDE_PLAY_STORE_URL = "";
 
 const SAPAUDE_BRIEFING_URL = "https://sapaude.app/briefing.json";
@@ -88,6 +87,7 @@ function wirePlay() {
 function wireStore() {
   const root = document.querySelector("[data-sapaude-store]");
   if (!root) return;
+  if (root.querySelector(".store-link")) return;
   const href = appStoreProductUrl(SAPAUDE_APP_STORE_URL);
   if (!href) return;
   const pending = root.querySelector("[data-store-pending]");

@@ -126,9 +126,9 @@ Canonical, hreflang, Open Graph, Twitter, JSON-LD, `docs/sitemap.xml`, and the S
 
 ## App Store link
 
-`docs/landing.js` has one constant, `SAPAUDE_APP_STORE_URL`. It is an empty string. That is the coming-soon state: the English page shows “Coming soon on App Store” and “Coming soon on Google Play”. The German page shows “Demnächst im App Store” and “Demnächst bei Google Play”. The Download badge is not rendered. Google Play has no URL on the page yet, so that line stays text.
+`docs/landing.js` has one constant, `SAPAUDE_APP_STORE_URL`. It is `https://apps.apple.com/app/id6825464359`. The home pages show Apple’s official badge and the lines “Now on the App Store” and “Jetzt im App Store”. Google Play has no URL. That line stays muted text: “Coming soon to Google Play” and “Demnächst bei Google Play”.
 
-Apple’s badge has to link to the product page, unmodified, once per page, at least 40px tall, with clear space of a quarter of its height. This page uses the official white badge at 48px with 12px of clear space, only after the constant is an `https://apps.apple.com/...` URL. English uses the US-UK artwork. German uses the DE artwork (“Laden im App Store”). The words App Store stay in English on the badge. Do not redraw it.
+Apple’s badge links to the product page, unmodified, once per page, at least 40px tall, with clear space of a quarter of its height. This page uses the official white badge at 48px with 12px of clear space. English uses the US-UK artwork (“Download on the App Store”). German uses the DE artwork (“Laden im App Store”). The words App Store stay in English on the badge. Do not redraw it.
 
 ## apple-app-site-association
 

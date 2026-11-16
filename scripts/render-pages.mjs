@@ -380,7 +380,9 @@ function pageShell({ file, locale, title, description, canonical, deUrl, enUrl, 
   <meta name="twitter:description" content="${escapeHtml(safeDescription)}">
   <meta name="twitter:image" content="${ORIGIN}/${copy.ogImage}">
   <meta name="twitter:image:alt" content="${escapeHtml(copy.ogAlt)}">
-  <meta name="theme-color" content="#F6F1E8">
+  <meta name="apple-itunes-app" content="app-id=6825464359">
+  <meta name="theme-color" content="#F3EEE4" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#101614" media="(prefers-color-scheme: dark)">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <link rel="icon" href="${asset("favicon.svg")}" type="image/svg+xml">
   <link rel="icon" href="${asset("favicon-32.png")}" sizes="32x32" type="image/png">
