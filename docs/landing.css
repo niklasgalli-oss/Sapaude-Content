@@ -756,6 +756,14 @@ summary:focus-visible {
   margin-top: 1.15rem;
 }
 
+.colophon .store-footer {
+  margin-top: 1.15rem;
+}
+
+.colophon .store-row {
+  margin: 0;
+}
+
 .colophon address {
   font-style: normal;
   margin: 0;

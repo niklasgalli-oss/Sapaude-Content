@@ -580,6 +580,60 @@ test("legal hygiene, SEO files, and JSON-LD on landing pages", () => {
   }
 });
 
+test("footers on German and English pages carry the App Store badge", () => {
+  const de = read("docs/index.html");
+  const en = read("docs/en/index.html");
+  const deFooter = de.match(/<footer class="colophon">[\s\S]*?<\/footer>/)[0];
+  const enFooter = en.match(/<footer class="colophon">[\s\S]*?<\/footer>/)[0];
+  assert.match(deFooter, /store-link" href="https:\/\/apps\.apple\.com\/app\/id6825464359"/);
+  assert.match(deFooter, /assets\/app-store-badge-de\.svg/);
+  assert.match(deFooter, /alt="Laden im App Store"/);
+  assert.doesNotMatch(deFooter, /Demnächst bei Google Play|Coming soon to Google Play|play\.google/);
+  assert.match(enFooter, /store-link" href="https:\/\/apps\.apple\.com\/app\/id6825464359"/);
+  assert.match(enFooter, /assets\/app-store-badge-en\.svg/);
+  assert.match(enFooter, /alt="Download on the App Store"/);
+  assert.doesNotMatch(enFooter, /Coming soon to Google Play|Demnächst bei Google Play|play\.google/);
+
+  const deAbout = read("docs/ueber/index.html");
+  const enAbout = read("docs/en/about/index.html");
+  assert.match(deAbout, /class="store-cta"/);
+  assert.match(deAbout, /Sapaude ist jetzt für iPhone im App Store\./);
+  assert.match(deAbout, /app-store-badge-de\.svg/);
+  assert.match(enAbout, /class="store-cta"/);
+  assert.match(enAbout, /Sapaude is now on the App Store for iPhone\./);
+  assert.match(enAbout, /app-store-badge-en\.svg/);
+
+  const deBrief = read("docs/briefing/index.html");
+  const enBrief = read("docs/en/briefing/index.html");
+  assert.match(deBrief, /class="store-cta"/);
+  assert.match(deBrief, /<footer>[\s\S]*app-store-badge-de\.svg[\s\S]*Laden im App Store[\s\S]*?<\/footer>/);
+  assert.match(enBrief, /class="store-cta"/);
+  assert.match(enBrief, /<footer>[\s\S]*app-store-badge-en\.svg[\s\S]*Download on the App Store[\s\S]*?<\/footer>/);
+  assert.doesNotMatch(deBrief, /Demnächst bei Google Play/);
+  assert.doesNotMatch(enBrief, /Coming soon to Google Play/);
+
+  const notFound = read("docs/404.html");
+  assert.match(notFound, /store-link" href="https:\/\/apps\.apple\.com\/app\/id6825464359"/);
+  assert.match(notFound, /\/assets\/app-store-badge-de\.svg/);
+  assert.doesNotMatch(notFound, /play\.google/);
+
+  for (const path of walk(join(root, "docs")).filter((path) => path.endsWith(".html"))) {
+    const rel = path.slice(root.length + 1);
+    const html = read(rel);
+    if (/http-equiv="refresh"/.test(html)) continue;
+    assert.match(html, /store-link" href="https:\/\/apps\.apple\.com\/app\/id6825464359"/, rel);
+    if (rel.startsWith("docs/en/") || rel.includes("/en/")) {
+      assert.match(html, /app-store-badge-en\.svg/, rel);
+    } else {
+      assert.match(html, /app-store-badge-de\.svg/, rel);
+    }
+    const footer = html.match(/<footer[\s\S]*?<\/footer>/);
+    if (footer) {
+      assert.doesNotMatch(footer[0], /Demnächst bei Google Play|Coming soon to Google Play|play\.google/, rel);
+    }
+  }
+});
+
 test("Sapi and Sapaude Pro stay out of docs HTML", () => {
   const pages = walk(join(root, "docs")).filter((path) => path.endsWith(".html"));
   assert.ok(pages.length >= 12);
