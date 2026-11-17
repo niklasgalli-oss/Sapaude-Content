@@ -112,7 +112,8 @@ test("homepage FAQ schema matches the visible questions", () => {
       assert.equal(question.name, visible[index].name, path);
       assert.equal(question.acceptedAnswer.text.replace(/\s+/g, " ").trim(), visible[index].text, path);
     });
-    assert.doesNotMatch(html, /aggregateRating|downloadUrl|sameAs/);
+    assert.doesNotMatch(html, /aggregateRating|downloadUrl/);
+    assert.match(html, /"sameAs"/);
     const logo = nodes(html).find((node) => node["@type"] === "Organization").logo;
     assert.equal(logo.url, "https://sapaude.app/logo-512.png");
     assert.equal(logo.width, 512);
@@ -120,8 +121,8 @@ test("homepage FAQ schema matches the visible questions", () => {
   }
   assert.match(read("docs/index.html"), /Es gibt nicht die eine App für alle\./);
   assert.match(read("docs/index.html"), /<title>Sapaude — KI lernen wie eine Sprache, ab 5 Minuten am Tag<\/title>/);
-  assert.equal(meta(read("docs/index.html"), "description").length, 160);
-  assert.equal(meta(read("docs/en/index.html"), "description").length, 148);
+  assert.equal(meta(read("docs/index.html"), "description").length, 137);
+  assert.equal(meta(read("docs/en/index.html"), "description").length, 126);
 });
 
 test("logo is a square PNG of at least 112 pixels", () => {

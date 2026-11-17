@@ -140,13 +140,13 @@ test("English and German pages carry the landing sections", () => {
   assert.match(en, /apple-itunes-app" content="app-id=6825464359"/);
   assert.match(en, /https:\/\/apps\.apple\.com\/app\/id6825464359/);
   assert.match(en, /Learn AI/);
-  assert.match(en, /Android follows/);
+  assert.match(en, /Android is not available/);
   assert.match(de, /Jetzt im App Store/);
   assert.match(de, /Laden im App Store/);
   assert.match(de, /Demnächst bei Google Play/);
   assert.match(de, /apple-itunes-app" content="app-id=6825464359"/);
   assert.match(de, /https:\/\/apps\.apple\.com\/app\/id6825464359/);
-  assert.match(de, /Android folgt/);
+  assert.match(de, /Android ist nicht verfügbar/);
   assert.match(de, /KI lernen/);
   assert.match(en, /<html lang="en">/);
   assert.match(de, /<html lang="de">/);
@@ -517,7 +517,12 @@ test("legal hygiene, SEO files, and JSON-LD on landing pages", () => {
   assert.match(llms, /Sapaude/);
   assert.match(llms, /support@sapaude\.app/);
   assert.match(llms, /https:\/\/sapaude\.app\/en\//);
-  assert.doesNotMatch(llms, /Niklas Galli/);
+  assert.match(llms, /https:\/\/apps\.apple\.com\/app\/id6825464359/);
+  assert.match(llms, /Sapaude Premium/);
+  assert.match(llms, /not affiliated with Duolingo/);
+  assert.match(llms, /Free tier: \[TBD\]/);
+  assert.match(llms, /Android release: \[TBD\]/);
+  assert.doesNotMatch(llms, /Niklas Galli|\bSapi\b|AILA/);
 
   const de = read("docs/index.html");
   const en = read("docs/en/index.html");
@@ -542,6 +547,28 @@ test("legal hygiene, SEO files, and JSON-LD on landing pages", () => {
     assert.ok(types.includes("SoftwareApplication"));
     assert.ok(types.includes("WebSite"));
     assert.ok(types.includes("FAQPage"));
+    const org = data["@graph"].find((node) => node["@type"] === "Organization");
+    const app = data["@graph"].find((node) => {
+      const type = node["@type"];
+      return Array.isArray(type) ? type.includes("MobileApplication") : type === "MobileApplication";
+    });
+    const listed = (value) => (Array.isArray(value) ? value : [value]);
+    const store = "https://apps.apple.com/app/id6825464359";
+    assert.equal(app.name, "Sapaude");
+    assert.equal(app.operatingSystem, "iOS");
+    assert.equal(app.url, store);
+    assert.equal(app.installUrl, store);
+    assert.equal(app.aggregateRating, undefined);
+    assert.ok(listed(app.sameAs).includes(store));
+    assert.equal(org.name, "Sapaude");
+    assert.equal(org.email, "support@sapaude.app");
+    assert.ok(listed(org.sameAs).includes("https://www.instagram.com/sapaude.app/"));
+    assert.ok(listed(org.sameAs).includes(store));
+    const offers = listed(app.offers);
+    assert.ok(offers.some((offer) => offer.price === "0" && offer.priceCurrency === "EUR"));
+    assert.ok(offers.some((offer) => offer.name === "Sapaude Premium" && offer.price === "7.99" && offer.priceCurrency === "EUR"));
+    assert.ok(offers.some((offer) => offer.name === "Sapaude Premium" && offer.price === "39.99" && offer.priceCurrency === "EUR"));
+    assert.equal(org.logo.url, "https://sapaude.app/logo-512.png");
   }
 
   const assetPages = walk(join(root, "docs")).filter((path) => /\.(html|css|js)$/.test(path));
