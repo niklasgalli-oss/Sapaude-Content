@@ -1,7 +1,142 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-16T04:43:03+01:00",
+  "updatedAt": "2026-11-17T04:43:34+01:00",
   "days": [
+    {
+      "date": "2026-11-17",
+      "items": [
+        {
+          "id": "2026-11-17-california-sues-openai-agent-tests",
+          "headline": "California sues OpenAI over rogue agent tests",
+          "summary": "California's attorney general says OpenAI tested dangerous models without proper safeguards and cites 80 incidents, including the Hugging Face hack. OpenAI disputes this, and no court has ruled yet.",
+          "source": {
+            "name": "State of California DOJ",
+            "url": "https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "Kalifornien verklagt OpenAI wegen Agenten-Tests",
+              "summary": "Kaliforniens Generalstaatsanwalt wirft OpenAI vor, gefährliche Modelle ohne ausreichende Schutzmaßnahmen getestet zu haben, und nennt 80 Vorfälle wie den Hugging-Face-Hack. OpenAI widerspricht, entschieden ist nichts."
+            }
+          }
+        },
+        {
+          "id": "2026-11-17-us-curbs-remote-chip-access",
+          "headline": "US closes the remote route to AI chips for China",
+          "summary": "A new interim rule requires licenses for AI chips and servers sent to data centers anywhere in the world if they could provide compute to companies in China or other restricted countries.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/16/us-tightens-ai-chip-export-controls-to-deter-chinese-companies-from-accessing-compute-remotely/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "USA schränken Fernzugriff auf KI-Chips ein",
+              "summary": "Eine neue vorläufige Regel verlangt Lizenzen für KI-Chips und Server in Rechenzentren weltweit, wenn diese Rechenleistung an Firmen in China oder anderen gesperrten Ländern liefern könnten."
+            }
+          }
+        },
+        {
+          "id": "2026-11-17-openai-embedded-safety-assessments",
+          "headline": "OpenAI lets outside testers inspect internal models",
+          "summary": "Apollo Research, METR, Transluce and Goodfire get deep access to checkpoints, code and monitoring to check alignment and safeguards. OpenAI says public reports from such reviews should show how labs handle risks.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/our-first-phase-of-embedded-assessments"
+          },
+          "tag": "Benchmarks",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI öffnet interne Modelle für externe Prüfer",
+              "summary": "Apollo Research, METR, Transluce und Goodfire erhalten tiefen Zugang zu Checkpoints, Code und Monitoring, um Alignment und Schutzmaßnahmen zu prüfen. Öffentliche Berichte sollen zeigen, wie Labs mit Risiken umgehen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-17-gemini-history-without-training",
+          "headline": "Gemini keeps your chats without training on them",
+          "summary": "A new setting lets you keep your Gemini chat history while opting out of model training. With history off, new chats are still stored for about two months; the rollout starts in the coming weeks.",
+          "source": {
+            "name": "Google",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/updated-controls/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Gemini speichert Chats auf Wunsch ohne Training",
+              "summary": "Eine neue Einstellung erlaubt, den Gemini-Chatverlauf zu behalten, ohne dass er fürs Training genutzt wird. Ist der Verlauf aus, bleiben neue Chats trotzdem rund zwei Monate gespeichert."
+            }
+          }
+        },
+        {
+          "id": "2026-11-17-ask-maps-comes-to-europe",
+          "headline": "Ask Maps comes to more than 30 European countries",
+          "summary": "Google's Gemini-based Ask Maps answers questions about places in plain language and can build trip itineraries with weather and parking info for each stop.",
+          "source": {
+            "name": "Google",
+            "url": "https://blog.google/products-and-platforms/products/maps/ask-maps-is-coming-to-europe/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Ask Maps startet in über 30 Ländern Europas",
+              "summary": "Googles Gemini-gestütztes Ask Maps beantwortet Fragen zu Orten in Alltagssprache und plant Reiserouten mit Wetter- und Parkinfos für jeden Halt."
+            }
+          }
+        },
+        {
+          "id": "2026-11-17-tencent-hy4-flash",
+          "headline": "Tencent's Hy4 flash cuts the price of everyday tasks",
+          "summary": "Hy4 flash has 224 billion parameters, only 12 billion of them active, takes multimodal input and handles up to 1 million tokens of context. Input costs about $0.07 per million tokens.",
+          "source": {
+            "name": "Tencent",
+            "url": "https://www.tencent.com/tencent-launches-hy4-flash-to-power-high-speed-cost-efficient-ai-deployment-for-everyday-workflows/"
+          },
+          "tag": "Model Release",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "Tencents Hy4 flash macht Alltagsaufgaben billiger",
+              "summary": "Hy4 flash hat 224 Milliarden Parameter, davon nur 12 Milliarden aktiv, verarbeitet multimodale Eingaben und bis zu 1 Million Token Kontext. Input kostet rund 0,07 Dollar pro Million Token."
+            }
+          }
+        },
+        {
+          "id": "2026-11-17-hugging-face-routes-via-openrouter",
+          "headline": "Hugging Face now routes open-weight models via OpenRouter",
+          "summary": "Inference Providers now send language model requests through OpenRouter, which picks a provider by price, speed and reliability. Your Hugging Face token and code stay the same.",
+          "source": {
+            "name": "Hugging Face",
+            "url": "https://huggingface.co/blog/openrouter"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Hugging Face leitet Open-Weight-Modelle über OpenRouter",
+              "summary": "Inference Providers schicken Anfragen an Sprachmodelle jetzt über OpenRouter, das den Anbieter nach Preis, Tempo und Zuverlässigkeit wählt. Hugging-Face-Token und Code bleiben gleich."
+            }
+          }
+        },
+        {
+          "id": "2026-11-17-eu-template-rights-impact-check",
+          "headline": "EU drafts a template for AI Act rights checks",
+          "summary": "The Commission wants feedback on a questionnaire for deployers of high-risk AI systems who must assess fundamental rights impacts under Article 27. The duty applies from December 2027.",
+          "source": {
+            "name": "European Commission",
+            "url": "https://digital-strategy.ec.europa.eu/en/news/commission-seeks-feedback-draft-template-fundamental-rights-impact-assessment-under-ai-act"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "EU entwirft Vorlage für Grundrechte-Prüfung",
+              "summary": "Die EU-Kommission sammelt Feedback zu einem Fragebogen für Betreiber von Hochrisiko-KI, die nach Artikel 27 AI Act eine Grundrechte-Folgenabschätzung machen müssen. Die Pflicht gilt ab Dezember 2027."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-16",
       "items": [
@@ -775,125 +910,6 @@
             "de": {
               "headline": "Alexa+ läuft in Deutschland jetzt auch im Browser",
               "summary": "Amazon hat Alexa.com für Alexa+-Early-Access-Nutzer in Deutschland geöffnet. Die Assistentin hilft dort beim Einkaufen, steuert das Smart Home und plant, also auch am Laptop statt nur auf Echo-Geräten und in der App."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-11-10",
-      "items": [
-        {
-          "id": "2026-11-10-claude-fable-5-2",
-          "headline": "Claude Fable 5.2: faster and 20% cheaper",
-          "summary": "Anthropic released Claude Fable 5.2 for all users and Mythos 5.2 for verified security and life-science groups. Both share one model, run up to 30% faster than 5.1 and cost $8 per million input tokens.",
-          "source": {
-            "name": "Anthropic",
-            "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
-          },
-          "tag": "Model Release",
-          "priority": "breaking",
-          "i18n": {
-            "de": {
-              "headline": "Claude Fable 5.2: schneller und 20 % günstiger",
-              "summary": "Anthropic hat Claude Fable 5.2 für alle veröffentlicht, Mythos 5.2 nur für geprüfte Sicherheits- und Life-Science-Teams. Beide teilen ein Modell, sind bis zu 30 % schneller als 5.1 und kosten 8 Dollar pro Million Input-Tokens."
-            }
-          }
-        },
-        {
-          "id": "2026-11-10-meta-muse-ember",
-          "headline": "Meta's Muse Ember targets everyday agent work",
-          "summary": "Meta calls Muse Ember its smallest and most efficient model, built for tool calls, coding subtasks, routing and long documents. Meta claims more intelligence per dollar than Claude Haiku 5.5 or GPT-6 Luna.",
-          "source": {
-            "name": "The Verge",
-            "url": "https://www.theverge.com/tech/1029979/meta-is-launching-its-smallest-and-most-efficient-ai-model-muse-ember"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Metas Muse Ember für die Routinearbeit von Agents",
-              "summary": "Meta nennt Muse Ember sein kleinstes und effizientestes Modell, gedacht für Tool-Calls, Coding-Teilaufgaben, Routing und lange Dokumente. Laut Meta liefert es mehr Leistung pro Dollar als Claude Haiku 5.5 oder GPT-6 Luna."
-            }
-          }
-        },
-        {
-          "id": "2026-11-10-nvidia-gr00t-2",
-          "headline": "NVIDIA GR00T 2 learns robot skills from human video",
-          "summary": "At the CoRL robotics conference, NVIDIA presented GR00T 2, an open robot foundation model built on Cosmos. It predicts video and robot actions together and can pick up fine skills from videos of people.",
-          "source": {
-            "name": "NVIDIA",
-            "url": "https://blogs.nvidia.com/blog/robotics-simulation-advancements-corl/"
-          },
-          "tag": "Model Release",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "NVIDIA GR00T 2 lernt Roboter-Skills aus Videos",
-              "summary": "Auf der Robotik-Konferenz CoRL hat NVIDIA GR00T 2 vorgestellt, ein offenes Foundation Model für Roboter auf Basis von Cosmos. Es sagt Video und Roboterbewegung gemeinsam voraus und lernt feine Handgriffe aus Videos von Menschen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-10-disney-adobe-ai",
-          "headline": "Disney and Adobe build custom generative AI models",
-          "summary": "In a multi-year deal announced at Adobe MAX, the two firms will train artist-led models on Disney's own characters and styles using Firefly Foundry, for parks, cruises, studio work and ESPN.",
-          "source": {
-            "name": "Adobe",
-            "url": "https://news.adobe.com/news/2026/11/adobe-and-the-walt-disney-company-alliance"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Disney und Adobe bauen eigene generative KI-Modelle",
-              "summary": "In einer mehrjährigen Partnerschaft, verkündet auf der Adobe MAX, trainieren beide Firmen mit Firefly Foundry Modelle auf Disneys eigenen Figuren und Stilen, etwa für Freizeitparks, Kreuzfahrten, Studios und ESPN."
-            }
-          }
-        },
-        {
-          "id": "2026-11-10-telekom-ai-factory-munich",
-          "headline": "Telekom doubles the chips in its Munich AI factory",
-          "summary": "The first stage was fully booked after seven months, so Deutsche Telekom is adding NVIDIA B300 systems and growing the site to 20 megawatts. It is investing almost another quarter billion euros.",
-          "source": {
-            "name": "Deutsche Telekom",
-            "url": "https://www.telekom.com/de/newsroom/aktuelles/medieninformationen/2026/11/ki-nachfrage-steigt-telekom-erweitert-ki-fabrik-in-muenchen"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "Telekom verdoppelt Chips in Münchner KI-Fabrik",
-              "summary": "Die erste Ausbaustufe war nach sieben Monaten ausgebucht, nun ergänzt die Telekom NVIDIA-B300-Systeme und erweitert den Standort auf 20 Megawatt. Investiert wird knapp eine weitere Viertelmilliarde Euro."
-            }
-          }
-        },
-        {
-          "id": "2026-11-10-ba-ai-jobs-forecast",
-          "headline": "German job agency: AI cuts and creates 800,000 jobs",
-          "summary": "Andrea Nahles, head of Germany's Federal Employment Agency, expects about 800,000 jobs to disappear due to AI over 15 years, with a similar number of new ones. Business services, banks and insurers are hit harder.",
-          "source": {
-            "name": "Handelsblatt",
-            "url": "https://www.handelsblatt.com/politik/deutschland/arbeitsmarkt-800.000-jobs-werden-in-deutschland-aufgrund-von-ki-wegfallen/100264931.html"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Arbeitsagentur: KI kostet und schafft 800.000 Jobs",
-              "summary": "BA-Chefin Andrea Nahles rechnet damit, dass in 15 Jahren rund 800.000 Jobs durch KI wegfallen, aber ähnlich viele neu entstehen. Stärker betroffen seien Unternehmensdienstleister sowie Banken und Versicherungen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-10-anthropic-gas-generators",
-          "headline": "Anthropic reportedly buys $3.4B in gas generators",
-          "summary": "According to the Financial Times, Anthropic took over existing orders for gas generators with 1.7 gigawatts of capacity to power future data centers. Power supply has become a key bottleneck for AI growth.",
-          "source": {
-            "name": "TechCrunch",
-            "url": "https://techcrunch.com/2026/11/09/anthropic-joins-ais-natural-gas-frenzy-buys-3-4b-worth-of-turbines/"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "Anthropic kauft offenbar Gasgeneratoren für 3,4 Mrd.",
-              "summary": "Laut Financial Times hat Anthropic bestehende Bestellungen für Gasgeneratoren mit 1,7 Gigawatt Leistung übernommen, um künftige Rechenzentren zu versorgen. Strom ist zum Engpass für das KI-Wachstum geworden."
             }
           }
         }
