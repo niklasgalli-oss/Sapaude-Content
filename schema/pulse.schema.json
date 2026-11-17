@@ -148,6 +148,11 @@
               "$ref": "#/$defs/levelVariant"
             }
           }
+        },
+        "coverImage": {
+          "type": "string",
+          "pattern": "^https://sapaude\\.app/covers/pulse-[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9]+(?:-[a-z0-9]+)*\\.webp$",
+          "description": "Optional per-article cover art: https://sapaude.app/covers/<id>.webp, a 600x800 (3:4) WebP under 120 KB stored at docs/covers/<id>.webp. No text in the image. See covers/README.md."
         }
       }
     },

@@ -1,6 +1,7 @@
 [
   {
     "id": "pulse-2026-11-16-notebook-builds-sites",
+    "coverImage": "https://sapaude.app/covers/pulse-2026-11-16-notebook-builds-sites.webp",
     "date": "2026-11-16T18:00:00.000Z",
     "tag": "Tools",
     "readTimeMinutes": 6,
@@ -86,6 +87,7 @@
   },
   {
     "id": "pulse-2026-11-16-gemini-history-without-training",
+    "coverImage": "https://sapaude.app/covers/pulse-2026-11-16-gemini-history-without-training.webp",
     "date": "2026-11-16T17:00:00.000Z",
     "tag": "Tools",
     "readTimeMinutes": 6,
@@ -171,6 +173,7 @@
   },
   {
     "id": "pulse-2026-11-16-gemini-writes-your-scripts",
+    "coverImage": "https://sapaude.app/covers/pulse-2026-11-16-gemini-writes-your-scripts.webp",
     "date": "2026-11-16T17:00:00.000Z",
     "tag": "Tools",
     "readTimeMinutes": 4,
@@ -256,6 +259,7 @@
   },
   {
     "id": "pulse-2026-11-16-free-chatgpt-for-researchers",
+    "coverImage": "https://sapaude.app/covers/pulse-2026-11-16-free-chatgpt-for-researchers.webp",
     "date": "2026-11-16T16:00:00.000Z",
     "tag": "Tools",
     "readTimeMinutes": 4,
@@ -341,6 +345,7 @@
   },
   {
     "id": "pulse-2026-11-16-qwen4-max-cuts-cost",
+    "coverImage": "https://sapaude.app/covers/pulse-2026-11-16-qwen4-max-cuts-cost.webp",
     "date": "2026-11-16T12:00:00.000Z",
     "tag": "Model Release",
     "readTimeMinutes": 6,
@@ -426,6 +431,7 @@
   },
   {
     "id": "pulse-2026-11-16-apple-tests-health-ai",
+    "coverImage": "https://sapaude.app/covers/pulse-2026-11-16-apple-tests-health-ai.webp",
     "date": "2026-11-16T01:30:00.000Z",
     "tag": "Tools",
     "readTimeMinutes": 5,
@@ -511,6 +517,7 @@
   },
   {
     "id": "pulse-2026-11-15-claude-reads-goedel",
+    "coverImage": "https://sapaude.app/covers/pulse-2026-11-15-claude-reads-goedel.webp",
     "date": "2026-11-15T17:52:00.000Z",
     "tag": "Tools",
     "readTimeMinutes": 8,
@@ -596,6 +603,7 @@
   },
   {
     "id": "pulse-2026-11-15-cursor-breach-traced",
+    "coverImage": "https://sapaude.app/covers/pulse-2026-11-15-cursor-breach-traced.webp",
     "date": "2026-11-15T12:00:00.000Z",
     "tag": "Tools",
     "readTimeMinutes": 7,
@@ -681,6 +689,7 @@
   },
   {
     "id": "pulse-2026-11-14-gpu-fingerprints-in-weights",
+    "coverImage": "https://sapaude.app/covers/pulse-2026-11-14-gpu-fingerprints-in-weights.webp",
     "date": "2026-11-14T17:30:00.000Z",
     "tag": "Hardware",
     "readTimeMinutes": 8,
@@ -766,6 +775,7 @@
   },
   {
     "id": "pulse-2026-11-14-poppy-agents-shopify",
+    "coverImage": "https://sapaude.app/covers/pulse-2026-11-14-poppy-agents-shopify.webp",
     "date": "2026-11-14T16:00:00.000Z",
     "tag": "Framework",
     "readTimeMinutes": 7,
@@ -851,6 +861,7 @@
   },
   {
     "id": "pulse-2026-11-13-gemini-glasses-preorder",
+    "coverImage": "https://sapaude.app/covers/pulse-2026-11-13-gemini-glasses-preorder.webp",
     "date": "2026-11-13T17:00:00.000Z",
     "tag": "Hardware",
     "readTimeMinutes": 5,
@@ -936,6 +947,7 @@
   },
   {
     "id": "pulse-2026-11-13-gemini-reads-your-spending",
+    "coverImage": "https://sapaude.app/covers/pulse-2026-11-13-gemini-reads-your-spending.webp",
     "date": "2026-11-13T17:00:00.000Z",
     "tag": "Tools",
     "readTimeMinutes": 4,

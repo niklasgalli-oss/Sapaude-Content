@@ -731,3 +731,25 @@ test("rejects mid-sentence glossary glosses and classroom frames", async () => {
   const clean = await lintFeed([item()], { now: NOW });
   assert.equal(clean.errors.filter((error) => error.includes("glossary gloss")).length, 0);
 });
+
+test("coverImage is optional and must point at sapaude.app/covers/<id>.webp", async () => {
+  const base = item();
+  const none = await lintFeed([base], { now: NOW });
+  assert.ok(!none.errors.some((e) => e.includes("coverImage")));
+  const good = item({ coverImage: `https://sapaude.app/covers/${base.id}.webp` });
+  const ok = await lintFeed([good], { now: NOW, checkCoverFiles: false });
+  assert.ok(!ok.errors.some((e) => e.includes("coverImage")), ok.errors.join("\n"));
+  const wrongHost = item({ coverImage: `https://example.com/covers/${base.id}.webp` });
+  const bad = await lintFeed([wrongHost], { now: NOW, checkCoverFiles: false });
+  assert.ok(bad.errors.some((e) => e.includes("coverImage") && e.includes("sapaude.app/covers/")));
+  const wrongId = item({ coverImage: "https://sapaude.app/covers/other.webp" });
+  const mismatch = await lintFeed([wrongId], { now: NOW, checkCoverFiles: false });
+  assert.ok(mismatch.errors.some((e) => e.includes("coverImage")));
+  const missing = await lintFeed([good], { now: NOW, repoRoot: join(root, "no-such-dir") });
+  assert.ok(missing.errors.some((e) => e.includes("coverImage") && e.includes("missing")));
+});
+
+test("every coverImage in pulse.json has a small WebP in docs/covers", async () => {
+  const result = await lintFeed(pulse, { now: Date.now() });
+  assert.ok(!result.errors.some((e) => e.includes("coverImage")), result.errors.join("\n"));
+});

@@ -1,4 +1,4 @@
-import { readFileSync } from "node:fs";
+import { existsSync, readFileSync, statSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
@@ -37,6 +37,7 @@ const ITEM_KEYS = [
   "i18n",
   "levels",
   "shortTitle",
+  "coverImage",
 ];
 
 const COPY_KEYS = ["headline", "hook", "summaryPoints", "takeaway", "deepDiveMarkdown"];
@@ -46,6 +47,30 @@ const LEVEL_NAMES = ["beginner", "advanced"];
 const VARIANT_KEYS = [...ALLOWED_COPY_KEYS, "de"];
 
 export const MAX_SHORT_TITLE_CHARS = 24;
+
+// Per-article cover art. GitHub Pages serves docs/ at https://sapaude.app, so
+// docs/covers/<id>.webp is https://sapaude.app/covers/<id>.webp.
+export const COVER_BASE_URL = "https://sapaude.app/covers/";
+export const COVER_DIR = join("docs", "covers");
+export const MAX_COVER_BYTES = 120 * 1024;
+
+export function coverImageProblem(item, { repoRoot = root, checkFiles = true } = {}) {
+  const value = item.coverImage;
+  if (typeof value !== "string" || value.trim() === "") return "must be a non-empty https URL when set";
+  const expected = `${COVER_BASE_URL}${item.id}.webp`;
+  if (!value.startsWith(COVER_BASE_URL)) return `must be on ${COVER_BASE_URL} (got ${value})`;
+  if (value !== expected) return `must be ${expected}`;
+  if (!checkFiles) return null;
+  const file = join(repoRoot, COVER_DIR, `${item.id}.webp`);
+  if (!existsSync(file)) return `file ${COVER_DIR}/${item.id}.webp is missing`;
+  const size = statSync(file).size;
+  if (size >= MAX_COVER_BYTES) return `file ${COVER_DIR}/${item.id}.webp is ${Math.round(size / 1024)} KB; keep it under 120 KB`;
+  const head = readFileSync(file).subarray(0, 12);
+  if (head.toString("latin1", 0, 4) !== "RIFF" || head.toString("latin1", 8, 12) !== "WEBP") {
+    return `file ${COVER_DIR}/${item.id}.webp is not a WebP image`;
+  }
+  return null;
+}
 
 const ID_RE = /^pulse-[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z0-9]+(?:-[a-z0-9]+)*$/;
 const ISO_RE =
@@ -303,6 +328,8 @@ export function collectSchemaErrors(schema) {
   if (item?.required?.includes("priority")) fail("priority must not be required");
   if (item?.required?.includes("takeaway")) fail("takeaway must not be required");
   if (item?.required?.includes("shortTitle")) fail("shortTitle must not be required");
+  if (item?.required?.includes("coverImage")) fail("coverImage must not be required");
+  if (item?.properties?.coverImage?.type !== "string") fail("coverImage must be an optional string");
   if (item?.properties?.takeaway?.type !== "string") fail("takeaway must be a string");
   if ((item?.properties?.takeaway?.minLength ?? 0) > 0) fail("takeaway must allow an empty string");
   if (item?.properties?.shortTitle?.type !== "string") fail("shortTitle must be an optional string");
@@ -769,6 +796,13 @@ export async function lintFeed(pulse, options = {}) {
     if (Object.prototype.hasOwnProperty.call(item, "takeaway")) rootCopy.takeaway = item.takeaway;
     checkLocalized(fail, path, rootCopy, warn);
     checkShortTitle(fail, warn, path, item);
+    if (Object.prototype.hasOwnProperty.call(item, "coverImage") && typeof item.id === "string") {
+      const problem = coverImageProblem(item, {
+        repoRoot: options.repoRoot ?? root,
+        checkFiles: options.checkCoverFiles ?? true,
+      });
+      if (problem) fail(`${path}.coverImage`, problem);
+    }
     if (typeof item.shortTitle === "string") {
       checkGlossaryField(fail, `${path}.shortTitle`, item.shortTitle, { headline: true });
     }
