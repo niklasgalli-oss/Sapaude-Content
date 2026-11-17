@@ -46,6 +46,17 @@
     nav a { min-height: 44px; display: inline-flex; align-items: center; }
     .claims { margin-top: 2.2rem; color: #6B635A; font-style: italic; }
     .claims p { margin: 0.2rem 0; font-family: inherit; }
+    body { flex-direction: column; }
+    footer { width: min(36rem, calc(100% - 2.4rem)); margin-top: 0.5rem; padding-bottom: 2.5rem; }
+    .store-row { display: flex; flex-wrap: wrap; align-items: center; margin: 0; }
+    .store-link { display: inline-block; padding: 12px; line-height: 0; }
+    .store-link img { display: block; height: 48px; width: auto; }
+    @media (prefers-color-scheme: dark) {
+      :root { color-scheme: dark; }
+      body { background: #101614; color: #F4EFE6; }
+      .en, .claims { color: #C9C0B4; }
+      .store-link { background: #F3EEE4; border-radius: 16px; }
+    }
   </style>
 </head>
 <body>
@@ -64,5 +75,12 @@
       <p lang="en">Be brave. Get smart.</p>
     </div>
   </main>
+  <footer>
+    <p class="store-row">
+      <a class="store-link" href="https://apps.apple.com/app/id6825464359">
+        <img src="/assets/app-store-badge-de.svg" alt="Laden im App Store" width="144" height="48">
+      </a>
+    </p>
+  </footer>
 </body>
 </html>

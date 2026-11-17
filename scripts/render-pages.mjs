@@ -98,6 +98,9 @@ const COPY = {
     learnPath: "ki-lernen-app/",
     dailyPath: "duolingo-fuer-ki/",
     aboutPath: "ueber/",
+    badgeFile: "assets/app-store-badge-de.svg",
+    badgeAlt: "Laden im App Store",
+    storeCta: "Sapaude ist jetzt für iPhone im App Store.",
     ogAlt: "Sapaude. Veni, vidi, KI.",
     ogImage: "og-de.png"
   },
@@ -155,6 +158,9 @@ const COPY = {
     learnPath: "en/best-app-to-learn-ai/",
     dailyPath: "en/duolingo-for-ai/",
     aboutPath: "en/about/",
+    badgeFile: "assets/app-store-badge-en.svg",
+    badgeAlt: "Download on the App Store",
+    storeCta: "Sapaude is now on the App Store for iPhone.",
     ogAlt: "Sapaude. Be brave. Get smart.",
     ogImage: "og.png"
   }
@@ -235,6 +241,29 @@ function relHref(fromFile, urlPath) {
   const href = relFile(fromFile, urlPath);
   if (!href || href === ".") return "./";
   return href.endsWith("/") ? href : `${href}/`;
+}
+
+const APP_STORE_URL = "https://apps.apple.com/app/id6825464359";
+
+function storeBadge(file, locale) {
+  const copy = COPY[locale];
+  return `      <p class="store-row">
+        <a class="store-link" href="${APP_STORE_URL}">
+          <img src="${relFile(file, copy.badgeFile)}" alt="${escapeHtml(copy.badgeAlt)}" width="144" height="48">
+        </a>
+      </p>`;
+}
+
+function storeCta(file, locale) {
+  const copy = COPY[locale];
+  return `      <section class="store-cta" aria-label="${escapeHtml(copy.badgeAlt)}">
+        <p class="store-cta-lead">${escapeHtml(copy.storeCta)}</p>
+        <p class="store-row">
+          <a class="store-link" href="${APP_STORE_URL}">
+            <img src="${relFile(file, copy.badgeFile)}" alt="${escapeHtml(copy.badgeAlt)}" width="144" height="48">
+          </a>
+        </p>
+      </section>`;
 }
 
 function jsonScript(data) {
@@ -407,6 +436,7 @@ function pageShell({ file, locale, title, description, canonical, deUrl, enUrl, 
 ${body}
     </main>
     <footer>
+${storeBadge(file, locale)}
       <p class="claim">${escapeHtml(copy.claim)}</p>
       <p>${escapeHtml(copy.publisher)}: Sapaude. ${escapeHtml(copy.aiNote)}</p>
       <a href="${href(homeUrl)}">${copy.homeLabel}</a>
@@ -679,7 +709,8 @@ ${articles}
       <ul>
 ${dayLinks}
       </ul>
-${older}`;
+${older}
+${storeCta(file, locale)}`;
   const newest = items[0] ? String(items[0].date).slice(0, 10) : days[0]?.date;
   return {
     file,
