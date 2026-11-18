@@ -1,7 +1,142 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-17T04:43:34+01:00",
+  "updatedAt": "2026-11-18T04:44:25+01:00",
   "days": [
+    {
+      "date": "2026-11-18",
+      "items": [
+        {
+          "id": "2026-11-18-gpt-6-2-astra-sol",
+          "headline": "OpenAI ships GPT-6.2 Astra and the cheaper Sol",
+          "summary": "OpenAI's new frontier model Astra and the everyday model Sol are rolling out in ChatGPT Work, Codex and the API. Astra's API prices drop 20 percent, cached input 60 percent.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+          },
+          "tag": "Model Release",
+          "priority": "breaking",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI bringt GPT-6.2 Astra und das günstigere Sol",
+              "summary": "Astra, OpenAIs neues Topmodell, und das Alltagsmodell Sol kommen in ChatGPT Work, Codex und die API. Astra kostet in der API 20 Prozent weniger, gecachter Input 60 Prozent."
+            }
+          }
+        },
+        {
+          "id": "2026-11-18-ai-studio-builds-android-backends",
+          "headline": "AI Studio now builds full-stack Android apps",
+          "summary": "Google AI Studio can now set up a Firestore database, Google sign-in and secure Gemini API calls for Android apps from a prompt, and publish them to your personal Play library.",
+          "source": {
+            "name": "Google Developers Blog",
+            "url": "https://developers.googleblog.com/build-full-stack-android-apps-with-gemini-in-google-ai-studio/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "AI Studio baut jetzt Android-Apps mit Backend",
+              "summary": "Google AI Studio richtet für Android-Apps per Prompt eine Firestore-Datenbank, Google-Login und sichere Gemini-API-Aufrufe ein. Fertige Apps landen direkt in der persönlichen Play-Bibliothek."
+            }
+          }
+        },
+        {
+          "id": "2026-11-18-gemini-tasks-go-free",
+          "headline": "Gemini's task mode is now free in six countries",
+          "summary": "Google is rolling out tasks in the Gemini app at no cost in the US, Japan, Korea, Canada, Australia and India, so it can work through chores instead of only answering. The EU is excluded.",
+          "source": {
+            "name": "Google",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/tasks-in-gemini-free-new-features/"
+          },
+          "tag": "Tools",
+          "pulseId": "pulse-2026-11-17-gemini-takes-on-chores",
+          "i18n": {
+            "de": {
+              "headline": "Geminis Task-Modus ist jetzt in sechs Ländern gratis",
+              "summary": "Google schaltet Tasks in der Gemini-App kostenlos frei, in den USA, Japan, Korea, Kanada, Australien und Indien. Die App erledigt dann Aufgaben, statt nur zu antworten. Die EU ist nicht dabei."
+            }
+          }
+        },
+        {
+          "id": "2026-11-18-devin-bots-own-goals",
+          "headline": "Devin Bots take on whole engineering goals",
+          "summary": "Cognition's new Devin Bots are persistent agents with their own memory that split a larger goal into tasks and run several Devin sessions in parallel. They bring only decisions back to people.",
+          "source": {
+            "name": "Cognition",
+            "url": "https://devin.ai/blog/introducing-devin-bots"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "Devin Bots übernehmen ganze Entwicklungsziele",
+              "summary": "Cognitions neue Devin Bots sind dauerhaft laufende Agents, die sich Kontext über Sessions hinweg merken. Sie zerlegen ein Ziel in Aufgaben, steuern mehrere Devins parallel und legen Menschen nur Entscheidungen vor."
+            }
+          }
+        },
+        {
+          "id": "2026-11-18-nato-uses-openai-for-cyber-defense",
+          "headline": "NATO uses OpenAI models for cyber defense",
+          "summary": "Through its Daybreak program, OpenAI gives NATO's communications agency access to advanced security models for finding vulnerabilities and testing fixes. NATO has used up to 300 billion tokens a month.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/strengthening-nato-allied-cyber-defences-ai"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "NATO nutzt OpenAI-Modelle zur Cyberabwehr",
+              "summary": "Über das Programm Daybreak erhält die NATO-Agentur NCIA Zugriff auf OpenAIs Sicherheitsmodelle, um Schwachstellen zu finden und Fixes zu testen. Die NATO nutzte bis zu 300 Milliarden Tokens pro Monat."
+            }
+          }
+        },
+        {
+          "id": "2026-11-18-isomorphic-raises-5-billion",
+          "headline": "Isomorphic Labs raises $5 billion for AI drug design",
+          "summary": "The Google DeepMind spinout raised a $5 billion Series C co-led by Greenoaks and Sequoia, with Alphabet investing again. The money goes into its drug design engine and its pipeline of candidates.",
+          "source": {
+            "name": "Isomorphic Labs",
+            "url": "https://www.isomorphiclabs.com/articles/isomorphic-labs-announces-series-c-investment-round"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Isomorphic Labs sammelt 5 Milliarden Dollar ein",
+              "summary": "Die Google-DeepMind-Ausgründung erhält in einer Series C fünf Milliarden Dollar, angeführt von Greenoaks und Sequoia. Auch Alphabet investiert erneut. Das Geld fließt in die KI-Plattform für Wirkstoffdesign."
+            }
+          }
+        },
+        {
+          "id": "2026-11-18-genesis-ai-raises-500-million",
+          "headline": "Genesis AI raises $500 million for dexterous robots",
+          "summary": "The robotics startup raised a $500 million Series A at a $3.5 billion valuation. It wants to bring robots with human-like hand skills into factories and warehouses.",
+          "source": {
+            "name": "TechCrunch",
+            "url": "https://techcrunch.com/2026/11/17/genesis-ai-raises-500-million-to-deploy-electric-glove-wearing-robots/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Genesis AI erhält 500 Millionen Dollar für Roboter",
+              "summary": "Das Robotik-Start-up sammelt in einer Series A 500 Millionen Dollar bei einer Bewertung von 3,5 Milliarden ein. Es will Roboter mit menschenähnlicher Fingerfertigkeit in Fabriken und Lager bringen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-18-eu-advisors-want-strong-ai-rules",
+          "headline": "EU science advisors warn against weaker AI rules",
+          "summary": "Two advisory groups of the European Commission call for keeping existing AI laws strong and for independent EU capacity to evaluate models instead of leaving that to developers.",
+          "source": {
+            "name": "European Commission",
+            "url": "https://research-and-innovation.ec.europa.eu/news/all-research-and-innovation-news/ai-requires-rigorous-safeguards-and-rules-keep-pace-technological-advances-experts-tell-european-2026-11-16_en"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "EU-Berater warnen vor lockereren KI-Regeln",
+              "summary": "Zwei Beratergremien der EU-Kommission fordern, bestehende KI-Gesetze nicht aufzuweichen. Die EU solle eigene Kapazitäten aufbauen, um Modelle unabhängig zu prüfen, statt das den Entwicklern zu überlassen."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-17",
       "items": [
@@ -790,126 +925,6 @@
             "de": {
               "headline": "United lässt KI-Agenten keine Flüge buchen",
               "summary": "United Airlines schränkt den Zugriff fremder KI-Agenten auf seine Buchungsplattformen ein und verweist auf Datensicherheit und Vorschriften. Assistenten dürfen Flüge anzeigen, den Kauf müssen Kunden selbst abschließen."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-11-11",
-      "items": [
-        {
-          "id": "2026-11-11-gemini-4-carbon",
-          "headline": "Gemini 4 Carbon is out for developers and Ultra users",
-          "summary": "Google released Gemini 4 Carbon, its strongest model for long agentic tasks and cybersecurity. Via API it costs $2 per million input tokens and $10 per million output tokens, the same introductory price as Gemini 4 Argon.",
-          "source": {
-            "name": "Google",
-            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
-          },
-          "tag": "Model Release",
-          "priority": "breaking",
-          "pulseId": "pulse-2026-11-10-gemini-carbon-agent-teams",
-          "i18n": {
-            "de": {
-              "headline": "Gemini 4 Carbon ist da, für Entwickler und Ultra-Abos",
-              "summary": "Google hat Gemini 4 Carbon freigegeben, sein stärkstes Modell für lange agentische Aufgaben und Cybersecurity. Per API kostet es 2 Dollar pro Million Input-Tokens und 10 Dollar pro Million Output-Tokens, wie Gemini 4 Argon zum Start."
-            }
-          }
-        },
-        {
-          "id": "2026-11-11-anthropic-ipo-price-range",
-          "headline": "Anthropic sets IPO range at $70 to $78 per share",
-          "summary": "Anthropic started its IPO roadshow and plans to offer 825 million shares on Nasdaq under the ticker ANT. The registration is not yet effective; CNBC's sources expect pricing on November 18.",
-          "source": {
-            "name": "Anthropic",
-            "url": "https://www.anthropic.com/news/roadshow-launch"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Anthropic peilt 70 bis 78 Dollar je Aktie an",
-              "summary": "Anthropic hat die Roadshow für den Börsengang gestartet und will 825 Millionen Aktien an der Nasdaq unter dem Kürzel ANT anbieten. Die Registrierung ist noch nicht wirksam, laut CNBC-Quellen soll der Preis am 18. November feststehen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-11-businesses-in-chatgpt",
-          "headline": "Companies can now claim their profile in ChatGPT",
-          "summary": "OpenAI launched Businesses in ChatGPT in beta: firms can update their details and see aggregated mention and click data. Eligible US online shops can also publish Business Agents that answer customer questions.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/introducing-businesses-chatgpt"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Firmen können ihr Profil in ChatGPT jetzt selbst pflegen",
-              "summary": "OpenAI startet Businesses in ChatGPT als Beta: Firmen pflegen ihre Angaben und sehen gesammelte Daten zu Erwähnungen und Klicks. Berechtigte US-Onlinehändler können zusätzlich Business Agents für Kundenfragen veröffentlichen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-11-gemini-robotics-2-5",
-          "headline": "Gemini Robotics 2.5 sorts car parts in a Mercedes pilot",
-          "summary": "Google DeepMind's new vision-language-action model helped Apptronik humanoids sort parts on Mercedes-Benz lines in Hungary and Germany. DeepMind reports a 96% success rate in this proof of concept.",
-          "source": {
-            "name": "Google DeepMind",
-            "url": "https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Gemini Robotics 2.5 sortiert Teile im Mercedes-Test",
-              "summary": "Mit dem neuen Vision-Language-Action-Modell von Google DeepMind sortierten Apptronik-Humanoide Teile an Mercedes-Bändern in Ungarn und Deutschland. DeepMind nennt für den Machbarkeitstest eine Erfolgsquote von 96 %."
-            }
-          }
-        },
-        {
-          "id": "2026-11-11-alphaproof-code-signal",
-          "headline": "AI agents formally verify Signal's encryption code",
-          "summary": "Google DeepMind's AlphaProof Code used prover agents and human-reviewed Lean specifications to check security properties of Signal's compiled code. The proofs are public on GitHub.",
-          "source": {
-            "name": "Google DeepMind",
-            "url": "https://deepmind.google/blog/introducing-alphaproof-code/"
-          },
-          "tag": "Autonomous Agent",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "KI-Agenten prüfen Signals Verschlüsselung formal",
-              "summary": "Mit AlphaProof Code haben Prover-Agenten von Google DeepMind auf Basis von Menschen geprüfter Lean-Spezifikationen Sicherheitseigenschaften von Signals kompiliertem Code nachgewiesen. Die Beweise liegen offen auf GitHub."
-            }
-          }
-        },
-        {
-          "id": "2026-11-11-minimax-h3-image",
-          "headline": "MiniMax opens H3-Image for fast 4K image generation",
-          "summary": "MiniMax released open weights for H3-Image, which generates and edits images up to 4096 by 4096 pixels and can use up to 16 reference images. MiniMax says a 4K image takes under 10 seconds.",
-          "source": {
-            "name": "MiniMax",
-            "url": "https://www.minimax.io/blog/minimax-h3-image"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "MiniMax gibt H3-Image für schnelle 4K-Bilder frei",
-              "summary": "MiniMax hat die Open Weights von H3-Image veröffentlicht. Das Modell erzeugt und bearbeitet Bilder bis 4096 × 4096 Pixel und nutzt bis zu 16 Referenzbilder; ein 4K-Bild soll laut MiniMax unter 10 Sekunden dauern."
-            }
-          }
-        },
-        {
-          "id": "2026-11-11-alexa-com-germany",
-          "headline": "Alexa+ now works in the browser in Germany",
-          "summary": "Amazon opened Alexa.com to Alexa+ early-access users in Germany; the assistant now handles shopping, smart-home control and planning on laptops and desktops, not just on Echo devices and in the app.",
-          "source": {
-            "name": "Amazon",
-            "url": "https://www.aboutamazon.de/news/amazon-devices-und-services/-alexa-im-browser"
-          },
-          "tag": "Tools",
-          "i18n": {
-            "de": {
-              "headline": "Alexa+ läuft in Deutschland jetzt auch im Browser",
-              "summary": "Amazon hat Alexa.com für Alexa+-Early-Access-Nutzer in Deutschland geöffnet. Die Assistentin hilft dort beim Einkaufen, steuert das Smart Home und plant, also auch am Laptop statt nur auf Echo-Geräten und in der App."
             }
           }
         }
