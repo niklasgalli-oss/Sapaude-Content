@@ -185,7 +185,7 @@ test("landing assets stay self-hosted and flat-colored", () => {
   assert.equal(existsSync(join(root, "docs/assets/source-sans-3-latin-400.woff2")), true);
   assert.equal(existsSync(join(root, "docs/assets/OFL.txt")), true);
   for (const locale of ["de", "en"]) {
-    for (const name of ["activity", "basics", "briefing", "home", "reader"]) {
+    for (const name of ["activity", "basics", "briefing", "home"]) {
       for (const width of ["390", "780"]) {
         for (const ext of ["webp", "avif"]) {
           assert.equal(existsSync(join(root, `docs/assets/screens/${locale}/${name}-${width}.${ext}`)), true);
@@ -311,14 +311,17 @@ test("story row, path, briefing fallback, and teams copy stay in sync", () => {
   const en = read("docs/en/index.html");
   const css = read("docs/landing.css");
   const js = read("docs/landing.js");
-  const order = ["onboarding", "home", "lesson", "briefing"];
+  const order = ["home", "briefing", "onboarding", "activity"];
 
   for (const html of [en, de]) {
     const screens = html.slice(html.indexOf('id="screens"'), html.indexOf('id="learn"'));
     assert.deepEqual([...screens.matchAll(/data-story="([^"]+)"/g)].map((m) => m[1]), order);
     assert.equal((screens.match(/<figure/g) || []).length, 4);
     assert.doesNotMatch(screens, /<figcaption|phone-caption/);
-    assert.doesNotMatch(screens, /activity-|is-crop|--mask/);
+    assert.doesNotMatch(screens, /reader-|is-crop|--mask/);
+    assert.match(screens, /\/activity-/);
+    assert.match(screens, /\/basics-/);
+    assert.match(screens, /\/briefing-/);
     assert.match(screens, /\/home-/);
     assert.match(screens, /type="image\/avif"/);
     assert.doesNotMatch(html, /Vector Databases/);
@@ -446,8 +449,9 @@ test("sapaude wordmark, claims, and app mismatches", () => {
   assert.match(de, /Tägliches KI-Briefing/);
   assert.match(de, /Basics 1 &amp; 2 gratis – auch zum Hören/);
   assert.match(en, /Basics 1 &amp; 2 free – listening included/);
-  assert.doesNotMatch(de, /Copilot|Lernpfad|Arbeit 01/);
-  assert.doesNotMatch(en, /Copilot|Learning path|Work 01/);
+  const withoutNews = (html) => html.replace(/<a href="(?:\.\.\/)?briefing\/[^"]+">[^<]+<\/a>/g, "");
+  assert.doesNotMatch(withoutNews(de), /Copilot|Lernpfad|Arbeit 01/);
+  assert.doesNotMatch(withoutNews(en), /Copilot|Learning path|Work 01/);
   assert.doesNotMatch(de, /Sapi/);
   assert.doesNotMatch(en, /Sapi/);
   assert.match(css, /#3C9EC4/);
