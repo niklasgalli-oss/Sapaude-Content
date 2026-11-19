@@ -1,0 +1,36 @@
+# Press release (English)
+
+For https://sapaude.app/en/press/ and as an attachment to English pitches. Do not mention euro prices.
+
+From: support@sapaude.app
+Suggested subject: Sapaude brings “learn and understand AI” to the iPhone
+
+---
+
+**Press release**
+19 November 2026
+
+**Sapaude: learn and understand AI in 5 minutes a day**
+
+Sapaude is now available on the App Store for iPhone. The app combines short lessons on the fundamentals of AI with a daily briefing in plain language, in German and English.
+
+Many people already use ChatGPT, Claude or Gemini without knowing the ideas behind them. Sapaude turns that into a daily habit: 5, 10 or 15 minutes, with quizzes, and a Pulse that explains the AI news that matters and links to the original sources. Terms such as LLM, token, prompt, RAG and agent stay in English; the explanations do not.
+
+The daily Pulse and the first Basics lessons are free. Sapaude Premium unlocks the rest of the path. There is no account, no ads and no tracking. Progress stays on the device.
+
+Sapaude is a learning app, not a chatbot and not a news ticker. Android will follow and is not yet on Google Play.
+
+**Facts**
+
+- Platform: iPhone (iOS), App Store
+- Languages: German, English
+- Price: free to download, with an optional Sapaude Premium subscription (prices are shown in the app)
+- Contact: support@sapaude.app
+- Website and press kit: https://sapaude.app/en/press/
+- App Store: https://apps.apple.com/app/sapaude/id6825464359?pt=129655793&ct=presse&mt=8
+
+Images and screenshots are in the press kit. For review access, please write to support@sapaude.app.
+
+---
+
+End of release. Legal publisher details are in the imprint at https://sapaude.app/impressum/.

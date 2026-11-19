@@ -106,7 +106,7 @@ test("apple-app-site-association is not a file", () => {
 
 test("App Store URL is one empty constant", () => {
   const js = read("docs/landing.js");
-  assert.match(js, /const SAPAUDE_APP_STORE_URL = "https:\/\/apps\.apple\.com\/app\/id6825464359";/);
+  assert.match(js, /const SAPAUDE_APP_STORE_URL = "https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359\?pt=129655793&ct=web&mt=8";/);
   assert.equal((js.match(/const SAPAUDE_APP_STORE_URL/g) || []).length, 1);
   assert.match(js, /const SAPAUDE_PLAY_STORE_URL = "";/);
   assert.equal((js.match(/const SAPAUDE_PLAY_STORE_URL/g) || []).length, 1);
@@ -138,14 +138,14 @@ test("English and German pages carry the landing sections", () => {
   assert.match(en, /Download on the App Store/);
   assert.match(en, /Coming soon to Google Play/);
   assert.match(en, /apple-itunes-app" content="app-id=6825464359"/);
-  assert.match(en, /https:\/\/apps\.apple\.com\/app\/id6825464359/);
+  assert.match(en, /https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359/);
   assert.match(en, /Learn AI/);
   assert.match(en, /Android is not available/);
   assert.match(de, /Jetzt im App Store/);
   assert.match(de, /Laden im App Store/);
   assert.match(de, /Demnächst bei Google Play/);
   assert.match(de, /apple-itunes-app" content="app-id=6825464359"/);
-  assert.match(de, /https:\/\/apps\.apple\.com\/app\/id6825464359/);
+  assert.match(de, /https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359/);
   assert.match(de, /Android ist nicht verfügbar/);
   assert.match(de, /KI lernen/);
   assert.match(en, /<html lang="en">/);
@@ -447,8 +447,10 @@ test("sapaude wordmark, claims, and app mismatches", () => {
   assert.match(de, /aria-label="EN, English">EN</);
   assert.match(en, /aria-label="DE, Deutsch">DE</);
   assert.match(de, /Tägliches KI-Briefing/);
-  assert.match(de, /Basics 1 &amp; 2 gratis – auch zum Hören/);
-  assert.match(en, /Basics 1 &amp; 2 free – listening included/);
+  assert.match(de, /Basics 1 &amp; 2 gratis/);
+  assert.doesNotMatch(de, /auch zum Hören/);
+  assert.doesNotMatch(en, /listening included/);
+  assert.match(en, /Basics 1 &amp; 2 free/);
   const withoutNews = (html) => html.replace(/<a href="(?:\.\.\/)?briefing\/[^"]+">[^<]+<\/a>/g, "");
   assert.doesNotMatch(withoutNews(de), /Copilot|Lernpfad|Arbeit 01/);
   assert.doesNotMatch(withoutNews(en), /Copilot|Learning path|Work 01/);
@@ -464,8 +466,8 @@ test("sapaude wordmark, claims, and app mismatches", () => {
   assert.doesNotMatch(en, /Prompts/);
   assert.match(de, /was ein Token ist/);
   assert.match(en, /what a token is/);
-  assert.match(de, /Hören im Briefing ist Sapaude Premium/);
-  assert.match(en, /Listening to the briefing is part of Sapaude Premium/);
+  assert.doesNotMatch(de, /Hören im Briefing ist Sapaude Premium/);
+  assert.doesNotMatch(en, /Listening to the briefing is part of Sapaude Premium/);
   assert.doesNotMatch(de, /Briefing bleibt frei/);
   assert.doesNotMatch(en, /Briefing stays free/);
   const briefingDay = JSON.parse(read("briefing.json")).updatedAt.slice(0, 10);
@@ -478,6 +480,8 @@ test("sapaude wordmark, claims, and app mismatches", () => {
   assert.match(read("docs/404.html"), /Be brave\. Get smart\./);
   assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/support\//);
   assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/en\/support\//);
+  assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/presse\//);
+  assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/en\/press\//);
   assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/daten-loeschen\//);
   assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/en\/delete-data\//);
   assert.match(read("docs/daten-loeschen/index.html"), /support@sapaude\.app/);
@@ -521,7 +525,7 @@ test("legal hygiene, SEO files, and JSON-LD on landing pages", () => {
   assert.match(llms, /Sapaude/);
   assert.match(llms, /support@sapaude\.app/);
   assert.match(llms, /https:\/\/sapaude\.app\/en\//);
-  assert.match(llms, /https:\/\/apps\.apple\.com\/app\/id6825464359/);
+  assert.match(llms, /https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359/);
   assert.match(llms, /Sapaude Premium/);
   assert.match(llms, /not affiliated with Duolingo/);
   assert.match(llms, /Free tier: \[TBD\]/);
@@ -557,7 +561,7 @@ test("legal hygiene, SEO files, and JSON-LD on landing pages", () => {
       return Array.isArray(type) ? type.includes("MobileApplication") : type === "MobileApplication";
     });
     const listed = (value) => (Array.isArray(value) ? value : [value]);
-    const store = "https://apps.apple.com/app/id6825464359";
+    const store = "https://apps.apple.com/app/sapaude/id6825464359";
     assert.equal(app.name, "Sapaude");
     assert.equal(app.operatingSystem, "iOS");
     assert.equal(app.url, store);
@@ -589,11 +593,11 @@ test("footers on German and English pages carry the App Store badge", () => {
   const en = read("docs/en/index.html");
   const deFooter = de.match(/<footer class="colophon">[\s\S]*?<\/footer>/)[0];
   const enFooter = en.match(/<footer class="colophon">[\s\S]*?<\/footer>/)[0];
-  assert.match(deFooter, /store-link" href="https:\/\/apps\.apple\.com\/app\/id6825464359"/);
+  assert.match(deFooter, /store-link" href="https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359\?pt=129655793&ct=web&mt=8"/);
   assert.match(deFooter, /assets\/app-store-badge-de\.svg/);
   assert.match(deFooter, /alt="Laden im App Store"/);
   assert.doesNotMatch(deFooter, /Demnächst bei Google Play|Coming soon to Google Play|play\.google/);
-  assert.match(enFooter, /store-link" href="https:\/\/apps\.apple\.com\/app\/id6825464359"/);
+  assert.match(enFooter, /store-link" href="https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359\?pt=129655793&ct=web&mt=8"/);
   assert.match(enFooter, /assets\/app-store-badge-en\.svg/);
   assert.match(enFooter, /alt="Download on the App Store"/);
   assert.doesNotMatch(enFooter, /Coming soon to Google Play|Demnächst bei Google Play|play\.google/);
@@ -617,7 +621,7 @@ test("footers on German and English pages carry the App Store badge", () => {
   assert.doesNotMatch(enBrief, /Coming soon to Google Play/);
 
   const notFound = read("docs/404.html");
-  assert.match(notFound, /store-link" href="https:\/\/apps\.apple\.com\/app\/id6825464359"/);
+  assert.match(notFound, /store-link" href="https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359\?pt=129655793&ct=web&mt=8"/);
   assert.match(notFound, /\/assets\/app-store-badge-de\.svg/);
   assert.doesNotMatch(notFound, /play\.google/);
 
@@ -625,7 +629,7 @@ test("footers on German and English pages carry the App Store badge", () => {
     const rel = path.slice(root.length + 1);
     const html = read(rel);
     if (/http-equiv="refresh"/.test(html)) continue;
-    assert.match(html, /store-link" href="https:\/\/apps\.apple\.com\/app\/id6825464359"/, rel);
+    assert.match(html, /store-link" href="https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359\?pt=129655793&ct=web&mt=8"/, rel);
     if (rel.startsWith("docs/en/") || rel.includes("/en/")) {
       assert.match(html, /app-store-badge-en\.svg/, rel);
     } else {

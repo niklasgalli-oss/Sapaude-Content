@@ -10,7 +10,7 @@ Sapaude in this text is the learning app at https://sapaude.app. It is not a pla
 
 ## Availability
 
-- iPhone, iOS 16.4 or later, on the App Store now: https://apps.apple.com/app/id6825464359
+- iPhone, iOS 16.4 or later, on the App Store now: https://apps.apple.com/app/sapaude/id6825464359
 - App id: 6825464359
 - Category: Education
 - Languages: German and English
@@ -29,6 +29,8 @@ Sapaude in this text is the learning app at https://sapaude.app. It is not a pla
 - Guide, Duolingo for AI (EN): https://sapaude.app/en/duolingo-for-ai/
 - About (DE): https://sapaude.app/ueber/
 - About (EN): https://sapaude.app/en/about/
+- Press (DE): https://sapaude.app/presse/
+- Press (EN): https://sapaude.app/en/press/
 - Briefing index (DE): https://sapaude.app/briefing/
 - Briefing index (EN): https://sapaude.app/en/briefing/
 - Privacy (DE): https://sapaude.app/privacy/
@@ -68,4 +70,4 @@ Do not fill these in. They are open on purpose.
 
 ## Kurz auf Deutsch
 
-Sapaude ist eine Lern-App, um KI zu lernen: Grundlagen und ein tägliches Briefing, auf Deutsch und Englisch. Der Name kommt von sapere aude, wage weise zu sein. Die App ist jetzt für iPhone im App Store (iOS 16.4 oder neuer): https://apps.apple.com/app/id6825464359 . Android ist nicht verfügbar: Demnächst bei Google Play, ohne Termin. Das Abo heißt Sapaude Premium (im deutschen Store 7,99 € im Monat und 39,99 € im Jahr). Sapaude ist nicht mit Duolingo verbunden. Free tier: [TBD]. Android release: [TBD]. Kontakt: support@sapaude.app
+Sapaude ist eine Lern-App, um KI zu lernen: Grundlagen und ein tägliches Briefing, auf Deutsch und Englisch. Der Name kommt von sapere aude, wage weise zu sein. Die App ist jetzt für iPhone im App Store (iOS 16.4 oder neuer): https://apps.apple.com/app/sapaude/id6825464359 . Android ist nicht verfügbar: Demnächst bei Google Play, ohne Termin. Das Abo heißt Sapaude Premium (im deutschen Store 7,99 € im Monat und 39,99 € im Jahr). Sapaude ist nicht mit Duolingo verbunden. Free tier: [TBD]. Android release: [TBD]. Kontakt: support@sapaude.app
