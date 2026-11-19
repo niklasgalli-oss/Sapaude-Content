@@ -1,7 +1,126 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-18T04:44:25+01:00",
+  "updatedAt": "2026-11-19T04:41:55+01:00",
   "days": [
+    {
+      "date": "2026-11-19",
+      "items": [
+        {
+          "id": "2026-11-19-gemini-4-neon",
+          "headline": "Google releases Gemini 4 Neon for coding and research",
+          "summary": "Google built Neon for fast end-to-end work in software, knowledge work and science, with a 1M-token context window at $3 per million input tokens. It is rolling out in the Gemini API, AI Studio and the Gemini app.",
+          "source": {
+            "name": "Google",
+            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+          },
+          "tag": "Model Release",
+          "priority": "breaking",
+          "i18n": {
+            "de": {
+              "headline": "Google bringt Gemini 4 Neon für Coding und Forschung",
+              "summary": "Neon soll Aufgaben in Software, Wissensarbeit und Forschung schnell erledigen. Es hat ein context window von 1 Mio. Tokens, kostet 3 Dollar pro Million Input-Tokens und startet in Gemini API, AI Studio und Gemini-App."
+            }
+          }
+        },
+        {
+          "id": "2026-11-19-anthropic-prices-ipo",
+          "headline": "Anthropic prices its IPO at $83 per share",
+          "summary": "Anthropic shares are set to start trading on Nasdaq under the ticker ANT on November 19. AP puts the valuation at about $1.5 trillion, which would make it the largest IPO so far.",
+          "source": {
+            "name": "AP News",
+            "url": "https://apnews.com/article/anthropic-ipo-pricing-70b660ddf900d90bbf484ecdf1fb441c"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Anthropic legt Ausgabepreis von 83 Dollar fest",
+              "summary": "Die Aktie soll am 19. November unter dem Kürzel ANT an der Nasdaq starten. AP beziffert die Bewertung auf rund 1,5 Billionen Dollar, es wäre der bislang größte Börsengang."
+            }
+          }
+        },
+        {
+          "id": "2026-11-19-microsoft-mai-models",
+          "headline": "Microsoft launches seven cheaper MAI models",
+          "summary": "At Ignite, Microsoft AI introduced models for coding, cyber defense, images, voice and transcription. It says MAI Code 2 reaches 98% of GPT-6.1 Sol's coding quality at about 40% of the price.",
+          "source": {
+            "name": "Microsoft AI",
+            "url": "https://microsoft.ai/news/microsoft-ignite-2026/"
+          },
+          "tag": "Model Release",
+          "pulseId": "pulse-2026-11-18-microsoft-cheaper-coding-ai",
+          "i18n": {
+            "de": {
+              "headline": "Microsoft stellt sieben günstigere MAI-Modelle vor",
+              "summary": "Auf der Ignite zeigte Microsoft AI Modelle für Coding, Cyberabwehr, Bilder, Sprache und Transkription. MAI Code 2 erreicht laut Microsoft 98 Prozent der Coding-Qualität von GPT-6.1 Sol zu etwa 40 Prozent des Preises."
+            }
+          }
+        },
+        {
+          "id": "2026-11-19-chatgpt-for-accounting",
+          "headline": "ChatGPT for Accounting helps close the books",
+          "summary": "OpenAI's new accounting offering connects ChatGPT to tools such as QuickBooks and Xero through plugins for invoices, reconciliation and reporting. Xero adds month-end close reviews.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/business/solutions/accounting/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "ChatGPT for Accounting hilft beim Monatsabschluss",
+              "summary": "OpenAIs neues Angebot für Buchhaltung verbindet ChatGPT per Plugin mit Tools wie QuickBooks und Xero, etwa für Rechnungen, Abstimmungen und Berichte. Xero ergänzt Prüfungen zum Monatsabschluss."
+            }
+          }
+        },
+        {
+          "id": "2026-11-19-openai-models-design-chips",
+          "headline": "OpenAI models find up to 14% gains in AMD GPUs",
+          "summary": "OpenAI says its models improved power, performance and area in AMD's flagship GPU designs by up to 14 percent. It also works with Synopsys to bring them into chip design tools.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/advancing-chip-design-with-our-models/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI-Modelle verbessern AMD-GPUs um bis zu 14 %",
+              "summary": "Laut OpenAI haben seine Modelle Stromverbrauch, Leistung und Chipfläche in AMDs wichtigsten GPU-Designs um bis zu 14 Prozent verbessert. Mit Synopsys sollen sie in Werkzeuge für Chipdesign kommen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-19-boltz-raises-110-million",
+          "headline": "Boltz raises $110 million for AI drug design",
+          "summary": "Six of the world's 20 largest pharma companies use the startup's molecule design platform, and usage grew 50-fold since June, Boltz says. Bessemer led the Series A.",
+          "source": {
+            "name": "Boltz",
+            "url": "https://boltz.com/series-a"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Boltz sammelt 110 Mio. Dollar für KI-Wirkstoffdesign",
+              "summary": "Sechs der 20 größten Pharmakonzerne nutzen laut Boltz die Plattform des Startups für Moleküldesign, die Nutzung stieg seit Juni um das 50-Fache. Bessemer führte die Series A an."
+            }
+          }
+        },
+        {
+          "id": "2026-11-19-kpmg-tests-audit-agents",
+          "headline": "KPMG tests AI agents in a real company audit",
+          "summary": "In a pilot, AI agents worked alongside a human audit team on the accounts of a UK-listed company. KPMG says the agents asked better questions in places.",
+          "source": {
+            "name": "The Irish Times",
+            "url": "https://www.irishtimes.com/business/2026/11/18/ai-asked-better-questions-than-kpmg-accountants-in-pilot-audit-of-effectiveness/"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "KPMG testet KI-Agenten bei einer echten Prüfung",
+              "summary": "In einem Pilotprojekt arbeiteten KI-Agenten neben einem menschlichen Prüfteam am Abschluss eines in Großbritannien börsennotierten Unternehmens. Laut KPMG stellten die Agenten teils bessere Fragen."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-18",
       "items": [
@@ -790,141 +909,6 @@
             "de": {
               "headline": "OpenAI verarbeitet API-Anfragen jetzt auch in Indien",
               "summary": "Berechtigte Unternehmen können API-Anfragen jetzt komplett in Indien verarbeiten lassen, zunächst mit GPT-6 Luna. So sollen lokale Datenregeln erfüllt werden, etwa im Finanzsektor."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-11-12",
-      "items": [
-        {
-          "id": "2026-11-12-claude-sheets-meetings",
-          "headline": "Claude adds spreadsheets, whiteboards and meetings",
-          "summary": "Anthropic launched Claude Sheets and Claude Whiteboards in beta and made dashboards generally available as Claude Data. Claude Meetings, a beta for Team and Enterprise, lets Claude join Google Meet calls and start tasks.",
-          "source": {
-            "name": "Anthropic",
-            "url": "https://claude.com/resources/articles/sheets-whiteboards-data"
-          },
-          "tag": "Tools",
-          "pulseId": "pulse-2026-11-11-claude-builds-sheets",
-          "i18n": {
-            "de": {
-              "headline": "Claude kann jetzt Tabellen, Whiteboards und Meetings",
-              "summary": "Anthropic startet Claude Sheets und Claude Whiteboards als Beta, Dashboards laufen jetzt regulär als Claude Data. Mit Claude Meetings, einer Beta für Team- und Enterprise-Kunden, sitzt Claude in Google-Meet-Calls und legt Aufgaben an."
-            }
-          }
-        },
-        {
-          "id": "2026-11-12-gemini-apple-carplay",
-          "headline": "Gemini now talks with you in Apple CarPlay",
-          "summary": "Google is rolling out a Gemini app for Apple CarPlay worldwide. iPhone users can hold hands-free voice conversations while driving, for example to catch up on email or prepare for a meeting.",
-          "source": {
-            "name": "Google",
-            "url": "https://blog.google/innovation-and-ai/products/gemini-app/gemini-on-apple-carplay/"
-          },
-          "tag": "Tools",
-          "pulseId": "pulse-2026-11-11-gemini-talks-in-the-car",
-          "i18n": {
-            "de": {
-              "headline": "Gemini spricht jetzt auch in Apple CarPlay",
-              "summary": "Google verteilt weltweit eine Gemini-App für Apple CarPlay. Wer ein iPhone nutzt, kann während der Fahrt freihändig mit Gemini sprechen, etwa um Mails durchzugehen oder sich auf ein Meeting vorzubereiten."
-            }
-          }
-        },
-        {
-          "id": "2026-11-12-qwen4-max-preview",
-          "headline": "Alibaba opens a short preview of Qwen4-Max",
-          "summary": "Alibaba released Qwen4-Max-Preview, a new flagship model for text, image and video understanding, reasoning and tool use. The preview runs only through its Token Plan and is scheduled to end on November 25.",
-          "source": {
-            "name": "Alibaba Cloud",
-            "url": "https://www.alibabacloud.com/help/en/model-studio/qwen4-max-preview"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Alibaba testet Qwen4-Max in kurzer Preview",
-              "summary": "Alibaba hat Qwen4-Max-Preview veröffentlicht, ein neues Spitzenmodell für Text, Bild- und Videoverständnis, Reasoning und Tool-Nutzung. Die Preview läuft nur über den Token Plan und soll am 25. November enden."
-            }
-          }
-        },
-        {
-          "id": "2026-11-12-alphagenome-2",
-          "headline": "AlphaGenome 2 predicts DNA effects per cell type",
-          "summary": "Google DeepMind's AlphaGenome 2 estimates how genetic variants change gene activity in hundreds of human cell types. It is open to non-commercial research and is not meant for clinical diagnosis.",
-          "source": {
-            "name": "Google DeepMind",
-            "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "AlphaGenome 2 sagt DNA-Effekte je Zelltyp voraus",
-              "summary": "AlphaGenome 2 von Google DeepMind schätzt, wie genetische Varianten die Genaktivität in Hunderten menschlicher Zelltypen verändern. Das Modell steht für nicht-kommerzielle Forschung bereit, nicht für klinische Diagnosen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-12-runway-praxis-1-open",
-          "headline": "Runway releases its robot model Praxis-1 openly",
-          "summary": "Runway published weights and code for Praxis-1, a world action model for robot arms, under the Apache 2.0 license. Robotics teams can now run and adapt it on their own hardware.",
-          "source": {
-            "name": "Runway",
-            "url": "https://runway.com/news/company-news/praxis-1-is-now-available"
-          },
-          "tag": "Model Release",
-          "i18n": {
-            "de": {
-              "headline": "Runway gibt Robotermodell Praxis-1 frei",
-              "summary": "Runway hat Gewichte und Code von Praxis-1, einem World Action Model für Roboterarme, unter der Apache-2.0-Lizenz veröffentlicht. Robotik-Teams können es jetzt selbst betreiben und an eigene Hardware anpassen."
-            }
-          }
-        },
-        {
-          "id": "2026-11-12-openai-control-room",
-          "headline": "OpenAI can stop research models within 35 seconds",
-          "summary": "OpenAI described Control Room, a central system that tracks model jobs across its research infrastructure. Once staff decide to intervene, it halts a job's model output within 35 seconds.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/control-room"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI stoppt Forschungsmodelle in 35 Sekunden",
-              "summary": "OpenAI hat Control Room vorgestellt, ein zentrales System, das Modell-Jobs in der eigenen Forschungsinfrastruktur überwacht. Fällt die Entscheidung einzugreifen, stoppt es die Ausgabe eines Jobs innerhalb von 35 Sekunden."
-            }
-          }
-        },
-        {
-          "id": "2026-11-12-new-york-raise-portal",
-          "headline": "New York opens registration for big AI labs",
-          "summary": "Under the RAISE Act, large frontier AI developers must register with New York by January 1, 2027. From then on they must publish safety frameworks and report critical safety incidents within 72 hours.",
-          "source": {
-            "name": "New York State",
-            "url": "https://www.governor.ny.gov/news/governor-hochul-declares-ny-will-lead-nation-ai-science-and-safety-launches-new-research"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "New York startet Registrierung für große KI-Labs",
-              "summary": "Nach dem RAISE Act müssen sich große Frontier-KI-Entwickler bis 1. Januar 2027 in New York registrieren. Ab dann müssen sie Sicherheitskonzepte veröffentlichen und kritische Vorfälle binnen 72 Stunden melden."
-            }
-          }
-        },
-        {
-          "id": "2026-11-12-united-blocks-ai-agents",
-          "headline": "United won't let AI agents book flights",
-          "summary": "United Airlines is restricting third-party AI agents on its booking platforms, citing data security and regulation. Assistants may still show flight options, but customers have to complete the purchase themselves.",
-          "source": {
-            "name": "CNBC",
-            "url": "https://www.cnbc.com/2026/11/11/united-airlines-ai-agents.html"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "United lässt KI-Agenten keine Flüge buchen",
-              "summary": "United Airlines schränkt den Zugriff fremder KI-Agenten auf seine Buchungsplattformen ein und verweist auf Datensicherheit und Vorschriften. Assistenten dürfen Flüge anzeigen, den Kauf müssen Kunden selbst abschließen."
             }
           }
         }
