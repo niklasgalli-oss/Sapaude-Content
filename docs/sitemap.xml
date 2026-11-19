@@ -2,11 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://sapaude.app/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/en/</loc>
-    <lastmod>2026-11-18</lastmod>
+    <lastmod>2026-11-19</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/ki-lernen-app/</loc>
@@ -117,6 +117,10 @@
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
+    <loc>https://sapaude.app/briefing/tag/2026-11-19/</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
     <loc>https://sapaude.app/briefing/tag/2026-11-18/</loc>
     <lastmod>2026-11-18</lastmod>
   </url>
@@ -139,10 +143,6 @@
   <url>
     <loc>https://sapaude.app/briefing/tag/2026-11-13/</loc>
     <lastmod>2026-11-13</lastmod>
-  </url>
-  <url>
-    <loc>https://sapaude.app/briefing/tag/2026-11-12/</loc>
-    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/en/briefing/2026-11-18-rtx-spark-desktops/</loc>
@@ -193,6 +193,10 @@
     <lastmod>2026-11-16</lastmod>
   </url>
   <url>
+    <loc>https://sapaude.app/en/briefing/tag/2026-11-19/</loc>
+    <lastmod>2026-11-19</lastmod>
+  </url>
+  <url>
     <loc>https://sapaude.app/en/briefing/tag/2026-11-18/</loc>
     <lastmod>2026-11-18</lastmod>
   </url>
@@ -215,10 +219,6 @@
   <url>
     <loc>https://sapaude.app/en/briefing/tag/2026-11-13/</loc>
     <lastmod>2026-11-13</lastmod>
-  </url>
-  <url>
-    <loc>https://sapaude.app/en/briefing/tag/2026-11-12/</loc>
-    <lastmod>2026-11-12</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/briefing/</loc>
@@ -341,6 +341,10 @@
     <lastmod>2026-11-11</lastmod>
   </url>
   <url>
+    <loc>https://sapaude.app/briefing/tag/2026-11-12/</loc>
+    <lastmod>2026-11-12</lastmod>
+  </url>
+  <url>
     <loc>https://sapaude.app/en/briefing/</loc>
     <lastmod>2026-11-18</lastmod>
   </url>
@@ -459,5 +463,9 @@
   <url>
     <loc>https://sapaude.app/en/briefing/tag/2026-11-11/</loc>
     <lastmod>2026-11-11</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/en/briefing/tag/2026-11-12/</loc>
+    <lastmod>2026-11-12</lastmod>
   </url>
 </urlset>
