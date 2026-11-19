@@ -156,7 +156,7 @@ test("guide pages and soft redirects are crawlable without store fiction", () =>
     assert.ok(meta(html, "description").length <= 160, rel);
     assert.match(html, /rel="canonical"/);
     assert.match(html, /hreflang="x-default" href="https:\/\/sapaude\.app\//);
-    assert.match(html, /https:\/\/apps\.apple\.com\/app\/id6825464359/);
+    assert.match(html, /https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359/);
     assert.doesNotMatch(html, /play\.google\.com|aggregateRating/);
     assert.match(html, /support@sapaude\.app/);
   }

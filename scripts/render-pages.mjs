@@ -98,6 +98,8 @@ const COPY = {
     learnPath: "ki-lernen-app/",
     dailyPath: "duolingo-fuer-ki/",
     aboutPath: "ueber/",
+    press: "Presse",
+    pressPath: "presse/",
     badgeFile: "assets/app-store-badge-de.svg",
     badgeAlt: "Laden im App Store",
     storeCta: "Sapaude ist jetzt für iPhone im App Store.",
@@ -158,6 +160,8 @@ const COPY = {
     learnPath: "en/best-app-to-learn-ai/",
     dailyPath: "en/duolingo-for-ai/",
     aboutPath: "en/about/",
+    press: "Press",
+    pressPath: "en/press/",
     badgeFile: "assets/app-store-badge-en.svg",
     badgeAlt: "Download on the App Store",
     storeCta: "Sapaude is now on the App Store for iPhone.",
@@ -175,6 +179,8 @@ const STATIC_URLS = [
   ["/en/duolingo-for-ai/", "2026-11-14"],
   ["/ueber/", "2026-11-14"],
   ["/en/about/", "2026-11-14"],
+  ["/presse/", "2026-11-19"],
+  ["/en/press/", "2026-11-19"],
   ["/privacy/", "2026-10-26"],
   ["/en/privacy/", "2026-10-26"],
   ["/daten-loeschen/", "2026-10-26"],
@@ -243,7 +249,7 @@ function relHref(fromFile, urlPath) {
   return href.endsWith("/") ? href : `${href}/`;
 }
 
-const APP_STORE_URL = "https://apps.apple.com/app/id6825464359";
+const APP_STORE_URL = "https://apps.apple.com/app/sapaude/id6825464359?pt=129655793&ct=web&mt=8";
 
 function storeBadge(file, locale) {
   const copy = COPY[locale];
@@ -449,6 +455,8 @@ ${storeBadge(file, locale)}
       ·
       <a href="${href(copy.aboutPath)}">${copy.about}</a>
       ·
+      <a href="${href(copy.pressPath)}">${copy.press}</a>
+      ·
       <a href="${href(copy.privacyPath)}">${copy.privacy}</a>
       ·
       <a href="${href("impressum/")}">${copy.imprint}</a>
@@ -521,7 +529,7 @@ function articlePage(item, locale, items) {
   const body = `      <p class="meta"><a href="${relHref(file, copy.home)}">Sapaude</a> · <a href="${relHref(file, locale === "de" ? "briefing/" : "en/briefing/")}">${copy.briefing}</a></p>
       <p class="kicker">${escapeHtml(tag)}</p>
       <h1>${escapeHtml(headline)}</h1>
-      <p class="meta"><time datetime="${published}">${escapeHtml(label)}</time> · ${copy.read}: ${minutesLabel(item.readTimeMinutes, copy)} · ${copy.listen}: ${minutesLabel(item.listenTimeMinutes, copy)}. ${escapeHtml(copy.listenNote)}</p>
+      <p class="meta"><time datetime="${published}">${escapeHtml(label)}</time> · ${copy.read}: ${minutesLabel(item.readTimeMinutes, copy)}</p>
       <p>${escapeHtml(hook)}</p>
       <p>${escapeHtml(copy.ownWords)} ${copy.publisher}: Sapaude.</p>
       <h2>${escapeHtml(copy.pointsHeading)}</h2>
@@ -699,7 +707,7 @@ ${kept.map((entry) => `        <li><a href="${relHref(file, entry.urlPath)}">${e
   };
   const body = `      <p class="meta"><a href="${relHref(file, copy.home)}">Sapaude</a></p>
       <h1>${escapeHtml(copy.indexH1)}</h1>
-      <p>${escapeHtml(copy.indexLead)} ${escapeHtml(copy.listenNote)}</p>
+      <p>${escapeHtml(copy.indexLead)}</p>
       <p><a href="${relHref(file, copy.learnPath)}">${copy.learn}</a> · <a href="${relHref(file, copy.dailyPath)}">${copy.daily}</a></p>
       <h2>${escapeHtml(copy.longHeading)}</h2>
       <ul>

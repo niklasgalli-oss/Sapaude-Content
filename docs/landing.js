@@ -16,7 +16,7 @@
  * German uses the DE artwork ("Laden im App Store"). App Store stays in
  * English on the badge.
  */
-const SAPAUDE_APP_STORE_URL = "https://apps.apple.com/app/id6825464359";
+const SAPAUDE_APP_STORE_URL = "https://apps.apple.com/app/sapaude/id6825464359?pt=129655793&ct=web&mt=8";
 const SAPAUDE_PLAY_STORE_URL = "";
 
 const SAPAUDE_BRIEFING_URL = "https://sapaude.app/briefing.json";
