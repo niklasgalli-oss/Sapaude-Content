@@ -106,7 +106,7 @@ test("apple-app-site-association is not a file", () => {
 
 test("App Store URL is one empty constant", () => {
   const js = read("docs/landing.js");
-  assert.match(js, /const SAPAUDE_APP_STORE_URL = "https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359\?pt=129655793&ct=web&mt=8";/);
+  assert.match(js, /const SAPAUDE_APP_STORE_URL = "https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359";/);
   assert.equal((js.match(/const SAPAUDE_APP_STORE_URL/g) || []).length, 1);
   assert.match(js, /const SAPAUDE_PLAY_STORE_URL = "";/);
   assert.equal((js.match(/const SAPAUDE_PLAY_STORE_URL/g) || []).length, 1);
@@ -594,11 +594,11 @@ test("footers on German and English pages carry the App Store badge", () => {
   const en = read("docs/en/index.html");
   const deFooter = de.match(/<footer class="colophon">[\s\S]*?<\/footer>/)[0];
   const enFooter = en.match(/<footer class="colophon">[\s\S]*?<\/footer>/)[0];
-  assert.match(deFooter, /store-link" href="https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359\?pt=129655793&ct=web&mt=8"/);
+  assert.match(deFooter, /store-link" href="https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359"/);
   assert.match(deFooter, /assets\/app-store-badge-de\.svg/);
   assert.match(deFooter, /alt="Laden im App Store"/);
   assert.doesNotMatch(deFooter, /Demnächst bei Google Play|Coming soon to Google Play|play\.google/);
-  assert.match(enFooter, /store-link" href="https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359\?pt=129655793&ct=web&mt=8"/);
+  assert.match(enFooter, /store-link" href="https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359"/);
   assert.match(enFooter, /assets\/app-store-badge-en\.svg/);
   assert.match(enFooter, /alt="Download on the App Store"/);
   assert.doesNotMatch(enFooter, /Coming soon to Google Play|Demnächst bei Google Play|play\.google/);
@@ -622,7 +622,7 @@ test("footers on German and English pages carry the App Store badge", () => {
   assert.doesNotMatch(enBrief, /Coming soon to Google Play/);
 
   const notFound = read("docs/404.html");
-  assert.match(notFound, /store-link" href="https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359\?pt=129655793&ct=web&mt=8"/);
+  assert.match(notFound, /store-link" href="https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359"/);
   assert.match(notFound, /\/assets\/app-store-badge-de\.svg/);
   assert.doesNotMatch(notFound, /play\.google/);
 
@@ -630,7 +630,7 @@ test("footers on German and English pages carry the App Store badge", () => {
     const rel = path.slice(root.length + 1);
     const html = read(rel);
     if (/http-equiv="refresh"/.test(html)) continue;
-    assert.match(html, /store-link" href="https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359\?pt=129655793&ct=web&mt=8"/, rel);
+    assert.match(html, /store-link" href="https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359"/, rel);
     if (rel.startsWith("docs/en/") || rel.includes("/en/")) {
       assert.match(html, /app-store-badge-en\.svg/, rel);
     } else {

@@ -18,7 +18,7 @@ Sapaude ist eine eigenständige Lern-App, kein Chatbot und kein Nachrichten-Tick
 - Preis der App: kostenlos mit optionalem Abo „Sapaude Premium“ (Preise in der App)
 - Kontakt: support@sapaude.app
 - Website und Pressekit: https://sapaude.app/presse/
-- App Store: https://apps.apple.com/app/sapaude/id6825464359?pt=129655793&ct=presse&mt=8
+- App Store: https://apps.apple.com/app/sapaude/id6825464359
 
 Bilder und Screenshots liegen im Pressekit. Für Interview- oder Testzugänge schreibt bitte an support@sapaude.app.
 

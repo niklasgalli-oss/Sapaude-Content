@@ -249,7 +249,7 @@ function relHref(fromFile, urlPath) {
   return href.endsWith("/") ? href : `${href}/`;
 }
 
-const APP_STORE_URL = "https://apps.apple.com/app/sapaude/id6825464359?pt=129655793&ct=web&mt=8";
+const APP_STORE_URL = "https://apps.apple.com/app/sapaude/id6825464359";
 
 function storeBadge(file, locale) {
   const copy = COPY[locale];
