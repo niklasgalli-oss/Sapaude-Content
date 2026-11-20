@@ -1,7 +1,140 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-19T04:41:55+01:00",
+  "updatedAt": "2026-11-20T04:42:28+01:00",
   "days": [
+    {
+      "date": "2026-11-20",
+      "items": [
+        {
+          "id": "2026-11-20-gemini-mac-computer-use",
+          "headline": "Gemini can now operate apps on your Mac",
+          "summary": "The Gemini app for Mac can carry out multi-step tasks across local files, desktop apps and the web. It works in a separate background window, and you pick which apps it may use and approve its actions.",
+          "source": {
+            "name": "Google",
+            "url": "https://blog.google/innovation-and-ai/products/gemini-app/computer-use-mac/"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Gemini bedient jetzt Apps auf dem Mac",
+              "summary": "Die Gemini-App für den Mac erledigt mehrstufige Aufgaben in lokalen Dateien, Programmen und im Web. Sie arbeitet in einem eigenen Fenster im Hintergrund, Nutzer legen die erlaubten Apps fest und geben Aktionen frei."
+            }
+          }
+        },
+        {
+          "id": "2026-11-20-gpt-live-1-1-api",
+          "headline": "GPT-Live-1.1 brings better voice chats to the API",
+          "summary": "OpenAI's updated full-duplex voice model pronounces and transcribes more accurately across languages and keeps a steadier accent. A new standby mode pauses inference while nobody is speaking.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://developers.openai.com/api/docs/changelog"
+          },
+          "tag": "Model Release",
+          "i18n": {
+            "de": {
+              "headline": "GPT-Live-1.1 verbessert Sprachdialoge in der API",
+              "summary": "Das aktualisierte full-duplex Voice-Modell von OpenAI spricht und transkribiert in mehreren Sprachen genauer und hält den Akzent stabiler. Ein neuer Standby-Modus pausiert die inference, solange niemand spricht."
+            }
+          }
+        },
+        {
+          "id": "2026-11-20-chatgpt-dots-reach-plus",
+          "headline": "ChatGPT tests its always-on dots with Plus users",
+          "summary": "OpenAI is trying its proactive dots agents with a small group of Plus subscribers and rolling them out to Business Standard. Users in the EU, the UK and Switzerland are excluded for now.",
+          "source": {
+            "name": "9to5Mac",
+            "url": "https://9to5mac.com/2026/11/19/openai-begins-testing-dots-with-chatgpt-plus-users-expands-business-access/"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "ChatGPT testet seine Dauer-Agenten mit Plus-Nutzern",
+              "summary": "OpenAI testet die proaktiven dots-Agenten mit einer kleinen Gruppe von Plus-Abonnenten und verteilt sie an Business Standard. Nutzer in der EU, Großbritannien und der Schweiz sind vorerst ausgenommen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-20-iwork-opens-to-ai-agents",
+          "headline": "Pages, Numbers and Keynote open up to AI agents",
+          "summary": "Apple's iWork update adds an AI assistant in beta, US English only. On the Mac, MCP lets outside agents such as ChatGPT, Claude or local models edit documents, but only with a Creator Studio subscription.",
+          "source": {
+            "name": "heise online",
+            "url": "https://www.heise.de/en/news/AI-assistant-and-MCP-Apple-opens-iWork-apps-to-LLMs-11530891.html"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Pages, Numbers und Keynote öffnen sich für KI-Agenten",
+              "summary": "Apples iWork-Update bringt einen KI-Assistenten als Beta, vorerst nur auf US-Englisch. Am Mac können externe Agenten wie ChatGPT, Claude oder lokale Modelle per MCP Dokumente bearbeiten, allerdings nur mit Creator-Studio-Abo."
+            }
+          }
+        },
+        {
+          "id": "2026-11-20-eu-commission-ai-cyberattack",
+          "headline": "EU Commission confirms a cyberattack using an AI tool",
+          "summary": "The attack began on October 22 and took staff systems such as payroll offline for more than ten days. The Commission called it an AI-generated campaign; reports name the open-source hacking tool ARTEX.",
+          "source": {
+            "name": "The Record",
+            "url": "https://therecord.media/european-commission-confirms-cyberattack-using-ai"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "EU-Kommission bestätigt Cyberangriff mit KI-Tool",
+              "summary": "Der Angriff begann am 22. Oktober und legte Personalsysteme wie die Gehaltsabrechnung über zehn Tage lahm. Die Kommission spricht von einer KI-generierten Kampagne, Berichte nennen das Open-Source-Tool ARTEX."
+            }
+          }
+        },
+        {
+          "id": "2026-11-20-california-ai-safety-plan",
+          "headline": "California proposes shutdown powers for risky AI",
+          "summary": "Governor Newsom's office released recommendations for mandatory safety standards, ongoing third-party oversight and emergency shutdown authority. These are proposals for legislation, not yet law.",
+          "source": {
+            "name": "Governor of California",
+            "url": "https://www.gov.ca.gov/2026/11/18/governor-newsoms-nation-leading-ai-safety-framework-is-getting-even-stronger-as-california-releases-next-steps-on-mandatory-safety-standards-and-oversight/"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Kalifornien plant Notabschaltung für riskante KI",
+              "summary": "Das Büro von Gouverneur Newsom empfiehlt verbindliche Sicherheitsstandards, laufende Prüfung durch Dritte und eine Befugnis zur Notabschaltung. Es sind Vorschläge für Gesetze, noch kein geltendes Recht."
+            }
+          }
+        },
+        {
+          "id": "2026-11-20-echr-bars-lawyer-over-ai-citations",
+          "headline": "ECHR bars a lawyer over unchecked AI citations",
+          "summary": "The court's president excluded a lawyer from cases before the court for two years after a brief cited rulings that do not exist. The ban covers only the ECHR, and readmission remains possible.",
+          "source": {
+            "name": "beck-aktuell",
+            "url": "https://www.beck-aktuell.de/rechtsbranche/anwaltschaft/egmr-sperrt-anwaeltin-KI-Schriftsatz-2026-11-19"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "EGMR sperrt Anwältin wegen ungeprüfter KI-Zitate",
+              "summary": "Der Präsident des Gerichtshofs schloss eine Anwältin für zwei Jahre von Verfahren dort aus, weil ihr Schriftsatz nicht existierende Urteile zitierte. Die Sperre gilt nur vor dem EGMR, eine Wiederzulassung ist möglich."
+            }
+          }
+        },
+        {
+          "id": "2026-11-20-nvidia-eyes-inception",
+          "headline": "Report: Nvidia in talks to buy diffusion startup Inception",
+          "summary": "According to The Information, Nvidia is in advanced talks to acquire Inception for more than $500 million. The startup builds diffusion language models that generate text in parallel instead of token by token.",
+          "source": {
+            "name": "The Information",
+            "url": "https://www.theinformation.com/articles/nvidia-nears-acquisition-diffusion-ai-developer-500-million"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Bericht: Nvidia verhandelt über Kauf von Inception",
+              "summary": "Laut The Information verhandelt Nvidia fortgeschritten über die Übernahme von Inception für mehr als 500 Millionen Dollar. Das Startup entwickelt diffusion-Sprachmodelle, die Text parallel statt Token für Token erzeugen."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-19",
       "items": [
@@ -790,125 +923,6 @@
             "de": {
               "headline": "KI-Chatbots verweisen teils auf Fake-Shops",
               "summary": "In Tests der Markenschutzfirma Podqi tauchten riskante Shops in 15 Prozent der Antworten von Perplexity auf, bei ChatGPT in 8 und bei Gemini in 4 Prozent. Vor dem Bezahlen also die Shop-Adresse prüfen."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-11-13",
-      "items": [
-        {
-          "id": "2026-11-13-gemini-4-hydrogen",
-          "headline": "Gemini 4 Hydrogen is fast and now powers Google Search",
-          "summary": "Google released Gemini 4 Hydrogen, a fast model for everyday coding and agent tasks at $1.50/$7.50 per million tokens. It is the new default in AI Mode and is rolling out in the Gemini app and API.",
-          "source": {
-            "name": "Google",
-            "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-hydrogen/"
-          },
-          "tag": "Model Release",
-          "priority": "breaking",
-          "i18n": {
-            "de": {
-              "headline": "Gemini 4 Hydrogen: schnell und jetzt in der Google-Suche",
-              "summary": "Google bringt mit Gemini 4 Hydrogen ein schnelles Modell für Coding- und Agenten-Aufgaben im Alltag, für 1,50/7,50 Dollar pro Million Tokens. In AI Mode ist es jetzt Standard, dazu kommt es in die Gemini-App und die API."
-            }
-          }
-        },
-        {
-          "id": "2026-11-13-nvidia-ceo-transition",
-          "headline": "Jensen Huang steps down as Nvidia CEO",
-          "summary": "Nvidia says Jensen Huang resigned as CEO and board member, effective immediately. CFO Colette Kress leads as interim CEO while the board searches for a permanent successor.",
-          "source": {
-            "name": "NVIDIA",
-            "url": "https://nvidianews.nvidia.com/news/nvidia-announces-ceo-transition"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "Jensen Huang tritt als Nvidia-Chef zurück",
-              "summary": "Laut Nvidia hat Jensen Huang seinen Posten als CEO und seinen Sitz im Board mit sofortiger Wirkung abgegeben. Finanzchefin Colette Kress führt das Unternehmen übergangsweise, der Vorstand sucht einen dauerhaften Nachfolger."
-            }
-          }
-        },
-        {
-          "id": "2026-11-13-lawsuit-to-freeze-ai",
-          "headline": "Nonprofits sue five AI labs to pause new models",
-          "summary": "A coalition of advocacy groups filed suit in San Francisco against Anthropic, Google, Meta, OpenAI and SpaceXSI, asking a court to halt new models over safety risks. The case has just been filed; no court has ruled.",
-          "source": {
-            "name": "AP News",
-            "url": "https://apnews.com/article/artificial-intelligence-ai-lawsuit-cyberattacks-anthropic-openai-03ece37b96979fe834f60976648504ba"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Klage soll fünf KI-Labore bei neuen Modellen stoppen",
-              "summary": "Mehrere Verbraucher- und Sicherheitsgruppen haben in San Francisco gegen Anthropic, Google, Meta, OpenAI und SpaceXSI geklagt, um neue Modelle zu stoppen. Die Klage ist eingereicht, entschieden ist nichts."
-            }
-          }
-        },
-        {
-          "id": "2026-11-13-openai-daybreak-security",
-          "headline": "OpenAI's new agents test and patch company code",
-          "summary": "OpenAI added Daybreak Red Team, which probes web apps for vulnerabilities in early access, and Daybreak Defense Factory, which finds and fixes flaws in codebases. Engineers review each proposed patch.",
-          "source": {
-            "name": "The Register",
-            "url": "https://www.theregister.com/security/2026/11/12/openai-launches-security-products-tells-orgs-theyre-doomed-if-they-dont-use-them/5309500"
-          },
-          "tag": "Autonomous Agent",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI-Agenten prüfen und flicken Firmencode",
-              "summary": "OpenAI startet Daybreak Red Team, das Web-Apps in Early Access auf Schwachstellen testet, und Daybreak Defense Factory, das Lücken im Code findet und behebt. Jeden Patch geben Engineers vorher frei."
-            }
-          }
-        },
-        {
-          "id": "2026-11-13-mirendil-raises-1b",
-          "headline": "Mirendil raises $1 billion for agent-run AI research",
-          "summary": "Startup Mirendil closed a $1 billion Series A led by Kleiner Perkins and Clearlake. It builds tools where hundreds of agents write code and run experiments, so small teams can do frontier AI research.",
-          "source": {
-            "name": "Mirendil",
-            "url": "https://mirendil.com/news/series-a/"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "Mirendil holt 1 Milliarde Dollar für Agenten-Forschung",
-              "summary": "Das Start-up Mirendil hat eine Series A über 1 Milliarde Dollar abgeschlossen, angeführt von Kleiner Perkins und Clearlake. Mit seinen Tools schreiben Hunderte Agenten Code und fahren Experimente."
-            }
-          }
-        },
-        {
-          "id": "2026-11-13-openai-child-safety-research",
-          "headline": "OpenAI funds research on AI and children's safety",
-          "summary": "OpenAI signed a charter on safer AI for children at the Paris Peace Forum and pledged $2 million for shared research tools. It also says it wants to work with EU policymakers on the planned EU Kids Act.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/children-first-declaration"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI fördert Forschung zu KI und Kinderschutz",
-              "summary": "OpenAI hat beim Paris Peace Forum eine Charta für sicherere KI für Kinder unterzeichnet und 2 Millionen Dollar für gemeinsame Forschungswerkzeuge zugesagt. Beim geplanten EU Kids Act will das Unternehmen mit der EU-Politik reden."
-            }
-          }
-        },
-        {
-          "id": "2026-11-13-openai-india-local-inference",
-          "headline": "OpenAI's API can now run requests inside India",
-          "summary": "Eligible businesses can now have API requests processed and answered within India, starting with GPT-6 Luna. The goal is to meet local data rules, for example in financial services.",
-          "source": {
-            "name": "The Hindu",
-            "url": "https://www.thehindu.com/business/openai-now-allows-enterprises-to-process-ai-requests-within-india/article71692799.ece"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "OpenAI verarbeitet API-Anfragen jetzt auch in Indien",
-              "summary": "Berechtigte Unternehmen können API-Anfragen jetzt komplett in Indien verarbeiten lassen, zunächst mit GPT-6 Luna. So sollen lokale Datenregeln erfüllt werden, etwa im Finanzsektor."
             }
           }
         }
