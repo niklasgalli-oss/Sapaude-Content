@@ -14,6 +14,7 @@
 import { existsSync, mkdirSync, readFileSync, readdirSync, statSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import { pathToFileURL } from "node:url";
+import { GLOSSARY } from "./glossary-data.mjs";
 
 const ORIGIN = "https://sapaude.app";
 
@@ -100,6 +101,10 @@ const COPY = {
     aboutPath: "ueber/",
     press: "Presse",
     pressPath: "presse/",
+    glossary: "Glossar",
+    glossaryPath: "glossar/",
+    pulseArchive: "Pulse-Archiv",
+    pulsePath: "pulse/",
     badgeFile: "assets/app-store-badge-de.svg",
     badgeAlt: "Laden im App Store",
     storeCta: "Sapaude ist jetzt für iPhone im App Store.",
@@ -162,6 +167,10 @@ const COPY = {
     aboutPath: "en/about/",
     press: "Press",
     pressPath: "en/press/",
+    glossary: "Glossary",
+    glossaryPath: "en/glossary/",
+    pulseArchive: "Pulse archive",
+    pulsePath: "en/pulse/",
     badgeFile: "assets/app-store-badge-en.svg",
     badgeAlt: "Download on the App Store",
     storeCta: "Sapaude is now on the App Store for iPhone.",
@@ -249,7 +258,7 @@ function relHref(fromFile, urlPath) {
   return href.endsWith("/") ? href : `${href}/`;
 }
 
-const APP_STORE_URL = "https://apps.apple.com/app/sapaude/id6825464359?pt=129655793&ct=web&mt=8";
+const APP_STORE_URL = "https://apps.apple.com/app/sapaude/id6825464359";
 
 function storeBadge(file, locale) {
   const copy = COPY[locale];
@@ -448,6 +457,10 @@ ${storeBadge(file, locale)}
       <a href="${href(homeUrl)}">${copy.homeLabel}</a>
       ·
       <a href="${href(locale === "de" ? "briefing/" : "en/briefing/")}">${copy.briefing}</a>
+      ·
+      <a href="${href(copy.pulsePath)}">${copy.pulseArchive}</a>
+      ·
+      <a href="${href(copy.glossaryPath)}">${copy.glossary}</a>
       ·
       <a href="${href(copy.learnPath)}">${copy.learn}</a>
       ·
@@ -856,6 +869,408 @@ function keptPages(docsDir, locale, currentUrls) {
   return kept;
 }
 
+// ---------------------------------------------------------------------------
+// Pulse archive: /pulse/ and /en/pulse/ with one page per day.
+// pulse.json only holds the newest items, so pulse-archive.json keeps a small
+// projection (id, date, tag, headline, hook, German copy) of every item that
+// was ever published. Each render merges the current feed into it.
+// ---------------------------------------------------------------------------
+
+const ARCHIVE_COPY = {
+  de: {
+    title: "Pulse-Archiv: alle KI-Meldungen nach Tag | Sapaude",
+    desc: "Alle Meldungen aus dem Sapaude Pulse nach Tag sortiert, in eigenen Worten und mit Datum. Herausgeber ist Sapaude.",
+    h1: "Pulse-Archiv",
+    lead: "Hier steht jede Meldung, die im Pulse der Sapaude-App erschienen ist, nach Tag sortiert. Wo es einen langen Text gibt, führt der Link dorthin. In der App kommen jeden Tag neue Meldungen dazu, passend zu deinem Level.",
+    count: (n) => `${n} ${n === 1 ? "Meldung" : "Meldungen"}`,
+    dayTitle: (label) => `Pulse vom ${label}: KI-Meldungen | Sapaude`,
+    dayDesc: (label, n) => `${n} KI-Meldungen vom ${label} aus dem Sapaude Pulse, kurz und in eigenen Worten.`,
+    dayH1: (label) => `Pulse vom ${label}`,
+    dayLead: (label) => `Die Meldungen vom ${label} aus dem Pulse der Sapaude-App, in eigenen Worten. Begriffe, die du nicht kennst, erklärt das Glossar.`,
+    prev: "Älterer Tag",
+    next: "Neuerer Tag",
+    all: "Alle Tage"
+  },
+  en: {
+    title: "Pulse archive: every AI story by day | Sapaude",
+    desc: "Every story from the Sapaude Pulse, sorted by day, in our own words and with a date. The publisher is Sapaude.",
+    h1: "Pulse archive",
+    lead: "Every story that ran in the Pulse of the Sapaude app, sorted by day. Where a longer article exists, the link goes there. In the app, new stories arrive every day, matched to your level.",
+    count: (n) => `${n} ${n === 1 ? "story" : "stories"}`,
+    dayTitle: (label) => `Pulse for ${label}: AI news | Sapaude`,
+    dayDesc: (label, n) => `${n} AI stories from ${label} in the Sapaude Pulse, short and in our own words.`,
+    dayH1: (label) => `Pulse for ${label}`,
+    dayLead: (label) => `The stories from ${label} in the Pulse of the Sapaude app, in our own words. Terms you don’t know are explained in the glossary.`,
+    prev: "Older day",
+    next: "Newer day",
+    all: "All days"
+  }
+};
+
+function archiveEntry(item) {
+  const de = (item.i18n && item.i18n.de) || {};
+  return {
+    id: item.id,
+    date: item.date,
+    tag: item.tag || "",
+    headline: textOrEmpty(item.headline),
+    hook: textOrEmpty(item.hook),
+    de: { headline: textOrEmpty(de.headline), hook: textOrEmpty(de.hook) }
+  };
+}
+
+export function mergePulseArchive(rootDir, pulse) {
+  const file = path.join(rootDir, "pulse-archive.json");
+  const existing = existsSync(file) ? JSON.parse(readFileSync(file, "utf8")) : [];
+  const byId = new Map(existing.map((entry) => [entry.id, entry]));
+  for (const item of pulse) {
+    if (item && item.id && item.date) byId.set(item.id, archiveEntry(item));
+  }
+  return [...byId.values()].sort((a, b) => {
+    const byDate = String(b.date).localeCompare(String(a.date));
+    return byDate !== 0 ? byDate : String(a.id).localeCompare(String(b.id));
+  });
+}
+
+function archiveText(entry, locale) {
+  if (locale === "de" && entry.de && entry.de.headline) return { headline: entry.de.headline, hook: entry.de.hook || entry.hook };
+  return { headline: entry.headline, hook: entry.hook };
+}
+
+function pulseArchivePages(rootDir, archive, items) {
+  const live = new Set(items.map((item) => item.id));
+  const hasArticle = (entry, locale) => {
+    if (live.has(entry.id)) return true;
+    const rel = articlePaths(slugFromPulseId(entry.id))[locale];
+    return existsSync(path.join(rootDir, "docs", rel, "index.html"));
+  };
+  const byDay = new Map();
+  for (const entry of archive) {
+    const day = String(entry.date).slice(0, 10);
+    if (!byDay.has(day)) byDay.set(day, []);
+    byDay.get(day).push(entry);
+  }
+  const dayList = [...byDay.keys()].sort().reverse();
+  const pages = [];
+  for (const locale of ["de", "en"]) {
+    const copy = COPY[locale];
+    const ac = ARCHIVE_COPY[locale];
+    const base = locale === "de" ? "pulse/" : "en/pulse/";
+    dayList.forEach((day, index) => {
+      const entries = byDay.get(day);
+      const urlPath = `${base}${day}/`;
+      const file = `docs/${urlPath}index.html`;
+      const canonical = `${ORIGIN}/${urlPath}`;
+      const label = formatDay(day, locale);
+      const list = entries.map((entry) => {
+        const text = archiveText(entry, locale);
+        const tag = TAG_LABEL[locale][entry.tag] || entry.tag || "";
+        const link = hasArticle(entry, locale)
+          ? `\n        <p><a href="${relHref(file, articlePaths(slugFromPulseId(entry.id))[locale])}">${copy.fullText}</a></p>`
+          : "";
+        return `      <article>
+        <p class="kicker">${escapeHtml(tag)}</p>
+        <h2>${escapeHtml(text.headline)}</h2>
+        <p>${escapeHtml(text.hook)}</p>${link}
+      </article>`;
+      }).join("\n");
+      const newer = dayList[index - 1];
+      const older = dayList[index + 1];
+      const pager = [
+        older ? `<a href="${relHref(file, `${base}${older}/`)}">← ${ac.prev}</a>` : "",
+        `<a href="${relHref(file, base)}">${ac.all}</a>`,
+        newer ? `<a href="${relHref(file, `${base}${newer}/`)}">${ac.next} →</a>` : ""
+      ].filter(Boolean).join(" · ");
+      const ld = {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "CollectionPage",
+            "@id": `${canonical}#page`,
+            name: ac.dayH1(label),
+            description: ac.dayDesc(label, entries.length),
+            datePublished: day,
+            inLanguage: locale,
+            url: canonical,
+            publisher: publisherNode(),
+            mainEntity: {
+              "@type": "ItemList",
+              itemListElement: entries.map((entry, i) => {
+                const node = { "@type": "ListItem", position: i + 1, name: archiveText(entry, locale).headline };
+                if (hasArticle(entry, locale)) node.url = `${ORIGIN}/${articlePaths(slugFromPulseId(entry.id))[locale]}`;
+                return node;
+              })
+            }
+          },
+          breadcrumbLd([
+            { name: copy.homeLabel, url: `${ORIGIN}/${copy.home}` },
+            { name: copy.pulseArchive, url: `${ORIGIN}/${base}` },
+            { name: label, url: canonical }
+          ])
+        ]
+      };
+      const body = `      <p class="meta"><a href="${relHref(file, copy.home)}">Sapaude</a> · <a href="${relHref(file, base)}">${copy.pulseArchive}</a></p>
+      <h1>${escapeHtml(ac.dayH1(label))}</h1>
+      <p>${escapeHtml(ac.dayLead(label))} <a href="${relHref(file, copy.glossaryPath)}">${copy.glossary}</a></p>
+${list}
+      <p class="meta">${pager}</p>
+${storeCta(file, locale)}`;
+      pages.push({
+        file,
+        url: `/${urlPath}`,
+        lastmod: day,
+        html: `<!-- generated by scripts/render-pages.mjs; do not edit by hand -->\n${pageShell({
+          file,
+          locale,
+          title: ac.dayTitle(label),
+          description: ac.dayDesc(label, entries.length),
+          canonical,
+          deUrl: `${ORIGIN}/pulse/${day}/`,
+          enUrl: `${ORIGIN}/en/pulse/${day}/`,
+          body,
+          jsonLd: jsonScript(ld),
+          ogType: "website"
+        })}`
+      });
+    });
+
+    const file = `docs/${base}index.html`;
+    const canonical = `${ORIGIN}/${base}`;
+    const months = new Map();
+    for (const day of dayList) {
+      const key = day.slice(0, 7);
+      if (!months.has(key)) months.set(key, []);
+      months.get(key).push(day);
+    }
+    const sections = [...months.entries()].map(([month, days]) => {
+      const heading = `${MONTHS[locale][Number(month.slice(5, 7)) - 1]} ${month.slice(0, 4)}`;
+      const rows = days.map((day) => {
+        const entries = byDay.get(day);
+        const first = archiveText(entries[0], locale).headline;
+        return `        <li><a href="${relHref(file, `${base}${day}/`)}"><time datetime="${day}">${escapeHtml(formatDay(day, locale))}</time></a> · ${escapeHtml(ac.count(entries.length))} · ${escapeHtml(clip(first, 90))}</li>`;
+      }).join("\n");
+      return `      <h2>${escapeHtml(heading)}</h2>
+      <ul>
+${rows}
+      </ul>`;
+    }).join("\n");
+    const ld = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "CollectionPage",
+          "@id": `${canonical}#page`,
+          name: ac.h1,
+          description: ac.desc,
+          inLanguage: locale,
+          url: canonical,
+          publisher: publisherNode()
+        },
+        breadcrumbLd([
+          { name: copy.homeLabel, url: `${ORIGIN}/${copy.home}` },
+          { name: copy.pulseArchive, url: canonical }
+        ])
+      ]
+    };
+    const body = `      <p class="meta"><a href="${relHref(file, copy.home)}">Sapaude</a> · <a href="${relHref(file, locale === "de" ? "briefing/" : "en/briefing/")}">${copy.briefing}</a> · <a href="${relHref(file, copy.glossaryPath)}">${copy.glossary}</a></p>
+      <h1>${escapeHtml(ac.h1)}</h1>
+      <p>${escapeHtml(ac.lead)}</p>
+${sections}
+${storeCta(file, locale)}`;
+    pages.push({
+      file,
+      url: `/${base}`,
+      lastmod: dayList[0],
+      html: `<!-- generated by scripts/render-pages.mjs; do not edit by hand -->\n${pageShell({
+        file,
+        locale,
+        title: ac.title,
+        description: ac.desc,
+        canonical,
+        deUrl: `${ORIGIN}/pulse/`,
+        enUrl: `${ORIGIN}/en/pulse/`,
+        body,
+        jsonLd: jsonScript(ld),
+        ogType: "website"
+      })}`
+    });
+  }
+  return pages;
+}
+
+// ---------------------------------------------------------------------------
+// Glossary: /glossar/<slug>/ and /en/glossary/<slug>/ from glossary-data.mjs.
+// ---------------------------------------------------------------------------
+
+export const GLOSSARY_UPDATED = "2026-11-19";
+
+const GLOSSARY_COPY = {
+  de: {
+    title: "KI-Glossar: die wichtigsten AI-Begriffe einfach erklärt | Sapaude",
+    desc: `${GLOSSARY.length} AI-Begriffe von LLM bis RAG in normaler Sprache erklärt, mit Beispiel. Das KI-Glossar von Sapaude.`,
+    h1: "KI-Glossar",
+    lead: "Die wichtigsten AI-Begriffe in normaler Sprache, jeweils mit einem Beispiel aus dem Alltag. Die Fachbegriffe bleiben englisch, so wie sie dir in Nachrichten und Tools begegnen.",
+    setName: "KI-Glossar von Sapaude",
+    termTitle: (term) => `${term} einfach erklärt | KI-Glossar | Sapaude`,
+    whatIs: (term) => `Was ist ${term}?`,
+    example: "Beispiel",
+    related: "Verwandte Begriffe",
+    learn: (term) => `${term} und die anderen Grundlagen lernst du in Sapaude in fünf Minuten am Tag, auf Deutsch oder Englisch.`,
+    back: "Alle Begriffe"
+  },
+  en: {
+    title: "AI glossary: key AI terms explained simply | Sapaude",
+    desc: `${GLOSSARY.length} AI terms from LLM to RAG explained in plain English, each with an example. The Sapaude AI glossary.`,
+    h1: "AI glossary",
+    lead: "The key AI terms in plain English, each with an everyday example.",
+    setName: "Sapaude AI glossary",
+    termTitle: (term) => `${term} explained simply | AI glossary | Sapaude`,
+    whatIs: (term) => `What is ${term}?`,
+    example: "Example",
+    related: "Related terms",
+    learn: (term) => `Learn ${term} and the other basics with Sapaude in five minutes a day, in English or German.`,
+    back: "All terms"
+  }
+};
+
+function glossaryBase(locale) {
+  return locale === "de" ? "glossar/" : "en/glossary/";
+}
+
+function shortTerm(term) {
+  return term.replace(/\s*\(.*\)\s*$/, "");
+}
+
+function glossaryPages() {
+  const bySlug = new Map(GLOSSARY.map((entry) => [entry.slug, entry]));
+  const sorted = [...GLOSSARY].sort((a, b) => a.term.localeCompare(b.term, "en", { sensitivity: "base" }));
+  const pages = [];
+  for (const locale of ["de", "en"]) {
+    const copy = COPY[locale];
+    const gc = GLOSSARY_COPY[locale];
+    const base = glossaryBase(locale);
+    const setUrl = `${ORIGIN}/${base}`;
+    const setNode = { "@type": "DefinedTermSet", "@id": `${setUrl}#set`, name: gc.setName, url: setUrl, inLanguage: locale };
+
+    for (const entry of GLOSSARY) {
+      const text = entry[locale];
+      const urlPath = `${base}${entry.slug}/`;
+      const file = `docs/${urlPath}index.html`;
+      const canonical = `${ORIGIN}/${urlPath}`;
+      const related = entry.related.map((slug) => bySlug.get(slug)).filter(Boolean);
+      const ld = {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "DefinedTerm",
+            "@id": `${canonical}#term`,
+            name: entry.term,
+            termCode: entry.slug,
+            description: text.def,
+            url: canonical,
+            inLanguage: locale,
+            inDefinedTermSet: setNode
+          },
+          {
+            "@type": "WebPage",
+            "@id": `${canonical}#page`,
+            url: canonical,
+            name: gc.whatIs(shortTerm(entry.term)),
+            inLanguage: locale,
+            dateModified: GLOSSARY_UPDATED,
+            about: { "@id": `${canonical}#term` },
+            publisher: publisherNode()
+          },
+          breadcrumbLd([
+            { name: copy.homeLabel, url: `${ORIGIN}/${copy.home}` },
+            { name: copy.glossary, url: setUrl },
+            { name: entry.term, url: canonical }
+          ])
+        ]
+      };
+      const relatedHtml = related.map((other) => `        <li><a href="${relHref(file, `${base}${other.slug}/`)}">${escapeHtml(other.term)}</a></li>`).join("\n");
+      const body = `      <p class="meta"><a href="${relHref(file, copy.home)}">Sapaude</a> · <a href="${relHref(file, base)}">${copy.glossary}</a></p>
+      <article>
+        <h1>${escapeHtml(entry.term)}</h1>
+        <p>${escapeHtml(text.def)}</p>
+        <h2>${escapeHtml(gc.example)}</h2>
+        <p>${escapeHtml(text.example)}</p>
+      </article>
+      <h2>${escapeHtml(gc.related)}</h2>
+      <ul>
+${relatedHtml}
+      </ul>
+      <p>${escapeHtml(gc.learn(shortTerm(entry.term)))}</p>
+${storeCta(file, locale)}
+      <p class="meta"><a href="${relHref(file, base)}">${gc.back}</a> · <a href="${relHref(file, copy.pulsePath)}">${copy.pulseArchive}</a></p>`;
+      pages.push({
+        file,
+        url: `/${urlPath}`,
+        lastmod: GLOSSARY_UPDATED,
+        html: `<!-- generated by scripts/render-pages.mjs; do not edit by hand -->\n${pageShell({
+          file,
+          locale,
+          title: gc.termTitle(shortTerm(entry.term)),
+          description: text.def,
+          canonical,
+          deUrl: `${ORIGIN}/glossar/${entry.slug}/`,
+          enUrl: `${ORIGIN}/en/glossary/${entry.slug}/`,
+          body,
+          jsonLd: jsonScript(ld)
+        })}`
+      });
+    }
+
+    const file = `docs/${base}index.html`;
+    const rows = sorted.map((entry) => `        <li><a href="${relHref(file, `${base}${entry.slug}/`)}">${escapeHtml(entry.term)}</a>: ${escapeHtml(clip(entry[locale].def.split(/(?<=\.)\s/)[0], 150))}</li>`).join("\n");
+    const ld = {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          ...setNode,
+          description: gc.desc,
+          publisher: publisherNode(),
+          hasDefinedTerm: sorted.map((entry) => ({
+            "@type": "DefinedTerm",
+            "@id": `${setUrl}${entry.slug}/#term`,
+            name: entry.term,
+            url: `${setUrl}${entry.slug}/`
+          }))
+        },
+        breadcrumbLd([
+          { name: copy.homeLabel, url: `${ORIGIN}/${copy.home}` },
+          { name: copy.glossary, url: setUrl }
+        ])
+      ]
+    };
+    const body = `      <p class="meta"><a href="${relHref(file, copy.home)}">Sapaude</a> · <a href="${relHref(file, copy.pulsePath)}">${copy.pulseArchive}</a></p>
+      <h1>${escapeHtml(gc.h1)}</h1>
+      <p>${escapeHtml(gc.lead)}</p>
+      <ul>
+${rows}
+      </ul>
+${storeCta(file, locale)}`;
+    pages.push({
+      file,
+      url: `/${base}`,
+      lastmod: GLOSSARY_UPDATED,
+      html: `<!-- generated by scripts/render-pages.mjs; do not edit by hand -->\n${pageShell({
+        file,
+        locale,
+        title: gc.title,
+        description: gc.desc,
+        canonical: setUrl,
+        deUrl: `${ORIGIN}/glossar/`,
+        enUrl: `${ORIGIN}/en/glossary/`,
+        body,
+        jsonLd: jsonScript(ld),
+        ogType: "website"
+      })}`
+    });
+  }
+  return pages;
+}
+
 export function buildSite(rootDir) {
   const pulse = JSON.parse(readFileSync(path.join(rootDir, "pulse.json"), "utf8"));
   const briefing = JSON.parse(readFileSync(path.join(rootDir, "briefing.json"), "utf8"));
@@ -891,6 +1306,13 @@ export function buildSite(rootDir) {
         generated.push({ url: `/${entry.urlPath}`, lastmod: entry.lastmod });
       }
     }
+  }
+
+  const archive = mergePulseArchive(rootDir, pulse);
+  files.set("pulse-archive.json", `${JSON.stringify(archive, null, 2)}\n`);
+  for (const page of [...pulseArchivePages(rootDir, archive, items), ...glossaryPages()]) {
+    files.set(page.file, page.html);
+    generated.push(page);
   }
 
   const homeDate = String(briefing.updatedAt).slice(0, 10);

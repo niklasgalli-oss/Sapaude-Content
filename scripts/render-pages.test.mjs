@@ -173,3 +173,36 @@ test("guide pages and soft redirects are crawlable without store fiction", () =>
   assert.doesNotMatch(read("docs/index.html"), /Sapere aude/);
   assert.doesNotMatch(read("docs/en/index.html"), /Sapere aude/);
 });
+
+test("glossary has at least 40 terms per language with DefinedTerm, hreflang and a plain store link", () => {
+  for (const [base, other] of [["docs/glossar", "en/glossary"], ["docs/en/glossary", "glossar"]]) {
+    const slugs = readdirSync(join(root, base)).filter((name) => statSync(join(root, base, name)).isDirectory());
+    assert.ok(slugs.length >= 40, `${base} has ${slugs.length} terms`);
+    for (const slug of slugs) {
+      const html = read(`${base}/${slug}/index.html`);
+      const term = nodes(html).find((node) => node["@type"] === "DefinedTerm");
+      assert.ok(term && term.inDefinedTermSet, `${slug} DefinedTerm`);
+      assert.match(html, new RegExp(`hreflang="${base.includes("/en/") ? "de" : "en"}" href="https://sapaude.app/${other}/${slug}/"`));
+      assert.match(html, /<link rel="canonical" href="https:\/\/sapaude\.app\//);
+      assert.match(html, /href="https:\/\/apps\.apple\.com\/app\/sapaude\/id6825464359"/);
+      assert.doesNotMatch(html, /pt=\d/);
+    }
+  }
+  const sitemap = read("docs/sitemap.xml");
+  assert.match(sitemap, /https:\/\/sapaude\.app\/glossar\/rag\//);
+  assert.match(sitemap, /https:\/\/sapaude\.app\/en\/glossary\/rag\//);
+});
+
+test("pulse archive has an index and one page per day in both languages", () => {
+  const archive = JSON.parse(read("pulse-archive.json"));
+  const pulse = JSON.parse(read("pulse.json"));
+  const ids = new Set(archive.map((entry) => entry.id));
+  for (const item of pulse) assert.ok(ids.has(item.id), `${item.id} missing from archive`);
+  const days = new Set(archive.map((entry) => String(entry.date).slice(0, 10)));
+  for (const day of days) {
+    assert.ok(existsSync(join(root, "docs/pulse", day, "index.html")), `de ${day}`);
+    assert.ok(existsSync(join(root, "docs/en/pulse", day, "index.html")), `en ${day}`);
+  }
+  assert.match(read("docs/pulse/index.html"), /Pulse-Archiv/);
+  assert.match(read("docs/sitemap.xml"), /https:\/\/sapaude\.app\/pulse\//);
+});

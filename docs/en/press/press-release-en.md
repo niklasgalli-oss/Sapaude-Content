@@ -27,7 +27,7 @@ Sapaude is a learning app, not a chatbot and not a news ticker. Android will fol
 - Price: free to download, with an optional Sapaude Premium subscription (prices are shown in the app)
 - Contact: support@sapaude.app
 - Website and press kit: https://sapaude.app/en/press/
-- App Store: https://apps.apple.com/app/sapaude/id6825464359?pt=129655793&ct=presse&mt=8
+- App Store: https://apps.apple.com/app/sapaude/id6825464359
 
 Images and screenshots are in the press kit. For review access, please write to support@sapaude.app.
 
