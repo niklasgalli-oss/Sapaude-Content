@@ -1,7 +1,141 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-11-20T04:42:28+01:00",
+  "updatedAt": "2026-11-21T04:42:20+01:00",
   "days": [
+    {
+      "date": "2026-11-21",
+      "items": [
+        {
+          "id": "2026-11-21-riemann-proof-claim-with-claude",
+          "headline": "Mathematician claims Riemann proof made with Claude",
+          "summary": "An Anthropic mathematician says he proved the Riemann hypothesis with help from Claude and formalized it in Lean. The claim has not been independently verified, and Anthropic has not commented.",
+          "source": {
+            "name": "The Verge",
+            "url": "https://www.theverge.com/ai-artificial-intelligence/1010051/anthropic-riemann-hypothesis-millennium-prize-problem"
+          },
+          "tag": "Benchmarks",
+          "i18n": {
+            "de": {
+              "headline": "Mathematiker meldet Riemann-Beweis mit Claude",
+              "summary": "Ein Mathematiker von Anthropic gibt an, die Riemann-Vermutung mithilfe von Claude bewiesen und den Beweis in Lean formalisiert zu haben. Unabhängig geprüft ist das noch nicht, Anthropic äußert sich bisher nicht."
+            }
+          }
+        },
+        {
+          "id": "2026-11-21-claude-computer-use-for-teams",
+          "headline": "Claude can now use desktop apps in Team plans",
+          "summary": "Computer use is now in beta for Claude Team and Enterprise plans. Claude can see the screen and work in desktop apps that users allow, and the feature is rolling out to organizations gradually.",
+          "source": {
+            "name": "Anthropic",
+            "url": "https://support.claude.com/en/articles/12138966-release-notes"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "Claude bedient Desktop-Apps jetzt auch im Team-Tarif",
+              "summary": "Computer use ist für die Tarife Claude Team und Enterprise jetzt als Beta verfügbar. Claude sieht den Bildschirm und arbeitet in freigegebenen Desktop-Apps, Organisationen erhalten die Funktion schrittweise."
+            }
+          }
+        },
+        {
+          "id": "2026-11-21-signal-blocks-ai-screen-reading",
+          "headline": "Signal stops AI assistants from reading your chats",
+          "summary": "Signal now blocks screenshots and on-device assistants like Gemini and Siri from reading its screen. On iPhone the protection is on by default, and it can be adjusted in the privacy settings.",
+          "source": {
+            "name": "Signal",
+            "url": "https://support.signal.org/hc/en-us/articles/11338514641306-Screen-security-blocking-Google-Gemini-and-Siri-AI"
+          },
+          "tag": "Tools",
+          "i18n": {
+            "de": {
+              "headline": "Signal sperrt KI-Assistenten aus den Chats aus",
+              "summary": "Signal verhindert jetzt Screenshots und das Mitlesen des Bildschirms durch Assistenten wie Gemini und Siri. Auf dem iPhone ist der Schutz standardmäßig aktiv und lässt sich in den Datenschutz-Einstellungen anpassen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-21-google-fake-web-tests-agents",
+          "headline": "Google tests its agents on a fake internet",
+          "summary": "Google built a sealed-off test web with thousands of artificial websites to expose its AI agents to realistic attacks. The goal is to find prompt injection weaknesses without agents taking real actions online.",
+          "source": {
+            "name": "heise online",
+            "url": "https://www.heise.de/news/Google-baut-ein-kuenstliches-Internet-fuer-seine-KI-Agenten-11532191.html"
+          },
+          "tag": "Autonomous Agent",
+          "i18n": {
+            "de": {
+              "headline": "Google testet seine Agenten in einem Schein-Internet",
+              "summary": "Google hat ein abgeschottetes Test-Web mit Tausenden künstlichen Websites gebaut, um seine KI-Agenten realistischen Angriffen auszusetzen. So sollen Schwachstellen für prompt injection auffallen, ohne dass Agenten echte Aktionen auslösen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-21-openai-guards-against-distillation",
+          "headline": "OpenAI tightens defenses against model copying",
+          "summary": "OpenAI explains how it detects attempts to train rival models on its outputs without permission. In internal tests, attacks to extract hidden reasoning from GPT-6.2 Astra succeeded only 0.2% of the time.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/combatting-adversarial-distillation/"
+          },
+          "tag": "Framework",
+          "level": "advanced",
+          "i18n": {
+            "de": {
+              "headline": "OpenAI schützt Modelle besser vor dem Abkupfern",
+              "summary": "OpenAI beschreibt, wie es Versuche erkennt, mit seinen Antworten unerlaubt Konkurrenzmodelle zu trainieren. In internen Tests gelang es Angriffen nur noch in 0,2 Prozent der Fälle, verborgenes Reasoning aus GPT-6.2 Astra auszulesen."
+            }
+          }
+        },
+        {
+          "id": "2026-11-21-medchembench-tests-drug-reasoning",
+          "headline": "New benchmark tests AI on drug discovery tasks",
+          "summary": "OpenAI's MedChemBench has 99 problems from medicinal chemistry research, such as choosing which compounds to test next. GPT-6.2 Astra scored 84.5% of the available credit.",
+          "source": {
+            "name": "OpenAI",
+            "url": "https://openai.com/index/introducing-medchembench/"
+          },
+          "tag": "Benchmarks",
+          "i18n": {
+            "de": {
+              "headline": "Neuer Benchmark prüft KI bei der Wirkstoffsuche",
+              "summary": "MedChemBench von OpenAI umfasst 99 Aufgaben aus der medizinischen Chemie, etwa die Wahl der nächsten zu testenden Verbindungen. GPT-6.2 Astra erreichte 84,5 Prozent der möglichen Punkte."
+            }
+          }
+        },
+        {
+          "id": "2026-11-21-trump-threatens-data-center-tax",
+          "headline": "Trump threatens tax on AI data centers abroad",
+          "summary": "President Trump said US tech firms that build AI data centers in other countries will face a heavy tax. He gave no details and said his own officials had not yet been told about the plan.",
+          "source": {
+            "name": "AP News",
+            "url": "https://apnews.com/article/trump-artificial-intelligence-data-centers-f1ac03b73d13445400eeed8631d9d879"
+          },
+          "tag": "Framework",
+          "i18n": {
+            "de": {
+              "headline": "Trump droht mit Steuer auf KI-Rechenzentren im Ausland",
+              "summary": "US-Präsident Trump kündigte eine hohe Steuer für US-Techfirmen an, die KI-Rechenzentren im Ausland bauen. Details nannte er nicht, seine eigenen Mitarbeiter wussten nach seinen Worten noch nichts davon."
+            }
+          }
+        },
+        {
+          "id": "2026-11-21-meta-rethinks-net-zero-goal",
+          "headline": "Meta rethinks its 2030 climate goal as AI grows",
+          "summary": "Meta is reevaluating its goal of net-zero emissions by 2030. Its new sustainability report shows total emissions rose almost 40% in 2025, as AI data center demand grew faster than planned.",
+          "source": {
+            "name": "Ars Technica",
+            "url": "https://arstechnica.com/ai/2026/11/meta-reconsiders-2030-net-zero-goal-amid-record-emissions-from-ai-data-centers/"
+          },
+          "tag": "Hardware",
+          "i18n": {
+            "de": {
+              "headline": "Meta stellt sein Klimaziel für 2030 infrage",
+              "summary": "Meta prüft sein Ziel, bis 2030 netto keine Emissionen mehr zu verursachen. Laut neuem Nachhaltigkeitsbericht stiegen die Gesamtemissionen 2025 um fast 40 Prozent, weil der Bedarf an KI-Rechenzentren schneller wuchs als geplant."
+            }
+          }
+        }
+      ]
+    },
     {
       "date": "2026-11-20",
       "items": [
@@ -786,143 +920,6 @@
             "de": {
               "headline": "Cursor erklärt den Angriff auf seinen Marktplatz",
               "summary": "Ein bei Dienstleister Fireworks offengelegter Schlüssel führte einen Angreifer in Cursors Systeme und zu einer manipulierten Claude-Code-Erweiterung für bis zu 5.000 Nutzer. Die meisten Kunden waren laut Cursor nicht betroffen."
-            }
-          }
-        }
-      ]
-    },
-    {
-      "date": "2026-11-14",
-      "items": [
-        {
-          "id": "2026-11-14-chatgpt-wallet",
-          "headline": "ChatGPT agents can now pay for purchases",
-          "summary": "OpenAI launched ChatGPT Wallet with Visa, Mastercard and American Express. Agents pay with a token instead of your card number, and you confirm every purchase with Face ID or a fingerprint; first for Pro users in the US.",
-          "source": {
-            "name": "OpenAI",
-            "url": "https://openai.com/index/introducing-chatgpt-wallet/"
-          },
-          "tag": "Tools",
-          "pulseId": "pulse-2026-11-13-chatgpt-agents-can-pay",
-          "i18n": {
-            "de": {
-              "headline": "ChatGPT-Agenten können jetzt bezahlen",
-              "summary": "OpenAI startet ChatGPT Wallet mit Visa, Mastercard und American Express. Agents zahlen mit einem Token statt der Kartennummer, jeder Kauf wird per Face ID oder Fingerabdruck bestätigt. Zunächst nur für Pro-Nutzer in den USA."
-            }
-          }
-        },
-        {
-          "id": "2026-11-14-eu-ai-summit-dublin",
-          "headline": "EU leaders hold their first AI summit in Dublin",
-          "summary": "At an informal summit, EU leaders discussed how Europe can catch up in AI while managing its risks. Commission chief von der Leyen put the investment need at €500 billion, from private money and the next EU budget.",
-          "source": {
-            "name": "WELT",
-            "url": "https://www.welt.de/wirtschaft/article6af76f157f8bbad09ea62d26/gipfeltreffen-in-dublin-haben-keine-zeit-zu-verlieren-eukommission-veranschlagt-halbe-billion-euro-fuer-ki-investitionen.html"
-          },
-          "tag": "Framework",
-          "i18n": {
-            "de": {
-              "headline": "Erster KI-Gipfel der EU-Spitzen in Dublin",
-              "summary": "Bei einem informellen Gipfel berieten die EU-Staats- und Regierungschefs, wie Europa bei KI aufholen und Risiken begrenzen kann. Von der Leyen beziffert den Investitionsbedarf auf 500 Milliarden Euro aus privatem Kapital und EU-Haushalt."
-            }
-          }
-        },
-        {
-          "id": "2026-11-14-claude-for-manufacturing",
-          "headline": "Claude gets a plugin for factory software",
-          "summary": "Anthropic's Claude for Manufacturing connects to tools like Autodesk Fusion, NetSuite and Infor. It drafts quotes, compares suppliers and writes quality reports for Team and Enterprise customers; key steps still need human approval.",
-          "source": {
-            "name": "The Decoder",
-            "url": "https://the-decoder.com/anthropics-claude-for-manufacturing-plugs-ai-directly-into-factory-software-to-automate-industrial-workflows/"
-          },
-          "tag": "Autonomous Agent",
-          "i18n": {
-            "de": {
-              "headline": "Claude bekommt ein Plugin für Fabrik-Software",
-              "summary": "Claude for Manufacturing von Anthropic greift auf Programme wie Autodesk Fusion, NetSuite und Infor zu. Es erstellt Angebote, vergleicht Lieferanten und schreibt Qualitätsberichte. Wichtige Schritte muss weiter ein Mensch freigeben."
-            }
-          }
-        },
-        {
-          "id": "2026-11-14-gemini-glasses-preorder",
-          "headline": "Gemini smart glasses are open for pre-order",
-          "summary": "Google's glasses with Warby Parker, Gentle Monster and Samsung can now be pre-ordered in the US and reach stores on December 10. Gemini helps with directions, live translation and photos, and they also work with iPhones.",
-          "source": {
-            "name": "Google",
-            "url": "https://blog.google/innovation-and-ai/technology/xr-ar/google-intelligent-eyewear-collections-pre-order/"
-          },
-          "tag": "Hardware",
-          "pulseId": "pulse-2026-11-13-gemini-glasses-preorder",
-          "i18n": {
-            "de": {
-              "headline": "Gemini-Brillen jetzt vorbestellbar",
-              "summary": "Googles Brillen mit Warby Parker, Gentle Monster und Samsung lassen sich in den USA vorbestellen und kommen am 10. Dezember in die Läden. Gemini hilft bei Navigation, Live-Übersetzung und Fotos, auch mit dem iPhone."
-            }
-          }
-        },
-        {
-          "id": "2026-11-14-notion-chats-fireworks-breach",
-          "headline": "Notion AI chats exposed in a vendor hack",
-          "summary": "A breach at AI provider Fireworks let attackers see some Notion AI chat transcripts, affecting under 1% of workspaces. Notion revoked leaked API keys and has contacted affected customers.",
-          "source": {
-            "name": "Notion",
-            "url": "https://www.notion.com/security/advisories/security-incident-involving-a-third-party-ai-vendor"
-          },
-          "tag": "Tools",
-          "pulseId": "pulse-2026-11-13-notion-ai-chats-exposed",
-          "i18n": {
-            "de": {
-              "headline": "Notion-AI-Chats bei Dienstleister-Hack offengelegt",
-              "summary": "Über einen Angriff auf den KI-Anbieter Fireworks konnten Angreifer einige Chatverläufe aus Notion AI einsehen, betroffen sind weniger als 1 Prozent der Workspaces. Notion hat geleakte API-Keys gesperrt und Betroffene informiert."
-            }
-          }
-        },
-        {
-          "id": "2026-11-14-spacex-74b-ai-campuses",
-          "headline": "SpaceX plans $74 billion in AI computing sites",
-          "summary": "SpaceX wants to spend more than $74 billion on AI supercomputing campuses in Texas and Arizona. The Arizona site alone is planned at about $50 billion and still needs local approval.",
-          "source": {
-            "name": "UPI",
-            "url": "https://www.upi.com/Top_News/US/2026/11/12/spacex-musk-AI-supercomputing-texas-arizona/8361794521839/"
-          },
-          "tag": "Hardware",
-          "i18n": {
-            "de": {
-              "headline": "SpaceX plant 74 Milliarden Dollar für KI-Rechenzentren",
-              "summary": "SpaceX will mehr als 74 Milliarden Dollar in KI-Rechenzentren in Texas und Arizona stecken. Allein der Standort in Arizona soll rund 50 Milliarden kosten und braucht noch eine Genehmigung vor Ort."
-            }
-          }
-        },
-        {
-          "id": "2026-11-14-inkling-2-small-open-weights",
-          "headline": "Thinking Machines releases Inkling 2 Small weights",
-          "summary": "Thinking Machines Lab put Inkling 2 Small on Hugging Face under Apache 2.0. The mixture-of-experts model has 594B parameters, 17B active per token, reads images and needs large GPU clusters to run.",
-          "source": {
-            "name": "Thinking Machines Lab",
-            "url": "https://thinkingmachines.ai/news/inkling-2-small/"
-          },
-          "tag": "Model Release",
-          "level": "advanced",
-          "i18n": {
-            "de": {
-              "headline": "Thinking Machines gibt Inkling 2 Small frei",
-              "summary": "Thinking Machines Lab stellt Inkling 2 Small unter Apache 2.0 auf Hugging Face. Das mixture-of-experts-Modell hat 594B Parameter, davon 17B aktiv pro Token, versteht Bilder und braucht große GPU-Cluster."
-            }
-          }
-        },
-        {
-          "id": "2026-11-14-ai-shopping-risky-sites",
-          "headline": "AI chatbots sometimes point shoppers to fake stores",
-          "summary": "In tests by brand-protection firm Podqi, risky shops showed up in 15% of Perplexity answers, 8% of ChatGPT answers and 4% of Gemini answers. Check the shop address before you pay.",
-          "source": {
-            "name": "The Verge",
-            "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
-          },
-          "tag": "Benchmarks",
-          "i18n": {
-            "de": {
-              "headline": "KI-Chatbots verweisen teils auf Fake-Shops",
-              "summary": "In Tests der Markenschutzfirma Podqi tauchten riskante Shops in 15 Prozent der Antworten von Perplexity auf, bei ChatGPT in 8 und bei Gemini in 4 Prozent. Vor dem Bezahlen also die Shop-Adresse prüfen."
             }
           }
         }
