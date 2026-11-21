@@ -77,6 +77,14 @@
     <lastmod>2026-11-14</lastmod>
   </url>
   <url>
+    <loc>https://sapaude.app/briefing/2026-11-20-claude-computer-use/</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/briefing/2026-11-20-signal-screen-block/</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
     <loc>https://sapaude.app/briefing/2026-11-19-gemini-runs-mac-apps/</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
@@ -101,10 +109,6 @@
     <lastmod>2026-11-18</lastmod>
   </url>
   <url>
-    <loc>https://sapaude.app/briefing/2026-11-18-rtx-spark-desktops/</loc>
-    <lastmod>2026-11-18</lastmod>
-  </url>
-  <url>
     <loc>https://sapaude.app/briefing/2026-11-18-hermes-works-in-teams/</loc>
     <lastmod>2026-11-18</lastmod>
   </url>
@@ -114,10 +118,6 @@
   </url>
   <url>
     <loc>https://sapaude.app/briefing/2026-11-18-perplexity-writes-skills/</loc>
-    <lastmod>2026-11-18</lastmod>
-  </url>
-  <url>
-    <loc>https://sapaude.app/briefing/2026-11-18-copilot-works-on-its-own/</loc>
     <lastmod>2026-11-18</lastmod>
   </url>
   <url>
@@ -153,6 +153,14 @@
     <lastmod>2026-11-15</lastmod>
   </url>
   <url>
+    <loc>https://sapaude.app/en/briefing/2026-11-20-claude-computer-use/</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/en/briefing/2026-11-20-signal-screen-block/</loc>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
     <loc>https://sapaude.app/en/briefing/2026-11-19-gemini-runs-mac-apps/</loc>
     <lastmod>2026-11-19</lastmod>
   </url>
@@ -177,10 +185,6 @@
     <lastmod>2026-11-18</lastmod>
   </url>
   <url>
-    <loc>https://sapaude.app/en/briefing/2026-11-18-rtx-spark-desktops/</loc>
-    <lastmod>2026-11-18</lastmod>
-  </url>
-  <url>
     <loc>https://sapaude.app/en/briefing/2026-11-18-hermes-works-in-teams/</loc>
     <lastmod>2026-11-18</lastmod>
   </url>
@@ -190,10 +194,6 @@
   </url>
   <url>
     <loc>https://sapaude.app/en/briefing/2026-11-18-perplexity-writes-skills/</loc>
-    <lastmod>2026-11-18</lastmod>
-  </url>
-  <url>
-    <loc>https://sapaude.app/en/briefing/2026-11-18-copilot-works-on-its-own/</loc>
     <lastmod>2026-11-18</lastmod>
   </url>
   <url>
@@ -230,7 +230,7 @@
   </url>
   <url>
     <loc>https://sapaude.app/briefing/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/briefing/2026-11-11-gemini-answers-yes-or-no/</loc>
@@ -357,6 +357,10 @@
     <lastmod>2026-11-18</lastmod>
   </url>
   <url>
+    <loc>https://sapaude.app/briefing/2026-11-18-copilot-works-on-its-own/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
     <loc>https://sapaude.app/briefing/2026-11-18-gpt-6-2-astra-sol/</loc>
     <lastmod>2026-11-18</lastmod>
   </url>
@@ -366,6 +370,10 @@
   </url>
   <url>
     <loc>https://sapaude.app/briefing/2026-11-18-replit-agents-chase-goals/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/briefing/2026-11-18-rtx-spark-desktops/</loc>
     <lastmod>2026-11-18</lastmod>
   </url>
   <url>
@@ -402,7 +410,7 @@
   </url>
   <url>
     <loc>https://sapaude.app/en/briefing/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/en/briefing/2026-11-11-gemini-answers-yes-or-no/</loc>
@@ -529,6 +537,10 @@
     <lastmod>2026-11-18</lastmod>
   </url>
   <url>
+    <loc>https://sapaude.app/en/briefing/2026-11-18-copilot-works-on-its-own/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
     <loc>https://sapaude.app/en/briefing/2026-11-18-gpt-6-2-astra-sol/</loc>
     <lastmod>2026-11-18</lastmod>
   </url>
@@ -538,6 +550,10 @@
   </url>
   <url>
     <loc>https://sapaude.app/en/briefing/2026-11-18-replit-agents-chase-goals/</loc>
+    <lastmod>2026-11-18</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/en/briefing/2026-11-18-rtx-spark-desktops/</loc>
     <lastmod>2026-11-18</lastmod>
   </url>
   <url>
@@ -571,6 +587,10 @@
   <url>
     <loc>https://sapaude.app/en/briefing/tag/2026-11-14/</loc>
     <lastmod>2026-11-14</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/pulse/2026-11-20/</loc>
+    <lastmod>2026-11-20</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/pulse/2026-11-19/</loc>
@@ -782,7 +802,11 @@
   </url>
   <url>
     <loc>https://sapaude.app/pulse/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
+  </url>
+  <url>
+    <loc>https://sapaude.app/en/pulse/2026-11-20/</loc>
+    <lastmod>2026-11-20</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/en/pulse/2026-11-19/</loc>
@@ -994,7 +1018,7 @@
   </url>
   <url>
     <loc>https://sapaude.app/en/pulse/</loc>
-    <lastmod>2026-11-19</lastmod>
+    <lastmod>2026-11-20</lastmod>
   </url>
   <url>
     <loc>https://sapaude.app/glossar/llm/</loc>
